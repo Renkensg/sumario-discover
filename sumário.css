@@ -1,32 +1,210 @@
-* {margin: 5px;}
-* {background-color: #121214;}
-* {color: white;}
+* {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #121214;
+
+  background-color: #121214;
+
+  color: white;
+}
+
 body {
-    font: 17px 'Lato', sans-serif;
-    height: 100vh;
+  font: 17px "Lato", sans-serif;
+  height: 100vh;
 }
+
+header {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 .título {
-    text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+  text-align: center;
 }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 330px;
+  margin: auto;
+  padding-top: 7px;
+  text-align: center;
+  border-radius: 10%;
+}
+
+.title,
+.title * {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.9s;
+  background: #141414;
+  border-color: transparent;
+}
+
+.card img {
+  width: 250px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.card img {
+  padding: 0;
+  background-color: mediumspringgreen;
+  box-sizing: border-box;
+  /* background: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%); */
+}
+
+.card img:hover {
+  transform: scale(1.04);
+  padding: 2px;
+}
+
+.fa-linkedin:hover {
+  transform: scale(1.5);
+  text-shadow: 1px 1px 0 rgb(0, 12, 7), 0 0 0.2em rgb(0, 0, 255),
+    0 0 0.7em rgb(0, 0, 160), 1px 1px 1.3em rgb(0, 0, 70);
+}
+
+.fa-github:hover {
+  transform: scale(1.5);
+  text-shadow: 1px 1px 0 rgb(0, 12, 7), 0 0 0.2em rgb(255, 0, 255),
+    0 0 0.7em rgb(128, 0, 255), 1px 1px 1.3em rgb(71, 0, 143);
+}
+
+.fa-spotify:hover {
+  transform: scale(1.5);
+  text-shadow: 1px 1px 0 rgb(0, 12, 7), 0 0 0.2em #00ff59, 0 0 0.7em #008830,
+    1px 1px 1.3em #00300f;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
 .glossário {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.fundamentar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1295px) {
+  .fundamentar {
     display: grid;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(385px, 385px));
+    column-gap: 0.59rem;
+    box-sizing: border-box;
     justify-content: center;
+    width: 95vw;
+  }
 }
-.tópicos {
-    border-radius: 11px;
-    padding: 3px 7px;
-    text-align: center;
+
+@media (max-width: 700px) {
+  .fundamentar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(385px, 385px));
+    column-gap: 0.59rem;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 95vw;
+  }
 }
+
+.chip {
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 25px;
+}
+
+.chip {
+  border: 2px solid gray;
+}
+
+.chip:hover {
+  border: 2px solid mediumspringgreen;
+  transition: 0.5s;
+}
+
+.chip a:hover {
+  color: mediumspringgreen;
+  text-shadow: 1px 1px 0 rgb(0, 12, 7), 0 0 0.2em rgb(0, 129, 65),
+    0 0 0.4em rgb(0, 70, 0), 1px 1px 0.6em rgb(0, 30, 0);
+  transition: 1s;
+}
+
+.chip img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
 a {
-    outline: none;
-    text-decoration: none;
-    padding: 2px 2px;
-    color: mediumspringgreen;
+  outline: none;
+  text-decoration: none;
+  padding: 2px 2px;
+  font-size: 20px;
 }
-a:hover {
-    border: 1px solid;
-    background-color: rgb(15, 15, 15);
-    border-radius: 10px;
-    padding: 1px 7px 0;
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+header {
+  animation: fromTop 0.9s 0.2s backwards;
+}
+
+main {
+  animation: fromBottom 0.9s backwards;
+}
+
+@keyframes fromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
