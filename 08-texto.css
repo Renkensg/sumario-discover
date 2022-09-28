@@ -1,0 +1,519 @@
+* {
+    margin: 5px;
+    background-color: #121214;
+    color: white;
+}
+
+body {
+    font: 17px sans-serif;
+    height: 100vh;
+}
+
+/* body {
+    display: grid;
+    grid-template-areas: "head-container" "body-div";
+    grid-template-rows: 1fr 1fr;
+} */
+.main-document-head-container {
+    margin: 0;
+    padding: 0;
+}
+
+.top-navigation {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.título {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 5px 0 0 0;
+    width: 100%;
+}
+
+.glossário {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 97vw;
+}
+
+/* Juntei o autofitcol10px e índice em indcol10px */
+.indcol10px {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(10px, 10px));
+    column-gap: 0.59rem;
+    box-sizing: border-box;
+    padding-top: 10px;
+    justify-content: center;
+    width: 99vw;
+}
+
+.titlecolumngrid {
+    font-family: 'Lato', sans-serif;
+}
+
+.indcolumngrid {
+    padding: 0.50em;
+    border-radius: .5em;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+    text-align: start;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    background-color: #151515;
+    padding-left: 20px;
+}
+
+.indcolumngrid * {
+    background-color: #151515;
+}
+
+.indcolumngrid li {
+    font-size: 95%;
+    color: white;
+}
+
+.indol {
+    padding-left: 20px;
+}
+
+.elevatedbox {
+    text-align: center;
+    font-weight: bold;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+@media {
+    .boxspace1 {
+        grid-column: auto / span 1;
+    }
+
+    .boxspace2 {
+        grid-column: auto / span 2;
+    }
+
+    .boxspace3 {
+        grid-column: auto / span 3;
+    }
+
+    .boxspace4 {
+        grid-column: auto / span 4;
+    }
+
+    .boxspace5 {
+        grid-column: auto / span 5;
+    }
+
+    .boxspace6 {
+        grid-column: auto / span 6;
+    }
+
+    .boxspace7 {
+        grid-column: auto / span 7;
+    }
+
+    .boxspace8 {
+        grid-column: auto / span 8;
+    }
+
+    .boxspace9 {
+        grid-column: auto / span 9;
+    }
+
+    .boxspace10 {
+        grid-column: auto / span 10;
+    }
+
+    .boxspace11 {
+        grid-column: auto / span 11;
+    }
+
+    .boxspace12 {
+        grid-column: auto / span 12;
+    }
+
+    .boxspace13 {
+        grid-column: auto / span 13;
+    }
+
+    .boxspace14 {
+        grid-column: auto / span 14;
+    }
+
+    .boxspace15 {
+        grid-column: auto / span 15;
+    }
+
+    .boxspace16 {
+        grid-column: auto / span 16;
+    }
+
+    .boxspace17 {
+        grid-column: auto / span 17;
+    }
+
+    .boxspace18 {
+        grid-column: auto / span 18;
+    }
+
+    .boxspace19 {
+        grid-column: auto / span 19;
+    }
+
+    .boxspace20 {
+        grid-column: auto / span 20;
+    }
+
+    .boxspace21 {
+        grid-column: auto / span 21;
+    }
+
+    .boxspace22 {
+        grid-column: auto / span 22;
+    }
+
+    .boxspace23 {
+        grid-column: auto / span 23;
+    }
+
+    .boxspace24 {
+        grid-column: auto / span 24;
+    }
+
+    .boxspace25 {
+        grid-column: auto / span 25;
+    }
+
+    .boxspace26 {
+        grid-column: auto / span 26;
+    }
+
+    .boxspace27 {
+        grid-column: auto / span 27;
+    }
+
+    .boxspace28 {
+        grid-column: auto / span 28;
+    }
+
+    .boxspace29 {
+        grid-column: auto / span 29;
+    }
+
+    .boxspace30 {
+        grid-column: auto / span 30;
+    }
+
+    .boxspace31 {
+        grid-column: auto / span 31;
+    }
+
+    .boxspace32 {
+        grid-column: auto / span 32;
+    }
+
+    .boxspace33 {
+        grid-column: auto / span 33;
+    }
+
+    .boxspace34 {
+        grid-column: auto / span 34;
+    }
+
+    .boxspace35 {
+        grid-column: auto / span 35;
+    }
+
+    .boxspace36 {
+        grid-column: auto / span 36;
+    }
+
+    .boxspace37 {
+        grid-column: auto / span 37;
+    }
+
+    .boxspace38 {
+        grid-column: auto / span 38;
+    }
+
+    .boxspace39 {
+        grid-column: auto / span 39;
+    }
+
+    .boxspace40 {
+        grid-column: auto / span 40;
+    }
+
+    .boxspace41 {
+        grid-column: auto / span 41;
+    }
+
+    .boxspace42 {
+        grid-column: auto / span 42;
+    }
+
+    .boxspace43 {
+        grid-column: auto / span 43;
+    }
+
+    .boxspace44 {
+        grid-column: auto / span 44;
+    }
+
+    .boxspace45 {
+        grid-column: auto / span 45;
+    }
+
+    .boxspace46 {
+        grid-column: auto / span 46;
+    }
+
+    .boxspace47 {
+        grid-column: auto / span 47;
+    }
+
+    .boxspace48 {
+        grid-column: auto / span 48;
+    }
+
+    .boxspace49 {
+        grid-column: auto / span 49;
+    }
+
+    .boxspace50 {
+        grid-column: auto / span 50;
+    }
+}
+
+.body-div {
+    grid-area: body-div;
+    margin-right: 100px;
+    width: 97vw;
+    padding: 0;
+}
+
+.lesson {
+    margin: 0;
+    display: grid;
+    grid-template-areas:
+        "title"
+        "subtitle"
+        "info"
+        "respawn";
+    grid-template-rows: 35px 20px 1fr;
+}
+
+.title {
+    grid-area: title;
+    margin: 2px 8px 3px 3px;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 30px;
+    text-align: left;
+}
+
+.subtitle {
+    grid-area: subtitle;
+    margin: 2px 8px 10px 8px;
+    color: rgb(200, 200, 200);
+    font-family: 'Lora', serif;
+    text-align: left;
+}
+
+.info {
+    grid-area: info;
+    font-size: 0.912em;
+    margin: 10px 8px 3px 3px;
+    width: 96vw;
+    display: grid;
+    grid-template-areas:
+        "box autofitcol";
+}
+
+.info2 {
+    grid-area: info;
+    font-size: 0.912em;
+    margin: 10px 8px 3px 3px;
+    width: 96vw;
+    display: grid;
+    grid-template-areas:
+        "box autofitcol";
+    grid-template-columns: 33vw 50vw;
+}
+
+.box {
+    margin: 4px;
+    grid-area: box;
+    font-size: 0.95em;
+}
+
+.boxtitle {
+    margin: 5px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: rgb(240, 240, 240);
+}
+
+.boxinfo {
+    margin: 5px 10px 20px 10px;
+    color: rgb(175, 175, 175);
+}
+
+.infop {
+    color: rgb(160, 160, 160);
+}
+
+.autofitcol25px {
+    grid-area: autofitcol;
+    margin: 4px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 25px));
+    column-gap: 0.59rem;
+}
+
+.csspredomina {
+    display: grid;
+    padding: 5px;
+    margin: 0;
+    width: 1fr;
+    grid-template-areas:
+        "css html"
+        "css resultado";
+}
+
+.csspredomina2 {
+    display: grid;
+    padding: 5px;
+    margin: 0;
+    width: 1fr;
+    grid-template-areas:
+        "html css"
+        "resultado css";
+}
+
+.htmlpredomina {
+    display: grid;
+    padding: 5px;
+    margin: 0;
+    width: 1fr;
+    grid-template-areas:
+        "html html"
+        "css resultado";
+}
+
+.resultadopredomina {
+    display: grid;
+    padding: 5px;
+    margin: 0;
+    width: 1fr;
+    grid-template-areas:
+        "html resultado"
+        "css resultado";
+}
+
+.css {
+    grid-area: css;
+}
+
+.html {
+    grid-area: html;
+}
+
+.resultado {
+    grid-area: resultado;
+}
+
+.bodycolumngrid {
+    padding: 0.50em;
+    border-radius: .5em;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+    text-align: start;
+    font-weight: normal;
+    background-color: #151515;
+}
+
+.bodycolumngrid * {
+    background-color: #151515;
+}
+
+.bodycolumngrid li {
+    font-size: 95%;
+    color: white;
+}
+
+.titlecolumngrid {
+    text-align: center;
+}
+
+/* Mudei respaw para respawn */
+.respawn {
+    grid-area: respawn;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin: 2px 8px 3px 3px;
+}
+
+code {
+    color: hsl(30, 100%, 50%);
+    font-style: italic;
+    font-size: 1em;
+}
+
+a {
+    color: mediumspringgreen;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+a:hover {
+    text-shadow: 1px 1px 0 rgb(0, 12, 7), 0 0 0.2em rgb(0, 129, 65), 0 0 0.7em rgb(0, 90, 0), 1px 1px 1.3em rgb(0, 50, 0);
+    border-bottom: none;
+}
+
+blockquote {
+    margin-left: 1.2em;
+    font-size: 1em;
+    color: rgb(180, 180, 180);
+}
+
+blockquote em {
+    color: rgb(239, 239, 239);
+}
+
+li {
+    color: rgb(220, 220, 220);
+}
+
+.lessonfontfamily1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5em;
+}
+
+.fontvariantp {
+    font-variant: small-caps;
+}
+
+.fontstretchp {
+    font-stretch: condensed;
+}
+
+.letterspacing {
+    letter-spacing: 4px;
+}
+
+.wordspacing {
+    word-spacing: 1em;
+}

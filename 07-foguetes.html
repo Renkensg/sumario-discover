@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foguetes</title>
+    <link rel="stylesheet" href="./cssglobal.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Lato:wght@300&family=Lora:ital@1&family=Quicksand&family=Source+Serif+Pro:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="body" class="body">
+    <div id="main-document-head-container" class="main-document-head-container">
+        <header class="main-document-head-container top-navigation">
+            <div class="container">
+                <a href="/sumário.html" id="logo" class="logo" title="Homepage | Sumário">
+                    <img src="https://icon-library.com/images/icon-for-home/icon-for-home-1.jpg"
+                        alt="Home button with a blue background" width="35px">
+                </a>
+                <h1 class="título" id="título" title="Foguetes">Posicionando foguetes</h1>
+            </div>
+        </header>
+        <div id="glossário" class="glossário" title="Glossário">
+            <div id="autofitcol10px índice" class="autofitcol10px índice">
+                <div class="elevatedbox titlecolumngrid boxspace15">
+                    <h4 class="titlecolumngrid">1-5</h4>
+                    <ol class="bodycolumngrid indol">
+                        <li><a href="#Layouts">Layouts</a></li>
+                        <li><a href="#Position">Position</a></li>
+                        <li><a href="#Static">Static</a></li>
+                        <li><a href="#Relative">Relative</a></li>
+                        <li><a href="#Absolute">Absolute</a></li>
+                    </ol>
+                </div>
+                <div class="elevatedbox titlecolumngrid boxspace15">
+                    <h4 class="titlecolumngrid">6-10</h4>
+                    <ol class="bodycolumngrid indol">
+                        <li><a href="#Fixed">Fixed</a></li>
+                        <li><a href="#Element Stacking">Element Stacking</a></li>
+                        <li><a href="#Flex">Flex</a></li>
+                        <li><a href="#Grid">Grid</a></li>
+                        <li><a href="#Grid ou Flexbox">Grid ou Flexbox</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="body-div" class="body-div">
+        <div id="segmento" class="segmento" title="Exemplo">
+            <div id="Layouts" class="lesson" title="Layouts | Posicionando foguetes">
+                <h2 id="title" class="title" tabindex="">Layouts</h2>
+                <span class="subtitle">Alguns dos métodos usados para posicionar os elementos na tela.</span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">Elementos:</div>
+                        <div class="boxinfo">
+                            <ul>
+                                <li>Tables</li>
+                                <li>Floats e clear</li>
+                                <li>Frameworks e Grid Systems</li>
+                                <li>Flexbox</li>
+                                <li>Grid</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+                </div>
+            </div>
+            <hr>
+            <div id="Position" class="lesson" title="Position | Posicionando foguetes">
+                <h2 id="title" class="title" tabindex="">Position</h2>
+                <span class="subtitle">Controla onde, na página, o elemento irá ficar, alterando o fluxo normal dos
+                    elementos.</span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">Propriedade e valores.</div>
+                        <div class="boxinfo">
+                            <p class="infop">Name: <code>position</code></p>
+                            <p class="infop">Value:
+                                <code>static</code>|<code>relative</code>|<code>absolute</code>|<code>fixed</code></p>
+                            <p class="infop"><strong>Lembrando que o fluxo normal dos elementos é ficar um abaixo do
+                                    outro, a não ser no caso de elementos inline, que ficam um ao lado do
+                                    outro.</strong></p>
+                        </div>
+                    </div>
+                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+                </div>
+            </div>
+            <hr>
+            <div id="Static" class="lesson" title="Static | Posicionando foguetes">
+                <h2 id="title" class="title" tabindex="">Static</h2>
+                <span class="subtitle"><code>static</code></span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">Fluxo padrão</div>
+                        <div class="boxinfo">
+                            <p class="infop">Por padrão os elementos são<code>static</code>.</p>
+                            <p class="infop">Isso significa que os elementos irão seguir o fluxo normal do HTML.</p>
+                        </div>
+                    </div>
+                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+                </div>
+            </div>
+            <hr>
+            <div id="Relative" class="lesson" title="Relative | Posicionando foguetes">
+                <h2 id="title" class="title" tabindex="">Relative</h2>
+                <span class="subtitle"><code>relative</code></span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">Introdução</div>
+                        <div class="boxinfo">
+                            <p class="infop">O <b>position</b> indica onde o elemento vai ser posicionado na página. Ao
+                                usar o position podemos adicionar outras propriedades como
+                                <code>top, right, bottom, left e z-index,</code> que vão determinar o posicionamento
+                                final do elemento.</p>
+                            <p class="infop">Quando o position é <b>relative</b> os elementos são deslocados do seu
+                                posicionamento normal, mas sem afetar o posicionamento de outros elementos da página.
+                            </p>
+                        </div>
+                        <div class="boxtitle">Exemplo:</div>
+                        <div class="boxinfo">
+                            <p class="infop">A caixa vermelha vai receber a propriedade <code>relative</code> e poderá
+                                ter o seu posicionamento alterado via
+                                <code>top, right, bottom, left <em>e</em> z-index</code>.</p>
+                            <div class="autofitcol25px">
+                                <div class="bodycolumngrid boxspace12">
+                                    <h3 class="titlecolumngrid">HTML</h3>
+                                    <blockquote><code>
+                                        &lt;div class="<em>lessonbox lessonbox1</em>"&gt;&lt;/div&gt;<br>
+                                        &lt;div class="<em>lessonbox lessonbox2</em>"&gt;&lt;/div&gt;<br>
+                                        &lt;div class="<em>lessonbox lessonbox3</em>"&gt;&lt;/div&gt;<br>
+                                    </code></blockquote>
+                                </div>
+                                <div class="bodycolumngrid boxspace8">
+                                    <h3 class="titlecolumngrid">CSS</h3>
+                                    <blockquote><code>
+                                        .lessonbox {<br>
+                                            width: <em>50px</em>;<br>
+                                            height: <em>50px</em>;<br>
+                                            margin-bottom: <em>8px</em>;<br>
+                                          }<br>
+                                          <br>
+                                          .lessonbox1 {<br>
+                                            background-color: <em>red</em>;<br>
+                                            position: <em>relative</em>;<br>
+                                            left: <em>100px</em>;<br>
+                                            top: <em>80px</em>;<br>
+                                          }<br>
+                                          <br>
+                                          .lessonbox2 {<br>
+                                            background-color: <em>green</em>;<br>
+                                          }<br>
+                                          <br>
+                                          .lessonbox3 {<br>
+                                            background-color: <em>blue</em>;<br>
+                                          }<br>
+                                    </code></blockquote>
+                                </div>
+                                <div class="bodycolumngrid boxspace6">
+                                    <h3 class="titlecolumngrid">Resultado</h3>
+                                    <div class="lessonbox lessonbox1"></div>
+                                    <div class="lessonbox lessonbox2"></div>
+                                    <div class="lessonbox lessonbox3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+                </div>
+            </div>
+            <hr>
+            <div id="Absolute" class="lesson" title="Absolute | Posicionando foguetes">
+                <h2 id="title" class="title" tabindex="">Absolute</h2>
+                <span class="subtitle"><code>absolute</code></span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">Descrição:</div>
+                        <div class="boxinfo">
+                            <p class="infop">Quando o position é <strong>absolute</strong> o elemento é deslocado saindo
+                                do fluxo normal.</p>
+                            <p class="infop">O elemento de position <code>absolute</code> é posicionado em relação ao
+                                seu <em>parent element</em> mais próximo. Se esse elemento "pai" não existir, ele será
+                                posicionando em relação ao bloco contendo a raiz do elemento.</p>
+                        </div>
+                        <div class="boxtitle">Exemplo:</div>
+                        <div class="boxinfo">
+                            <p class="infop">No valor <code>absolute</code>, as caixas verde e azul sobem, pois é como
+                                se a box da vermelha tivesse deixado de existir e ocupar seu espaço.</p>
+                            <p class="infop">Agora, os valores de length em relação às propriedades
+                                <code>top right bottom left</code> serão contados como distância da mesma, e não como
+                                proximidade(ou aproximação).</p>
+                            <p class="infop">Foi necessário o seu <em>parent element</em> ter a
+                                <code>position <em>relative</em></code> para que a caixa não ficasse perdida pela
+                                página.</p>
+                            <div class="autofitcol25px">
+                                <div class="bodycolumngrid boxspace12">
+                                    <h3 class="titlecolumngrid">HTML</h3>
+                                    <blockquote><code>
+                                        &lt;div class="<em>foguetesgrid</em>"&gt;<br>
+                                        &nbsp; &lt;div class="<em>lessonbox lessonbox4</em>"&gt;&lt;/div&gt;<br>
+                                        &nbsp; &lt;div class="<em>lessonbox lessonbox2</em>"&gt;&lt;/div&gt;<br>
+                                        &nbsp; &lt;div class="<em>lessonbox lessonbox3</em>"&gt;&lt;/div&gt;<br>
+                                        &lt;/div&gt;<br>
+                                    </code></blockquote>
+                                </div>
+                                <div class="bodycolumngrid boxspace8">
+                                    <h3 class="titlecolumngrid">CSS</h3>
+                                    <blockquote><code>
+                                        .foguetesgrid {<br>
+                                            position: <em>relative</em>;<br>
+                                          }<br>
+                                          <br>
+                                        .lessonbox {<br>
+                                            width: <em>50px</em>;<br>
+                                            height: <em>50px</em>;<br>
+                                            margin-bottom: <em>8px</em>;<br>
+                                          }<br>
+                                          <br>
+                                          .lessonbox4 {<br>
+                                            background-color: <em>red</em>;<br>
+                                            position: <em>absolute</em>;<br>
+                                            left: <em>1170px</em>;<br>
+                                          }<br>
+                                          <br>
+                                          .lessonbox2 {<br>
+                                            background-color: <em>green</em>;<br>
+                                          }<br>
+                                          <br>
+                                          .lessonbox3 {<br>
+                                            background-color: <em>blue</em>;<br>
+                                          }<br>
+                                    </code></blockquote>
+                                </div>
+                                <div class="bodycolumngrid foguetesgrid boxspace6">
+                                    <h3 class="titlecolumngrid">Resultado</h3>
+                                    <div class="lessonbox lessonbox4"></div>
+                                    <div class="lessonbox lessonbox2"></div>
+                                    <div class="lessonbox lessonbox3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+                </div>
+            </div>
+            <hr>
+            <div id="Fixed" class="lesson" title="Fixed | Posicionando foguetes">
+                <h2 id="title" class="title" tabindex="">Fixed</h2>
+                <span class="subtitle"><code>fixed</code></span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">Descrição:</div>
+                        <div class="boxinfo">
+                            <p class="infop">Quando aplicado o <code>position <em>fixed</em></code> é como se criasse um
+                                elemento flutuante que fica fixo na página, independente do scrolling feito.</p>
+                        </div>
+                        <div class="boxtitle">Exemplo:</div>
+                        <div class="boxinfo">
+                            <p class="infop">Nesse caso, a caixa vermelha não ficou presa à caixa de resultado.</p>
+                            <div class="autofitcol25px">
+                                <div class="bodycolumngrid boxspace12">
+                                    <h3 class="titlecolumngrid">HTML</h3>
+                                    <blockquote><code>
+                                        &lt;div class="<em>lessonbox lessonbox7</em>"&gt;&lt;/div&gt;<br>
+                                        &lt;div class="<em>lessonbox lessonbox2</em>"&gt;&lt;/div&gt;<br>
+                                        &lt;div class="<em>lessonbox lessonbox3</em>"&gt;&lt;/div&gt;<br>
+                                    </code></blockquote>
+                                </div>
+                                <div class="bodycolumngrid boxspace8">
+                                    <h3 class="titlecolumngrid">CSS</h3>
+                                    <blockquote><code>
+                                        .lessonbox {<br>
+                                            width: <em>50px</em>;<br>
+                                            height: <em>50px</em>;<br>
+                                            margin-bottom: <em>8px</em>;<br>
+                                          }<br>
+                                          <br>
+                                          .lessonbox7 {<br>
+                                            background-color: <em>red</em>;<br>
+                                            position: <em>fixed</em>;<br>
+                                          }<br>
+                                          <br>
+                                          .lessonbox2 {<br>
+                                            background-color: <em>green</em>;<br>
+                                          }<br>
+                                          <br>
+                                          .lessonbox3 {<br>
+                                            background-color: <em>blue</em>;<br>
+                                          }<br>
+                                    </code></blockquote>
+                                </div>
+                                <div class="bodycolumngrid boxspace6">
+                                    <h3 class="titlecolumngrid">Resultado</h3>
+                                    <div class="lessonbox lessonbox7"></div>
+                                    <div class="lessonbox lessonbox2"></div>
+                                    <div class="lessonbox lessonbox3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+                </div>
+            </div>
+            <hr>
+            <div id="Element Stacking" class="lesson" title="Element Stacking | Posicionando foguetes">
+                <h2 id="title" class="title" tabindex="">Element Stacking</h2>
+                <span class="subtitle"><code>z-index</code></span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">O que é?</div>
+                        <div class="boxinfo">
+                            <p class="infop">É o empilhamento de elementos. Podemos usar o z-index para determinar a
+                                ordem da posição do elemento.</p>
+                            <p class="infop">Quanto maior o <code>z-index</code>, mais "acima" vai aparecer o elemento.
+                            </p>
+                        </div>
+                        <div class="boxtitle">Exemplo:</div>
+                        <div class="boxinfo">
+                            <p class="infop">Foi preciso colocar a gridbox com position relative para as caixas absolute
+                                não se perderem pela página.</p>
+                            <p class="infop">O <code>z-index</code> define qual div vai ficar por cima da outra.</p>
+                            <div class="autofitcol25px">
+                                <div class="bodycolumngrid boxspace12">
+                                    <h3 class="titlecolumngrid">HTML</h3>
+                                    <blockquote><code>
+                                        &lt;div class="<em>foguetesgrid</em>"&gt;<br>
+                                        &nbsp; &lt;div class="<em>lessonbox lessonbox8</em>"&gt;&lt;/div&gt;<br>
+                                        &nbsp; &lt;div class="<em>lessonbox lessonbox5</em>"&gt;&lt;/div&gt;<br>
+                                        &nbsp; &lt;div class="<em>lessonbox lessonbox6</em>"&gt;&lt;/div&gt;<br>
+                                        &lt;/div&gt;<br>
+                                    </code></blockquote>
+                                </div>
+                                <div class="bodycolumngrid boxspace8">
+                                    <h3 class="titlecolumngrid">CSS</h3>
+                                    <blockquote><code>
+                                        .foguetesgrid {<br>
+                                            position: <em>relative</em>;<br>
+                                          }<br>
+                                          <br>
+                                        .lessonbox {<br>
+                                            width: <em>50px</em>;<br>
+                                            height: <em>50px</em>;<br>
+                                            margin-bottom: <em>8px</em>;<br>
+                                          }<br>
+                                          <br>
+                                          .lessonbox8 {<br>
+                                            background-color: <em>red</em>;<br>
+                                            position: <em>absolute</em>;<br>
+                                            left: <em>10px</em>;<br>
+                                            top: <em>35px</em>;<br>
+                                            z-index: <em>3</em>;<br>
+                                          }<br>
+                                          <br>
+                                          .lessonbox5 {<br>
+                                            background-color: <em>green</em>;<br>
+                                            position: <em>absolute</em>;<br>
+                                            left: <em>15px</em>;<br>
+                                            top: <em>40px</em>;<br>
+                                            z-index: <em>2</em>;<br>
+                                          }<br>
+                                          <br>
+                                          .lessonbox6 {<br>
+                                            background-color: <em>blue</em>;<br>
+                                            position: <em>absolute</em>;<br>
+                                            left: <em>20px</em>;<br>
+                                            top: <em>45px</em>;<br>
+                                            z-index: <em>1</em>;<br>
+                                          }<br>
+                                    </code></blockquote>
+                                </div>
+                                <div class="bodycolumngrid foguetesgrid boxspace6">
+                                    <h3 class="titlecolumngrid">Resultado</h3>
+                                    <div class="lessonbox lessonbox8"></div>
+                                    <div class="lessonbox lessonbox5"></div>
+                                    <div class="lessonbox lessonbox6"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+                </div>
+            </div>
+            <hr>
+            <div id="Flex" class="lesson" title="Flex | Posicionando foguetes">
+                <h2 id="title" class="title" tabindex="">Flex</h2>
+                <span class="subtitle">Como posicionar elementos usando o CSS Flexbox.</span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">Flexbox.</div>
+                        <div class="boxinfo">
+                            <p class="infop">Nos permite posicionar os elementos dentro da caixa.</p>
+                            <p class="infop">Controle em uma dimensão (horizontal ou vertical).</p>
+                            <p class="infop">Alinhamento, direcionamento, ordenar e tamanhos.</p>
+                            <blockquote><code>
+                                div.parent {<br>
+                                &nbsp;     display: <em>flex;</em><br>
+                                }<br>
+                            </code></blockquote>
+                        </div>
+                        <div class="boxtitle">Flex-direction.</div>
+                        <div class="boxinfo">
+                            <p class="infop">Qual a direção do flex: horizontal ou vertical:</p>
+                            <p class="infop">&nbsp; <em>row</em> | <em>column</em></p>
+                        </div>
+                        <div class="boxtitle">Alinhamento.</div>
+                        <div class="boxinfo">
+                            <p class="infop"><code>justify-content</code></p>
+                            <p class="infop"><code>align-items</code></p>
+                        </div>
+                        <div class="boxtitle">Exemplo:</div>
+                        <div class="boxinfo">
+                            <div class="autofitcol25px">
+                                <div class="bodycolumngrid boxspace20">
+                                    <h3 class="titlecolumngrid">HTML</h3>
+                                    <blockquote><code>
+                                        &lt;div class="flexboxcontainer"&gt;<br>
+                                        &nbsp; &lt;div class="flexlessonbox flexlessonblue"&gt;&lt;/div&gt;<br>
+                                        &nbsp; &lt;div class="flexlessonbox flexlessonred"&gt;&lt;/div&gt;<br>
+                                        &nbsp; &lt;div class="flexlessonbox flexlessongreen"&gt;&lt;/div&gt;<br>
+                                        &lt;/div&gt;<br>
+                                    </code></blockquote>
+                                </div>
+                                <div class="bodycolumngrid boxspace10">
+                                    <h3 class="titlecolumngrid">CSS</h3>
+                                    <blockquote><code>
+                                        .flexlessoncontainer {<br>
+                                            display: <em>flex</em>;<br>
+                                            justify-content: <em>space-between</em>;<br>
+                                            align-items: <em>center</em>;<br>
+                                            height: <em>300px</em>;<br>
+                                        }<br>
+                                        .flexlessonbox {<br>
+                                            width: <em>50px</em>;<br>
+                                            height: <em>50px</em>;<br>
+                                        }<br>
+                                        .flexlessonblue {<br>
+                                            background-color: <em>blue</em>;<br>
+                                        }<br>
+                                        .flexlessonred {<br>
+                                            background-color: <em>red</em>;<br>
+                                        }<br>
+                                        .flexlessongreen {<br>
+                                            background-color: <em>green</em>;<br>
+                                        }<br>
+                                    </code></blockquote>
+                                </div>
+                                <div class="bodycolumngrid boxspace10">
+                                    <h3 class="titlecolumngrid">Resultado</h3>
+                                    <div class="flexlessoncontainer">
+                                        <div class="flexlessonbox flexlessonblue"></div>
+                                        <div class="flexlessonbox flexlessonred"></div>
+                                        <div class="flexlessonbox flexlessongreen"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+                </div>
+            </div>
+            <hr>
+            <div id="Grid" class="lesson" title="Grid | Posicionando foguetes">
+                <h2 id="title" class="title" tabindex="">Grid</h2>
+                <span class="subtitle">Como posicionar elementos usando o CSS Grid.</span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">Características.</div>
+                        <div class="boxinfo">
+                            <ul>
+                                <li>Posicionamento dos elementos dentro da caixa;</li>
+                                <li>Posicionamento horizontal e vertical <strong>ao mesmo tempo</strong>;</li>
+                                <li>Pode ser flexível ou fixo;</li>
+                                <li>Cria espaços para os elementos filhos habitarem.</li>
+                            </ul>
+                        </div>
+                        <div class="boxtitle">Exemplo:</div>
+                        <div class="boxinfo">
+                            <p class="infop">Aplicado no Resultado e nas próprias tabelas.</p>
+                            <div class="autofitcol25px gridlessonfitcoltest">
+                                <div class="bodycolumngrid gridlessonbodycolumngridhtml boxspace16">
+                                    <h3 class="titlecolumngrid">HTML</h3>
+                                    <blockquote><code>
+                                        &lt;div class="gridlessonbody"&gt;<br>
+                                        &nbsp; &lt;h3 class="gridlessontitle"&gt;<em>Resultado</em>&lt;/h3&gt;<br>
+                                        &nbsp; &lt;header class="gridlessonheader"&gt;<em>Topo</em>&lt;/header&gt;<br>
+                                        &nbsp; &lt;main class="gridlessonmain"&gt;<em>Conteúdo</em>&lt;/main&gt;<br>
+                                        &nbsp; &lt;aside class="gridlessonaside"&gt;<em>Infos adicionais</em>&lt;/aside&gt;<br>
+                                        &nbsp; &lt;footer class="gridlessonfooter"&gt;<em>Rodapé</em>&lt;/footer&gt;<br>
+                                        &lt;/div&gt;<br>
+                                    </code></blockquote>
+                                </div>
+                                <div class="bodycolumngrid gridlessonbodycolumngridcss boxspace21">
+                                    <h3 class="titlecolumngrid">CSS</h3>
+                                    <blockquote><code>
+                                        .gridlessonbody {<br>
+                                            height: <em>1fr</em>;<br>
+                                            display: <em>grid</em>;<br>
+                                            grid-template-areas: <em>"title title"<br>"header header"<br>"main aside"<br>"footer footer"</em>;<br>
+                                            grid-template-rows: <em>30px 50px 1fr 35px</em>;<br>
+                                            grid-template-columns: <em>1fr 80px</em>;<br>
+                                          }<br>
+                                          .gridlessontitle {<br>
+                                            grid-area: <em>title</em>;<br>
+                                          }<br>
+                                          .gridlessonheader {<br>
+                                            grid-area: <em>header</em>;<br>
+                                            background-color: <em>green</em>;<br>
+                                          }<br>
+                                          .gridlessonmain {<br>
+                                            grid-area: <em>main</em>;<br>
+                                            background-color: <em>red</em>;<br>
+                                          }<br>
+                                          .gridlessonaside {<br>
+                                            grid-area: <em>aside</em>;<br>
+                                            background-color: <em>blue</em>;<br>
+                                          }<br>
+                                          .gridlessonfooter {<br>
+                                            grid-area: <em>footer</em>;<br>
+                                            background-color: <em>gray</em>;<br>
+                                          }  <br>
+                                    </code></blockquote>
+                                </div>
+                                <div class="bodycolumngrid gridlessonbody gridlessonbodycolumngridresult boxspace10">
+                                    <h3 class="titlecolumngrid gridlessontitle">Resultado</h3>
+                                    <header class="gridlessonheader">Topo</header>
+                                    <main class="gridlessonmain">Conteúdo</main>
+                                    <aside class="gridlessonaside">Infos adicionais</aside>
+                                    <footer class="gridlessonfooter">Rodapé</footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+                </div>
+            </div>
+            <hr>
+            <div id="Grid ou Flex" class="lesson" title="Grid ou Flex | Posicionando foguetes">
+                <h2 id="title" class="title" tabindex="">Grid ou Flex</h2>
+                <span class="subtitle">Podemos usar o Display Flex e Display Grid ao mesmo tempo.</span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">Exemplo:</div>
+                        <div class="boxinfo">
+                            <p class="infop">Dentro da <code>gridlessonheader2</code> foram adicionados duas novas div e
+                                seu css recebeu o valor <em>flex</em>, além de outros.</p>
+                            <div class="autofitcol25px gridlessonfitcoltest2">
+                                <div class="bodycolumngrid gridlessonbodycolumngridhtml boxspace16">
+                                    <h3 class="titlecolumngrid">HTML</h3>
+                                    <blockquote><code>
+                                        &lt;div class="gridlessonbody"&gt;<br>
+                                        &nbsp; &lt;h3 class="gridlessontitle"&gt;<em>Resultado</em>&lt;/h3&gt;<br>
+                                        &nbsp; &lt;header class="gridlessonheader2"&gt;<em>Topo</em>&lt;/header&gt;<br>
+                                        &nbsp; &nbsp; &lt;div class="gridlessondiv"&gt;<em>logo</em>&lt;/div&gt;<br>
+                                        &nbsp; &nbsp; &lt;div class="gridlessondiv"&gt;<em>menu</em>&lt;/div&gt;<br>
+                                        &nbsp; &lt;main class="gridlessonmain"&gt;<em>Conteúdo</em>&lt;/main&gt;<br>
+                                        &nbsp; &lt;aside class="gridlessonaside"&gt;<em>Infos adicionais</em>&lt;/aside&gt;<br>
+                                        &nbsp; &lt;footer class="gridlessonfooter"&gt;<em>Rodapé</em>&lt;/footer&gt;<br>
+                                        &lt;/div&gt;<br>
+                                    </code></blockquote>
+                                </div>
+                                <div class="bodycolumngrid gridlessonbodycolumngridcss boxspace21">
+                                    <h3 class="titlecolumngrid">CSS</h3>
+                                    <blockquote><code>
+                                        .gridlessonbody {<br>
+                                            height: <em>1fr</em>;<br>
+                                            display: <em>grid</em>;<br>
+                                            grid-template-areas: <em>"title title"<br>"header header"<br>"main aside"<br>"footer footer"</em>;<br>
+                                            grid-template-rows: <em>30px 50px 1fr 35px</em>;<br>
+                                            grid-template-columns: <em>1fr 80px</em>;<br>
+                                          }<br>
+                                          .gridlessontitle {<br>
+                                            grid-area: <em>title</em>;<br>
+                                          }<br>
+                                          .gridlessonheader2 {<br>
+                                            grid-area: <em>header</em>;<br>
+                                            background-color: <em>green</em>;<br>
+                                            display: <em>flex</em>;<br>
+                                            justify-content: <em>space-between</em>;<br>
+                                            align-items: <em>center</em>;<br>
+                                            padding: <em>0 5px</em>;<br>
+                                          }<br>
+                                          .gridlessondiv {<br>
+                                            background-color: <em>unset</em>;<br>
+                                          }<br>
+                                          .gridlessonmain {<br>
+                                            grid-area: <em>main</em>;<br>
+                                            background-color: <em>red</em>;<br>
+                                          }<br>
+                                          .gridlessonaside {<br>
+                                            grid-area: <em>aside</em>;<br>
+                                            background-color: <em>blue</em>;<br>
+                                          }<br>
+                                          .gridlessonfooter {<br>
+                                            grid-area: <em>footer</em>;<br>
+                                            background-color: <em>gray</em>;<br>
+                                          }  <br>
+                                    </code></blockquote>
+                                </div>
+                                <div class="bodycolumngrid gridlessonbody gridlessonbodycolumngridresult boxspace10">
+                                    <h3 class="titlecolumngrid gridlessontitle">Resultado</h3>
+                                    <header class="gridlessonheader2">
+                                        <div class="gridlessondiv">logo</div>
+                                        <div class="gridlessondiv">menu</div>
+                                    </header>
+                                    <main class="gridlessonmain">Conteúdo</main>
+                                    <aside class="gridlessonaside">Infos adicionais</aside>
+                                    <footer class="gridlessonfooter">Rodapé</footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+</body>
+
+</html>

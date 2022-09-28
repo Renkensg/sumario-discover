@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="HTML-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App bonito, até nos textos</title>
+    <link rel="stylesheet" href="./08-texto.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Lato:wght@300&family=Lora&family=Quicksand&family=Source+Serif+Pro:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="body" class="body">
+    <div id="main-document-head-container" class="main-document-head-container">
+        <header class="top-navigation">
+            <a href="/sumário.html" id="logo" class="logo" title="Homepage | Sumário">
+                <img src="https://icon-library.com/images/icon-for-home/icon-for-home-1.jpg"
+                    alt="Home button with a blue background" width="35px">
+            </a>
+            <h1 class="título" id="título" title="App bonito, até nos textos">App bonito, até nos textos</h1>
+        </header>
+        <div id="glossário" class="glossário" title="Glossário">
+            <div id="indcol10px" class="indcol10px">
+                <div class="elevatedbox titlecolumngrid boxspace15">Trabalhando com fontes
+                    <ol class="indcolumngrid">
+                        <li><a href="#Introdução font-properties">Introdução font-properties</a></li>
+                        <li><a href="#Font-family">Font-family</a></li>
+                        <li><a href="#Font-weight">Font-weight</a></li>
+                        <li><a href="#Font-style">Font-style</a></li>
+                        <li><a href="#Font-size">Font-size</a></li>
+                        <li><a href="#Web-fonts">Web-fonts</a></li>
+                    </ol>
+                </div>
+                <div class="elevatedbox boxspace15 titlecolumngrid">Mais estilos para os textos
+                    <ol class="indcolumngrid">
+                        <li><a href="#Font-variant e font-stretch">Font-variant e font-stretch</a></li>
+                        <li><a href="#Letter e word-spacing">Letter e word-spacing</a></li>
+                        <li><a href="#Line-height e text-transform">Line-height e text-transform</a></li>
+                        <li><a href="#Text-decoration">Text-decoration</a></li>
+                        <li><a href="#Text-align">Text-align</a></li>
+                        <li><a href="#Text-shadow">Text-shadow</a></li>
+                        <li><a href="#Shorthand">Shorthand</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div id="body-div" class="body-div">
+        <div id="segmento" class="segmento" title="Trabalhando com fontes">
+            <div id="Introdução font-properties" class="lesson"
+                title="Introdução font-properties | Trabalhando com fontes">
+                <h2 id="title" class="title" tabindex="">Introdução font-properties</h2>
+                <span class="subtitle">A tipografia transmite uma mensagem.</span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">Introdução</div>
+                        <div class="boxinfo">
+                            <p class="infop">Quando queremos dar uma ênfase no texto, nós podemos, por exemplo, escrever
+                                o mesmo em negrito.</p>
+                            <p class="infop">Nós podemos transmitir uma mensagem diferente dependendo do estilo que
+                                escrevemos o texto. Ou, do tamanho.</p>
+                        </div>
+                        <div class="boxtitle">CSS Fonts</div>
+                        <div class="boxinfo">
+                            <p class="infop">Algumas das propriedades de fonts do CSS que podem nos ajudar a transmitir
+                                uma mensagem através dos textos da página são:</p>
+                            <ul>
+                                <li><code>font-family;</code></li>
+                                <li><code>font-weight;</code></li>
+                                <li><code>font-style;</code></li>
+                                <li><code>font-size;</code></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+            </div>
+            <hr>
+            <div id="Font-family" class="lesson" title="Font-family | Trabalhando com fontes">
+                <h2 id="title" class="title" tabindex="">Font-family</h2>
+                <span class="subtitle">Tipo de fonte de um elemento.</span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">O que ele faz?</div>
+                        <div class="boxinfo">
+                            <p class="infop">Lista de fontes e ordem de prioridade e inclui um <b>fallback</b></p>
+                        </div>
+                        <div class="boxtitle">Fallback:</div>
+                        <div class="boxinfo">
+                            <p class="infop">Fallback é: pular de um código para o outro, por exemplo:</p>
+                            <p class="infop"><em><code>font-family</code>: 'Times New Roman', Times, serif;</em></p>
+                            <p class="infop">No caso, o leitor procura a <code>Times New Roman</code>, quando não acha,
+                                procura por <code>Times</code>, quando não acha, aplica a <code>serif</code>.</p>
+                        </div>
+                        <div class="boxtitle">Serifada:</div>
+                        <div class="boxinfo">
+                            <p class="lessonfontfamily1">Fonte com serifa.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+            </div>
+            <hr>
+            <div id="Font-weight" class="lesson" title="Font-weight | Trabalhando com fontes">
+                <h2 id="title" class="title" tabindex="">Font-weight</h2>
+                <span class="subtitle">Peso da fonte</span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">Valores:</div>
+                        <div class="boxinfo">
+                            <p class="infop"><code>normal</code> | <code>bold</code> | <code>bolder</code> |
+                                <code>lighter</code> | <code>100</code> | <code>200</code> | <code>300</code> |
+                                <code>400</code> | <code>500</code> | <code>600</code> | <code>700</code> |
+                                <code>800</code> | <code>900</code>
+                            </p>
+                            <p class="infop">Dependendo da família da fonte não conseguimos utilizar todos os pesos de
+                                fonte.</p>
+                        </div>
+                        <div class="boxtitle">Exemplo:</div>
+                        <div class="boxinfo">
+                            <blockquote><code> p {<br> font-weight:<em>bold</em>;<br> }<br> </code></blockquote>
+                        </div>
+                        <div class="boxtitle">Referência:</div>
+                        <div class="boxinfo">
+                            <a href="https://www.w3.org/TR/css-fonts-3/" target="_blank">W3 | CSS Fonts</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+            </div>
+            <hr>
+            <div id="Font-style" class="lesson" title="Font-style | Trabalhando com fontes">
+                <h2 id="title" class="title" tabindex="">Font-style</h2>
+                <span class="subtitle">Estilo da fonte.</span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">Valores:</div>
+                        <div class="boxinfo">
+                            <p class="infop"><code>normal</code> | <code>italic</code> | <code>oblique</code></p>
+                            <p class="infop">Os valores que podem ser aplicados dependem da fonte usada.</p>
+                        </div>
+                        <div class="boxtitle">Exemplo:</div>
+                        <div class="boxinfo">
+                            <blockquote><code> span {<br> font-style:<em>italic</em>;<br> }<br> </code></blockquote>
+                        </div>
+                    </div>
+                </div>
+                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+            </div>
+            <hr>
+            <div id="Font-size" class="lesson" title="Font-size | Trabalhando com fontes">
+                <h2 id="title" class="title" tabindex="">Font-size</h2>
+                <span class="subtitle">Tamanho da fonte.</span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">Exemplo:</div>
+                        <div class="boxinfo">
+                            <blockquote><code> p {<br> font-size:<em>18px</em>;<br> }<br> </code></blockquote>
+                        </div>
+                    </div>
+                </div>
+                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+            </div>
+            <hr>
+            <div id="Web-fonts" class="lesson" title="Web-fonts | Trabalhando com fontes">
+                <h2 id="title" class="title" tabindex="">Web-fonts</h2>
+                <span class="subtitle">Fontes armazenadas na web.</span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">Fontes do sistema x Fontes da web</div>
+                        <div class="boxinfo">
+                            <p class="infop"><strong>Fontes do sistema</strong> são as fontes que estão instaladas na
+                                máquina do usuário e nem sempre o cliente vai ter instalado as fontes usadas no projeto
+                                e isso pode fazer com que os estilos dos textos não sejam aplicados corretamente, mas
+                                para resolver esses casos podemos preparar nossas fonts para web ou usar <strong> fontes
+                                    da web. </strong></p>
+                        </div>
+                        <div class="boxtitle">Como usar fontes para web?</div>
+                        <div class="boxinfo">
+                            <li><code>@font-face</code>;</li>
+                            <li><code>@import</code>;</li>
+                            <li><code>link</code>;</li>
+                        </div>
+                        <div class="boxtitle">Como aplicar o CSS?</div>
+                        <div class="boxinfo">
+                            <p class="infop">Antes de aplicar o código para CSS, o <code>link</code> ou o
+                                <code>@import</code> da fonte deve estar no <em>head</em> do HTML.
+                            </p>
+                        </div>
+                        <div class="boxtitle">Referência:</div>
+                        <div class="boxinfo">
+                            <a href="https://fonts.google.com" target="_blank">Fonts Google</a><br>
+                            <a href="https://css-tricks.com/snippets/css/using-font-face-in-css/" target="_blank">CSS
+                                Tricks | Using font-face</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+            </div>
+            <hr>
+        </div>
+        <div id="segmento" class="segmento" title="Mais estilos para os textos">
+            <div id="Font-variant e font-stretch" class="lesson"
+                title="Font-variant e font-stretch | Mais estilos para os textos">
+                <h2 id="title" class="title" tabindex="">Font-variant e font-stretch</h2>
+                <span class="subtitle"></span>
+                <div id="info" class="info2">
+                    <div class="box">
+                        <div class="boxtitle">Font Variant</div>
+                        <div class="boxinfo">
+                            <p class="infop">Faz variações na apresentação da fonte.</p>
+                            <blockquote><code> p {<br> font-variant: <em>small-caps</em>;<br> }<br> </code></blockquote>
+                        </div>
+                        <div class="boxtitle">Font Stretch</div>
+                        <div class="boxinfo">
+                            <ul>
+                                <li>Alargamento ou encolhimento da fonte;</li>
+                                <li>Aceita palavras-chave como <code>expanded</code>, <code>condensed</code>,
+                                    <code>normal</code>;
+                                </li>
+                                <li>Aceita porcentagens de 50% a 200%;</li>
+                                <li>Essa propriedade não vai funcionar em todas as fontes.</li>
+                            </ul>
+                            <blockquote><code> p {<br> font-stretch: <em>expanded</em>;<br> }<br> </code></blockquote>
+                        </div>
+                        <div class="boxtitle">Referências:</div>
+                        <div class="boxinfo">
+                            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant"
+                                    target="_blank">MDN | Font Variant</a></p>
+                            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-stretch"
+                                    target="_blank">MDN | Font Stretch</a></p>
+                            <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals"
+                                    target="_blank">MDN | Styling text Fundamentals</a></p>
+                        </div>
+                    </div>
+                    <div class="autofitcol25px">
+                        <div class="bodycolumngrid boxspace10">
+                            <h3 class="titlecolumngrid">HTML</h3>
+                            <blockquote><code> &lt;p class="<em>fontvariantp</em>"&gt;<em><br>Exemplo de Font Variant.</em><br>&lt;/p&gt; </code></blockquote>
+                        </div>
+                        <div class="bodycolumngrid boxspace9">
+                            <h3 class="titlecolumngrid">CSS</h3>
+                            <blockquote><code> p {<br> font-variant: <em>small-caps</em>;<br> }<br> </code></blockquote>
+                        </div>
+                        <div class="bodycolumngrid boxspace19">
+                            <p class="fontvariantp">Exemplo de Font Variant.</p>
+                        </div>
+                        <div class="bodycolumngrid boxspace10">
+                            <h3 class="titlecolumngrid">HTML</h3>
+                            <blockquote><code> &lt;p class="<em>fontstretchp</em>"&gt;<em><br>Exemplo de Font Stretch.</em><br>&lt;/p&gt; </code></blockquote>
+                        </div>
+                        <div class="bodycolumngrid boxspace9">
+                            <h3 class="titlecolumngrid">CSS</h3>
+                            <blockquote><code> p {<br> font-stretch: <em>condensed</em>;<br> }<br> </code></blockquote>
+                        </div>
+                        <div class="bodycolumngrid boxspace19">
+                            <p class="fontstretchp">Exemplo de Font Stretch.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+            </div>
+            <hr>
+            <div id="Letter e word-spacing" class="lesson" title="Letter e word-spacing | Mais estilos para os textos">
+                <h2 id="title" class="title" tabindex="">Letter e word-spacing</h2>
+                <span class="subtitle">Define o espaçamento entre os caracteres e as palavras.</span>
+                <div id="info" class="info2">
+                    <div class="box">
+                        <div class="boxtitle">Referências:</div>
+                        <div class="boxinfo">
+                            <p class="infop"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing"
+                                    target="_blank">MDN | Letter Spacing</a></p>
+                            <p class="infop"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing"
+                                    target="_blank">MDN | Word Spacing</a></p>
+                        </div>
+                    </div>
+                    <div class="autofitcol25px">
+                        <div class="bodycolumngrid boxspace10">
+                            <h3 class="titlecolumngrid">HTML</h3>
+                            <blockquote><code> &lt;p class="<em>letterspacing</em>"&gt;<em><br>Exemplo de letter spacing.</em><br>&lt;/p&gt; </code></blockquote>
+                        </div>
+                        <div class="bodycolumngrid boxspace9">
+                            <h3 class="titlecolumngrid">CSS</h3>
+                            <blockquote><code> p {<br> letter-spacing: <em>4px</em>;<br> }<br> </code></blockquote>
+                        </div>
+                        <div class="bodycolumngrid boxspace19">
+                            <p class="letterspacing">Exemplo de letter spacing.</p>
+                        </div>
+                        <div class="bodycolumngrid boxspace10">
+                            <h3 class="titlecolumngrid">HTML</h3>
+                            <blockquote><code> &lt;p class="<em>wordspacing</em>"&gt;<em><br>Exemplo de word spacing.</em><br>&lt;/p&gt; </code></blockquote>
+                        </div>
+                        <div class="bodycolumngrid boxspace9">
+                            <h3 class="titlecolumngrid">CSS</h3>
+                            <blockquote><code> p {<br> word-spacing: <em>1em</em>;<br> }<br> </code></blockquote>
+                        </div>
+                        <div class="bodycolumngrid boxspace19">
+                            <p class="wordspacing">Exemplo de word spacing.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+            </div>
+            <hr>
+            <div id="Line-height e text-transform" class="lesson"
+                title="Line-height e text-transform | Mais estilos para os textos">
+                <h2 id="title" class="title" tabindex="">Line-height e text-transform</h2>
+                <span class="subtitle">Define os espaços entre linhas e transformação do texto.</span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">Line-height</div>
+                        <div class="boxinfo">
+                            <p class="infop">Pode ser com unidades ou sem unidades de medida.</p>
+                            <p class="infop">Valores comuns: 1.5 ou 2.</p>
+                            <blockquote><code>p {<br>line-height:<em>1.5</em>;<br>}</code></blockquote>
+                            <p class="infop">Referência:</p>
+                            <p class="infop"><a href="http://developer.mozilla.org/en-US/docs/Web/CSS/line-height" target="_blank">MDN | Line-height</a></p>
+                        </div>
+                        <div class="boxtitle">Text-transform</div>
+                        <div class="boxinfo">
+                            <p class="infop">Valores podem ser:</p>
+                            <p class="infop"><code>none</code> | <code>capitalize</code> | <code>uppercase</code> | <code>lowercase</code> | <code>full-width</code> | <code>full-size-kana</code></p>
+                            <blockquote><code>p {<br>text-transform:<em>uppercase;</em>;<br>}</code></blockquote>
+                            <p class="infop">Referência:</p>
+                            <p class="infop"><a href="http://developer.mozilla.org/en-US/docs/Web/CSS/text-transform" target="_blank">MDN | Text-transform</a></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+            </div>
+            <hr>
+            <div id="Text-decoration" class="lesson" title="Text-decoration | Mais estilos para os textos">
+                <h2 id="title" class="title" tabindex="">Text-decoration</h2>
+                <span class="subtitle">Aparência decorativa de um texto.</span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">É possível aplicar mais de um valor.</div>
+                        <div class="boxinfo">
+                            <p class="infop">line: underline | overline | line-through</p>
+                            <p class="infop">style: wavy | dotted | double | dashed | solid</p>
+                            <p class="infop">color: <color> values</p>
+                                <p class="infop">
+                                    <blockquote><code>
+                                        h1 {<br> 
+                                            text-decoration: <em>underline</em>; /* Shorthand */<br>
+                                        }<br>
+                                        p {<br> 
+                                            text-decoration: <em>wavy overline blue</em>; /* Shorthand */<br>
+                                        }<br>
+                                    </code></blockquote>
+                                </p>
+                                <p class="infop"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration" target="_blank">MND | Text-decoration</a></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+            </div>
+            <hr>
+            <div id="Text-align" class="lesson" title="Text-align | Mais estilos para os textos">
+                <h2 id="title" class="title" tabindex="">Text-align</h2>
+                <span class="subtitle">Alinhamento de um texto.</span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">Valores:</div>
+                        <div class="boxinfo">
+                            <p class="infop">start | end | left | right | center | justify | match-parent</p>
+                            <p class="infop"><blockquote><code>
+                                p {<br> 
+                                text-align: center;<br>
+                                }<br>
+                            </code></blockquote></p>
+                        </div>
+                        <div class="boxtitle">Referências</div>
+                        <div class="boxinfo">
+                            <p class="infop"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align" target="_blank">MDN | Text-align</a></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+            </div>
+            <hr>
+            <div id="Text-shadow" class="lesson" title="Text-shadow | Mais estilos para os textos">
+                <h2 id="title" class="title" tabindex="">Text-shadow</h2>
+                <span class="subtitle">Sombra aplicada a um texto.</span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">Como?</div>
+                        <div class="boxinfo">
+                            <p class="infop"><blockquote><code>
+                                p {<br>
+                                    text-shadow: 1px 1px 1px red,<br>
+                                    2px 2px 1px green; /* offset-x | offset-y | blur-radius | color */<br>
+                                }
+                            </code></blockquote></p>
+                        </div>
+                        <div class="boxtitle">Referência</div>
+                        <div class="boxinfo">
+                            <p class="infop"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow" target="_blank">MDN | Text-shadow</a></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+            </div>
+            <hr>
+            <div id="Shorthand" class="lesson" title="Shorthand | Mais estilos para os textos">
+                <h2 id="title" class="title" tabindex="">Shorthand</h2>
+                <span class="subtitle">Colocar todos esses outros valores em uma única propriedade.</span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">Valores:</div>
+                        <div class="boxinfo">
+                            <p class="infop"><code>font-style, font-variant, font-weight, font-stretch, font-size, line-height</code> e <code>font-family;</code></p>
+                            <p class="infop"><blockquote><code>
+                                p {<br>
+                                    font: italic normal bold normal 3em/1.5 Helvetica, Arial, sans-serif;<br>
+                                  }<br>
+                            </code></blockquote></p>
+                        </div>
+                        <div class="boxtitle">Exemplo</div>
+                        <div class="boxinfo">
+                            <p class="infop">texto</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+            </div>
+            <hr>
+        </div>
+    </div>
+</body>
+
+</html>

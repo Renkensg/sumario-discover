@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas</title>
+    <link rel="stylesheet" href="./cssglobal.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Lato:wght@300&family=Lora:ital@1&family=Quicksand&family=Source+Serif+Pro:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="body" class="body">
+    <div id="main-document-head-container" class="main-document-head-container">
+        <header class="main-document-head-container top-navigation">
+            <div class="container">
+                <a href="/sumário.html" id="logo" class="logo" title="Homepage | Sumário">
+                    <img src="https://icon-library.com/images/icon-for-home/icon-for-home-1.jpg"
+                        alt="Home button with a blue background" width="35px">
+                </a>
+                <h1 class="título" id="título" title="Caixas">Uma caixa dentro da outra</h1>
+            </div>
+        </header>
+        <div id="glossário" class="glossário" title="Glossário">
+            <div id="índice" class="autofitcol10px índice">
+                <div class="elevatedbox titlecolumngrid boxspace13">
+                    <ol class="bodycolumngrid indol">
+                        <li><a href="#Introdução">Introdução</a></li>
+                        <li><a href="#Box Sizing">Box Sizing</a></li>
+                        <li><a href="#Display-block-inline">Display-block-inline</a></li>
+                        <li><a href="#Margin">Margin</a></li>
+                        <li><a href="#Padding">Padding</a></li>
+                        <li><a href="#Border-outline">Border-outline</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="body-div" class="body-div">
+        <div id="segmento" class="segmento" title="Uma caixa dentro da outra">
+            <div id="Introdução" class="lesson" title="Introdução">
+                <h2 id="title" class="title" tabindex="01">Introdução</h2>
+                <span class="subtitle">O <b>Box Model</b> é fundamental para fazer layouts para web porque ele vai te
+                    dar maior facilidade na hora de <b>aplicar o CSS.</b> Ao entender os conceitos do <b>Box Model</b>
+                    muitas questões do CSS começam a fazer sentido.</span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">O que é o Box Model?</div>
+                        <div class="boxinfo">
+                            <p class="infop">Cada elemento é representado como uma caixa retangular</p>
+                            <p class="infop">Essa caixa possui propriedades de uma caixa em 2 dimensões (largura x
+                                altura)</p>
+                        </div>
+                        <div class="boxtitle">Propriedades da caixa</div>
+                        <div class="boxinfo">
+                            <code>width | height</code>→ Tamanho (largura x altura).<br>
+                            <code>content</code>→ Conteúdo.<br>
+                            <code>border</code>→ Bordas.<br>
+                            <code>padding</code>→ Preenchimento interno.<br>
+                            <code>margin</code>→ Espaços fora da caixa.<br>
+                            <p class="infop"><img src="https://xesque.rocketseat.dev/forum/1630331451431-image.png"
+                                    alt="Imagem das bordas no DevTools"></p>
+                        </div>
+                    </div>
+                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+                </div>
+            </div>
+            <hr>
+            <div id="Box Sizing" class="lesson" title="Box Sizing">
+                <h2 id="title" class="title" tabindex="02">Box Sizing</h2>
+                <span class="subtitle">É o responsável pelo calculo do tamanho total da caixa (box).</span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">DevTools (F12):</div>
+                        <div class="boxinfo">
+                            <p class="infop">Posso usar a ferramenta de desenvolvedor do próprio navegador para
+                                visualizar as especificações dos elementos da página.</p>
+                            <img class="imgp" src="https://xesque.rocketseat.dev/forum/1630331307131-image.png"
+                                alt="Exemplo de DevTools em um site.">
+                        </div>
+                        <div class="boxtitle">Exemplo:</div>
+                        <div class="boxinfo">
+                            <p class="infop">HTML:
+                            <blockquote><code>&lt;div&gt;<br>
+                                    <em>CSS é incrível!</em><br>
+                                &lt;/div&gt;</code></blockquote>
+                            </p>
+                            <p class="infop">Ao usar CSS no código acima:</p>
+                            <img class="imgp" src="https://xesque.rocketseat.dev/forum/1630331327738-image.png"
+                                alt="Aplicando configuração básica de box sizing.">
+                            <p class="infop">Quando o padding é adicionado (<code>padding: 0 20px;</code>) faz com que
+                                aumente a largura da caixa, deixando de respeitar os<code>100px</code>de largura:</p>
+                            <img class="imgp" src="https://xesque.rocketseat.dev/forum/1630331344721-image.png"
+                                alt="Adicionando padding via CSS.">
+                            <p class="infop">E é por isso que é tão importante conhecer a propriedade
+                                do<code>box-sizing.</code></p>
+                            <p class="infop">Por padrão o navegador vai calcular o tamanho da caixa
+                                pelo<code>content-box</code>e vai somar com os outros boxes, no exemplo acima no lugar
+                                de<code>100px</code>a caixa vai ficar com uma largura de<code>140px</code>. Para que
+                                isso não aconteça, é possível mudar qual vai ser a referência para o calculo do tamanho
+                                da caixa adicionando a propriedade<code>box-sizing: border-box;</code>.</p>
+                            <p class="infop">Dessa forma o elemento vai ficar com a largura (<code>width</code>)
+                                determinado, que no caso do exemplo citado é de<code>100px</code>.</p>
+                            <img class="imgp" src="https://xesque.rocketseat.dev/forum/1630331360926-image.png"
+                                alt="adicionando a propriedade box-sizing: border-box;.">
+                            <p class="infop">Normalmente usa-se o código abaixo como forma de "resetar" o box-sizing que
+                                vem por padrão nos navegadores.</p>
+                            <blockquote><code>* {<br>
+                                box-sizing:<em>border-box;</em><br>
+                                }
+                            </code></blockquote>
+                            <p class="infop">O seletor * seleciona todos os elementos da página.</p>
+                        </div>
+                    </div>
+                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+                </div>
+            </div>
+            <hr>
+            <div id="Display-block-inline" class="lesson" title="Display-block-inline">
+                <h2 id="title" class="title" tabindex="03">Display-block-inline</h2>
+                <span class="subtitle"><code>display: block;</code>vs<code>display: inline;</code></span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxinfo">
+                            <p class="infop">Como as caixas se comportam em relação as outras caixas.</p>
+                            <p class="infop">Comportamento externo das caixas.</p>
+                        </div>
+                        <div class="boxtitle">Display Block:</div>
+                        <div class="boxinfo">
+                            <p class="infop">Ocupa toda a linha, colocando o próximo elemento abaixo desse:</p>
+                            <img class="imgp" src="https://xesque.rocketseat.dev/forum/1630331612162-image.png" alt="">
+                            <p class="infop">width e height são respeitados.</p>
+                            <img class="imgp" src="https://xesque.rocketseat.dev/forum/1630331630563-image.png" alt="">
+                            <p class="infop">padding, margin, border irão funcionar normalmente.</p>
+                            <img class="imgp" src="https://xesque.rocketseat.dev/forum/1630331645405-image.png" alt="">
+                            <p class="infop"><code>&lt;p&gt; &lt;div&gt; &lt;section&gt;</code>, todos os
+                                headings<code>&lt;h1&gt; &lt;h2&gt;</code>...</p>
+                        </div>
+                        <div class="boxtitle">Display Inline:</div>
+                        <div class="boxinfo">
+                            <p class="infop">Os elementos ficam ao lado do outro e não empurram outros elementos para
+                                baixo:</p>
+                            <img class="imgp" src="https://xesque.rocketseat.dev/forum/1630331668706-image.png" alt="">
+                            <p class="infop">width e height não funcionam.</p>
+                            <img class="imgp" src="https://xesque.rocketseat.dev/forum/1630331684494-image.png" alt="">
+                            <p class="infop">Somente valores horizontais de margin.</p>
+                            <img class="imgp" src="https://xesque.rocketseat.dev/forum/1630331713656-image.png"
+                                alt=""><br>
+                            <p class="infop"><code>&lt;a&gt; &lt;strong&gt; &lt;span&gt; &lt;em&gt;</code></p>
+                        </div>
+                    </div>
+                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+                </div>
+            </div>
+            <hr>
+            <div id="Margin" class="lesson" title="Margin">
+                <h2 id="title" class="title" tabindex="04">Margin</h2>
+                <span class="subtitle">Margin, é o espaço (margem) entre os elementos.</span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">Podemos dividir o margin em 4 valores:</div>
+                        <div class="boxinfo">
+                            <blockquote>/* margin-top | margin-right | margin-bottom | margin-left */</blockquote>
+                            <p class="infop">
+                                <strong>values:</strong><code>&lt;length&gt;</code>|<code>&lt;percentage&gt;</code>|
+                                auto</p>
+                            <p class="infop">Geralmente usamos uma forma abreviada (shorthand) para escrever o margin.
+                                Esse formato segue o sentido horário iniciando pelo top, seguindo para right, bottom e
+                                left.</p>
+                            <blockquote>
+                                <strong>margin:</strong><code>12px 16px 10px 4px;</code>/* TOP = 12px | RIGHT = 16px |
+                                BOTTOM = 10px | LEFT = 4px */<br>
+                                <strong>margin:</strong><code>12px 16px 0;</code>/* TOP = 12px | RIGHT = 16px | BOTTOM =
+                                0px | LEFT = 16px */<br>
+                                <strong>margin:</strong><code>8px 16px;</code>/* TOP = 8px | RIGHT = 16px | BOTTOM = 8px
+                                | LEFT = 16px */<br>
+                                <strong>margin:</strong><code>8px;</code>/* TOP = 8px | RIGHT = 8px | BOTTOM = 8px |
+                                LEFT = 8px */
+                            </blockquote><br>
+                            <p class="infop">O margin é aplicado em elementos com display block.</p>
+                            <p class="infop">Cuidado com o <b>margin collapsing.</b> que é quando o <b>top se junta ao
+                                    bottom.</b></p>
+                        </div>
+                    </div>
+                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+                </div>
+            </div>
+            <hr>
+            <div id="Padding" class="lesson" title="Padding">
+                <h2 id="title" class="title" tabindex="05">Padding</h2>
+                <span class="subtitle">O padding é o<b>preenchimento interno</b>da caixa.</span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">Exemplos:</div>
+                        <div class="boxinfo">
+                            <p class="infop">A propriedade padding pode ser escrita como nos formatos apresentados
+                                abaixo:</p>
+                            <blockquote>padding-top | padding-right | padding-bottom | padding-left</blockquote>
+                            <p class="infop">Geralmente usamos uma forma abreviada (<b>shorthand</b>) para escrever o
+                                padding. Esse formato segue o sentido horário iniciando pelo top, seguindo para right,
+                                bottom e left.</p>
+                            <blockquote>
+                                <strong>padding:</strong><code>12px 16px 10px 4px;</code>/* TOP = 12px | RIGHT = 16px |
+                                BOTTOM = 10px | LEFT = 4px */<br>
+                                <strong>padding:</strong><code>12px 16px 0;</code>/* TOP = 12px | RIGHT = 16px | BOTTOM
+                                = 0px | LEFT = 16px */<br>
+                                <strong>padding:</strong><code>8px 16px;</code>/* TOP = 8px | RIGHT = 16px | BOTTOM =
+                                8px | LEFT = 16px */<br>
+                                <strong>padding:</strong><code>8px;</code>/* TOP = 8px | RIGHT = 8px | BOTTOM = 8px |
+                                LEFT = 8px */<br>
+                            </blockquote>
+                            <p class="infop">O padding pode ter<b>valores</b>(values) de<b>comprimento</b>(px, em, rem)
+                                ou de<b>porcentagem</b>(%).</p>
+                            <p class="infop">O padding poderá causar diferença na largura de um elemento.</p>
+                            <p class="infop">obs.: Na aula sobre box-sizing aprendemos como resolver essa diferença na
+                                largura do elemento.</p>
+                            <a href="#Box Sizing">Box sizing</a> | <a
+                                href="https://app.rocketseat.com.br/discover/course/uma-caixa-dentro-da-outra/uma-caixa-dentro-da-outra/box-sizing"
+                                target="_blank">Link da aula</a>
+                        </div>
+                    </div>
+                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+                </div>
+            </div>
+            <hr>
+            <div id="Border-outline" class="lesson" title="Border-outline">
+                <h2 id="title" class="title" tabindex="06">Border-outline</h2>
+                <span class="subtitle">São as bordas da caixa.</span>
+                <div id="info" class="info">
+                    <div class="box">
+                        <div class="boxtitle">Valores:</div>
+                        <div class="boxinfo">
+                            <p class="infop">
+                                <strong>value:</strong><code>&lt;border-style&gt;</code>|<code>&lt;border-width&gt;</code>|<code>&lt;border-color&gt;</code><br>
+                                <strong>style:</strong><em>solid</em>|<em>dotted</em>|<em>dashed</em>|<em>double</em>|<em>groove</em>|<em>ridge</em>|<em>inset</em>|<em>outset</em><br>
+                                <strong>width:</strong><code>&lt;length&gt;</code><br>
+                                <strong>color:</strong><code>&lt;color&gt;</code>
+                            </p>
+                            <blockquote><code>div {</code><br>
+                                /* shorthand
+                                */<br><strong>border-top:</strong><em></em>/*<em>top</em>|<em>right</em>|<em>bottom</em>|<em>left</em>*/
+                                <br><br>
+                                /* style */<br><strong>border:</strong><em>solid;</em>
+                                <br><br>
+                                /* width<code>&lt;length&gt;</code>| style */<br><strong>border:</strong><em>2px
+                                    dotted;</em>
+                                <br><br>
+                                /* style | color */<br><strong>border:</strong><em>outset #f33;</em>
+                                <br><br>
+                                /* width | style | color */<br><strong>border:</strong><em>medium dashed green;</em>
+                                <br><code>}</code>
+                            </blockquote>
+                        </div>
+                        <div class="boxtitle">E o outline?</div>
+                        <div class="boxinfo">
+                            <p class="infop">O <b>outline</b> é muito semelhante ao <b>border</b>, mas difere em 4
+                                sentidos:</p>
+                            <p class="infop">→
+                                Não modifica o tamanho da caixa, pois não é parte do Box Model.<br>→
+                                Poderá ser diferente de retangular.<br>→
+                                Não permite ajuste individuais.<br>→
+                                Mais usado pelo user agent para acessibilidade.
+                            </p>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border">MDN | Border</a>
+                        </div>
+                    </div>
+                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+</body>
+
+</html>

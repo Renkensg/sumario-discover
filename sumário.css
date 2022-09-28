@@ -1,0 +1,32 @@
+* {margin: 5px;}
+* {background-color: #121214;}
+* {color: white;}
+body {
+    font: 17px 'Lato', sans-serif;
+    height: 100vh;
+}
+.título {
+    text-align: center;
+}
+.glossário {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.tópicos {
+    border-radius: 11px;
+    padding: 3px 7px;
+    text-align: center;
+}
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 2px;
+    color: mediumspringgreen;
+}
+a:hover {
+    border: 1px solid;
+    background-color: rgb(15, 15, 15);
+    border-radius: 10px;
+    padding: 1px 7px 0;
+}
