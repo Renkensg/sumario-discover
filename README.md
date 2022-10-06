@@ -1,5 +1,6 @@
 # Sumário
-![preview](./sumario.png)
+
+![preview](./sumario.pngs)
 
 > Trilha Fundamentar
 
@@ -19,6 +20,6 @@ Trilha para aprender os fundamentos da programação web.
 - [App bonito, até nos textos](https://renkensg.github.io/sumario-discover/08-texto.html)
 - [Formulários de outro planeta](https://renkensg.github.io/sumario-discover/09-formularios.html)
 
-##  📩  Contato
+## 📩 Contato
 
 renkensg@gmail.com
