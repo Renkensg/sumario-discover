@@ -8,22 +8,32 @@
   color: white;
 }
 
-body {
-  font: 17px "Lato", sans-serif;
-  height: 100vh;
+html {
+  padding-top: 0;
 }
 
+body {
+  font: 62.5% "Lato", sans-serif;
+  height: 100vh;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* Inside header is the .título and the .card */
 header {
   margin-top: 0;
   padding-top: 0;
 }
 
+/* This is the h1 "< Guia para iniciantes! /> */
 .título {
   margin-top: 0;
   padding-top: 0;
   text-align: center;
+  font-size: 2.2rem;
 }
 
+/* These ".card" are the header information box. */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 330px;
@@ -33,27 +43,18 @@ header {
   border-radius: 10%;
 }
 
-.title,
-.title * {
-  border-color: transparent;
-  background-color: transparent;
-}
-
 .card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  transition: 0.9s;
-  background: #141414;
+  transition: 0.6s;
+  background: #131314;
   border-color: transparent;
 }
 
 .card img {
   width: 250px;
   margin: auto;
-  border-radius: 50%;
-}
-
-.card img {
   padding: 0;
+  border-radius: 50%;
   background-color: mediumspringgreen;
   box-sizing: border-box;
   /* background: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%); */
@@ -62,46 +63,71 @@ header {
 .card img:hover {
   transform: scale(1.04);
   padding: 2px;
+  transition: 0.4s;
 }
 
+/* The ".title" is about the h2 "Guilherme Renkens", subtitle and links inside the .card. */
+.title,
+.title * {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.title {
+  color: grey;
+  font-size: 1.2rem;
+}
+
+/* Back to the .card to respect the cascading style order. */
+.card h2 {
+  font-size: 1.8rem;
+}
+
+.card a {
+  font-size: 1.4rem;
+}
+
+/* These are the links that was added to the header box. */
 .fa-linkedin:hover {
   transform: scale(1.5);
   text-shadow: 1px 1px 0 rgb(0, 12, 7), 0 0 0.2em rgb(0, 0, 255),
     0 0 0.7em rgb(0, 0, 160), 1px 1px 1.3em rgb(0, 0, 70);
+  transition: 0.3s;
 }
 
 .fa-github:hover {
   transform: scale(1.5);
   text-shadow: 1px 1px 0 rgb(0, 12, 7), 0 0 0.2em rgb(255, 0, 255),
     0 0 0.7em rgb(128, 0, 255), 1px 1px 1.3em rgb(71, 0, 143);
+  transition: 0.3s;
 }
 
 .fa-spotify:hover {
   transform: scale(1.5);
   text-shadow: 1px 1px 0 rgb(0, 12, 7), 0 0 0.2em #00ff59, 0 0 0.7em #008830,
     1px 1px 1.3em #00300f;
+  transition: 0.3s;
 }
 
-.title {
-  color: grey;
-  font-size: 18px;
-}
-
+/* This is the box that align .fundamentar and his boxes in the center. */
 .glossário {
   display: grid;
   align-items: center;
   justify-content: center;
+  margin-top: 0;
 }
 
+/* This is the box that contain the lesson's link boxes. */
 .fundamentar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 0.4rem;
   justify-content: center;
   align-items: center;
+  margin-top: 0;
 }
 
+/* Thats to auto-organize the lesson's boxes on a medium display. */
 @media (max-width: 1295px) {
   .fundamentar {
     display: grid;
@@ -113,6 +139,7 @@ header {
   }
 }
 
+/* Thats to auto-organize the buttons on a small display. */
 @media (max-width: 700px) {
   .fundamentar {
     display: grid;
@@ -124,7 +151,11 @@ header {
   }
 }
 
+/* These ".chip" are the lesson's link buttons. */
+
+/* This one is to give them their border, display format and rounded design. */
 .chip {
+  border: 2px solid gray;
   display: inline-block;
   padding: 0 25px;
   height: 50px;
@@ -133,22 +164,22 @@ header {
   border-radius: 25px;
 }
 
-.chip {
-  border: 2px solid gray;
-}
-
+/* The difference between these two is that the hover only is for the border, and the a:hover is for the text. */
 .chip:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   border: 2px solid mediumspringgreen;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .chip a:hover {
   color: mediumspringgreen;
   text-shadow: 1px 1px 0 rgb(0, 12, 7), 0 0 0.2em rgb(0, 129, 65),
     0 0 0.4em rgb(0, 70, 0), 1px 1px 0.6em rgb(0, 30, 0);
-  transition: 1s;
+  transition: 0.7s;
 }
 
+/* This .chip img is positioning and defining the size of the buttons' img logo.
+His float is allowing the img and text link to stay side by side. */
 .chip img {
   float: left;
   margin: 0 10px 0 -25px;
@@ -157,6 +188,8 @@ header {
   border-radius: 50%;
 }
 
+/* This "a" is about the lesson's link buttons text. 
+He's removing the underline link's decoration, increasing his font size too, and defining his padding. */
 a {
   outline: none;
   text-decoration: none;
@@ -164,7 +197,8 @@ a {
   font-size: 20px;
 }
 
-button {
+/* That was for the old "a" links. They was removed. */
+/* button {
   border: none;
   outline: 0;
   display: inline-block;
@@ -175,16 +209,21 @@ button {
   cursor: pointer;
   width: 100%;
   font-size: 18px;
-}
+} */
 
+/* Animation display party! */
+
+/* The header is for the header information box that is coming to the center from the top. */
 header {
   animation: fromTop 0.9s 0.2s backwards;
 }
 
+/* The main is for the lesson's link boxes that is coming to the center from the bottom. */
 main {
   animation: fromBottom 0.9s backwards;
 }
 
+/* These two are the commands to the header's and main's animations. */
 @keyframes fromTop {
   from {
     opacity: 0;
