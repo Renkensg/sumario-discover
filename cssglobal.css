@@ -70,8 +70,8 @@ body {
 
 /* Mudei o índiceol para bodycolumngrid indol; e o bodyboxgrid para bodycolumngrid boxspace */
 .bodycolumngrid {
-  padding: 0.50em;
-  border-radius: .5em;
+  padding: 0.5em;
+  border-radius: 0.5em;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
   text-align: start;
   font-weight: normal;
@@ -321,7 +321,6 @@ body {
   font-size: 0.912em;
 }
 
-
 .boxtitle {
   font-size: 1.2em;
   font-weight: bolder;
@@ -372,7 +371,8 @@ a {
 }
 
 a:hover {
-  text-shadow: 1px 1px 0 rgb(0, 12, 7), 0 0 0.2em rgb(0, 129, 65), 0 0 0.7em rgb(0, 90, 0), 1px 1px 1.3em rgb(0, 50, 0);
+  text-shadow: 1px 1px 0 rgb(0, 12, 7), 0 0 0.2em rgb(0, 129, 65),
+    0 0 0.7em rgb(0, 90, 0), 1px 1px 1.3em rgb(0, 50, 0);
   border-bottom: none;
 }
 
@@ -510,8 +510,8 @@ li {
 
 /* Próprios do Agora sim, cores */
 .bodycolumngridgray {
-  padding: 0.50em;
-  border-radius: .5em;
+  padding: 0.5em;
+  border-radius: 0.5em;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
   text-align: start;
   font-weight: normal;
@@ -607,7 +607,9 @@ li {
 .lessoncolorheader8 {
   height: 150px;
   border: 7px dashed blue;
-  background: rgb(55, 100, 50) url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png) no-repeat right 10px top / 50px content-box border-box;
+  background: rgb(55, 100, 50)
+    url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png) no-repeat right 10px
+    top / 50px content-box border-box;
   /* background-image: url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png);
     background-repeat: no-repeat round;
     background-position: center;
@@ -619,19 +621,21 @@ li {
 .lessoncolorheader9 {
   height: 150px;
   border: 7px dashed blue;
-  background: linear-gradient(45deg, red, yellow)
+  background: linear-gradient(45deg, red, yellow);
 }
 
 .lessoncolorheader10 {
   height: 150px;
   border: 7px dashed blue;
-  background: radial-gradient(purple, rgba(0, 255, 255, 1), rgba(0, 0, 255, 100%))
+  background: radial-gradient(purple, rgba(0, 255, 255, 1), rgba(0, 0, 255, 100%));
 }
 
 .lessoncolorheader11 {
   height: 150px;
   border: 7px dashed blue;
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0), rgba(255, 0, 0, 0.3)), rgb(55, 100, 50) url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png) no-repeat right 10px top / 50px content-box border-box;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0), rgba(255, 0, 0, 0.3)),
+    rgb(55, 100, 50) url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png)
+      no-repeat right 10px top / 50px content-box border-box;
 }
 
 /* Fim do Agora sim, cores */
@@ -729,7 +733,7 @@ li {
   height: 1fr;
 
   display: grid;
-  grid-template-areas: "title title""header header""main aside""footer footer";
+  grid-template-areas: 'title title' 'header header' 'main aside' 'footer footer';
   grid-template-rows: 30px 50px 1fr 35px;
   grid-template-columns: 1fr 80px;
 }
@@ -760,7 +764,7 @@ li {
 
 .gridlessonfitcoltest {
   display: grid;
-  grid-template-areas: "css html""css resultado";
+  grid-template-areas: 'css html' 'css resultado';
   grid-template-columns: 400px 530px;
   grid-template-rows: 200px 1fr;
 }
@@ -779,7 +783,7 @@ li {
 
 .gridlessonfitcoltest2 {
   display: grid;
-  grid-template-areas: "css html""css resultado";
+  grid-template-areas: 'css html' 'css resultado';
   grid-template-columns: 400px 530px;
   grid-template-rows: 240px 1fr;
 }
