@@ -12,10 +12,6 @@ html {
   padding-top: 0;
 }
 
-html * {
-  border: 1px solid red;
-}
-
 body {
   display: grid;
   grid-template-areas: "header header"
