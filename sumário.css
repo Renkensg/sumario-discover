@@ -13,16 +13,37 @@ html {
 }
 
 body {
+  display: grid;
+  grid-template-areas: "header header"
+  "main aside";
+  justify-content: space-around;
+  align-content: flex-start;
   font: 62.5% "Lato", sans-serif;
   height: 100vh;
-  padding-top: 0;
+  padding: 0;
   margin-top: 0;
 }
 
-/* Inside header is the .título and the .card */
+/* Inside header is the .título */
 header {
+  margin: 0 5px;
+  padding: 0 5px;
+  height: fit-content;
+  grid-area: header;
+}
+
+/* Inside main is the .card */
+main {
   margin-top: 0;
   padding-top: 0;
+  height: fit-content;
+  grid-area: main;
+}
+
+/* Inside aside is the .glossário */
+aside {
+  grid-area: aside;
+  height: fit-content;
 }
 
 /* This is the h1 "< Guia para iniciantes! /> */
@@ -128,7 +149,29 @@ header {
 }
 
 /* Thats to auto-organize the lesson's boxes on a medium display. */
-@media (max-width: 1295px) {
+@media (max-width: 1531px) {
+  .fundamentar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.59rem;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+}
+
+/* Thats to auto-organize the lesson's boxes on a small display. */
+@media (max-width: 1225px) {
+  .fundamentar {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0.59rem;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+}
+
+/* That was the old ones displays columns organize */
+/*@media (max-width: 1295px) {
   .fundamentar {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(385px, 385px));
@@ -137,9 +180,8 @@ header {
     justify-content: center;
     width: 95vw;
   }
-}
+} 
 
-/* Thats to auto-organize the buttons on a small display. */
 @media (max-width: 700px) {
   .fundamentar {
     display: grid;
@@ -150,9 +192,9 @@ header {
     width: 95vw;
   }
 }
+*/
 
 /* These ".chip" are the lesson's link buttons. */
-
 /* This one is to give them their border, display format and rounded design. */
 .chip {
   border: 2px solid gray;
@@ -166,7 +208,6 @@ header {
 
 /* The difference between these two is that the hover only is for the border, and the a:hover is for the text. */
 .chip:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   border: 2px solid mediumspringgreen;
   transition: 0.4s;
 }
@@ -213,14 +254,19 @@ a {
 
 /* Animation display party! */
 
-/* The header is for the header information box that is coming to the center from the top. */
+/* The header is for the main title that is coming to the center from the top. */
 header {
   animation: fromTop 0.9s 0.2s backwards;
 }
 
-/* The main is for the lesson's link boxes that is coming to the center from the bottom. */
+/* The main is for the information boxes that is coming to the center from left. */
 main {
-  animation: fromBottom 0.9s backwards;
+  animation: fromLeft 0.9s backwards;
+}
+
+/* The aside is for the lesson's link boxes that is coming to the center from right. */
+aside {
+  animation: fromRight 0.9s backwards;
 }
 
 /* These two are the commands to the header's and main's animations. */
@@ -236,14 +282,25 @@ main {
   }
 }
 
-@keyframes fromBottom {
+@keyframes fromLeft {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateX(-30px);
   }
 
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
+  }
+}
+@keyframes fromRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
