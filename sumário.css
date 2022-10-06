@@ -12,16 +12,20 @@ html {
   padding-top: 0;
 }
 
+html * {
+  border: 1px solid red;
+}
+
 body {
   display: grid;
   grid-template-areas: "header header"
   "main aside";
-  justify-content: space-around;
-  align-content: flex-start;
+  justify-content: stretch;
+  align-content: start;
   font: 62.5% "Lato", sans-serif;
   height: 100vh;
-  padding: 0;
-  margin-top: 0;
+  padding: 5px 0 0 0;
+  margin: 0;
 }
 
 /* Inside header is the .título */
@@ -52,6 +56,12 @@ aside {
   padding-top: 0;
   text-align: center;
   font-size: 2.2rem;
+}
+
+/* .cards is the box who contains the information boxes. */
+.cards {
+  padding: 0;
+  margin: 0;
 }
 
 /* These ".card" are the header information box. */
@@ -170,7 +180,7 @@ aside {
   }
 }
 
-/* That was the old ones displays columns organize */
+/* Those was the old ones displays columns organize */
 /*@media (max-width: 1295px) {
   .fundamentar {
     display: grid;
