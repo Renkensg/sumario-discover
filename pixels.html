@@ -1,360 +1,338 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Lato:wght@300&family=Lora:ital@1&family=Quicksand&family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixels</title>
-    <link rel="stylesheet" href="./cssglobal.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Lato:wght@300&family=Lora:ital@1&family=Quicksand&family=Source+Serif+Pro:wght@300&display=swap"
-        rel="stylesheet">
-</head>
-
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+    <link rel="stylesheet" href="./cssglobal.css" />
+  </head>
+  <body>
     <div class="main-document-head-container">
-        <header class="main-document-header-container top-navigation">
-            <div class="container">
-                <a href="https://renkensg.github.io/sumario-discover/" id="logo" class="logo" title="Homepage | Sumário">
-                    <img src="https://icon-library.com/images/icon-for-home/icon-for-home-1.jpg"
-                        alt="Home button with a blue background" width="35px">
-                </a>
-                <h1 id="título" class="título" title="Título">Nem tudo são pixels</h1>
-            </div>
-        </header>
-        <div id="glossário" class="glossário" title="Glossário">
-            <div id="índice" class="autofitcol10px índice">
-                <div class="elevatedbox titlecolumngrid boxspace18">
-                    <ol class="bodycolumngrid indol">
-                        <li><a href="#Introdução">Introdução</a></li>
-                        <li><a href="#Tipos numéricos e unidades comuns">Tipos numéricos e unidades comuns</a></li>
-                        <li><a href="#Distâncias absolutas e relativas">Distâncias absolutas e relativas</a></li>
-                        <li><a href="#Porcentagens">Porcentagens</a></li>
-                        <li><a href="#Position">Position</a></li>
-                        <li><a href="#Funções">Funções</a></li>
-                        <li><a href="#Strings e identificadores">Strings e identificadores</a></li>
-                    </ol>
-                </div>
-            </div>
+      <header class="main-document-header-container top-navigation">
+        <div class="container">
+          <a href="https://renkensg.github.io/sumario-discover/" id="logo" class="logo" title="Homepage | Sumário">
+            <img src="https://icon-library.com/images/icon-for-home/icon-for-home-1.jpg" alt="Home button with a blue background" width="35px" />
+          </a>
+          <h1 id="título" class="título" title="Título">Nem tudo são pixels</h1>
         </div>
-        <hr>
+      </header>
+      <div id="glossário" class="glossário" title="Glossário">
+        <div id="índice" class="autofitcol10px índice">
+          <div class="elevatedbox titlecolumngrid boxspace18">
+            <ol class="bodycolumngrid indol">
+              <li><a href="#Introdução">Introdução</a></li>
+              <li><a href="#Tipos numéricos e unidades comuns">Tipos numéricos e unidades comuns</a></li>
+              <li><a href="#Distâncias absolutas e relativas">Distâncias absolutas e relativas</a></li>
+              <li><a href="#Porcentagens">Porcentagens</a></li>
+              <li><a href="#Position">Position</a></li>
+              <li><a href="#Funções">Funções</a></li>
+              <li><a href="#Strings e identificadores">Strings e identificadores</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <hr />
     </div>
     <div id="body-div" class="body-div">
-        <div id="segmento" class="segmento" title="Nem tudo são pixels">
-            <div id="Introdução" class="lesson" title="Introdução">
-                <h2 id="title" class="title">Introdução</h2>
-                <span class="subtitle">Nessa aula abordaremos os valores e unidades de medidas no CSS e como posso usar
-                    a documentação do MDN para aprender mais.</span><br>
-                    <div id="info" class="info">
-                        <div class="box">
-                            <div class="boxtitle">Valores e unidades de medidas</div>
-                            <div class="boxinfo">
-                                <p class="infop">Cada propriedade possui valores <code>property: value</code>.</p>
-                                <p class="infop">Estudo constante a fim de entender as propriedades e seus valores.</p>
-                            </div>
-                            <div class="boxtitle">Na prática</div>
-                            <div class="boxinfo">
-                                <p class="infop">Como conhecer e estudar os valores na documentação?</p>
-                                <p class="infop"><code>&lt;color&gt;&lt;length&gt;</code></p>
-                                <p class="infop">Os termos podem variar <code>values</code> ou <code>data types</code>.
-                                </p>
-                            </div>
-                        </div>
-                        <p><a href="https://developer.mozilla.org/en-US/" target="_blank">Documentação MDN</a></p>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+      <div id="segmento" class="segmento" title="Nem tudo são pixels">
+        <div id="Introdução" class="lesson" title="Introdução">
+          <h2 id="title" class="title">Introdução</h2>
+          <span class="subtitle">Nessa aula abordaremos os valores e unidades de medidas no CSS e como posso usar a documentação do MDN para aprender mais.</span><br />
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">Valores e unidades de medidas</div>
+              <div class="boxinfo">
+                <p class="infop">Cada propriedade possui valores <code>property: value</code>.</p>
+                <p class="infop">Estudo constante a fim de entender as propriedades e seus valores.</p>
+              </div>
+              <div class="boxtitle">Na prática</div>
+              <div class="boxinfo">
+                <p class="infop">Como conhecer e estudar os valores na documentação?</p>
+                <p class="infop"><code>&lt;color&gt;&lt;length&gt;</code></p>
+                <p class="infop">Os termos podem variar <code>values</code> ou <code>data types</code>.</p>
+              </div>
             </div>
-            <hr>
-            <div id="Tipos numéricos e unidades comuns" class="lesson" title="Tipos numéricos e unidades comuns">
-                <h2 id="title" class="title">Tipos numéricos e unidades comuns</h2>
-                <span class="subtitle">Nessa aula vamos falar sobre <strong>tipos numéricos.</strong></span><br>
-                    <div id="info" class="info">
-                        <div class="box">
-                            <div class="boxtitle">Tipos numéricos</div>
-                            <div class="boxinfo">
-                                <code>&lt;integer&gt;</code> - número inteiro como -10 ou 223;<br>
-                                <code>&lt;number&gt;</code> - número decimal como -2.4, 64 ou 0.234;<br>
-                                <code>&lt;dimension&gt;</code> - é um <code>&lt;number&gt;</code> com uma unidade junto:
-                                90deg, 2s, 8px;<br>
-                                <code>&lt;percentage&gt;</code> - representa uma fração de outro número: 50%.<br>
-                            </div>
-                            <div class="boxtitle">Unidades comuns</div>
-                            <div class="boxinfo">
-                                <code>&lt;length&gt;</code> - é um dos mais usados no CSS e representa um valor de
-                                distância:<code>px, em, vw</code>;<br>
-                                <code>&lt;angle&gt;</code> - representa um ângulo:<code>deg, rad, turn</code>;<br>
-                                <code>&lt;time&gt;</code> - representa um tempo<code>s, ms</code>;<br>
-                                <code>&lt;resolution&gt;</code> - representa resoluções para
-                                dispositivos:<code>dpi</code>;<br>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-            </div>
-            <hr>
-            <div id="Distâncias absolutas e relativas" class="lesson" title="Distâncias absolutas e relativas">
-                <h2 id="title" class="title">Distâncias absolutas e relativas</h2>
-                <span class="subtitle">Vamos entender sobre distâncias absolutas e relativas.</span><br>
-                    <div id="info" class="info">
-                        <div class="box">
-                            <div class="boxtitle">Distâncias absolutas <code>&lt;length&gt;</code></div>
-                            <div class="boxinfo">
-                                <p class="infop">São fixas e não alteram seu valor.</p>
-                                <table class="pixelstable">
-                                    <thead>
-                                        <tr>
-                                            <th class="pixelsth">Unidade</th>
-                                            <th class="pixelsth">Nome</th>
-                                            <th class="pixelsth">Equivalência</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="pixelstd">cm</td>
-                                            <td class="pixelstd">Centímetros</td>
-                                            <td class="pixelstd">1cm = 96px/2.54</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="pixelstd">in</td>
-                                            <td class="pixelstd">Inches (polegadas)</td>
-                                            <td class="pixelstd">1in = 2.54cm = 96px</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="pixelstd">px</td>
-                                            <td class="pixelstd">Pixels</td>
-                                            <td class="pixelstd">1px = 1/96th of 1in</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <p class="infop">O mais comum e mais utilizado é o <b class="infop">px.</b></p>
-                                <p class="infop">Não é recomendado usar <b class="infop">cm.</b></p>
-                            </div>
-                            <div class="boxtitle">Distâncias relativas</div>
-                            <div class="boxinfo">
-                                <p class="infop">São relativas a um outro valor, pode ser o elemento pai, ou root, ou o
-                                    tamanho da tela.</p>
-                                <p class="infop"><b class="infop">Benefício</b>: Maior adaptação aos diferentes tipos de
-                                    tela.</p>
-                                <table class="pixelstable">
-                                    <thead>
-                                        <tr>
-                                            <th class="pixelsth">Unidade</th>
-                                            <th class="pixelsth">Relativo a</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="pixelstd">em</td>
-                                            <td class="pixelstd">Tamanho da font do elemento pai</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="pixelstd">rem</td>
-                                            <td class="pixelstd">Tamanho da font do elemento raiz (root/html)</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="pixelstd">vw</td>
-                                            <td class="pixelstd">1% da viewport wid</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="pixelstd">vh</td>
-                                            <td class="pixelstd">1% da viewport height</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <p class="infop">Normalmente o tamanho da font padrão do navegador é de 16px e para
-                                    mudar
-                                    esse valor tenho que fazer a alteração no root ou no elemento html.</p>
-                                <blockquote class="infop">
-                                    <code>:root {</code> <br><em>font-size: 18px;</em><br><code>}</code><br> Ou...
-                                    <br><code>html {</code><br><em>font-size:18px;</em><br><code>}</code>
-                                </blockquote>
-                                <p class="infop">O<b class="infop">viewport</b> é a parte da tela que está sendo
-                                    exibida. No
-                                    caso dos navegadores web, é o que é exibido na janela/tela do documento. Conteúdos
-                                    que
-                                    estão fora do viewport só serão exibidos quando feito um scroll da área de
-                                    visualização.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-            </div>
-            <hr>
-            <div id="Porcentagens" class="lesson" title="Porcentagens">
-                <h2 id="title" class="title">Porcentagens</h2>
-                <span class="subtitle">São valores bem flexíveis que sempre serão relativos a algum outro valor.</span><br>
-                    <div id="info" class="info">
-                        <div class="box">
-                            <div class="boxtitle">Exemplo</div>
-                            <p class="infop">Relativo ao elemento pai:</p>
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace9">
-                                    <blockquote>
-                                        <code>&lt;ul&gt;<br>
-                                        &nbsp; &lt;li&gt;<em>One</em>&lt;/li&gt;<br>
-                                        &nbsp; &lt;li&gt;<em>Two</em>&lt;/li&gt;<br>
-                                        &nbsp; &lt;li&gt;<em>Three</em><br>
-                                        &nbsp; &nbsp; &lt;/ul&gt;<br>
-                                        &nbsp; &nbsp; &nbsp; &lt;li&gt;<em>Three A</em>&lt;/li&gt;<br>
-                                        &nbsp; &nbsp; &nbsp; &lt;li&gt;<em>Three B</em>&lt;/li&gt;<br>
-                                        &nbsp; &nbsp; &nbsp; &lt;/ul&gt;<br>
-                                        &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;<em>Three B 2</em>&lt;/li&gt;<br>
-                                        &nbsp; &nbsp; &nbsp; &lt;/ul&gt;<br>
-                                        &nbsp; &nbsp; &lt;/ul&gt;<br>
-                                        &nbsp; &lt;/li&gt;<br>
-                                        &lt;/ul&gt;</code>
-                                    </blockquote>
-                                    <br>
-                                    <blockquote>
-                                        <code>
-                                        li {<em>font-size: 95%;</em>}
-                                    </code>
-                                    </blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace8">
-                                    <ul>
-                                        <li>One</li>
-                                        <li>Two</li>
-                                        <li>Three
-                                            <ul>
-                                                <li>Three A</li>
-                                                <li>Three B</li>
-                                                <ul>
-                                                    <li>Three B 2</li>
-                                                </ul>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="boxinfo">
-                                <p class="infop">Cada linha vai ficando 20% menor em relação à sua anterior, ou seja,
-                                    <em class="infop">em relação ao elemento pai.</em></p>
-                                <p class="infop">P.s: Em muitos casos é tratado da mesma maneira que as distâncias
-                                    <code>&lt;length&gt;</code>.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-            </div>
-            <hr>
-            <div id="Position" class="lesson" title="Position">
-                <h2 id="title" class="title">Position</h2>
-                <span class="subtitle">&lt;<code>position</code>&gt;</span><br>
-                    <div id="info" class="info">
-                        <p class="infop">Representa um conjunto de coordenadas 2D:
-                            <code>top</code>,<code>right</code>,<code>bottom</code>,<code>left</code>e<code>center</code>.
-                        </p>
-                        <p class="infop">Usado para alguns tipos de propriedades como o
-                            <code>background-position</code>.
-                        </p>
-                        <p class="infop">Não confundir com a propriedade <code>position</code>.</p>
-                        <div class="box">
-                            <div class="boxtitle">Exemplo:</div>
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace11">
-                                    <blockquote>
-                                        <code>&lt;div class="boxx2"&gt;&lt;/div&gt;</code>
-                                    </blockquote><br>
-                                    <blockquote>
-                                        <code>.boxx2 {</code><br>
-                                        <code>height:</code>calc(96%);<br>
-                                        <code>width:</code>var(bodycolumngrid);<br>
-                                        <code>background-image: </code>url(<a
-                                            href="https://images.unsplash.com/photo-1657143377606-ad2f0b790fc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                            target="_blank"
-                                            title="https://images.unsplash.com/photo-1657143377606-ad2f0b790fc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">https://exemplo</a>);
-                                        <br>
-                                        <code>background-repeat:</code>no-repeat;<br>
-                                        <code>background-position:</code>right -40px bottom;<br>
-                                        <code>}</code>
-                                    </blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace11">
-                                    <div class="boxx2"></div>
-                                </div>
-                            </div>
-                            <div class="boxinfo">
-                                <p class="infop">É a imagem que vai se movendo dentro de um limite visível.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-            </div>
-            <hr>
-            <div id="Funções" class="lesson" title="Funções">
-                <h2 id="title" class="title">Funções</h2>
-                <span class="subtitle">Em programação, funções são reconhecidas por causar um reaproveitamento de
-                    código.
-                    </span><br>
-                    <div id="info" class="info">
-                        <div class="box">
-                            <div class="boxtitle">Exemplos de funções do CSS:</div>
-                            <div class="boxinfo">
-                                <ul>
-                                    <li><code>rgb()</code></li>
-                                    <li><code>hsl()</code></li>
-                                    <li><code>url()</code></li>
-                                    <li><code>calc()</code></li>
-                                </ul>
-                                <p class="infop">Dentro dos parêntesis são passados os argumentos.</p>
-                            </div>
-                            <div class="boxtitle">Exemplo de função <code>calc()</code></div>
-                            <div class="boxinfo">
-                                <div class="autofitcol25px">
-                                    <div class="bodycolumngrid boxspace11">
-                                        <blockquote>
-                                            <code>&lt;div class="boxx4"&gt;&lt;/div&gt;</code>
-                                        </blockquote><br>
-                                        <blockquote>
-                                            <code>.boxx4 {</code><br>
-                                            <code>height:</code>calc(50% + 20px);<br>
-                                            <code>width:</code>var(bodycolumngrid);<br>
-                                            <code>background-image: </code>url(<a
-                                                href="https://images.unsplash.com/photo-1657143377606-ad2f0b790fc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                                target="_blank"
-                                                title="https://images.unsplash.com/photo-1657143377606-ad2f0b790fc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">https://exemplo</a>);
-                                            <br>
-                                            <code>background-repeat:</code>no-repeat;<br>
-                                            <code>background-position:</code>right -40px bottom;<br>
-                                            <code>}</code>
-                                        </blockquote>
-                                    </div>
-                                    <div class="bodycolumngrid boxspace11">
-                                        <div class="boxx4"></div>
-                                    </div>
-                                </div>
-                                <p class="infop"><a
-                                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions"
-                                        title="CSS Functions">CSS Functions</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-            </div>
-            <hr>
-            <div id="Strings e identificadores" class="lesson" title="Strings e identificadores">
-                <h2 id="title" class="title">Strings e identificadores</h2><br>
-                <div id="info" class="info">
-                    <div class="boxinfo">
-                        <p class="infop"><strong>Strings:</strong>Texto envolto em aspas</p>
-                        <blockquote><code>
-                            .box::after {content:<em>"Isso é uma string";</em>}
-                        </code></blockquote>
-                    </div><br>
-                    <div class="boxinfo">
-                        <p class="infop"><strong>Identificadores:</strong>Podemos ter nomes de cores como
-                            <code>red</code>,<code>black</code>,<code>gold</code>..
-                        </p>
-                    </div>
-                </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-            </div>
+            <p><a href="https://developer.mozilla.org/en-US/" target="_blank">Documentação MDN</a></p>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
         </div>
+        <hr />
+        <div id="Tipos numéricos e unidades comuns" class="lesson" title="Tipos numéricos e unidades comuns">
+          <h2 id="title" class="title">Tipos numéricos e unidades comuns</h2>
+          <span class="subtitle">Nessa aula vamos falar sobre <strong>tipos numéricos.</strong></span
+          ><br />
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">Tipos numéricos</div>
+              <div class="boxinfo">
+                <code>&lt;integer&gt;</code> - número inteiro como -10 ou 223;<br />
+                <code>&lt;number&gt;</code> - número decimal como -2.4, 64 ou 0.234;<br />
+                <code>&lt;dimension&gt;</code> - é um <code>&lt;number&gt;</code> com uma unidade junto: 90deg, 2s, 8px;<br />
+                <code>&lt;percentage&gt;</code> - representa uma fração de outro número: 50%.<br />
+              </div>
+              <div class="boxtitle">Unidades comuns</div>
+              <div class="boxinfo">
+                <code>&lt;length&gt;</code> - é um dos mais usados no CSS e representa um valor de distância:<code>px, em, vw</code>;<br />
+                <code>&lt;angle&gt;</code> - representa um ângulo:<code>deg, rad, turn</code>;<br />
+                <code>&lt;time&gt;</code> - representa um tempo<code>s, ms</code>;<br />
+                <code>&lt;resolution&gt;</code> - representa resoluções para dispositivos:<code>dpi</code>;<br />
+              </div>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Distâncias absolutas e relativas" class="lesson" title="Distâncias absolutas e relativas">
+          <h2 id="title" class="title">Distâncias absolutas e relativas</h2>
+          <span class="subtitle">Vamos entender sobre distâncias absolutas e relativas.</span><br />
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">Distâncias absolutas <code>&lt;length&gt;</code></div>
+              <div class="boxinfo">
+                <p class="infop">São fixas e não alteram seu valor.</p>
+                <table class="pixelstable">
+                  <thead>
+                    <tr>
+                      <th class="pixelsth">Unidade</th>
+                      <th class="pixelsth">Nome</th>
+                      <th class="pixelsth">Equivalência</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="pixelstd">cm</td>
+                      <td class="pixelstd">Centímetros</td>
+                      <td class="pixelstd">1cm = 96px/2.54</td>
+                    </tr>
+                    <tr>
+                      <td class="pixelstd">in</td>
+                      <td class="pixelstd">Inches (polegadas)</td>
+                      <td class="pixelstd">1in = 2.54cm = 96px</td>
+                    </tr>
+                    <tr>
+                      <td class="pixelstd">px</td>
+                      <td class="pixelstd">Pixels</td>
+                      <td class="pixelstd">1px = 1/96th of 1in</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="infop">O mais comum e mais utilizado é o <b class="infop">px.</b></p>
+                <p class="infop">Não é recomendado usar <b class="infop">cm.</b></p>
+              </div>
+              <div class="boxtitle">Distâncias relativas</div>
+              <div class="boxinfo">
+                <p class="infop">São relativas a um outro valor, pode ser o elemento pai, ou root, ou o tamanho da tela.</p>
+                <p class="infop"><b class="infop">Benefício</b>: Maior adaptação aos diferentes tipos de tela.</p>
+                <table class="pixelstable">
+                  <thead>
+                    <tr>
+                      <th class="pixelsth">Unidade</th>
+                      <th class="pixelsth">Relativo a</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="pixelstd">em</td>
+                      <td class="pixelstd">Tamanho da font do elemento pai</td>
+                    </tr>
+                    <tr>
+                      <td class="pixelstd">rem</td>
+                      <td class="pixelstd">Tamanho da font do elemento raiz (root/html)</td>
+                    </tr>
+                    <tr>
+                      <td class="pixelstd">vw</td>
+                      <td class="pixelstd">1% da viewport wid</td>
+                    </tr>
+                    <tr>
+                      <td class="pixelstd">vh</td>
+                      <td class="pixelstd">1% da viewport height</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="infop">Normalmente o tamanho da font padrão do navegador é de 16px e para mudar esse valor tenho que fazer a alteração no root ou no elemento html.</p>
+                <blockquote class="infop">
+                  <code>:root {</code> <br /><em>font-size: 18px;</em><br /><code>}</code><br />
+                  Ou... <br /><code>html {</code><br /><em>font-size:18px;</em><br /><code>}</code>
+                </blockquote>
+                <p class="infop">O<b class="infop">viewport</b> é a parte da tela que está sendo exibida. No caso dos navegadores web, é o que é exibido na janela/tela do documento. Conteúdos que estão fora do viewport só serão exibidos quando feito um scroll da área de visualização.</p>
+              </div>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Porcentagens" class="lesson" title="Porcentagens">
+          <h2 id="title" class="title">Porcentagens</h2>
+          <span class="subtitle">São valores bem flexíveis que sempre serão relativos a algum outro valor.</span><br />
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">Exemplo</div>
+              <p class="infop">Relativo ao elemento pai:</p>
+              <div class="autofitcol25px">
+                <div class="bodycolumngrid boxspace9">
+                  <blockquote>
+                    <code
+                      >&lt;ul&gt;<br />
+                      &nbsp; &lt;li&gt;<em>One</em>&lt;/li&gt;<br />
+                      &nbsp; &lt;li&gt;<em>Two</em>&lt;/li&gt;<br />
+                      &nbsp; &lt;li&gt;<em>Three</em><br />
+                      &nbsp; &nbsp; &lt;/ul&gt;<br />
+                      &nbsp; &nbsp; &nbsp; &lt;li&gt;<em>Three A</em>&lt;/li&gt;<br />
+                      &nbsp; &nbsp; &nbsp; &lt;li&gt;<em>Three B</em>&lt;/li&gt;<br />
+                      &nbsp; &nbsp; &nbsp; &lt;/ul&gt;<br />
+                      &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;<em>Three B 2</em>&lt;/li&gt;<br />
+                      &nbsp; &nbsp; &nbsp; &lt;/ul&gt;<br />
+                      &nbsp; &nbsp; &lt;/ul&gt;<br />
+                      &nbsp; &lt;/li&gt;<br />
+                      &lt;/ul&gt;</code
+                    >
+                  </blockquote>
+                  <br />
+                  <blockquote>
+                    <code> li {<em>font-size: 95%;</em>} </code>
+                  </blockquote>
+                </div>
+                <div class="bodycolumngrid boxspace8">
+                  <ul>
+                    <li>One</li>
+                    <li>Two</li>
+                    <li>
+                      Three
+                      <ul>
+                        <li>Three A</li>
+                        <li>Three B</li>
+                        <ul>
+                          <li>Three B 2</li>
+                        </ul>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="boxinfo">
+                <p class="infop">Cada linha vai ficando 20% menor em relação à sua anterior, ou seja, <em class="infop">em relação ao elemento pai.</em></p>
+                <p class="infop">P.s: Em muitos casos é tratado da mesma maneira que as distâncias <code>&lt;length&gt;</code>.</p>
+              </div>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Position" class="lesson" title="Position">
+          <h2 id="title" class="title">Position</h2>
+          <span class="subtitle">&lt;<code>position</code>&gt;</span><br />
+          <div id="info" class="info">
+            <p class="infop">Representa um conjunto de coordenadas 2D: <code>top</code>,<code>right</code>,<code>bottom</code>,<code>left</code>e<code>center</code>.</p>
+            <p class="infop">Usado para alguns tipos de propriedades como o <code>background-position</code>.</p>
+            <p class="infop">Não confundir com a propriedade <code>position</code>.</p>
+            <div class="box">
+              <div class="boxtitle">Exemplo:</div>
+              <div class="autofitcol25px">
+                <div class="bodycolumngrid boxspace11">
+                  <blockquote>
+                    <code>&lt;div class="boxx2"&gt;&lt;/div&gt;</code>
+                  </blockquote>
+                  <br />
+                  <blockquote>
+                    <code>.boxx2 {</code><br />
+                    <code>height:</code>calc(96%);<br />
+                    <code>width:</code>var(bodycolumngrid);<br />
+                    <code>background-image: </code>url(<a
+                      href="https://images.unsplash.com/photo-1657143377606-ad2f0b790fc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                      target="_blank"
+                      title="https://images.unsplash.com/photo-1657143377606-ad2f0b790fc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                      >https://exemplo</a
+                    >);
+                    <br />
+                    <code>background-repeat:</code>no-repeat;<br />
+                    <code>background-position:</code>right -40px bottom;<br />
+                    <code>}</code>
+                  </blockquote>
+                </div>
+                <div class="bodycolumngrid boxspace11">
+                  <div class="boxx2"></div>
+                </div>
+              </div>
+              <div class="boxinfo">
+                <p class="infop">É a imagem que vai se movendo dentro de um limite visível.</p>
+              </div>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Funções" class="lesson" title="Funções">
+          <h2 id="title" class="title">Funções</h2>
+          <span class="subtitle">Em programação, funções são reconhecidas por causar um reaproveitamento de código. </span><br />
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">Exemplos de funções do CSS:</div>
+              <div class="boxinfo">
+                <ul>
+                  <li><code>rgb()</code></li>
+                  <li><code>hsl()</code></li>
+                  <li><code>url()</code></li>
+                  <li><code>calc()</code></li>
+                </ul>
+                <p class="infop">Dentro dos parêntesis são passados os argumentos.</p>
+              </div>
+              <div class="boxtitle">Exemplo de função <code>calc()</code></div>
+              <div class="boxinfo">
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace11">
+                    <blockquote>
+                      <code>&lt;div class="boxx4"&gt;&lt;/div&gt;</code>
+                    </blockquote>
+                    <br />
+                    <blockquote>
+                      <code>.boxx4 {</code><br />
+                      <code>height:</code>calc(50% + 20px);<br />
+                      <code>width:</code>var(bodycolumngrid);<br />
+                      <code>background-image: </code>url(<a
+                        href="https://images.unsplash.com/photo-1657143377606-ad2f0b790fc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        target="_blank"
+                        title="https://images.unsplash.com/photo-1657143377606-ad2f0b790fc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        >https://exemplo</a
+                      >);
+                      <br />
+                      <code>background-repeat:</code>no-repeat;<br />
+                      <code>background-position:</code>right -40px bottom;<br />
+                      <code>}</code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace11">
+                    <div class="boxx4"></div>
+                  </div>
+                </div>
+                <p class="infop"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions" title="CSS Functions">CSS Functions</a></p>
+              </div>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Strings e identificadores" class="lesson" title="Strings e identificadores">
+          <h2 id="title" class="title">Strings e identificadores</h2>
+          <br />
+          <div id="info" class="info">
+            <div class="boxinfo">
+              <p class="infop"><strong>Strings:</strong>Texto envolto em aspas</p>
+              <blockquote>
+                <code> .box::after {content:<em>"Isso é uma string";</em>} </code>
+              </blockquote>
+            </div>
+            <br />
+            <div class="boxinfo">
+              <p class="infop"><strong>Identificadores:</strong>Podemos ter nomes de cores como <code>red</code>,<code>black</code>,<code>gold</code>..</p>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

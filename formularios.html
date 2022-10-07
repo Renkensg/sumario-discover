@@ -1,950 +1,917 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulários de outro planeta</title>
-    <link rel="stylesheet" href="./cssglobal.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Lato:wght@300&family=Lora:ital@1&family=Quicksand&family=Source+Serif+Pro:wght@300&display=swap"
-        rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="./cssglobal.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Lato:wght@300&family=Lora:ital@1&family=Quicksand&family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet" />
+  </head>
 
-<body id="body" class="body">
+  <body id="body" class="body">
     <div id="main-document-head-container" class="main-document-head-container">
-        <header class="top-navigation">
-            <div class="container">
-                <a href="https://renkensg.github.io/sumario-discover/" id="logo" class="logo" title="Homepage | Sumário">
-                    <img src="https://icon-library.com/images/icon-for-home/icon-for-home-1.jpg"
-                        alt="Home button with a blue background" width="35px">
-                </a>
-                <h1 class="título" id="título" title="Formulários de outro planeta">Formulários de outro planeta</h1>
-            </div>
-        </header>
-        <div id="glossário" class="glossário" title="Glossário do Formulários de outro planeta">
-            <div id="autofitcol10px índice" class="autofitcol10px índice">
-                <div class="elevatedbox titlecolumngrid boxspace15" title="Estrutura de Formulários de outro planeta">
-                    <h4 class="titlecolumngrid">Estrutura</h4>
-                    <ol class="bodycolumngrid indol">
-                        <li><a href="#Form" title="Ir para Form">Form</a></li>
-                        <li><a href="#Fieldset legend" title="Ir para Fieldset legend">Fieldset legend</a></li>
-                        <li><a href="#Label" title="Ir para Label">Label</a></li>
-                        <li><a href="#Button" title="Ir para Button">Button</a></li>
-                        <li><a href="#Datalist" title="Ir para Datalist">Datalist</a></li>
-                    </ol>
-                </div>
-                <div class="elevatedbox titlecolumngrid boxspace15"
-                    title="Tags de Entrada de Formulários de outro planeta">
-                    <h4 class="titlecolumngrid">Tags de Entrada 1</h4>
-                    <ol class="bodycolumngrid indol">
-                        <li><a href="#Input" title="Ir para Input">Input</a></li>
-                        <li><a href="#Password" title="Ir para Password">Password</a></li>
-                        <li><a href="#Email" title="Ir para Email">Email</a></li>
-                        <li><a href="#URL" title="Ir para URL">URL</a></li>
-                        <li><a href="#File" title="Ir para File">File</a></li>
-                        <li><a href="#Color" title="Ir para Color">Color</a></li>
-                        <li><a href="#Checkbox" title="Ir para Checkbox">Checkbox</a></li>
-                        <li><a href="#Hidden" title="Ir para Hidden">Hidden</a></li>
-                    </ol>
-                </div>
-                <div class="elevatedbox titlecolumngrid boxspace15"
-                    title="Tags de Entrada de Formulários de outro planeta">
-                    <h4 class="titlecolumngrid">Tags de Entrada 2</h4>
-                    <ol class="bodycolumngrid indol">
-                        <li><a href="#Radio" title="Ir para Radio">Radio</a></li>
-                        <li><a href="#Textarea" title="Ir para Textarea">Textarea</a></li>
-                        <li><a href="#Select" title="Ir para Select">Select</a></li>
-                        <li><a href="#Optgroup" title="Ir para Optgroup">Optgroup</a></li>
-                        <li><a href="#Search" title="Ir para Search">Search</a></li>
-                        <li><a href="#Number" title="Ir para Number">Number</a></li>
-                        <li><a href="#Range" title="Ir para Range">Range</a></li>
-                        <li><a href="#Data e hora" title="Ir para Data e hora">Data e hora</a></li>
-                    </ol>
-                </div>
-            </div>
+      <header class="top-navigation">
+        <div class="container">
+          <a href="https://renkensg.github.io/sumario-discover/" id="logo" class="logo" title="Homepage | Sumário">
+            <img src="https://icon-library.com/images/icon-for-home/icon-for-home-1.jpg" alt="Home button with a blue background" width="35px" />
+          </a>
+          <h1 class="título" id="título" title="Formulários de outro planeta">Formulários de outro planeta</h1>
         </div>
+      </header>
+      <div id="glossário" class="glossário" title="Glossário do Formulários de outro planeta">
+        <div id="autofitcol10px índice" class="autofitcol10px índice">
+          <div class="elevatedbox titlecolumngrid boxspace15" title="Estrutura de Formulários de outro planeta">
+            <h4 class="titlecolumngrid">Estrutura</h4>
+            <ol class="bodycolumngrid indol">
+              <li><a href="#Form" title="Ir para Form">Form</a></li>
+              <li><a href="#Fieldset legend" title="Ir para Fieldset legend">Fieldset legend</a></li>
+              <li><a href="#Label" title="Ir para Label">Label</a></li>
+              <li><a href="#Button" title="Ir para Button">Button</a></li>
+              <li><a href="#Datalist" title="Ir para Datalist">Datalist</a></li>
+            </ol>
+          </div>
+          <div class="elevatedbox titlecolumngrid boxspace15" title="Tags de Entrada de Formulários de outro planeta">
+            <h4 class="titlecolumngrid">Tags de Entrada 1</h4>
+            <ol class="bodycolumngrid indol">
+              <li><a href="#Input" title="Ir para Input">Input</a></li>
+              <li><a href="#Password" title="Ir para Password">Password</a></li>
+              <li><a href="#Email" title="Ir para Email">Email</a></li>
+              <li><a href="#URL" title="Ir para URL">URL</a></li>
+              <li><a href="#File" title="Ir para File">File</a></li>
+              <li><a href="#Color" title="Ir para Color">Color</a></li>
+              <li><a href="#Checkbox" title="Ir para Checkbox">Checkbox</a></li>
+              <li><a href="#Hidden" title="Ir para Hidden">Hidden</a></li>
+            </ol>
+          </div>
+          <div class="elevatedbox titlecolumngrid boxspace15" title="Tags de Entrada de Formulários de outro planeta">
+            <h4 class="titlecolumngrid">Tags de Entrada 2</h4>
+            <ol class="bodycolumngrid indol">
+              <li><a href="#Radio" title="Ir para Radio">Radio</a></li>
+              <li><a href="#Textarea" title="Ir para Textarea">Textarea</a></li>
+              <li><a href="#Select" title="Ir para Select">Select</a></li>
+              <li><a href="#Optgroup" title="Ir para Optgroup">Optgroup</a></li>
+              <li><a href="#Search" title="Ir para Search">Search</a></li>
+              <li><a href="#Number" title="Ir para Number">Number</a></li>
+              <li><a href="#Range" title="Ir para Range">Range</a></li>
+              <li><a href="#Data e hora" title="Ir para Data e hora">Data e hora</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
     </div>
-    <hr>
+    <hr />
     <div id="body-div" class="body-div">
-        <div id="segmento" class="segmento" title="Estrutura">
-            <div id="Form" class="lesson" title="Form | Estrutura">
-                <h2 id="title" class="title" tabindex="01">Form</h2>
-                <span class="subtitle">&lt;form&gt;</span>
-                <div id="info" class="info">
-                    <div class="boxtitle">O que é?</div>
-                    <div class="boxinfo">
-                        <p class="infop">É um container estilo <code>&lt;section&gt;</code> e
-                            <code>&lt;footer&gt;</code>;
-                        </p>
-                        <p class="infop">Elemento que definirá um fomulário.</p>
-                    </div>
-                    <div class="boxtitle">Atributos básicos</div>
-                    <div class="boxinfo">
-                        <p class="infop">Action. <span>Todos os dados de dentro do form serão enviados para algum
-                                lugar;</span></p>
-                        <p class="infop">Method. <span>Vai definir somente POST ou GET, que são métodos de escrita de
-                                URL. O POST esconde algumas infos.</span></p>
-                        <div class="autofitcol25px">
-                            <div class="bodycolumngrid boxspace15">
-                                <h3 class="titlecolumngrid">Action</h3>
-                                &lt;form action=""&gt;&lt;/form&gt;
-                            </div>
-                            <div class="bodycolumngrid boxspace15">
-                                <h3 class="titlecolumngrid">Method</h3>
-                                &lt;form method="POST"&gt;&lt;/form&gt;
-                            </div>
-                        </div>
-                    </div>
-                    <div class="boxtitle">Lembrar:</div>
-                    <div class="boxinfo">
-                        <p class="infop">NUNCA criar um form dentro de outro form!</p>
-                    </div>
-                </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+      <div id="segmento" class="segmento" title="Estrutura">
+        <div id="Form" class="lesson" title="Form | Estrutura">
+          <h2 id="title" class="title" tabindex="01">Form</h2>
+          <span class="subtitle">&lt;form&gt;</span>
+          <div id="info" class="info">
+            <div class="boxtitle">O que é?</div>
+            <div class="boxinfo">
+              <p class="infop">É um container estilo <code>&lt;section&gt;</code> e <code>&lt;footer&gt;</code>;</p>
+              <p class="infop">Elemento que definirá um fomulário.</p>
             </div>
-            <hr>
-            <div id="Fieldset legend" class="lesson" title="Fieldset legend | Estrutura">
-                <h2 id="title" class="title" tabindex="02">Fieldset legend</h2>
-                <span class="subtitle">&lt;fieldset&gt;</span>
-                <div id="info" class="info">
-                    <div class="boxtitle">O que ele proporciona?</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>Agrupamento de campos</li>
-                            <li>Mesmo propósito</li>
-                            <li>Semântico</li>
-                            <li>Acessibilidade</li>
-                        </ul>
-                    </div>
-                    <div class="boxtitle">Atributos especiais</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>disabled</li>
-                            <li>desabilita todos os elementos</li>
-                            <li>não serão enviados ao submeter o formulário</li>
-                            <li>form</li>
-                            <li>permite linkar id de um formulário ao qual esse fieldset pertence</li>
-                            <li>não precisa estar dentro do formulário</li>
-                            <li>name</li>
-                            <li>nome do grupo</li>
-                        </ul>
-                        <ul>&lt;legend&gt;
-                            <li>nome do agrupamento</li>
-                            <li>primeiro elemento dentro do fieldset</li>
-                        </ul>
-                    </div>
-                    <em>Dentro do formulário:</em>
-                    <div class="autofitcol25px">
-                        <div class="bodycolumngrid boxspace35">
-                            &lt;form action=""&gt; &lt;fieldset&gt; &lt;legend&gt;Contato&lt;/legend&gt; &lt;label
-                            for=""&gt;Nome&lt;/label&gt; &lt;input type="text"&gt; &lt;/fieldset&gt; &lt;/form&gt;
-                        </div>
-                        <div class="bodycolumngrid boxspace35">
-                            <form action="">
-                                <fieldset>
-                                    <legend>Contato</legend>
-                                </fieldset>
-                            </form>
-                        </div>
-                    </div>
-                    <em>Caso precise ficar fora, o fieldset carrega o id do form:</em>
-                    <div class="autofitcol25px">
-                        <div class="bodycolumngrid boxspace35">
-                            &lt;form id="contato" action=""&gt; &lt;/form&gt; <br> &lt;fieldset form="contato"&gt;
-                            &lt;legend&gt;Contato&lt;/legend&gt; &lt;label for=""&gt;Nome&lt;/label&gt; &lt;input
-                            type="text"&gt; &lt;/fieldset&gt;
-                        </div>
-                        <div class="bodycolumngrid boxspace35">
-                            <form action="" id="contato"></form>
-                            <fieldset form="contato">
-                                <legend>Contato</legend>
-                            </fieldset>
-                        </div>
-                    </div>
+            <div class="boxtitle">Atributos básicos</div>
+            <div class="boxinfo">
+              <p class="infop">Action. <span>Todos os dados de dentro do form serão enviados para algum lugar;</span></p>
+              <p class="infop">Method. <span>Vai definir somente POST ou GET, que são métodos de escrita de URL. O POST esconde algumas infos.</span></p>
+              <div class="autofitcol25px">
+                <div class="bodycolumngrid boxspace15">
+                  <h3 class="titlecolumngrid">Action</h3>
+                  &lt;form action=""&gt;&lt;/form&gt;
                 </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-            </div>
-            <hr>
-            <div id="Label" class="lesson" title="Label | Estrutura">
-                <h2 id="title" class="title" tabindex="03">Label</h2>
-                <span class="subtitle">&lt;label&gt;</span>
-                <div id="info" class="info">
-                    <div class="boxtitle">Pra que serve?</div>
-                    <div class="boxinfo">
-                        <p class="infop">Serve para:</p>
-                        <ul>
-                            <li>associar e identificar uma (ou mais) tag de entrada de dados</li>
-                            <li>acessibilidade</li>
-                            <li>poderei clicar para mudar o foco da entrada de dados</li>
-                        </ul>
-                    </div>
-                    <div class="autofitcol25px">
-                        <div class="bodycolumngrid boxspace15">
-                            &lt;label for=""&gt;Nome Completo:&lt;input type="text"&gt;&lt;/label&gt;
-                        </div>
-                        <div class="bodycolumngrid boxspace15">
-                            <label for="">Nome Completo:
-                                <input type="text">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="boxtitle">Atributos</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>for</li>
-                            <ul>
-                                <li>para fazer a conexão entre este label e a tag de entrada de dados</li>
-                                <li>é feita via id do input</li>
-                                <li>só funciona com elementos específicos</li>
-                                <ul>
-                                    <li>button, input (not hidden), meter, output, progress, select, textarea</li>
-                                </ul>
-                            </ul>
-                        </ul>
-                    </div>
-                    <div class="autofitcol25px">
-                        <div class="bodycolumngrid boxspace15">
-                            &lt;label for="nome"&gt;Nome Completo:&lt;/label&gt;
-                            <br>
-                            &lt;input id="nome" type="text"&gt;
-                        </div>
-                        <div class="bodycolumngrid boxspace15">
-                            <label for="nome">Nome Completo:</label>
-                            <input id="nome" type="text">
-                        </div>
-                    </div>
+                <div class="bodycolumngrid boxspace15">
+                  <h3 class="titlecolumngrid">Method</h3>
+                  &lt;form method="POST"&gt;&lt;/form&gt;
                 </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+              </div>
             </div>
-            <hr>
-            <div id="Button" class="lesson" title="Button | Estrutura">
-                <h2 id="title" class="title" tabindex="04">Button</h2>
-                <span class="subtitle">&lt;button&gt;</span>
-                <div id="info" class="info">
-                    <div class="boxtitle">O que é?</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>Representa um botão</li>
-                            <li>Usado para enviar formulários</li>
-                            <li>É estilizado pelo user agent</li>
-                        </ul>
-                    </div>
-                    <div class="boxtitle">Atributos comuns</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>type</li>
-                            <ul>
-                                <li>submit; enviar o formulário</li>
-                                <li>reset; limpar o form.</li>
-                                <li>button; mesma função do submit.</li>
-                            </ul>
-                            <li>autofocus; quando abre a página, o cursor vai direto em quem tiver autofocus (só pode
-                                ter um).</li>
-                            <li>disabled</li>
-                            <li>name; título da mensagem pra quem vai receber o form.</li>
-                            <li>value; mensagem pra quem vai receber o formulário.</li>
-                            <li>form; pra quando está fora do form. Funciona no mesmo padrão do label.</li>
-                        </ul>
-                    </div>
-                    <div class="autofitcol25px">
-                        <div class="bodycolumngrid boxspace15">
-                            &lt;form action=""&gt;<br>
-                            &lt;input type="text" value="Digite aqui"&gt;<br>
-                            &lt;button type="reset"&gt;Limpar&lt;/button&gt;<br>
-                            &lt;/form&gt;<br>
-                        </div>
-                        <div class="bodycolumngrid boxspace15">
-                            <form action="">
-                                <input type="text" value="Digite aqui">
-                                <button type="reset">Limpar</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+            <div class="boxtitle">Lembrar:</div>
+            <div class="boxinfo">
+              <p class="infop">NUNCA criar um form dentro de outro form!</p>
             </div>
-            <hr>
-            <div id="Datalist" class="lesson" title="Datalist | Estrutura">
-                <h2 id="title" class="title" tabindex="05">Datalist</h2>
-                <span class="subtitle">&lt;datalist&gt;</span>
-                <div id="info" class="info">
-                    <div class="boxtitle">O que é?</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>Lista de valores como sugestão a uma tag input;</li>
-                            <li>Valores sugestivos e não obrigatórios;</li>
-                            <li>Usuário poderá selecionar um dos valores, ou colocar um valor diferente da sugestão;
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="boxtitle">list</div>
-                    <div class="boxinfo">
-                        <p class="infop">Recebe como valor o id de um datalist residente no mesmo documento.</p>
-                    </div>
-                    <div class="boxtitle">Tipos de input suportados</div>
-                    <div class="boxinfo">
-                        <p class="infop">text, search, url, tel, email, date, month, week, time, datetime-local, number,
-                            range e color.</p>
-                    </div>
-                    <div class="boxtitle">Tipos de input não suportados</div>
-                    <div class="boxinfo">
-                        <p class="infop">hidden, password, checkbox, radio, file, ou qualquer tipo de button.</p>
-                    </div>
-                    <div class="boxtitle">User Agent</div>
-                    <div class="boxinfo">
-                        <p class="infop">Verificar a compatibilidade com o browser https://caniuse.com</p>
-                    </div>
-                    <div class="autofitcol25px">
-                        <div class="bodycolumngrid boxspace15">
-                            &lt;datalist id="fuitsdata"&gt;<br>
-                            &lt;option value=""&gt;brmaçã&lt;/option&gt;<br>
-                            &lt;option value=""&gt;brbanana&lt;/option&gt;<br>
-                            &lt;option value=""&gt;brmorango&lt;/option&gt;<br>
-                            &lt;option value=""&gt;brpera&lt;/option&gt;<br>
-                            &lt;option value=""&gt;bruva&lt;/option&gt;<br>
-                            &lt;/datalist&gt;<br>
-                        </div>
-                        <div class="bodycolumngrid boxspace15">
-                            <input type="text" list="fruitsdata" placeholder="Escolha uma fruta">
-                            <datalist id="fruitsdata">
-                                <option>maçã</option>
-                                <option>banana</option>
-                                <option>morango</option>
-                                <option>pera</option>
-                                <option>uva</option>
-                            </datalist>
-                        </div>
-                    </div>
-                </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-            </div>
-            <hr>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
         </div>
-        <div id="segmento" class="segmento" title="Tags de Entrada">
-            <div id="Input" class="lesson" title="Input | Tags de Entrada">
-                <h2 id="title" class="title" tabindex="06">Input</h2>
-                <span class="subtitle">&lt;input&gt;</span>
-                <div id="info" class="info">
-                    <div class="boxtitle">Características</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>Um dos mais usados em formulários</li>
-                            <li>Aceita os mais diversos tipos de dados;</li>
-                            <li>Um dos mais poderosos e complexos;</li>
-                            <li>Elevado número de combinações;</li>
-                        </ul>
-                    </div>
-                    <div class="boxtitle">Atributos comuns</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>type;</li>
-                            <li>name;</li>
-                            <li>id;</li>
-                            <li>autocomplete; busca no browser dados que usei com frequência.</li>
-                            <li>autofocus;</li>
-                            <li>disabled;</li>
-                            <li>readonly (aceito por quase todos); primo do disabled que não fica com aspecto opaco.
-                            </li>
-                            <li>value;</li>
-                            <li>form (aceito por quase todos); combinando com o id do form.</li>
-                            <li>name;</li>
-                            <li>required (aceito por quase todos); se torna obrigatório.</li>
-                            <li>placeholder (aceito por: password, search, tel, text, url); texto substituível no
-                                background do input. Não consegue ser lido pelo leitor de tela, por isso o name e o
-                                value ajudam na acessibilidade.</li>
-                        </ul>
-                    </div>
-                    <div class="autofitcol25px">
-                        <div class="bodycolumngrid boxspace15">
-                            &lt;input type="number" name="numero" id="numero"&gt;
-                        </div>
-                        <div class="bodycolumngrid boxspace15">
-                            <input type="number" name="numero" id="numero">
-                        </div>
-                    </div>
-                </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        <hr />
+        <div id="Fieldset legend" class="lesson" title="Fieldset legend | Estrutura">
+          <h2 id="title" class="title" tabindex="02">Fieldset legend</h2>
+          <span class="subtitle">&lt;fieldset&gt;</span>
+          <div id="info" class="info">
+            <div class="boxtitle">O que ele proporciona?</div>
+            <div class="boxinfo">
+              <ul>
+                <li>Agrupamento de campos</li>
+                <li>Mesmo propósito</li>
+                <li>Semântico</li>
+                <li>Acessibilidade</li>
+              </ul>
             </div>
-            <hr>
-            <div id="Password" class="lesson" title="Password | Tags de Entrada">
-                <h2 id="title" class="title" tabindex="07">Password</h2>
-                <span class="subtitle">&lt;input type="password"&gt;</span>
-                <div id="info" class="info">
-                    <div class="boxtitle">Características</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>Colocar uma senha de maneira segura;</li>
-                            <li>Esconde o que está sendo digitado no campo;</li>
-                            <li>O estilo da apresentação do campo, depende do User Agent.</li>
-                        </ul>
-                    </div>
-                    <div class="autofitcol25px">
-                        <div class="bodycolumngrid boxspace15">
-                            &lt;input type="password"&gt;
-                        </div>
-                        <div class="bodycolumngrid boxspace15">
-                            <input type="password">
-                        </div>
-                    </div>
-                    <div class="boxtitle">minlength / maxlength</div>
-                    <div class="boxinfo">
-                        <p class="infop">O número mínimo e/ou máximo de caracteres para este campo</p>
-                    </div>
-                    <div class="boxtitle">size</div>
-                    <div class="boxinfo">
-                        <p class="infop">O número aceitável de caracteres que esse campo deverá conter.</p>
-                    </div>
-                    <div class="boxtitle">pattern</div>
-                    <div class="boxinfo">
-                        <p class="infop">Expressão regular para validar o que está sendo digitado no campo.</p>
-                        <p class="infop">Altamente recomendado o uso de um padrão de segurança alta de senhas.</p>
-                        <p class="infop">exemplo: queremos que a senha contenha caracteres hexadecimais com o limite de
-                            no mínimo 4 e no máximo 8 caracteres.</p>
-                        <p class="infop"><code>pattern="[0-9a-fA-F]{4,8}"</code></p>
-                    </div>
-                    <div class="boxtitle">inputmode</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>poderá alterar o uso do teclado em smartphones;</li>
-                            <li>exemplo: queremos que o cliente só adicione números;</li>
-                            <ul>
-                                <li>inputmode="numeric"</li>
-                            </ul>
-                        </ul>
-                    </div>
-                    <div class="boxtitle">autocomplete</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>on: permite a sugestão de: new password ou current password;</li>
-                            <li>off: desabilita o autocomplete;</li>
-                            <li>new password: poderá sugerir uma nova senha.</li>
-                        </ul>
-                    </div>
-                    <div class="boxtitle">E outros...</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>placeholder;</li>
-                            <li>readonly;</li>
-                            <li>required.</li>
-                        </ul>
-                    </div>
-                </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+            <div class="boxtitle">Atributos especiais</div>
+            <div class="boxinfo">
+              <ul>
+                <li>disabled</li>
+                <li>desabilita todos os elementos</li>
+                <li>não serão enviados ao submeter o formulário</li>
+                <li>form</li>
+                <li>permite linkar id de um formulário ao qual esse fieldset pertence</li>
+                <li>não precisa estar dentro do formulário</li>
+                <li>name</li>
+                <li>nome do grupo</li>
+              </ul>
+              <ul>
+                &lt;legend&gt;
+                <li>nome do agrupamento</li>
+                <li>primeiro elemento dentro do fieldset</li>
+              </ul>
             </div>
-            <hr>
-            <div id="Email" class="lesson" title="Email | Tags de Entrada">
-                <h2 id="title" class="title" tabindex="08">Email</h2>
-                <span class="subtitle">&lt;input type="email"&gt;</span>
-                <div id="info" class="info">
-                    <div class="boxtitle">Características</div>
-                    <div class="boxinfo">
-                        <p class="infop">Espera que o usuário digite um email.</p>
-                        <p class="infop">Irá validar ser o valor digitado é um email.</p>
-                    </div>
-                    <div class="boxtitle">Atributos</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>placeholder;</li>
-                            <li>readonly / disabled;</li>
-                            <li>value;</li>
-                            <li>required;</li>
-                            <li>multiple; irá receber um ou mais emails, separado por vírgulas;</li>
-                            <li>minleght/maxlenght</li>
-                            <li>size;</li>
-                            <li>datalist; uma lista que contenha valores do datalist que não forem compatíveis com o
-                                campo, não serão apresentados como sugestão;</li>
-                        </ul>
-                    </div>
-                    <div class="boxtitle">pattern</div>
-                    <div class="boxinfo">
-                        <p class="infop">Uso da expressão regular para validar o campo.</p>
-                        <p class="infop">Exemplo: o usuário só poderá colocar email do domínio rocketseat.com.br</p>
-                    </div>
-                    <div class="autofitcol25px">
-                        <div class="bodycolumngrid boxspace15">
-                            &lt;input pattern=".+@rocketseat\.com\.br"&gt;
-                        </div>
-                        <div class="bodycolumngrid boxspace15">
-                            <input pattern=".+@rocketseat\.com\.br">
-                        </div>
-                    </div>
-                </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+            <em>Dentro do formulário:</em>
+            <div class="autofitcol25px">
+              <div class="bodycolumngrid boxspace35">&lt;form action=""&gt; &lt;fieldset&gt; &lt;legend&gt;Contato&lt;/legend&gt; &lt;label for=""&gt;Nome&lt;/label&gt; &lt;input type="text"&gt; &lt;/fieldset&gt; &lt;/form&gt;</div>
+              <div class="bodycolumngrid boxspace35">
+                <form action="">
+                  <fieldset>
+                    <legend>Contato</legend>
+                  </fieldset>
+                </form>
+              </div>
             </div>
-            <hr>
-            <div id="URL" class="lesson" title="URL | Tags de Entrada">
-                <h2 id="title" class="title" tabindex="09">URL</h2>
-                <span class="subtitle">&lt;input type="url"&gt;</span>
-                <div id="info" class="info">
-                    <div class="boxtitle">Características</div>
-                    <div class="boxinfo">
-                        <p class="infop">Espera que o usuário digite uma url.</p>
-                        <p class="infop">Irá validar se o valor digitado é uma url.</p>
-                    </div>
-                    <div class="boxtitle">Atributos</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>placeholder;</li>
-                            <li>readonly/disabled;</li>
-                            <li>value;</li>
-                            <li>required;</li>
-                            <li>minlenght/maxlenght;</li>
-                            <li>size;</li>
-                            <li>pattern;</li>
-                            <li>datalist;</li>
-                            <li>spellcheck; habilitar a verificação ortográfica.</li>
-                        </ul>
-                    </div>
-                </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+            <em>Caso precise ficar fora, o fieldset carrega o id do form:</em>
+            <div class="autofitcol25px">
+              <div class="bodycolumngrid boxspace35">
+                &lt;form id="contato" action=""&gt; &lt;/form&gt; <br />
+                &lt;fieldset form="contato"&gt; &lt;legend&gt;Contato&lt;/legend&gt; &lt;label for=""&gt;Nome&lt;/label&gt; &lt;input type="text"&gt; &lt;/fieldset&gt;
+              </div>
+              <div class="bodycolumngrid boxspace35">
+                <form action="" id="contato"></form>
+                <fieldset form="contato">
+                  <legend>Contato</legend>
+                </fieldset>
+              </div>
             </div>
-            <hr>
-            <div id="File" class="lesson" title="File | Tags de Entrada">
-                <h2 id="title" class="title" tabindex="10">File</h2>
-                <span class="subtitle">&lt;input type="file"&gt;</span>
-                <div id="info" class="info">
-                    <div class="boxtitle">Características</div>
-                    <div class="boxinfo">
-                        <p class="infop">Usuário poderá escolher 1 ou mais arquivos para enviar no formulário.</p>
-                        <p class="infop">Para envio dos arquivos <b>o form</b> deverá utilizar o method do tipo POST e o
-                            atributo enctype como "multipart/form-data".</p>
-                    </div>
-                    <div class="boxtitle">Atributos</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>value;</li>
-                            <li>accept; descreve que tipos de arquivos serão aceitos (exemplo: .doc, .docx, .pdf,
-                                audio/*, image/png, .png).</li>
-                            <li>files;</li>
-                            <li>multiple;</li>
-                        </ul>
-                    </div>
-                </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-            </div>
-            <hr>
-            <div id="Color" class="lesson" title="Color | Tags de Entrada">
-                <h2 id="title" class="title" tabindex="11">Color</h2>
-                <span class="subtitle">&lt;input type="color"&gt;</span>
-                <div id="info" class="info">
-                    <div class="boxtitle">Características</div>
-                    <div class="boxinfo">
-                        <p class="infop">Interface para selecionar cor.</p>
-                        <p class="infop">Color picker.</p>
-                    </div>
-                    <div class="boxtitle">Atributos</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>value: RGB. Se inválido, a cor preta será exibida.</li>
-                            <li>datalist</li>
-                        </ul>
-                    </div>
-                </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-            </div>
-            <hr>
-            <div id="Checkbox" class="lesson" title="Checkbox | Tags de Entrada">
-                <h2 id="title" class="title" tabindex="12">Checkbox</h2>
-                <span class="subtitle">&lt;input type="checkbox"&gt;</span>
-                <div id="info" class="info">
-                    <div class="boxtitle">Características</div>
-                    <div class="boxinfo">
-                        <p class="infop">Caixas que podem ser marcadas.</p>
-                        <p class="infop">Selecionar um valor para ser enviado.</p>
-                        <p class="infop">Se não selecionado, não será enviado nenhum dado.</p>
-                    </div>
-                    <div class="boxtitle">Atributos</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>globais</li>
-                            <li>value</li>
-                            <ul>
-                                <li>valor que aquele campo contém</li>
-                                <li>se não estiver presente, o padrão é 'on'</li>
-                            </ul>
-                            <li>checked</li>
-                            <ul>
-                                <li>para deixar o campo marcado por padrão</li>
-                            </ul>
-                        </ul>
-                    </div>
-                    <div class="boxtitle">Múltiplos valores</div>
-                    <div class="boxinfo">
-                        <p class="infop">Usaremos o atributo 'name' com o mesmo nome para os diversos campos.</p>
-                    </div>
-                    <div class="autofitcol25px">
-                        <div class="bodycolumngrid boxspace15">
-                            <h3 class="titlecolumngrid">HTML</h3>
-                            <code>
-                                &lt;fieldset&gt;<br>
-                                &lt;legend&gt;<em>Choose your interests</em>&lt;/legend&gt;<br>
-                                &lt;div&gt;<br>
-                                    &lt;input type="checkbox" id="coding" name="interest" value="coding" checked&gt;<br>
-                                    &lt;label for="coding"&gt;<em>Coding</em>&lt;/label&gt;<br>
-                                &lt;/div&gt;<br>
-                                &lt;div&gt;<br>
-                                    &lt;input type="checkbox" id="music" name="interest" value="music"&gt;<br>
-                                    &lt;label for="music"&gt;<em>Music</em>&lt;/label&gt;<br>
-                                &lt;/div&gt;<br>
-                            &lt;/fieldset&gt;<br>
-                            </code>
-                        </div>
-                        <div class="bodycolumngrid boxspace15">
-                            <h3 class="titlecolumngrid">Resultado</h3>
-                            <fieldset>
-                                <legend>Choose your interests</legend>
-                                <div>
-                                    <input type="checkbox" id="coding" name="interest" value="coding" checked>
-                                    <label for="coding">Coding</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="music" name="interest" value="music">
-                                    <label for="music">Music</label>
-                                </div>
-                            </fieldset>
-                        </div>
-                    </div>
-                </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-            </div>
-            <hr>
-            <div id="Hidden" class="lesson" title="Hidden | Tags de Entrada">
-                <h2 id="title" class="title" tabindex="13">Hidden</h2>
-                <span class="subtitle">&lt;input type="hidden"&gt;</span>
-                <div id="info" class="info">
-                    <div class="boxtitle">Características</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>Invisível ao usuário;</li>
-                            <li>Será enviado com o formulário;</li>
-                            <li>Não receberá foco;</li>
-                            <li>Leitores de tela não percebem esse campo.</li>
-                        </ul>
-                    </div>
-                </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-            </div>
-            <hr>
-            <div id="Radio" class="lesson" title="Radio | Tags de Entrada">
-                <h2 id="title" class="title" tabindex="14">Radio</h2>
-                <span class="subtitle">&lt;input type="radio"&gt;</span>
-                <div id="info" class="info">
-                    <div class="boxtitle">Características</div>
-                    <div class="boxinfo">
-                        <p class="infop">Projetado para selecionar uma única opção de um grupo de opções.</p>
-                    </div>
-                    <div class="boxtitle">Atributos</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>checked</li>
-                            <ul>
-                                <li>indica que o campo foi marcado.</li>
-                            </ul>
-                            <li>value</li>
-                            <ul>
-                                <li>valor que aquele campo contém.</li>
-                            </ul>
-                        </ul>
-                    </div>
-                    <div class="autofitcol25px">
-                        <div class="bodycolumngrid boxspace15">
-                            <h3 class="titlecolumngrid">HTML</h3>
-                            <code>
-                                &lt;fieldset&gt;<br>
-                                &lt;legend&gt;<em>Bora tomar um café?</em>&lt;/legend&gt;<br>
-                                &lt;label for="yep"&gt;<em>sim</em>&lt;/label&gt;<br>
-                                &lt;input type="radio" id="yep" name="coffee" value="yes"&gt;<br>
-                                &lt;label for="nono"&gt;<em>não</em>&lt;/label&gt;<br>
-                                &lt;input type="radio" checked id="nono" name="coffee" value="no"&gt;<br>
-                            &lt;/fieldset&gt;<br>
-                            </code>
-                        </div>
-                        <div class="bodycolumngrid boxspace15">
-                            <h3 class="titlecolumngrid">Resultado</h3>
-                            <fieldset>
-                                <legend>Bora tomar um café?</legend>
-                                <label for="yep">sim</label>
-                                <input type="radio" id="yep" name="coffee" value="yes">
-                                <label for="nono">não</label>
-                                <input type="radio" checked id="nono" name="coffee" value="no">
-                            </fieldset>
-                        </div>
-                    </div>
-                </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-            </div>
-            <hr>
-            <div id="Textarea" class="lesson" title="Textarea | Tags de Entrada">
-                <h2 id="title" class="title" tabindex="15">Textarea</h2>
-                <span class="subtitle">&lt;textarea&gt;</span>
-                <div id="info" class="info">
-                    <div class="boxtitle">Características</div>
-                    <div class="boxinfo">
-                        <p class="infop">Mais de uma linha.</p>
-                        <p class="infop">Útil para textos grandes.</p>
-                        <p class="infop">Considera espaço quando a quebra de linha é feita no html pela tecla Enter (não
-                            quebrar a linha).</p>
-                    </div>
-                    <div class="boxtitle">Atributos</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>id;</li>
-                            <li>name;</li>
-                            <li>rows e cols;</li>
-                            <li>maxlegth e minlenght (máximo e mínimo de caracteres);</li>
-                            <li>wrap (ultrapassa os limites da box e ativa barra de rolagem);</li>
-                            <li>...outros comuns aos &lt;input&gt;s:</li>
-                            <ul>
-                                <li>autocomplete, autofocus, disabled, placeholder, readonly, form, required.</li>
-                            </ul>
-                        </ul>
-                    </div>
-                </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-            </div>
-            <hr>
-            <div id="Select" class="lesson" title="Select | Tags de Entrada">
-                <h2 id="title" class="title" tabindex="16">Select</h2>
-                <span class="subtitle">&lt;select&gt;</span>
-                <div id="info" class="info">
-                    <div class="boxtitle">Características</div>
-                    <div class="boxinfo">
-                        <p class="infop">Controle que fornece um menu de opções.</p>
-                    </div>
-                    <div class="boxtitle">Características do &lt;option&gt;</div>
-                    <div class="boxinfo">
-                        <p class="infop">Contém as opções a serem selecionadas.</p>
-                        <p class="infop">Atributo necessário: value.</p>
-                    </div>
-                    <div class="boxtitle">Atributos</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>multiple;</li>
-                            <ul>
-                                <li>Habilita a seleção de múltiplas opções.</li>
-                            </ul>
-                            <li>size;</li>
-                            <ul>
-                                <li>Quantas opções visíveis.</li>
-                            </ul>
-                        </ul>
-                    </div>
-                    <div class="autofitcol25px">
-                        <div class="bodycolumngrid boxspace15">
-                            <h3 class="titlecolumngrid">HTML</h3>
-                            <code>
-                                &lt;label for="carselect"&gt;<em>Qual modelo do carro?</em>&lt;/label&gt;<br>
-                            &lt;select name="carmodel" id="carselect"&gt;<br>
-                                &lt;option value=""&gt;<em>Selecione o modelo</em>&lt;/option&gt;<br>
-                                &lt;option value="fiat"&gt;<em>Uno</em>&lt;/option&gt;<br>
-                                &lt;option value="audi"&gt;<em>A3</em>&lt;/option&gt;<br>
-                            &lt;/select&gt;<br>
-                            </code>
-                        </div>
-                        <div class="bodycolumngrid boxspace15">
-                            <h3 class="titlecolumngrid">Resultado</h3>
-                            <label for="carselect">Qual modelo do carro?</label>
-                            <select name="carmodel" id="carselect">
-                                <option value="">Selecione o modelo</option>
-                                <option value="fiat">Uno</option>
-                                <option value="audi">A3</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-            </div>
-            <hr>
-            <div id="Optgroup" class="lesson" title="Optgroup | Tags de Entrada">
-                <h2 id="title" class="title" tabindex="17">Optgroup</h2>
-                <span class="subtitle">&lt;optgroup&gt;</span>
-                <div id="info" class="info">
-                    <div class="boxtitle">Características</div>
-                    <div class="boxinfo">
-                        <p class="infop">Estará dentro do &lt;select&gt;.</p>
-                        <p class="infop">Indicará um grupo dentro da janela de seleção.</p>
-                    </div>
-                    <div class="boxtitle">Atributos</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>label;</li>
-                        </ul>
-                    </div>
-                    <div class="autofitcol25px">
-                        <div class="bodycolumngrid boxspace15">
-                            <h3 class="titlecolumngrid">HTML</h3>
-                            <code>
-                                &lt;label&gt;<em>Please choose one or more pets:</em><br>
-                                &lt;select name="pets" multiple size="4"&gt;<br>
-                                    &lt;optgroup label="4-legged pets"&gt;<br>
-                                        &lt;option value="dog"&gt;<em>Dog</em>&lt;/option&gt;<br>
-                                        &lt;option value="cat"&gt;<em>Cat</em>&lt;/option&gt;<br>
-                                        &lt;option value="hamster"&gt;<em>Hamster</em>&lt;/option&gt;<br>
-                                    &lt;/optgroup&gt;<br>
-                                    &lt;optgroup label="Flying pets"&gt;<br>
-                                        &lt;option value="parrot"&gt;<em>Parrot</em>&lt;/option&gt;<br>
-                                        &lt;option value="macaw"&gt;<em>Macaw</em>&lt;/option&gt;<br>
-                                        &lt;option value="albatross"&gt;<em>Albatross</em>&lt;/option&gt;<br>
-                                    &lt;/optgroup&gt;<br>
-                                &lt;/select&gt;<br>
-                            &lt;/label&gt;<br>
-                            </code>
-                        </div>
-                        <div class="bodycolumngrid boxspace15">
-                            <h3 class="titlecolumngrid">Resultado</h3>
-                            <label>Please choose one or more pets:
-                                <select name="pets" multiple size="5">
-                                    <optgroup label="4-legged pets">
-                                        <option value="dog">Dog</option>
-                                        <option value="cat">Cat</option>
-                                        <option value="hamster">Hamster</option>
-                                    </optgroup>
-                                    <optgroup label="Flying pets">
-                                        <option value="parrot">Parrot</option>
-                                        <option value="macaw">Macaw</option>
-                                        <option value="albatross">Albatross</option>
-                                    </optgroup>
-                                </select>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-            </div>
-            <hr>
-            <div id="Search" class="lesson" title="Search | Tags de Entrada">
-                <h2 id="title" class="title" tabindex="18">Search</h2>
-                <span class="subtitle">&lt;input type="search"&gt;</span>
-                <div id="info" class="info">
-                    <div class="boxtitle">Características</div>
-                    <div class="boxinfo">
-                        <p class="infop">Para campos de busca.</p>
-                        <p class="infop">É igual ao campo do tipo 'text', mas poderá ser um pouco diferente dependendo
-                            do user agent.</p>
-                    </div>
-                    <div class="boxtitle">Atributos</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>list / &lt;datalist&gt;;</li>
-                            <li>pattern; caracteres permitidos.</li>
-                            <li>aria-label; é uma opção ao label.</li>
-                        </ul>
-                    </div>
-                    <div class="autofitcol25px">
-                        <div class="bodycolumngrid boxspace15">
-                            <h3 class="titlecolumngrid">HTML</h3>
-                            <code>
-                            &lt;datalist id="searchterms"&gt;<br>
-                                &lt;option value=""&gt;<em>Mac</em>&lt;/option&gt;<br>
-                                &lt;option value=""&gt;<em>Windows</em>&lt;/option&gt;<br>
-                                &lt;option value=""&gt;<em>Linux</em>&lt;/option&gt;<br>
-                            &lt;/datalist&gt;<br>
-                            &lt;form action=""&gt;<br>
-                                &lt;input type="search" name="q" list="searchterms" placeholder="<em>Digite aqui</em>" size="13" aria-label="<em>Campo de pesquisa</em>"&gt;<br>
-                                &lt;button&gt;<em>Pesquisar</em>&lt;/button&gt;<br>
-                            &lt;/form&gt;<br>
-                            </code>
-                        </div>
-                        <div class="bodycolumngrid boxspace15">
-                            <h3 class="titlecolumngrid">Resultado</h3>
-                            <datalist id="searchterms">
-                                <option value="">Mac</option>
-                                <option value="">Windows</option>
-                                <option value="">Linux</option>
-                            </datalist>
-                            <form action="">
-                                <input type="search" name="q" list="searchterms" placeholder="Digite aqui" size="13"
-                                    aria-label="Campo de pesquisa">
-                                <button>Pesquisar</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-            </div>
-            <hr>
-            <div id="Number" class="lesson" title="Number | Tags de Entrada">
-                <h2 id="title" class="title" tabindex="19">Number</h2>
-                <span class="subtitle">&lt;input type="number"&gt;</span>
-                <div id="info" class="info">
-                    <div class="boxtitle">Características</div>
-                    <div class="boxinfo">
-                        <p class="infop">Entrada de números.</p>
-                    </div>
-                    <div class="boxtitle">Atributos</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>min/max;</li>
-                            <li>step; de quanto em quanto ele pula.</li>
-                            <li>datalist;</li>
-                        </ul>
-                    </div>
-                </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-            </div>
-            <hr>
-            <div id="Range" class="lesson" title="Range | Tags de Entrada">
-                <h2 id="title" class="title" tabindex="20">Range</h2>
-                <span class="subtitle">&lt;input type="range"&gt;</span>
-                <div id="info" class="info">
-                    <div class="boxtitle">Características</div>
-                    <div class="boxinfo">
-                        <p class="infop">Controle para selecionar um valor numérico.</p>
-                        <p class="infop">Slider ou dial control.</p>
-                    </div>
-                    <div class="boxtitle">Atributos</div>
-                    <div class="boxinfo">
-                        <ul>
-                            <li>min/max;</li>
-                            <li>step;</li>
-                        </ul>
-                    </div>
-                </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-            </div>
-            <hr>
-            <div id="Data e hora" class="lesson" title="Data e hora | Tags de Entrada">
-                <h2 id="title" class="title" tabindex="20">Data e hora</h2>
-                <span class="subtitle">&lt;input type="date"&gt;</span>
-                <div id="info" class="info">
-                    <div class="autofitcol25px">
-                        <div class="bodycolumngrid boxspace10">
-                            <h3 class="titlecolumngrid">HTML</h3>
-                            <code>&lt;input type="date"&gt;</code>
-                        </div>
-                        <div class="bodycolumngrid boxspace10">
-                            <h3 class="titlecolumngrid">Resultado</h3>
-                            <input type="date">
-                        </div>
-                    </div>
-                    <div class="autofitcol25px">
-                        <div class="bodycolumngrid boxspace10">
-                            <h3 class="titlecolumngrid">HTML</h3>
-                            <code>&lt;input type="datetime-local"&gt;</code>
-                        </div>
-                        <div class="bodycolumngrid boxspace10">
-                            <h3 class="titlecolumngrid">Resultado</h3>
-                            <input type="datetime-local">
-                        </div>
-                    </div>
-                    <div class="autofitcol25px">
-                        <div class="bodycolumngrid boxspace10">
-                            <h3 class="titlecolumngrid">HTML</h3>
-                            <code>&lt;input type="week"&gt;</code>
-                        </div>
-                        <div class="bodycolumngrid boxspace10">
-                            <h3 class="titlecolumngrid">Resultado</h3>
-                            <input type="week">
-                        </div>
-                    </div>
-                </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-            </div>
-            <hr>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
         </div>
+        <hr />
+        <div id="Label" class="lesson" title="Label | Estrutura">
+          <h2 id="title" class="title" tabindex="03">Label</h2>
+          <span class="subtitle">&lt;label&gt;</span>
+          <div id="info" class="info">
+            <div class="boxtitle">Pra que serve?</div>
+            <div class="boxinfo">
+              <p class="infop">Serve para:</p>
+              <ul>
+                <li>associar e identificar uma (ou mais) tag de entrada de dados</li>
+                <li>acessibilidade</li>
+                <li>poderei clicar para mudar o foco da entrada de dados</li>
+              </ul>
+            </div>
+            <div class="autofitcol25px">
+              <div class="bodycolumngrid boxspace15">&lt;label for=""&gt;Nome Completo:&lt;input type="text"&gt;&lt;/label&gt;</div>
+              <div class="bodycolumngrid boxspace15">
+                <label for=""
+                  >Nome Completo:
+                  <input type="text" />
+                </label>
+              </div>
+            </div>
+            <div class="boxtitle">Atributos</div>
+            <div class="boxinfo">
+              <ul>
+                <li>for</li>
+                <ul>
+                  <li>para fazer a conexão entre este label e a tag de entrada de dados</li>
+                  <li>é feita via id do input</li>
+                  <li>só funciona com elementos específicos</li>
+                  <ul>
+                    <li>button, input (not hidden), meter, output, progress, select, textarea</li>
+                  </ul>
+                </ul>
+              </ul>
+            </div>
+            <div class="autofitcol25px">
+              <div class="bodycolumngrid boxspace15">
+                &lt;label for="nome"&gt;Nome Completo:&lt;/label&gt;
+                <br />
+                &lt;input id="nome" type="text"&gt;
+              </div>
+              <div class="bodycolumngrid boxspace15">
+                <label for="nome">Nome Completo:</label>
+                <input id="nome" type="text" />
+              </div>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Button" class="lesson" title="Button | Estrutura">
+          <h2 id="title" class="title" tabindex="04">Button</h2>
+          <span class="subtitle">&lt;button&gt;</span>
+          <div id="info" class="info">
+            <div class="boxtitle">O que é?</div>
+            <div class="boxinfo">
+              <ul>
+                <li>Representa um botão</li>
+                <li>Usado para enviar formulários</li>
+                <li>É estilizado pelo user agent</li>
+              </ul>
+            </div>
+            <div class="boxtitle">Atributos comuns</div>
+            <div class="boxinfo">
+              <ul>
+                <li>type</li>
+                <ul>
+                  <li>submit; enviar o formulário</li>
+                  <li>reset; limpar o form.</li>
+                  <li>button; mesma função do submit.</li>
+                </ul>
+                <li>autofocus; quando abre a página, o cursor vai direto em quem tiver autofocus (só pode ter um).</li>
+                <li>disabled</li>
+                <li>name; título da mensagem pra quem vai receber o form.</li>
+                <li>value; mensagem pra quem vai receber o formulário.</li>
+                <li>form; pra quando está fora do form. Funciona no mesmo padrão do label.</li>
+              </ul>
+            </div>
+            <div class="autofitcol25px">
+              <div class="bodycolumngrid boxspace15">
+                &lt;form action=""&gt;<br />
+                &lt;input type="text" value="Digite aqui"&gt;<br />
+                &lt;button type="reset"&gt;Limpar&lt;/button&gt;<br />
+                &lt;/form&gt;<br />
+              </div>
+              <div class="bodycolumngrid boxspace15">
+                <form action="">
+                  <input type="text" value="Digite aqui" />
+                  <button type="reset">Limpar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Datalist" class="lesson" title="Datalist | Estrutura">
+          <h2 id="title" class="title" tabindex="05">Datalist</h2>
+          <span class="subtitle">&lt;datalist&gt;</span>
+          <div id="info" class="info">
+            <div class="boxtitle">O que é?</div>
+            <div class="boxinfo">
+              <ul>
+                <li>Lista de valores como sugestão a uma tag input;</li>
+                <li>Valores sugestivos e não obrigatórios;</li>
+                <li>Usuário poderá selecionar um dos valores, ou colocar um valor diferente da sugestão;</li>
+              </ul>
+            </div>
+            <div class="boxtitle">list</div>
+            <div class="boxinfo">
+              <p class="infop">Recebe como valor o id de um datalist residente no mesmo documento.</p>
+            </div>
+            <div class="boxtitle">Tipos de input suportados</div>
+            <div class="boxinfo">
+              <p class="infop">text, search, url, tel, email, date, month, week, time, datetime-local, number, range e color.</p>
+            </div>
+            <div class="boxtitle">Tipos de input não suportados</div>
+            <div class="boxinfo">
+              <p class="infop">hidden, password, checkbox, radio, file, ou qualquer tipo de button.</p>
+            </div>
+            <div class="boxtitle">User Agent</div>
+            <div class="boxinfo">
+              <p class="infop">Verificar a compatibilidade com o browser https://caniuse.com</p>
+            </div>
+            <div class="autofitcol25px">
+              <div class="bodycolumngrid boxspace15">
+                &lt;datalist id="fuitsdata"&gt;<br />
+                &lt;option value=""&gt;brmaçã&lt;/option&gt;<br />
+                &lt;option value=""&gt;brbanana&lt;/option&gt;<br />
+                &lt;option value=""&gt;brmorango&lt;/option&gt;<br />
+                &lt;option value=""&gt;brpera&lt;/option&gt;<br />
+                &lt;option value=""&gt;bruva&lt;/option&gt;<br />
+                &lt;/datalist&gt;<br />
+              </div>
+              <div class="bodycolumngrid boxspace15">
+                <input type="text" list="fruitsdata" placeholder="Escolha uma fruta" />
+                <datalist id="fruitsdata">
+                  <option>maçã</option>
+                  <option>banana</option>
+                  <option>morango</option>
+                  <option>pera</option>
+                  <option>uva</option>
+                </datalist>
+              </div>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+      </div>
+      <div id="segmento" class="segmento" title="Tags de Entrada">
+        <div id="Input" class="lesson" title="Input | Tags de Entrada">
+          <h2 id="title" class="title" tabindex="06">Input</h2>
+          <span class="subtitle">&lt;input&gt;</span>
+          <div id="info" class="info">
+            <div class="boxtitle">Características</div>
+            <div class="boxinfo">
+              <ul>
+                <li>Um dos mais usados em formulários</li>
+                <li>Aceita os mais diversos tipos de dados;</li>
+                <li>Um dos mais poderosos e complexos;</li>
+                <li>Elevado número de combinações;</li>
+              </ul>
+            </div>
+            <div class="boxtitle">Atributos comuns</div>
+            <div class="boxinfo">
+              <ul>
+                <li>type;</li>
+                <li>name;</li>
+                <li>id;</li>
+                <li>autocomplete; busca no browser dados que usei com frequência.</li>
+                <li>autofocus;</li>
+                <li>disabled;</li>
+                <li>readonly (aceito por quase todos); primo do disabled que não fica com aspecto opaco.</li>
+                <li>value;</li>
+                <li>form (aceito por quase todos); combinando com o id do form.</li>
+                <li>name;</li>
+                <li>required (aceito por quase todos); se torna obrigatório.</li>
+                <li>placeholder (aceito por: password, search, tel, text, url); texto substituível no background do input. Não consegue ser lido pelo leitor de tela, por isso o name e o value ajudam na acessibilidade.</li>
+              </ul>
+            </div>
+            <div class="autofitcol25px">
+              <div class="bodycolumngrid boxspace15">&lt;input type="number" name="numero" id="numero"&gt;</div>
+              <div class="bodycolumngrid boxspace15">
+                <input type="number" name="numero" id="numero" />
+              </div>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Password" class="lesson" title="Password | Tags de Entrada">
+          <h2 id="title" class="title" tabindex="07">Password</h2>
+          <span class="subtitle">&lt;input type="password"&gt;</span>
+          <div id="info" class="info">
+            <div class="boxtitle">Características</div>
+            <div class="boxinfo">
+              <ul>
+                <li>Colocar uma senha de maneira segura;</li>
+                <li>Esconde o que está sendo digitado no campo;</li>
+                <li>O estilo da apresentação do campo, depende do User Agent.</li>
+              </ul>
+            </div>
+            <div class="autofitcol25px">
+              <div class="bodycolumngrid boxspace15">&lt;input type="password"&gt;</div>
+              <div class="bodycolumngrid boxspace15">
+                <input type="password" />
+              </div>
+            </div>
+            <div class="boxtitle">minlength / maxlength</div>
+            <div class="boxinfo">
+              <p class="infop">O número mínimo e/ou máximo de caracteres para este campo</p>
+            </div>
+            <div class="boxtitle">size</div>
+            <div class="boxinfo">
+              <p class="infop">O número aceitável de caracteres que esse campo deverá conter.</p>
+            </div>
+            <div class="boxtitle">pattern</div>
+            <div class="boxinfo">
+              <p class="infop">Expressão regular para validar o que está sendo digitado no campo.</p>
+              <p class="infop">Altamente recomendado o uso de um padrão de segurança alta de senhas.</p>
+              <p class="infop">exemplo: queremos que a senha contenha caracteres hexadecimais com o limite de no mínimo 4 e no máximo 8 caracteres.</p>
+              <p class="infop"><code>pattern="[0-9a-fA-F]{4,8}"</code></p>
+            </div>
+            <div class="boxtitle">inputmode</div>
+            <div class="boxinfo">
+              <ul>
+                <li>poderá alterar o uso do teclado em smartphones;</li>
+                <li>exemplo: queremos que o cliente só adicione números;</li>
+                <ul>
+                  <li>inputmode="numeric"</li>
+                </ul>
+              </ul>
+            </div>
+            <div class="boxtitle">autocomplete</div>
+            <div class="boxinfo">
+              <ul>
+                <li>on: permite a sugestão de: new password ou current password;</li>
+                <li>off: desabilita o autocomplete;</li>
+                <li>new password: poderá sugerir uma nova senha.</li>
+              </ul>
+            </div>
+            <div class="boxtitle">E outros...</div>
+            <div class="boxinfo">
+              <ul>
+                <li>placeholder;</li>
+                <li>readonly;</li>
+                <li>required.</li>
+              </ul>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Email" class="lesson" title="Email | Tags de Entrada">
+          <h2 id="title" class="title" tabindex="08">Email</h2>
+          <span class="subtitle">&lt;input type="email"&gt;</span>
+          <div id="info" class="info">
+            <div class="boxtitle">Características</div>
+            <div class="boxinfo">
+              <p class="infop">Espera que o usuário digite um email.</p>
+              <p class="infop">Irá validar ser o valor digitado é um email.</p>
+            </div>
+            <div class="boxtitle">Atributos</div>
+            <div class="boxinfo">
+              <ul>
+                <li>placeholder;</li>
+                <li>readonly / disabled;</li>
+                <li>value;</li>
+                <li>required;</li>
+                <li>multiple; irá receber um ou mais emails, separado por vírgulas;</li>
+                <li>minleght/maxlenght</li>
+                <li>size;</li>
+                <li>datalist; uma lista que contenha valores do datalist que não forem compatíveis com o campo, não serão apresentados como sugestão;</li>
+              </ul>
+            </div>
+            <div class="boxtitle">pattern</div>
+            <div class="boxinfo">
+              <p class="infop">Uso da expressão regular para validar o campo.</p>
+              <p class="infop">Exemplo: o usuário só poderá colocar email do domínio rocketseat.com.br</p>
+            </div>
+            <div class="autofitcol25px">
+              <div class="bodycolumngrid boxspace15">&lt;input pattern=".+@rocketseat\.com\.br"&gt;</div>
+              <div class="bodycolumngrid boxspace15">
+                <input pattern=".+@rocketseat\.com\.br" />
+              </div>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="URL" class="lesson" title="URL | Tags de Entrada">
+          <h2 id="title" class="title" tabindex="09">URL</h2>
+          <span class="subtitle">&lt;input type="url"&gt;</span>
+          <div id="info" class="info">
+            <div class="boxtitle">Características</div>
+            <div class="boxinfo">
+              <p class="infop">Espera que o usuário digite uma url.</p>
+              <p class="infop">Irá validar se o valor digitado é uma url.</p>
+            </div>
+            <div class="boxtitle">Atributos</div>
+            <div class="boxinfo">
+              <ul>
+                <li>placeholder;</li>
+                <li>readonly/disabled;</li>
+                <li>value;</li>
+                <li>required;</li>
+                <li>minlenght/maxlenght;</li>
+                <li>size;</li>
+                <li>pattern;</li>
+                <li>datalist;</li>
+                <li>spellcheck; habilitar a verificação ortográfica.</li>
+              </ul>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="File" class="lesson" title="File | Tags de Entrada">
+          <h2 id="title" class="title" tabindex="10">File</h2>
+          <span class="subtitle">&lt;input type="file"&gt;</span>
+          <div id="info" class="info">
+            <div class="boxtitle">Características</div>
+            <div class="boxinfo">
+              <p class="infop">Usuário poderá escolher 1 ou mais arquivos para enviar no formulário.</p>
+              <p class="infop">Para envio dos arquivos <b>o form</b> deverá utilizar o method do tipo POST e o atributo enctype como "multipart/form-data".</p>
+            </div>
+            <div class="boxtitle">Atributos</div>
+            <div class="boxinfo">
+              <ul>
+                <li>value;</li>
+                <li>accept; descreve que tipos de arquivos serão aceitos (exemplo: .doc, .docx, .pdf, audio/*, image/png, .png).</li>
+                <li>files;</li>
+                <li>multiple;</li>
+              </ul>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Color" class="lesson" title="Color | Tags de Entrada">
+          <h2 id="title" class="title" tabindex="11">Color</h2>
+          <span class="subtitle">&lt;input type="color"&gt;</span>
+          <div id="info" class="info">
+            <div class="boxtitle">Características</div>
+            <div class="boxinfo">
+              <p class="infop">Interface para selecionar cor.</p>
+              <p class="infop">Color picker.</p>
+            </div>
+            <div class="boxtitle">Atributos</div>
+            <div class="boxinfo">
+              <ul>
+                <li>value: RGB. Se inválido, a cor preta será exibida.</li>
+                <li>datalist</li>
+              </ul>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Checkbox" class="lesson" title="Checkbox | Tags de Entrada">
+          <h2 id="title" class="title" tabindex="12">Checkbox</h2>
+          <span class="subtitle">&lt;input type="checkbox"&gt;</span>
+          <div id="info" class="info">
+            <div class="boxtitle">Características</div>
+            <div class="boxinfo">
+              <p class="infop">Caixas que podem ser marcadas.</p>
+              <p class="infop">Selecionar um valor para ser enviado.</p>
+              <p class="infop">Se não selecionado, não será enviado nenhum dado.</p>
+            </div>
+            <div class="boxtitle">Atributos</div>
+            <div class="boxinfo">
+              <ul>
+                <li>globais</li>
+                <li>value</li>
+                <ul>
+                  <li>valor que aquele campo contém</li>
+                  <li>se não estiver presente, o padrão é 'on'</li>
+                </ul>
+                <li>checked</li>
+                <ul>
+                  <li>para deixar o campo marcado por padrão</li>
+                </ul>
+              </ul>
+            </div>
+            <div class="boxtitle">Múltiplos valores</div>
+            <div class="boxinfo">
+              <p class="infop">Usaremos o atributo 'name' com o mesmo nome para os diversos campos.</p>
+            </div>
+            <div class="autofitcol25px">
+              <div class="bodycolumngrid boxspace15">
+                <h3 class="titlecolumngrid">HTML</h3>
+                <code>
+                  &lt;fieldset&gt;<br />
+                  &lt;legend&gt;<em>Choose your interests</em>&lt;/legend&gt;<br />
+                  &lt;div&gt;<br />
+                  &lt;input type="checkbox" id="coding" name="interest" value="coding" checked&gt;<br />
+                  &lt;label for="coding"&gt;<em>Coding</em>&lt;/label&gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;div&gt;<br />
+                  &lt;input type="checkbox" id="music" name="interest" value="music"&gt;<br />
+                  &lt;label for="music"&gt;<em>Music</em>&lt;/label&gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;/fieldset&gt;<br />
+                </code>
+              </div>
+              <div class="bodycolumngrid boxspace15">
+                <h3 class="titlecolumngrid">Resultado</h3>
+                <fieldset>
+                  <legend>Choose your interests</legend>
+                  <div>
+                    <input type="checkbox" id="coding" name="interest" value="coding" checked />
+                    <label for="coding">Coding</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="music" name="interest" value="music" />
+                    <label for="music">Music</label>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Hidden" class="lesson" title="Hidden | Tags de Entrada">
+          <h2 id="title" class="title" tabindex="13">Hidden</h2>
+          <span class="subtitle">&lt;input type="hidden"&gt;</span>
+          <div id="info" class="info">
+            <div class="boxtitle">Características</div>
+            <div class="boxinfo">
+              <ul>
+                <li>Invisível ao usuário;</li>
+                <li>Será enviado com o formulário;</li>
+                <li>Não receberá foco;</li>
+                <li>Leitores de tela não percebem esse campo.</li>
+              </ul>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Radio" class="lesson" title="Radio | Tags de Entrada">
+          <h2 id="title" class="title" tabindex="14">Radio</h2>
+          <span class="subtitle">&lt;input type="radio"&gt;</span>
+          <div id="info" class="info">
+            <div class="boxtitle">Características</div>
+            <div class="boxinfo">
+              <p class="infop">Projetado para selecionar uma única opção de um grupo de opções.</p>
+            </div>
+            <div class="boxtitle">Atributos</div>
+            <div class="boxinfo">
+              <ul>
+                <li>checked</li>
+                <ul>
+                  <li>indica que o campo foi marcado.</li>
+                </ul>
+                <li>value</li>
+                <ul>
+                  <li>valor que aquele campo contém.</li>
+                </ul>
+              </ul>
+            </div>
+            <div class="autofitcol25px">
+              <div class="bodycolumngrid boxspace15">
+                <h3 class="titlecolumngrid">HTML</h3>
+                <code>
+                  &lt;fieldset&gt;<br />
+                  &lt;legend&gt;<em>Bora tomar um café?</em>&lt;/legend&gt;<br />
+                  &lt;label for="yep"&gt;<em>sim</em>&lt;/label&gt;<br />
+                  &lt;input type="radio" id="yep" name="coffee" value="yes"&gt;<br />
+                  &lt;label for="nono"&gt;<em>não</em>&lt;/label&gt;<br />
+                  &lt;input type="radio" checked id="nono" name="coffee" value="no"&gt;<br />
+                  &lt;/fieldset&gt;<br />
+                </code>
+              </div>
+              <div class="bodycolumngrid boxspace15">
+                <h3 class="titlecolumngrid">Resultado</h3>
+                <fieldset>
+                  <legend>Bora tomar um café?</legend>
+                  <label for="yep">sim</label>
+                  <input type="radio" id="yep" name="coffee" value="yes" />
+                  <label for="nono">não</label>
+                  <input type="radio" checked id="nono" name="coffee" value="no" />
+                </fieldset>
+              </div>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Textarea" class="lesson" title="Textarea | Tags de Entrada">
+          <h2 id="title" class="title" tabindex="15">Textarea</h2>
+          <span class="subtitle">&lt;textarea&gt;</span>
+          <div id="info" class="info">
+            <div class="boxtitle">Características</div>
+            <div class="boxinfo">
+              <p class="infop">Mais de uma linha.</p>
+              <p class="infop">Útil para textos grandes.</p>
+              <p class="infop">Considera espaço quando a quebra de linha é feita no html pela tecla Enter (não quebrar a linha).</p>
+            </div>
+            <div class="boxtitle">Atributos</div>
+            <div class="boxinfo">
+              <ul>
+                <li>id;</li>
+                <li>name;</li>
+                <li>rows e cols;</li>
+                <li>maxlegth e minlenght (máximo e mínimo de caracteres);</li>
+                <li>wrap (ultrapassa os limites da box e ativa barra de rolagem);</li>
+                <li>...outros comuns aos &lt;input&gt;s:</li>
+                <ul>
+                  <li>autocomplete, autofocus, disabled, placeholder, readonly, form, required.</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Select" class="lesson" title="Select | Tags de Entrada">
+          <h2 id="title" class="title" tabindex="16">Select</h2>
+          <span class="subtitle">&lt;select&gt;</span>
+          <div id="info" class="info">
+            <div class="boxtitle">Características</div>
+            <div class="boxinfo">
+              <p class="infop">Controle que fornece um menu de opções.</p>
+            </div>
+            <div class="boxtitle">Características do &lt;option&gt;</div>
+            <div class="boxinfo">
+              <p class="infop">Contém as opções a serem selecionadas.</p>
+              <p class="infop">Atributo necessário: value.</p>
+            </div>
+            <div class="boxtitle">Atributos</div>
+            <div class="boxinfo">
+              <ul>
+                <li>multiple;</li>
+                <ul>
+                  <li>Habilita a seleção de múltiplas opções.</li>
+                </ul>
+                <li>size;</li>
+                <ul>
+                  <li>Quantas opções visíveis.</li>
+                </ul>
+              </ul>
+            </div>
+            <div class="autofitcol25px">
+              <div class="bodycolumngrid boxspace15">
+                <h3 class="titlecolumngrid">HTML</h3>
+                <code>
+                  &lt;label for="carselect"&gt;<em>Qual modelo do carro?</em>&lt;/label&gt;<br />
+                  &lt;select name="carmodel" id="carselect"&gt;<br />
+                  &lt;option value=""&gt;<em>Selecione o modelo</em>&lt;/option&gt;<br />
+                  &lt;option value="fiat"&gt;<em>Uno</em>&lt;/option&gt;<br />
+                  &lt;option value="audi"&gt;<em>A3</em>&lt;/option&gt;<br />
+                  &lt;/select&gt;<br />
+                </code>
+              </div>
+              <div class="bodycolumngrid boxspace15">
+                <h3 class="titlecolumngrid">Resultado</h3>
+                <label for="carselect">Qual modelo do carro?</label>
+                <select name="carmodel" id="carselect">
+                  <option value="">Selecione o modelo</option>
+                  <option value="fiat">Uno</option>
+                  <option value="audi">A3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Optgroup" class="lesson" title="Optgroup | Tags de Entrada">
+          <h2 id="title" class="title" tabindex="17">Optgroup</h2>
+          <span class="subtitle">&lt;optgroup&gt;</span>
+          <div id="info" class="info">
+            <div class="boxtitle">Características</div>
+            <div class="boxinfo">
+              <p class="infop">Estará dentro do &lt;select&gt;.</p>
+              <p class="infop">Indicará um grupo dentro da janela de seleção.</p>
+            </div>
+            <div class="boxtitle">Atributos</div>
+            <div class="boxinfo">
+              <ul>
+                <li>label;</li>
+              </ul>
+            </div>
+            <div class="autofitcol25px">
+              <div class="bodycolumngrid boxspace15">
+                <h3 class="titlecolumngrid">HTML</h3>
+                <code>
+                  &lt;label&gt;<em>Please choose one or more pets:</em><br />
+                  &lt;select name="pets" multiple size="4"&gt;<br />
+                  &lt;optgroup label="4-legged pets"&gt;<br />
+                  &lt;option value="dog"&gt;<em>Dog</em>&lt;/option&gt;<br />
+                  &lt;option value="cat"&gt;<em>Cat</em>&lt;/option&gt;<br />
+                  &lt;option value="hamster"&gt;<em>Hamster</em>&lt;/option&gt;<br />
+                  &lt;/optgroup&gt;<br />
+                  &lt;optgroup label="Flying pets"&gt;<br />
+                  &lt;option value="parrot"&gt;<em>Parrot</em>&lt;/option&gt;<br />
+                  &lt;option value="macaw"&gt;<em>Macaw</em>&lt;/option&gt;<br />
+                  &lt;option value="albatross"&gt;<em>Albatross</em>&lt;/option&gt;<br />
+                  &lt;/optgroup&gt;<br />
+                  &lt;/select&gt;<br />
+                  &lt;/label&gt;<br />
+                </code>
+              </div>
+              <div class="bodycolumngrid boxspace15">
+                <h3 class="titlecolumngrid">Resultado</h3>
+                <label
+                  >Please choose one or more pets:
+                  <select name="pets" multiple size="5">
+                    <optgroup label="4-legged pets">
+                      <option value="dog">Dog</option>
+                      <option value="cat">Cat</option>
+                      <option value="hamster">Hamster</option>
+                    </optgroup>
+                    <optgroup label="Flying pets">
+                      <option value="parrot">Parrot</option>
+                      <option value="macaw">Macaw</option>
+                      <option value="albatross">Albatross</option>
+                    </optgroup>
+                  </select>
+                </label>
+              </div>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Search" class="lesson" title="Search | Tags de Entrada">
+          <h2 id="title" class="title" tabindex="18">Search</h2>
+          <span class="subtitle">&lt;input type="search"&gt;</span>
+          <div id="info" class="info">
+            <div class="boxtitle">Características</div>
+            <div class="boxinfo">
+              <p class="infop">Para campos de busca.</p>
+              <p class="infop">É igual ao campo do tipo 'text', mas poderá ser um pouco diferente dependendo do user agent.</p>
+            </div>
+            <div class="boxtitle">Atributos</div>
+            <div class="boxinfo">
+              <ul>
+                <li>list / &lt;datalist&gt;;</li>
+                <li>pattern; caracteres permitidos.</li>
+                <li>aria-label; é uma opção ao label.</li>
+              </ul>
+            </div>
+            <div class="autofitcol25px">
+              <div class="bodycolumngrid boxspace15">
+                <h3 class="titlecolumngrid">HTML</h3>
+                <code>
+                  &lt;datalist id="searchterms"&gt;<br />
+                  &lt;option value=""&gt;<em>Mac</em>&lt;/option&gt;<br />
+                  &lt;option value=""&gt;<em>Windows</em>&lt;/option&gt;<br />
+                  &lt;option value=""&gt;<em>Linux</em>&lt;/option&gt;<br />
+                  &lt;/datalist&gt;<br />
+                  &lt;form action=""&gt;<br />
+                  &lt;input type="search" name="q" list="searchterms" placeholder="<em>Digite aqui</em>" size="13" aria-label="<em>Campo de pesquisa</em>"&gt;<br />
+                  &lt;button&gt;<em>Pesquisar</em>&lt;/button&gt;<br />
+                  &lt;/form&gt;<br />
+                </code>
+              </div>
+              <div class="bodycolumngrid boxspace15">
+                <h3 class="titlecolumngrid">Resultado</h3>
+                <datalist id="searchterms">
+                  <option value="">Mac</option>
+                  <option value="">Windows</option>
+                  <option value="">Linux</option>
+                </datalist>
+                <form action="">
+                  <input type="search" name="q" list="searchterms" placeholder="Digite aqui" size="13" aria-label="Campo de pesquisa" />
+                  <button>Pesquisar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Number" class="lesson" title="Number | Tags de Entrada">
+          <h2 id="title" class="title" tabindex="19">Number</h2>
+          <span class="subtitle">&lt;input type="number"&gt;</span>
+          <div id="info" class="info">
+            <div class="boxtitle">Características</div>
+            <div class="boxinfo">
+              <p class="infop">Entrada de números.</p>
+            </div>
+            <div class="boxtitle">Atributos</div>
+            <div class="boxinfo">
+              <ul>
+                <li>min/max;</li>
+                <li>step; de quanto em quanto ele pula.</li>
+                <li>datalist;</li>
+              </ul>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Range" class="lesson" title="Range | Tags de Entrada">
+          <h2 id="title" class="title" tabindex="20">Range</h2>
+          <span class="subtitle">&lt;input type="range"&gt;</span>
+          <div id="info" class="info">
+            <div class="boxtitle">Características</div>
+            <div class="boxinfo">
+              <p class="infop">Controle para selecionar um valor numérico.</p>
+              <p class="infop">Slider ou dial control.</p>
+            </div>
+            <div class="boxtitle">Atributos</div>
+            <div class="boxinfo">
+              <ul>
+                <li>min/max;</li>
+                <li>step;</li>
+              </ul>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Data e hora" class="lesson" title="Data e hora | Tags de Entrada">
+          <h2 id="title" class="title" tabindex="20">Data e hora</h2>
+          <span class="subtitle">&lt;input type="date"&gt;</span>
+          <div id="info" class="info">
+            <div class="autofitcol25px">
+              <div class="bodycolumngrid boxspace10">
+                <h3 class="titlecolumngrid">HTML</h3>
+                <code>&lt;input type="date"&gt;</code>
+              </div>
+              <div class="bodycolumngrid boxspace10">
+                <h3 class="titlecolumngrid">Resultado</h3>
+                <input type="date" />
+              </div>
+            </div>
+            <div class="autofitcol25px">
+              <div class="bodycolumngrid boxspace10">
+                <h3 class="titlecolumngrid">HTML</h3>
+                <code>&lt;input type="datetime-local"&gt;</code>
+              </div>
+              <div class="bodycolumngrid boxspace10">
+                <h3 class="titlecolumngrid">Resultado</h3>
+                <input type="datetime-local" />
+              </div>
+            </div>
+            <div class="autofitcol25px">
+              <div class="bodycolumngrid boxspace10">
+                <h3 class="titlecolumngrid">HTML</h3>
+                <code>&lt;input type="week"&gt;</code>
+              </div>
+              <div class="bodycolumngrid boxspace10">
+                <h3 class="titlecolumngrid">Resultado</h3>
+                <input type="week" />
+              </div>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

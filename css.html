@@ -1,645 +1,581 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Lato:wght@300&family=Lora:ital@1&family=Quicksand&family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS</title>
-    <link rel="stylesheet" href="./cssglobal.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Lato:wght@300&family=Lora:ital@1&family=Quicksand&family=Source+Serif+Pro:wght@300&display=swap"
-        rel="stylesheet">
-</head>
-
-<body id="body" class="body">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+    <link rel="stylesheet" href="./cssglobal.css" />
+  </head>
+  <body id="body" class="body">
     <div class="main-document-head-container">
-        <header class="main-document-head-container top-navigation">
-            <div class="container">
-                <a href="https://renkensg.github.io/sumario-discover/" id="logo" class="logo" title="Homepage | Sumário">
-                    <img src="https://icon-library.com/images/icon-for-home/icon-for-home-1.jpg"
-                        alt="Home button with a blue background" width="35px">
-                </a>
-                <h1 class="título" id="título" title="CSS shortkeys">Guia Estelar de CSS</h1>
-            </div>
-        </header>
-        <div id="glossário" class="glossário" title="Glossário">
-            <div id="índice" class="autofitcol10px índice">
-                <div class="elevatedbox titlecolumngrid boxspace11">1-5
-                    <ol class="bodycolumngrid indol">
-                        <li><a href="#Conhecendo o CSS">Conhecendo o CSS</a></li>
-                        <li><a href="#Comentários">Comentários</a></li>
-                        <li><a href="#Anatomia">Anatomia</a></li>
-                        <li><a href="#Seletores">Seletores</a></li>
-                        <li><a href="#Box model">Box model</a></li>
-                    </ol>
-                </div>
-                <div class="elevatedbox titlecolumngrid boxspace10">6-10
-                    <ol class="bodycolumngrid indol">
-                        <li><a href="#Origem do CSS">Origem do CSS</a></li>
-                        <li><a href="#A Cascata">A Cascata</a></li>
-                        <li><a href="#Especificidade">Especificidade</a></li>
-                        <li><a href="#Regra important">Regra important</a></li>
-                        <li><a href="#At rules">At rules</a></li>
-                    </ol>
-                </div>
-                <div class="elevatedbox titlecolumngrid boxspace13">11-15
-                    <ol class="bodycolumngrid indol">
-                        <li><a href="#Shorthand">Shorthand</a></li>
-                        <li><a href="#Funções">Funções</a></li>
-                        <li><a href="#DevTools">DevTools</a></li>
-                        <li><a href="#Cuidados com a escrita">Cuidados com a escrita</a></li>
-                        <li><a href="#Vendor prefixes">Vendor prefixes</a></li>
-                    </ol>
-                </div>
-                <!-- <table id="tabela" class="tabela">
-                    <thead>
-                        <tr>
-                            <th>1-5</th>
-                            <th></th>
-                            <th>6-10</th>
-                            <th></th>
-                            <th>11-15</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1. <a href="#Conhecendo o CSS">Conhecendo o CSS</a></td>
-                            <td></td>
-                            <td>6. <a href="#Origem do CSS">Origem do CSS</a></td>
-                            <td></td>
-                            <td>11.<a href="#Shorthand">Shorthand</a></td>
-                        </tr>
-                        <tr>
-                            <td>2. <a href="#Comentários">Comentários</a></td>
-                            <td></td>
-                            <td>7. <a href="#A Cascata">A Cascata</a></td>
-                            <td></td>
-                            <td>12.<a href="#Funções">Funções</a></td>
-                        </tr>
-                        <tr>
-                            <td>3. <a href="#Anatomia">Anatomia</a></td>
-                            <td></td>
-                            <td>8. <a href="#Especificidade">Especificidade</a></td>
-                            <td></td>
-                            <td>13.<a href="#DevTools">DevTools</a></td>
-                        </tr>
-                        <tr>
-                            <td>4. <a href="#Seletores">Seletores</a></td>
-                            <td></td>
-                            <td>9. <a href="#Regra important">Regra important</a></td>
-                            <td></td>
-                            <td>14.<a href="#Cuidados com a escrita">Cuidados com a escrita</a></td>
-                        </tr>
-                        <tr>
-                            <td>5. <a href="#Box model">Box model</a></td>
-                            <td></td>
-                            <td>10.<a href="#At rules">At rules</a></td>
-                            <td></td>
-                            <td>15.<a href="#Vendor prefixes">Vendor prefixes</a></td>
-                        </tr>
-                    </tbody>
-                </table> -->
-            </div>
+      <header class="main-document-head-container top-navigation">
+        <div class="container">
+          <a href="https://renkensg.github.io/sumario-discover/" id="logo" class="logo" title="Homepage | Sumário">
+            <img src="https://icon-library.com/images/icon-for-home/icon-for-home-1.jpg" alt="Home button with a blue background" width="35px" />
+          </a>
+          <h1 class="título" id="título" title="CSS shortkeys">Guia Estelar de CSS</h1>
         </div>
-        <hr>
+      </header>
+      <div id="glossário" class="glossário" title="Glossário">
+        <div id="índice" class="autofitcol10px índice">
+          <div class="elevatedbox titlecolumngrid boxspace11">
+            1-5
+            <ol class="bodycolumngrid indol">
+              <li><a href="#Conhecendo o CSS">Conhecendo o CSS</a></li>
+              <li><a href="#Comentários">Comentários</a></li>
+              <li><a href="#Anatomia">Anatomia</a></li>
+              <li><a href="#Seletores">Seletores</a></li>
+              <li><a href="#Box model">Box model</a></li>
+            </ol>
+          </div>
+          <div class="elevatedbox titlecolumngrid boxspace10">
+            6-10
+            <ol class="bodycolumngrid indol">
+              <li><a href="#Origem do CSS">Origem do CSS</a></li>
+              <li><a href="#A Cascata">A Cascata</a></li>
+              <li><a href="#Especificidade">Especificidade</a></li>
+              <li><a href="#Regra important">Regra important</a></li>
+              <li><a href="#At rules">At rules</a></li>
+            </ol>
+          </div>
+          <div class="elevatedbox titlecolumngrid boxspace13">
+            11-15
+            <ol class="bodycolumngrid indol">
+              <li><a href="#Shorthand">Shorthand</a></li>
+              <li><a href="#Funções">Funções</a></li>
+              <li><a href="#DevTools">DevTools</a></li>
+              <li>
+                <a href="#Cuidados com a escrita">Cuidados com a escrita</a>
+              </li>
+              <li><a href="#Vendor prefixes">Vendor prefixes</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <hr />
     </div>
     <div id="body-div" class="body-div" title="Guia Estelar de CSS">
-        <div id="segmento" class="segmento" title="O guia estelar de CSS">
-            <div id="Conhecendo o CSS" class="lesson" title="Conhecendo o CSS">
-                <h2 id="title" class="title" tabindex="1">Conhecendo o <abbr title="Cascading Style Sheet">CSS</abbr>
-                </h2>
-                <span class="subtitle">CSS é uma forma de escrever uma folha de estilos em cascata.</span>
-                <div id="info" class="info">
-                    <div class="boxinfo">
-                        <p class="infop">É um código para criar estilos no HTML, que como vimos, é a estrutura de todo o
-                            documento, já o CSS seria a beleza, a parte bonita.</p>
-                        <p class="infop">CSS não é uma linguagem de programação, é uma linguagem style sheet, pois mesmo
-                            não sendo de programação, ainda possui uma ideia de sintaxe, e assim, precisamos aprender a
-                            forma correta de se escrever.</p>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-                <hr>
+      <div id="segmento" class="segmento" title="O guia estelar de CSS">
+        <div id="Conhecendo o CSS" class="lesson" title="Conhecendo o CSS">
+          <h2 id="title" class="title" tabindex="1">Conhecendo o <abbr title="Cascading Style Sheet">CSS</abbr></h2>
+          <span class="subtitle">CSS é uma forma de escrever uma folha de estilos em cascata.</span>
+          <div id="info" class="info">
+            <div class="boxinfo">
+              <p class="infop">É um código para criar estilos no HTML, que como vimos, é a estrutura de todo o documento, já o CSS seria a beleza, a parte bonita.</p>
+              <p class="infop">CSS não é uma linguagem de programação, é uma linguagem style sheet, pois mesmo não sendo de programação, ainda possui uma ideia de sintaxe, e assim, precisamos aprender a forma correta de se escrever.</p>
             </div>
-            <div id="Comentários" class="lesson" title="Comentários">
-                <h2 id="title" class="title" tabindex="2">Comentários</h2>
-                <span class="subtitle">Os comentários, no CSS, abrem com /* e terminam com */.</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxinfo">
-                            <p class="infop">Eles não irão afetar o meu código, e podem me ajudar a lembrar de, ou
-                                agrupar e organizá-lo, além de deixar dicas para a leitura e ajudar outros devs a
-                                entende-lo.</p>
-                            <p class="infop">Também posso usar um comentário para desabilitar partes do código, o que
-                                possibilitaria um debug mais fácil (ou caso deseje fazer alguma alteração sem
-                                quebrá-lo).</p>
-                            <p class="infop">
-                            <blockquote><code>
-                                    /* Exemplo de código de comentário em um arquivo .css */
-                                </code></blockquote>
-                            </p>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-                <hr>
-            </div>
-            <div id="Anatomia" class="lesson" title="Anatomia">
-                <h2 id="title" class="title" tabindex="3">Anatomia</h2>
-                <span class="subtitle">O nome de algum elemento, uma chave aberta e uma fechada embaixo, e no meio vamos
-                    ter propriedades e seus valores.</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxinfo">
-                            <p class="infop">Toda propriedade é seguida de :(dois pontos) e um valor, e um ; (ponto e
-                                vírgula) para encerrar essa ideia de valor.<br>
-                                Por exemplo:
-                            <blockquote><code>
-                                    h1 {<br>
-                                        color: blue;<br>
-                                        font-size: 60px;<br>
-                                        background: gray;<br>}
-                                </code></blockquote>
-                            </p>
-                        </div>
-                        <div class="boxtitle">Os elementos do CSS são então:</div>
-                        <div class="boxinfo">
-                            <p class="infop"><strong>Selectors:</strong> Nesse caso o h1, que vai buscar no HTML a tag
-                                h1 e aplicar as mudanças.<br>
-                                <strong>Declaration:</strong> As chaves e tudo dentro delas.<br>
-                                <strong>Properties:</strong> As coisas a serem alteradas.<br>
-                                <strong>Property values:</strong> Os novos valores que estamos atribuindo a tais
-                                propriedades.
-                            </p>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-                <hr>
-            </div>
-            <div id="Seletores" class="lesson" title="Seletores">
-                <h2 id="title" class="title" tabindex="4">Seletores</h2>
-                <span class="subtitle">Os seletores são o que conectam um elemento HTML com o CSS.</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle">Existem vários tipos:</div>
-                        <div class="boxinfo">
-                            <p class="infop">
-                                <strong id="elementtypeselector">Element/Type selector</strong>, que usei na última aula
-                                <code>'h1, h2, p, div'</code>;<br>
-                                <strong id="universalselector">Universal Selector</strong>, que é um * (asterisco);<br>
-                                <strong id="idselector">ID Selector</strong>, que é um # (cardinal, jogo da velha)
-                                <code>'#box, #container'</code>;<br>
-                                <strong id="classselector">Class Selector</strong>, que é um . (ponto) seguido do nome
-                                da classe <code>'.red, .m-4'</code>;<br>
-                                ... e mais alguns que vou entender mais tarde no curso.
-                            </p>
-                        </div>
-                        <div class="boxtitle">Exemplos:</div>
-                        <div class="boxinfo">
-                            <section>HTML:
-                                <blockquote><code>
-                                    &lt;p class="exemploidselector"&gt;<br>
-                                    Exemplo de &lt;b&gt;ID Selector.&lt;/b&gt;<br>
-                                    &lt;/p&gt;
-                                </code></blockquote>
-                                CSS:
-                                <blockquote><code>
-                                    .exemploidselector, .exemploidselector b {<br>
-                                        &nbsp;&nbsp; color: red;<br>
-                                        &nbsp;&nbsp; font-size: 25px;<br>
-                                        &nbsp;&nbsp; background: black;<br>&nbsp;&nbsp;}
-                                </code></blockquote>
-                            </section>
-                        </div>
-                        <div class="boxtitle">Resultado:</div>
-                        <div class="boxinfo">
-                            <p class="exemploidselector">Exemplo de <b>ID Selector.</b></p>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-                <hr>
-            </div>
-            <div id="Box model" class="lesson" title="Box model">
-                <h2 id="title" class="title" tabindex="5">Box model</h2>
-                <span class="subtitle">O CSS trabalha com essa ideia de caixas, chamada "box model".</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle">O que é:</div>
-                        <div class="boxinfo">
-                            <p class="infop">O box model é uma caixa retangular. Essa caixa possui as mesmas
-                                propriedades de uma caixa 2D, e tem como propriedades:</p>
-                            <p class="infop">
-                            <blockquote>
-                                Tamanho (largura x altura): <code>width</code> e <code>height</code>,
-                                respectivamente;<br>
-                                Conteúdo: o <code>content</code>;<br>
-                                Bordas: o <code>border</code>;<br>
-                                Preenchimento interno: o <code>padding</code>;<br>
-                                Espaços fora da caixa: a <code>margin</code>.
-                            </blockquote>
-                            </p>
-                            <p class="infop">Quase todo elemento de uma página é considerado uma caixa: Posicionamento,
-                                tamanhos, espaçamentos, bordas, cores, então, em suma, elementos HTML são caixas, assim
-                                como quase tudo no CSS.</p>
-                            <p class="infop">As caixas podem ficar ao lado uma da outra, ou acima.</p>
-                        </div>
-                        <div class="boxtitle">Exemplo:</div>
-                        <div class="boxinfo">
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace18"><strong>HTML:</strong>
-                                    <blockquote><code>
-                                        &lt;div class="divtest"&gt;<br>
-                                        &nbsp;&nbsp;&lt;h3 class="h3id"&gt;<em>Aprenda HTML</em>&lt;/h3&gt;<br>
-                                        &nbsp;&nbsp;&lt;div class="boxmodeltest"&gt;<br>
-                                        &nbsp;&nbsp;&nbsp;&lt;p class="examplebox"&gt;<em>Empodere-se da capacidade de criar.</em>&lt;/p&gt;<br>
-                                        &nbsp;&nbsp;&nbsp;&lt;button class="button" style="color: white;"&gt;<em>Embarcar!</em>&lt;/button&gt;<br>
-                                        &nbsp;&nbsp;&lt;/div&gt;<br>
-                                        &nbsp;&lt;/div&gt;<br>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace10"><strong>CSS:</strong>
-                                    <blockquote><code>
-                                        <em>.divtest</em>{display:<em>grid</em>;<br>width:<em>50vw</em>;<br>align-items:<em>center</em>;<br>justify-content:<em>space-between</em>;}<br>
-                                        <em>.h3id</em>{margin:<em>20px</em>;<br>padding:<em>20px</em>;<br>text-align:<em>20px</em>;<br>font-size:<em>30px</em>;}<br>
-                                        <em>.boxmodeltest</em>{display:<em>flex</em>;}<br>
-                                        <em>.examplebox</em>{padding-top:<em>5px</em>;<br>font-size:<em>17px</em>;}<br>
-                                        <em>.button</em>{background-color:<em>purple</em>;<br>border-color:<em>purple</em>;<br>font-size:<em>17px</em>;}
-                                    </code></blockquote>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="boxtitle">Resultado:</div>
-                        <div class="boxinfo">
-                            <div class="divtest">
-                                <h3 class="h3id">Aprenda HTML</h3>
-                                <div class="boxmodeltest">
-                                    <p class="examplebox">Empodere-se da capacidade de criar.
-                                    </p>
-                                    <button class="button" style="color: white;">
-                                        Embarcar!
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-            </div>
-            <hr>
-            <div id="Origem do CSS" class="lesson" title="Origem do CSS">
-                <h2 id="title" class="title" tabindex="6">Origem do CSS</h2>
-                <span class="subtitle">Vamos primeiro aprender a adicionar um estilo no nosso documento HTML.</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle">Inline:</div>
-                        <div class="boxinfo">
-                            <p class="infop">Começaremos pelo inline, que é dentro do próprio HTML, através da tag
-                                <code>style</code>, utilizada das seguintes formas:
-                            <blockquote>
-                                <code>&lt;h3 style="color: blue;"&gt;<em>Título</em><br>&lt;strong style="color: red;"&gt;<em>alo</em>&lt;/strong&gt;<br>&lt;/h3&gt;</code>
-                            </blockquote>
-                            </p>
-                        </div>
-                        <div class="boxtitle">Ou na head do HTML, assim:</div>
-                        <div class="boxinfo">
-                            <p class="infop">
-                            <blockquote>
-                                <code>&lt;!DOCTYPE html&gt;<br>
-                                    &lt;html lang="en"&gt;<br>
-                                    &lt;head&gt;<br>
-                                    &lt;meta charset="UTF-8"&gt;<br>
-                                    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;<br>
-                                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
-                                    &lt;title&gt;<em>Document</em>&lt;/title&gt;<br>
-                                    &nbsp; &lt;style&gt;<br>
-                                    h1 {<br><em>color: blue;</em><br>}<br>
-                                    strong {<br><em>color: red;</em><br>}<br>
-                                    &nbsp; &lt;/style&gt;<br>
-                                    &lt;/head&gt;</code>
-                            </blockquote>
-                            </p>
-                        </div>
-                        <div class="boxtitle">Tag link:</div>
-                        <div class="boxinfo">
-                            <p class="infop">Porém, a forma mais comum, é através da <code>tag link</code>, onde vamos
-                                linkar um documento CSS externo, um outro arquivo para nosso documento HTML, feito da
-                                seguinte forma:
-                            <blockquote>
-                                <code>&lt;link rel="stylesheet" href="style.css&gt;</code>
-                            </blockquote>
-                            Neste caso, o nosso documento CSS se chama style.css e sua relação com o HTML é de
-                            <code>stylesheet</code>.</p>
-                        </div>
-                        <div class="boxtitle">Import:</div>
-                        <div class="boxinfo">
-                            <p class="infop">
-                                A última forma é através do <code>@import</code>, que é uma regra do CSS:
-                            <blockquote>
-                                <code>@import url('https://fonts.googleapis.com/');</code>
-                            </blockquote>
-                            </p>
-                            <p class="infop">Não é recomendado seu uso, pois leva um pouco mais de tempo do que através
-                                da tag link, deixando a página menos responsiva, demorando mais no carregamento. </p>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-                <hr>
-            </div>
-            <div id="A Cascata" class="lesson" title="A Cascata">
-                <h2 id="title" class="title" tabindex="7">A Cascata</h2>
-                <span class="subtitle">Na ordem de aplicações, caso haja algum selector com informações conflitantes, o
-                    mais embaixo é o que será atribuído.</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle">Seu estilo é lido de cima para baixo.</div>
-                        <div class="boxinfo">
-                            <p class="infop">Por exemplo:
-                            <blockquote><code>
-                                    h1 {color: red;}<br>
-                                    h1 {color: blue;}
-                                </code></blockquote>
-                            </p>
-                            <p class="infop">Nesse caso, o <code>blue</code> irá prevalecer pois está abaixo do
-                                <code>red</code>.</p>
-                            <p class="infop">
-                            <ol>São levados em consideração 3 fatores:
-                                <li>Origem do estilo;</li>
-                                <li>Especificidade;</li>
-                                <li>Importância;</li>
-                            </ol>
-                            </p>
-                            <h3 class="minor-title">Origem do estilo:</h3>
-                            <span>Inline > tag style > tag link.
-                            </span>
-                        </div>
-                        <div class="boxtitle">Inline:</div>
-                        <div class="boxinfo">
-                            <p id="inline">
-                                O inline (<code>&lt;style="color: exemplo"&gt;</code>) está direto no HTML, e direto no
-                                código.<br>
-                                Exemplo:
-                            <blockquote><code>&lt;h1 style="color: green"&gt;</code>Exemplo
-                                <code>&lt;/h1&gt;</code><br>
-                                <code>&lt;p&gt;</code>parágrafo
-                                <code>&lt;/p&gt;</code>
-                            </blockquote>
-                            </p>
-                        </div>
-                        <div class="boxtitle">Tag style:</div>
-                        <div class="boxinfo">
-                            <span>A tag style também está no HTML, mas fora do código.</span>
-                            <p class="infop">
-                                Exemplo:
-                            <blockquote>
-                                <code>&lt;style&gt;</code><br>
-                                h1 {color: gray;}<br>
-                                <code>&lt;/style&gt;</code><br>
-                                <code>&lt;h1&gt;</code>Exemplo
-                                <code>&lt;/h1&gt;</code><br>
-                                <code>&lt;p&gt;</code>parágrafo
-                                <code>&lt;/p&gt;</code>
-                            </blockquote>
-                            </p>
-                        </div>
-                        <div class="boxtitle">Tag link:</div>
-                        <div class="boxinfo">
-                            <span>A tag link é o CSS externo linkado ao HTML.</span>
-                            <p class="infop">
-                                Exemplo:
-                            <blockquote>
-                                <code>&lt;link rel="stylesheet" href="css.css"&gt;</code>
-                            </blockquote>
-                            </p>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-                <hr>
-            </div>
-            <div id="Especificidade" class="lesson" title="Especificidade">
-                <h2 id="title" class="title" tabindex="8">Especificidade</h2>
-                <span class="subtitle">É um cálculo matemático, onde cada tipo de seletor e origem de estilo possuem
-                    valores a serem considerados.</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxinfo">
-                            <p>0. <a class="infop" href="#universalselector">Universal selector</a>, combinator e
-                                negation pseudo-class (:not( ))<br>
-                                1. <a class="infop" href="#elementtypeselector">Element type selector</a> e
-                                pseudo-elements (::before, ::after)<br>
-                                10. <a class="infop" href="#classselector">Classes</a> e attribute selectors
-                                ([type="radio"])<br>
-                                100. <a class="infop" href="#idselector">ID selector</a>.<br>
-                                1000. <a class="infop" href="#inline">Inline</a>.</p>
-                        </div>
-                        <div class="boxtitle">Qualquer elemento com cálculo de valor superior irá prevalecer sobre o
-                            efeito cascata.</div>
-                        <div class="boxinfo">
-                            <p class="infop">Exemplo:
-                            <blockquote><code>
-                                    h1 {color: red;}<br>
-                                    h1 {color: blue;}<br>
-                                    * {color: green;}
-                                </code></blockquote>
-                            </p>
-                            <p class="infop">Apesar de estar acima, o <code>h1 {color: blue;}</code> irá prevalecer
-                                sobre o <code>* {color: green;}</code> pois seu valor é 1, enquanto o <code>*</code> tem
-                                valor 0.</p>
-                        </div>
-                        <div class="boxtitle">Seletores podem ser somados para aumentar o seu valor.</div>
-                        <div class="boxinfo">
-                            <p class="infop">Exemplo:
-                            <blockquote><code>
-                                    .class {color: purple;}<br>
-                                    h1 {color: red;}<br>
-                                    h1 .class {color: blue;}<br>
-                                    * {color: green;}
-                                </code></blockquote>
-                            </p>
-                            <p class="infop">Nesse caso, apesar do <code>.class</code> ter valor 10, o
-                                <code>h1 .class</code> se sobressai pois tem valor 11 (1+10).</p>
-                        </div>
-                        <div class="boxtitle">Quando houver duas ou mais origens dentro de uma, elas devem ser
-                            especificadas.</div>
-                        <div class="boxinfo">
-                            <p class="infop">Exemplo:
-                            <blockquote>
-                                <code>&lt;h1 id="title"&gt;</code>Título
-                                <code>&lt;strong&gt;</code>alo
-                                <code>&lt;/strong&gt;</code>
-                                <code>&lt;/h1&gt;</code>
-                            </blockquote>
-                            <blockquote><code>
-                                    #title {color: gray}<br>
-                                    * {color: green}
-                                </code></blockquote>
-                            </p>
-                            <p class="infop">Apesar de ter valor 0, o <code>*</code> será aplicado no "alo" pois o mesmo
-                                não foi especificado no <code>#title</code>.<br>Deveria ficar assim:
-                            <blockquote><code>
-                                    #title,<br>#title strong {color: gray}<br>
-                                    * {color: green}
-                                </code></blockquote>
-                            </p>
-                            <p class="infop">E, dessa forma, o alo ficaria cinza também.</p>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-                <hr>
-            </div>
-            <div id="Regra important" class="lesson" title="Regra important">
-                <h2 id="title" class="title" tabindex="9">Regra important</h2>
-                <span class="subtitle">Sintaxe: <code>!important</code></span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <p class="infop">São raras as ocasiões nas quais se devem usar um important, pois é uma má
-                            prática. Ela quebra o fluxo natural da cascata e das especificidades e pode acabar me
-                            atrapalhando caso eu a deixe em algum lugar no meu código.</p>
-                        <p class="evitar">
-                            Evitar!</p>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-                <hr>
-            </div>
-            <div id="At rules" class="lesson" title="At rules">
-                <h2 id="title" class="title" tabindex="10">At rules</h2>
-                <span class="subtitle">São regras relacionadas ao comportamento do CSS, começa com um sinal de @ seguido
-                    do identificador e do valor.</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <p class="infop">
-                        <ul>São as seguintes:
-                            <li><b>@import</b> serve para incluir um CSS externo.</li>
-                            <li><b>@media</b> são regras condicionais para vários dispositivos.</li>
-                            <li><b>@font-face</b> é pra colocar fontes externas.</li>
-                            <li><b>@keyframes</b> serve para as animations do CSS.</li>
-                        </ul>
-                        </p>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-                <hr>
-            </div>
-            <div id="Shorthand" class="lesson" title="Shorthand">
-                <h2 id="title" class="title" tabindex="11">Shorthand</h2>
-                <span class="subtitle">É a junção de propriedades, para que fiquem de forma resumida e legível.</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxinfo">
-                            <p class="infop">Exemplo de propriedades com e sem o shorthand:
-                            <blockquote><code>
-                                    * {<br>
-                                        /* background properties */<br>
-                                        background-color: #000;<br> 
-                                        background-image: url(images/bg.gif);<br>
-                                        background-repeat: no-repeat;<br>
-                                        background-position: left top;<br>
-                                    <br>
-                                        /* background shorthand */<br>
-                                        background: #000 url(images/bg.gif) no-repeat left top;<br>
-                                    <br>
-                                        /* font properties */<br>
-                                        font-style: italic;<br>
-                                        font-weight: bold;<br>
-                                        font-size: .8em;<br>
-                                        line-height: 1.2;<br> 
-                                        font-family: Arial, sans-serif;<br>
-                                    <br>
-                                        /* font shorthand */
-                                        font: bold italic .8em/1.2 Arial, sans-serif;<br>
-                                    }
-                                </code></blockquote>
-                            </p>
-                        </div>
-                        <div class="boxtitle">Algumas características do shorthand:</div>
-                        <div class="boxinfo">
-                            <p class="infop">Não irá considerar propriedades anteriores, ou seja, caso faça um
-                                shorthand, apenas ele será considerado, quaisquer propriedades anteriores serão
-                                substituídas pelas do shorthand.</p>
-                            <p class="infop">Os valores que não forem especificados irão assumir o valor padrão.</p>
-                            <p class="infop">Por fim, geralmente, a ordem descrita não importa, mas, caso haja muitas
-                                propriedades com valores semelhantes, poderemos encontrar problemas.</p>
-                            <p class="infop"><a
-                                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties">Shorthand
-                                    Properties</a></p>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-                <hr>
-            </div>
-            <div id="Funções" class="lesson" title="Funções">
-                <h2 id="title" class="title" tabindex="12">Funções</h2>
-                <span class="subtitle">Um tipo de valor existente no CSS, é estruturado com um nome seguido de abre e
-                    fecha parênteses. Recebe um argumento, que são seus valores.</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <p class="infop">Um exemplo de função é:
-                        <blockquote><code>
-                                color: rgb(255, 0, 100);
-                            </code></blockquote>
-                        </p>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-                <hr>
-            </div>
-            <div id="DevTools" class="lesson" title="DevTools">
-                <h2 id="title" class="title" tabindex="13">DevTools</h2>
-                <span class="subtitle">F12</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <p class="infop">Uma das ferramentas mais importantes para o desenvolvedor CSS, o DevTools é
-                            aberto ao apertar F12 em uma página web.</p>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-                <hr>
-            </div>
-            <div id="Cuidados com a escrita" class="lesson" title="Cuidados com a escrita">
-                <h2 id="title" class="title" tabindex="14">Cuidados com a escrita</h2>
-                <div id="info" class="info">
-                    <div class="box">
-                        <p class="infop">É importante prestar atenção à sua escrita do CSS, identificar seu código para
-                            facilitar a leitura, e mais importante, manter tudo organizado e funcionando!</p>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-                <hr>
-            </div>
-            <div id="Vendor prefixes" class="lesson" title="Vendor prefixes">
-                <h2 id="title" class="title" tabindex="15">Vendor prefixes</h2>
-                <span class="subtitle">São coisas que permitem que browsers adicionem features a fim de colocar em uso
-                    alguma novidade que vemos no CSS.</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <p class="infop">Exemplos:
-                        <blockquote><code>
-                                p {<br>
-                                    -webkit-background-clip: text; /*Chrome, Safari, iOS e Android */<br>
-                                    -moz-background-clip: text; /* Mozilla (Firefox) */<br>
-                                    -ms-background-clip: text; /* Internet Explorer ou Edge */<br>
-                                    -o-background-clip: text; /* Opera */<br>
-                                }
-                            </code></blockquote>
-                        </p>
-                        <p class="infop">É possível consultar se a feature pode ser utilizada através dos sites:<br>
-                            <a href="http://ireade.github.io/which-vendor-prefix">Ireade vendor prefix</a><br>
-                            <a href="http://caniuse.com/">Caniuse</a>
-                        </p>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-                <hr>
-            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+          <hr />
         </div>
-    </div>
-</body>
+        <div id="Comentários" class="lesson" title="Comentários">
+          <h2 id="title" class="title" tabindex="2">Comentários</h2>
+          <span class="subtitle">Os comentários, no CSS, abrem com /* e terminam com */.</span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxinfo">
+                <p class="infop">Eles não irão afetar o meu código, e podem me ajudar a lembrar de, ou agrupar e organizá-lo, além de deixar dicas para a leitura e ajudar outros devs a entende-lo.</p>
+                <p class="infop">Também posso usar um comentário para desabilitar partes do código, o que possibilitaria um debug mais fácil (ou caso deseje fazer alguma alteração sem quebrá-lo).</p>
+                <p class="infop"></p>
+                <blockquote>
+                  <code> /* Exemplo de código de comentário em um arquivo .css */ </code>
+                </blockquote>
+              </div>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+          <hr />
+        </div>
+        <div id="Anatomia" class="lesson" title="Anatomia">
+          <h2 id="title" class="title" tabindex="3">Anatomia</h2>
+          <span class="subtitle">O nome de algum elemento, uma chave aberta e uma fechada embaixo, e no meio vamos ter propriedades e seus valores.</span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxinfo">
+                <p class="infop">
+                  Toda propriedade é seguida de :(dois pontos) e um valor, e um ; (ponto e vírgula) para encerrar essa ideia de valor.<br />
+                  Por exemplo:
+                </p>
 
+                <blockquote>
+                  <code>
+                    h1 {<br />
+                    color: blue;<br />
+                    font-size: 60px;<br />
+                    background: gray;<br />}
+                  </code>
+                </blockquote>
+              </div>
+              <div class="boxtitle">Os elementos do CSS são então:</div>
+              <div class="boxinfo">
+                <p class="infop">
+                  <strong>Selectors:</strong> Nesse caso o h1, que vai buscar no HTML a tag h1 e aplicar as mudanças.<br />
+                  <strong>Declaration:</strong> As chaves e tudo dentro delas.<br />
+                  <strong>Properties:</strong> As coisas a serem alteradas.<br />
+                  <strong>Property values:</strong> Os novos valores que estamos atribuindo a tais propriedades.
+                </p>
+              </div>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+          <hr />
+        </div>
+        <div id="Seletores" class="lesson" title="Seletores">
+          <h2 id="title" class="title" tabindex="4">Seletores</h2>
+          <span class="subtitle">Os seletores são o que conectam um elemento HTML com o CSS.</span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">Existem vários tipos:</div>
+              <div class="boxinfo">
+                <p class="infop">
+                  <strong id="elementtypeselector">Element/Type selector</strong>, que usei na última aula <code>'h1, h2, p, div'</code>;<br />
+                  <strong id="universalselector">Universal Selector</strong>, que é um * (asterisco);<br />
+                  <strong id="idselector">ID Selector</strong>, que é um # (cardinal, jogo da velha) <code>'#box, #container'</code>;<br />
+                  <strong id="classselector">Class Selector</strong>, que é um . (ponto) seguido do nome da classe <code>'.red, .m-4'</code>;<br />
+                  ... e mais alguns que vou entender mais tarde no curso.
+                </p>
+              </div>
+              <div class="boxtitle">Exemplos:</div>
+              <div class="boxinfo">
+                <section>
+                  HTML:
+                  <blockquote>
+                    <code>
+                      &lt;p class="exemploidselector"&gt;<br />
+                      Exemplo de &lt;b&gt;ID Selector.&lt;/b&gt;<br />
+                      &lt;/p&gt;
+                    </code>
+                  </blockquote>
+                  CSS:
+                  <blockquote>
+                    <code>
+                      .exemploidselector, .exemploidselector b {<br />
+                      &nbsp;&nbsp; color: red;<br />
+                      &nbsp;&nbsp; font-size: 25px;<br />
+                      &nbsp;&nbsp; background: black;<br />&nbsp;&nbsp;}
+                    </code>
+                  </blockquote>
+                </section>
+              </div>
+              <div class="boxtitle">Resultado:</div>
+              <div class="boxinfo">
+                <p class="exemploidselector">Exemplo de <b>ID Selector.</b></p>
+              </div>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+          <hr />
+        </div>
+        <div id="Box model" class="lesson" title="Box model">
+          <h2 id="title" class="title" tabindex="5">Box model</h2>
+          <span class="subtitle">O CSS trabalha com essa ideia de caixas, chamada "box model".</span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">O que é:</div>
+              <div class="boxinfo">
+                <p class="infop">O box model é uma caixa retangular. Essa caixa possui as mesmas propriedades de uma caixa 2D, e tem como propriedades:</p>
+                <p class="infop"></p>
+                <blockquote>
+                  Tamanho (largura x altura): <code>width</code> e <code>height</code>, respectivamente;<br />
+                  Conteúdo: o <code>content</code>;<br />
+                  Bordas: o <code>border</code>;<br />
+                  Preenchimento interno: o <code>padding</code>;<br />
+                  Espaços fora da caixa: a <code>margin</code>.
+                </blockquote>
+
+                <p class="infop">Quase todo elemento de uma página é considerado uma caixa: Posicionamento, tamanhos, espaçamentos, bordas, cores, então, em suma, elementos HTML são caixas, assim como quase tudo no CSS.</p>
+                <p class="infop">As caixas podem ficar ao lado uma da outra, ou acima.</p>
+              </div>
+              <div class="boxtitle">Exemplo:</div>
+              <div class="boxinfo">
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace18">
+                    <strong>HTML:</strong>
+                    <blockquote>
+                      <code>
+                        &lt;div class="divtest"&gt;<br />
+                        &nbsp;&nbsp;&lt;h3 class="h3id"&gt;<em>Aprenda HTML</em>&lt;/h3&gt;<br />
+                        &nbsp;&nbsp;&lt;div class="boxmodeltest"&gt;<br />
+                        &nbsp;&nbsp;&nbsp;&lt;p class="examplebox"&gt;<em>Empodere-se da capacidade de criar.</em>&lt;/p&gt;<br />
+                        &nbsp;&nbsp;&nbsp;&lt;button class="button" style="color: white;"&gt;<em>Embarcar!</em>&lt;/button&gt;<br />
+                        &nbsp;&nbsp;&lt;/div&gt;<br />
+                        &nbsp;&lt;/div&gt;<br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace10">
+                    <strong>CSS:</strong>
+                    <blockquote>
+                      <code>
+                        <em>.divtest</em>{display:<em>grid</em>;<br />width:<em>50vw</em>;<br />align-items:<em>center</em>;<br />justify-content:<em>space-between</em>;}<br />
+                        <em>.h3id</em>{margin:<em>20px</em>;<br />padding:<em>20px</em>;<br />text-align:<em>20px</em>;<br />font-size:<em>30px</em>;}<br />
+                        <em>.boxmodeltest</em>{display:<em>flex</em>;}<br />
+                        <em>.examplebox</em>{padding-top:<em>5px</em>;<br />font-size:<em>17px</em>;}<br />
+                        <em>.button</em>{background-color:<em>purple</em>;<br />border-color:<em>purple</em>;<br />font-size:<em>17px</em>;}
+                      </code>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <div class="boxtitle">Resultado:</div>
+              <div class="boxinfo">
+                <div class="divtest">
+                  <h3 class="h3id">Aprenda HTML</h3>
+                  <div class="boxmodeltest">
+                    <p class="examplebox">Empodere-se da capacidade de criar.</p>
+                    <button class="button" style="color: white">Embarcar!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Origem do CSS" class="lesson" title="Origem do CSS">
+          <h2 id="title" class="title" tabindex="6">Origem do CSS</h2>
+          <span class="subtitle">Vamos primeiro aprender a adicionar um estilo no nosso documento HTML.</span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">Inline:</div>
+              <div class="boxinfo">
+                <p class="infop">Começaremos pelo inline, que é dentro do próprio HTML, através da tag <code>style</code>, utilizada das seguintes formas:</p>
+
+                <blockquote>
+                  <code>&lt;h3 style="color: blue;"&gt;<em>Título</em><br />&lt;strong style="color: red;"&gt;<em>alo</em>&lt;/strong&gt;<br />&lt;/h3&gt;</code>
+                </blockquote>
+              </div>
+              <div class="boxtitle">Ou na head do HTML, assim:</div>
+              <div class="boxinfo">
+                <p class="infop"></p>
+                <blockquote>
+                  <code
+                    >&lt;!DOCTYPE html&gt;<br />
+                    &lt;html lang="en"&gt;<br />
+                    &lt;head&gt;<br />
+                    &lt;meta charset="UTF-8"&gt;<br />
+                    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;<br />
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br />
+                    &lt;title&gt;<em>Document</em>&lt;/title&gt;<br />
+                    &nbsp; &lt;style&gt;<br />
+                    h1 {<br /><em>color: blue;</em><br />}<br />
+                    strong {<br /><em>color: red;</em><br />}<br />
+                    &nbsp; &lt;/style&gt;<br />
+                    &lt;/head&gt;</code
+                  >
+                </blockquote>
+              </div>
+              <div class="boxtitle">Tag link:</div>
+              <div class="boxinfo">
+                <p class="infop">Porém, a forma mais comum, é através da <code>tag link</code>, onde vamos linkar um documento CSS externo, um outro arquivo para nosso documento HTML, feito da seguinte forma:</p>
+
+                <blockquote>
+                  <code>&lt;link rel="stylesheet" href="style.css&gt;</code>
+                </blockquote>
+                Neste caso, o nosso documento CSS se chama style.css e sua relação com o HTML é de
+                <code>stylesheet</code>.
+              </div>
+              <div class="boxtitle">Import:</div>
+              <div class="boxinfo">
+                <p class="infop">A última forma é através do <code>@import</code>, que é uma regra do CSS:</p>
+
+                <blockquote>
+                  <code>@import url('https://fonts.googleapis.com/');</code>
+                </blockquote>
+
+                <p class="infop">Não é recomendado seu uso, pois leva um pouco mais de tempo do que através da tag link, deixando a página menos responsiva, demorando mais no carregamento.</p>
+              </div>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+          <hr />
+        </div>
+        <div id="A Cascata" class="lesson" title="A Cascata">
+          <h2 id="title" class="title" tabindex="7">A Cascata</h2>
+          <span class="subtitle">Na ordem de aplicações, caso haja algum selector com informações conflitantes, o mais embaixo é o que será atribuído.</span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">Seu estilo é lido de cima para baixo.</div>
+              <div class="boxinfo">
+                <p class="infop">Por exemplo:</p>
+                <blockquote>
+                  <code>
+                    h1 {color: red;}<br />
+                    h1 {color: blue;}
+                  </code>
+                </blockquote>
+
+                <p class="infop">Nesse caso, o <code>blue</code> irá prevalecer pois está abaixo do <code>red</code>.</p>
+                <p class="infop"></p>
+                <ol>
+                  São levados em consideração 3 fatores:
+                  <li>Origem do estilo;</li>
+                  <li>Especificidade;</li>
+                  <li>Importância;</li>
+                </ol>
+
+                <h3 class="minor-title">Origem do estilo:</h3>
+                <span>Inline > tag style > tag link. </span>
+              </div>
+              <div class="boxtitle">Inline:</div>
+              <div class="boxinfo">
+                <p id="inline">
+                  O inline (<code>&lt;style="color: exemplo"&gt;</code>) está direto no HTML, e direto no código.<br />
+                  Exemplo:
+                </p>
+
+                <blockquote>
+                  <code>&lt;h1 style="color: green"&gt;</code>Exemplo <code>&lt;/h1&gt;</code><br />
+                  <code>&lt;p&gt;</code>parágrafo
+                  <code>&lt;/p&gt;</code>
+                </blockquote>
+              </div>
+              <div class="boxtitle">Tag style:</div>
+              <div class="boxinfo">
+                <span>A tag style também está no HTML, mas fora do código.</span>
+                <p class="infop">Exemplo:</p>
+
+                <blockquote>
+                  <code>&lt;style&gt;</code><br />
+                  h1 {color: gray;}<br />
+                  <code>&lt;/style&gt;</code><br />
+                  <code>&lt;h1&gt;</code>Exemplo <code>&lt;/h1&gt;</code><br />
+                  <code>&lt;p&gt;</code>parágrafo
+                  <code>&lt;/p&gt;</code>
+                </blockquote>
+              </div>
+              <div class="boxtitle">Tag link:</div>
+              <div class="boxinfo">
+                <span>A tag link é o CSS externo linkado ao HTML.</span>
+                <p class="infop">Exemplo:</p>
+
+                <blockquote>
+                  <code>&lt;link rel="stylesheet" href="css.css"&gt;</code>
+                </blockquote>
+              </div>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+          <hr />
+        </div>
+        <div id="Especificidade" class="lesson" title="Especificidade">
+          <h2 id="title" class="title" tabindex="8">Especificidade</h2>
+          <span class="subtitle">É um cálculo matemático, onde cada tipo de seletor e origem de estilo possuem valores a serem considerados.</span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxinfo">
+                <p>
+                  0.
+                  <a class="infop" href="#universalselector">Universal selector</a>, combinator e negation pseudo-class (:not( ))<br />
+                  1.
+                  <a class="infop" href="#elementtypeselector">Element type selector</a>
+                  e pseudo-elements (::before, ::after)<br />
+                  10. <a class="infop" href="#classselector">Classes</a> e attribute selectors ([type="radio"])<br />
+                  100.
+                  <a class="infop" href="#idselector">ID selector</a>.<br />
+                  1000. <a class="infop" href="#inline">Inline</a>.
+                </p>
+              </div>
+              <div class="boxtitle">Qualquer elemento com cálculo de valor superior irá prevalecer sobre o efeito cascata.</div>
+              <div class="boxinfo">
+                <p class="infop">Exemplo:</p>
+                <blockquote>
+                  <code>
+                    h1 {color: red;}<br />
+                    h1 {color: blue;}<br />
+                    * {color: green;}
+                  </code>
+                </blockquote>
+
+                <p class="infop">Apesar de estar acima, o <code>h1 {color: blue;}</code> irá prevalecer sobre o <code>* {color: green;}</code> pois seu valor é 1, enquanto o <code>*</code> tem valor 0.</p>
+              </div>
+              <div class="boxtitle">Seletores podem ser somados para aumentar o seu valor.</div>
+              <div class="boxinfo">
+                <p class="infop">Exemplo:</p>
+                <blockquote>
+                  <code>
+                    .class {color: purple;}<br />
+                    h1 {color: red;}<br />
+                    h1 .class {color: blue;}<br />
+                    * {color: green;}
+                  </code>
+                </blockquote>
+
+                <p class="infop">Nesse caso, apesar do <code>.class</code> ter valor 10, o <code>h1 .class</code> se sobressai pois tem valor 11 (1+10).</p>
+              </div>
+              <div class="boxtitle">Quando houver duas ou mais origens dentro de uma, elas devem ser especificadas.</div>
+              <div class="boxinfo">
+                <p class="infop">Exemplo:</p>
+                <blockquote>
+                  <code>&lt;h1 id="title"&gt;</code>Título <code>&lt;strong&gt;</code>alo
+                  <code>&lt;/strong&gt;</code>
+                  <code>&lt;/h1&gt;</code>
+                </blockquote>
+                <blockquote>
+                  <code>
+                    #title {color: gray}<br />
+                    * {color: green}
+                  </code>
+                </blockquote>
+
+                <p class="infop">Apesar de ter valor 0, o <code>*</code> será aplicado no "alo" pois o mesmo não foi especificado no <code>#title</code>.<br />Deveria ficar assim:</p>
+
+                <blockquote>
+                  <code>
+                    #title,<br />#title strong {color: gray}<br />
+                    * {color: green}
+                  </code>
+                </blockquote>
+
+                <p class="infop">E, dessa forma, o alo ficaria cinza também.</p>
+              </div>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+          <hr />
+        </div>
+        <div id="Regra important" class="lesson" title="Regra important">
+          <h2 id="title" class="title" tabindex="9">Regra important</h2>
+          <span class="subtitle">Sintaxe: <code>!important</code></span>
+          <div id="info" class="info">
+            <div class="box">
+              <p class="infop">São raras as ocasiões nas quais se devem usar um important, pois é uma má prática. Ela quebra o fluxo natural da cascata e das especificidades e pode acabar me atrapalhando caso eu a deixe em algum lugar no meu código.</p>
+              <p class="evitar">Evitar!</p>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+          <hr />
+        </div>
+        <div id="At rules" class="lesson" title="At rules">
+          <h2 id="title" class="title" tabindex="10">At rules</h2>
+          <span class="subtitle">São regras relacionadas ao comportamento do CSS, começa com um sinal de @ seguido do identificador e do valor.</span>
+          <div id="info" class="info">
+            <div class="box">
+              <p class="infop"></p>
+              <ul>
+                São as seguintes:
+                <li><b>@import</b> serve para incluir um CSS externo.</li>
+                <li><b>@media</b> são regras condicionais para vários dispositivos.</li>
+                <li><b>@font-face</b> é pra colocar fontes externas.</li>
+                <li><b>@keyframes</b> serve para as animations do CSS.</li>
+              </ul>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+          <hr />
+        </div>
+        <div id="Shorthand" class="lesson" title="Shorthand">
+          <h2 id="title" class="title" tabindex="11">Shorthand</h2>
+          <span class="subtitle">É a junção de propriedades, para que fiquem de forma resumida e legível.</span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxinfo">
+                <p class="infop">Exemplo de propriedades com e sem o shorthand:</p>
+                <blockquote>
+                  <code>
+                    * {<br />
+                    /* background properties */<br />
+                    background-color: #000;<br />
+                    background-image: url(images/bg.gif);<br />
+                    background-repeat: no-repeat;<br />
+                    background-position: left top;<br />
+                    <br />
+                    /* background shorthand */<br />
+                    background: #000 url(images/bg.gif) no-repeat left top;<br />
+                    <br />
+                    /* font properties */<br />
+                    font-style: italic;<br />
+                    font-weight: bold;<br />
+                    font-size: .8em;<br />
+                    line-height: 1.2;<br />
+                    font-family: Arial, sans-serif;<br />
+                    <br />
+                    /* font shorthand */ font: bold italic .8em/1.2 Arial, sans-serif;<br />
+                    }
+                  </code>
+                </blockquote>
+              </div>
+              <div class="boxtitle">Algumas características do shorthand:</div>
+              <div class="boxinfo">
+                <p class="infop">Não irá considerar propriedades anteriores, ou seja, caso faça um shorthand, apenas ele será considerado, quaisquer propriedades anteriores serão substituídas pelas do shorthand.</p>
+                <p class="infop">Os valores que não forem especificados irão assumir o valor padrão.</p>
+                <p class="infop">Por fim, geralmente, a ordem descrita não importa, mas, caso haja muitas propriedades com valores semelhantes, poderemos encontrar problemas.</p>
+                <p class="infop">
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties">Shorthand Properties</a>
+                </p>
+              </div>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+          <hr />
+        </div>
+        <div id="Funções" class="lesson" title="Funções">
+          <h2 id="title" class="title" tabindex="12">Funções</h2>
+          <span class="subtitle">Um tipo de valor existente no CSS, é estruturado com um nome seguido de abre e fecha parênteses. Recebe um argumento, que são seus valores.</span>
+          <div id="info" class="info">
+            <div class="box">
+              <p class="infop">Um exemplo de função é:</p>
+              <blockquote>
+                <code> color: rgb(255, 0, 100); </code>
+              </blockquote>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+          <hr />
+        </div>
+        <div id="DevTools" class="lesson" title="DevTools">
+          <h2 id="title" class="title" tabindex="13">DevTools</h2>
+          <span class="subtitle">F12</span>
+          <div id="info" class="info">
+            <div class="box">
+              <p class="infop">Uma das ferramentas mais importantes para o desenvolvedor CSS, o DevTools é aberto ao apertar F12 em uma página web.</p>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+          <hr />
+        </div>
+        <div id="Cuidados com a escrita" class="lesson" title="Cuidados com a escrita">
+          <h2 id="title" class="title" tabindex="14">Cuidados com a escrita</h2>
+          <div id="info" class="info">
+            <div class="box">
+              <p class="infop">É importante prestar atenção à sua escrita do CSS, identificar seu código para facilitar a leitura, e mais importante, manter tudo organizado e funcionando!</p>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+          <hr />
+        </div>
+        <div id="Vendor prefixes" class="lesson" title="Vendor prefixes">
+          <h2 id="title" class="title" tabindex="15">Vendor prefixes</h2>
+          <span class="subtitle">São coisas que permitem que browsers adicionem features a fim de colocar em uso alguma novidade que vemos no CSS.</span>
+          <div id="info" class="info">
+            <div class="box">
+              < class="infop">Exemplos:
+              <blockquote>
+                <code>
+                  p {<br />
+                  -webkit-background-clip: text; /*Chrome, Safari, iOS e Android */<br />
+                  -moz-background-clip: text; /* Mozilla (Firefox) */<br />
+                  -ms-background-clip: text; /* Internet Explorer ou Edge */<br />
+                  -o-background-clip: text; /* Opera */<br />
+                  }
+                </code>
+              </blockquote>
+
+              <p class="infop">
+                É possível consultar se a feature pode ser utilizada através dos sites:<br />
+                <a href="http://ireade.github.io/which-vendor-prefix">Ireade vendor prefix</a><br />
+                <a href="http://caniuse.com/">Caniuse</a>
+              </p>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+          <hr />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

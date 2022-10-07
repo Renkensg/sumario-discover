@@ -1,598 +1,605 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Lato:wght@300&family=Lora:ital@1&family=Quicksand&family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ver e ouvir</title>
-    <link rel="stylesheet" href="./cssglobal.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Lato:wght@300&family=Lora:ital@1&family=Quicksand&family=Source+Serif+Pro:wght@300&display=swap"
-        rel="stylesheet">
-</head>
-
-<body id="body" class="body">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+    <link rel="stylesheet" href="./cssglobal.css" />
+  </head>
+  <body id="body" class="body">
     <div id="main-document-head-container" class="main-document-head-container">
-        <header class="main-document-head-container top-navigation">
-            <div class="container">
-                <a href="https://renkensg.github.io/sumario-discover/" id="logo" class="logo" title="Homepage | Sumário">
-                    <img src="https://icon-library.com/images/icon-for-home/icon-for-home-1.jpg"
-                        alt="Home button with a blue background" width="35px">
-                </a>
-                <h1 class="título" id="título" title="Ver e ouvir">Posso ver e ouvir o HTML</h1>
-            </div>
-        </header>
-        <div id="glossário" class="glossário" title="Glossário">
-            <div id="autofitcol10px índice" class="autofitcol10px índice">
-                <div class="elevatedbox titlecolumngrid boxspace15">
-                    <h4 class="titlecolumngrid">Áudio e Vídeo</h4>
-                    <ol class="bodycolumngrid indol">
-                        <li><a href="#Vídeo">Vídeo</a></li>
-                        <li><a href="#Áudio">Áudio</a></li>
-                        <li><a href="#Iframe">Iframe</a></li>
-                    </ol>
-                </div>
-                <div class="elevatedbox titlecolumngrid boxspace15">
-                    <h4 class="titlecolumngrid">Images</h4>
-                    <ol class="bodycolumngrid indol">
-                        <li><a href="#Images">Images</a></li>
-                        <li><a href="#Background image">Background image</a></li>
-                        <li><a href="#Figures">Figures</a></li>
-                        <li><a href="#Intro de SVG">Intro de SVG</a></li>
-                        <li><a href="#SVG na Prática">SVG na Prática</a></li>
-                    </ol>
-                </div>
-            </div>
+      <header class="main-document-head-container top-navigation">
+        <div class="container">
+          <a href="https://renkensg.github.io/sumario-discover/" id="logo" class="logo" title="Homepage | Sumário">
+            <img src="https://icon-library.com/images/icon-for-home/icon-for-home-1.jpg" alt="Home button with a blue background" width="35px" />
+          </a>
+          <h1 class="título" id="título" title="Ver e ouvir">Posso ver e ouvir o HTML</h1>
         </div>
-    </div><br>
-    <hr>
-    <div id="body-div" class="body-div">
-        <div id="segmento" class="segmento" title="Áudio e Vídeo">
-            <div id="Vídeo" class="lesson" title="Vídeo | Áudio e Vídeo">
-                <h2 id="title" class="title" tabindex="">Vídeo</h2>
-                <span class="subtitle">Inserir vídeo no HTML para deixá-lo mais rico.</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle">Como fazer?</div>
-                        <div class="boxinfo">
-                            <ol>
-                                <li>A tag<code>&lt;video&gt;</code>será adicionada e serão adicionados elementos dentro
-                                    dela;</li>
-                                <li>O elemento<code>src=""</code>indica a fonte, é o mais importante;</li>
-                                <li>O elemento<code>controls</code>fará aparecer controles como pause, som,
-                                    fullscreen...</li>
-                                <li>Se não funcionar?</li>
-                                <ol>
-                                    <li>Posso adicionar uma tag<code>p</code> para direcionar o usuário para outra URL
-                                        ou para fazer o download..</li>
-                                    <li>Posso adicionar a tag<code>&lt;source&gt;</code>;</li>
-                                    <ul>
-                                        <li>Ao fazer isso, transfere-se o elemento<code>src=""</code> da
-                                            tag<code>&lt;video&gt;</code> para a tag<code>&lt;source&gt;</code>;</li>
-                                        <li>O elemento<code>type=""</code>auxiliará o browser a entender o arquivo. No
-                                            caso,<code>type="video/mp4"</code>; </li>
-                                    </ul>
-                                    <li>Encontrar diversos formatos de Media type no MDN:</li>
-                                    <ul>
-                                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats"
-                                                target="_blank">MDN | Media type and format guide</a></li>
-                                    </ul>
-                                </ol>
-                                <li>O elemento<code>width</code>para largura também pode ser adicionado;
-                                <li>O elemento<code>height</code>para altura;</li>
-                                <li>O elemento<code>autoplay</code>(dependendo do browser, não será obedecido);</li>
-                                <li>O elemento<code>preload</code>que fará a pré leitura do vídeo de maneira
-                                    automatizada, ou carregará só o básico, ou não fará nada até que o usuário aperte
-                                    algum botão;</li>
-                                <li>O elemento<code>loop</code>vai tocar o vídeo novamente quando o mesmo acabar
-                                    (depende do browser);</li>
-                                <li>O elemento<code>muted</code>para o vídeo começar mutado (as vezes, acrescentar o
-                                    muted faz o autoplay funcionar em determinados browsers);</li>
-                                <li>O elemento<code>poster</code>permite por uma imagem de fundo antes dele começar.
-                                </li>
-                            </ol><br>
-                        </div>
-                        <div class="boxtitle">Exemplo:</div>
-                        <div class="boxinfo">
-                            <p class="infop">Pode não funcionar, dependendo do browser.</p>
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace17">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;video controls autoplay muted height="<em>200px</em>"&gt;<br>
-                                        &nbsp; &lt;source src="<em>./assets-example/rocket.mp4</em>" type="<em>video/mp4</em>"&gt;<br>
-                                        &lt;/video&gt;<br>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace13">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <video controls autoplay muted height="200px">
-                                        <source src="./assets-example/rocket.mp4" type="video/mp4">
-                                        <p>Este browser não suporta vídeo, baixe-o aqui.</p>
-                                    </video>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
-            <div id="Áudio" class="lesson" title="Áudio | Áudio e Vídeo">
-                <h2 id="title" class="title" tabindex="">Áudio</h2>
-                <span class="subtitle">Inserir áudio no HTML para deixá-lo mais rico.</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle">Como fazer?</div>
-                        <div class="boxinfo">
-                            <ol>
-                                <li>A tag<code>&lt;áudio&gt;</code>será adicionada e serão adicionados elementos dentro
-                                    dela;</li>
-                                <li>O elemento<code>src=""</code>indica a fonte, é o mais importante;</li>
-                                <li>O elemento<code>controls</code>fará aparecer controles como pause, volume...</li>
-                                <li>Se não funcionar?</li>
-                                <ol>
-                                    <li>Posso adicionar uma tag<code>p</code> para direcionar o usuário para outra URL
-                                        ou para fazer o download..</li>
-                                    <li>Posso adicionar a tag<code>&lt;source&gt;</code>;</li>
-                                    <ul>
-                                        <li>Ao fazer isso, transfere-se o elemento<code>src=""</code> da
-                                            tag<code>&lt;audio&gt;</code> para a tag<code>&lt;source&gt;</code>;</li>
-                                        <li>O elemento<code>type=""</code>auxiliará o browser a entender o arquivo. No
-                                            caso,<code>type="audio/mp3"</code>ou<code>type="audio/ogg"</code>; </li>
-                                    </ul>
-                                    <li>Encontrar diversos formatos de Media type no MDN:</li>
-                                    <ul>
-                                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats"
-                                                target="_blank">MDN | Media type and format guide</a></li>
-                                    </ul>
-                                </ol>
-                                <li>O elemento<code>hidden</code>esconde os controls do áudio;
-                                <li>O elemento<code>autoplay</code>executará automaticamente (dependendo do browser, não
-                                    será obedecido);</li>
-                                <li>O elemento<code>preload</code>fará a pré leitura do áudio de maneira automatizada,
-                                    ou carregará só o básico, ou não fará nada até que o usuário aperte algum botão;
-                                </li>
-                                <li>O elemento<code>loop</code>vai tocar o áudio novamente quando o mesmo acabar
-                                    (depende do browser);</li>
-                                <li>O elemento<code>muted</code>para o áudio começar mutado (para audios, acrescentar o
-                                    muted faz o autoplay não funcionar em determinados browsers);</li>
-                            </ol><br>
-                        </div>
-                        <div class="boxtitle">Exemplo:</div>
-                        <div class="boxinfo">
-                            <p class="infop">Pode não funcionar, dependendo do browser.</p>
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace17">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;audio controls autoplay muted height="<em>200px</em>"&gt;<br>
-                                        &nbsp; &lt;source src="<em>./assets-example/viper.mp3</em>" type="<em>audio/mp3</em>"&gt;<br>
-                                        &nbsp; &lt;source src="<em>./assets-example/viper.ogg</em>" type="<em>audio/ogg</em>"&gt;<br>
-                                        &nbsp; &lt;p&gt;<em>Seu navegador não suporta áudio.</em>&lt;/p&gt;<br>
-                                        &lt;/audio&gt;<br>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace10">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <audio controls preload="none">
-                                        <source src="./assets-example/viper.mp3" type="audio/mp3">
-                                        <source src="./assets-example/viper.ogg" type="audio/ogg">
-                                        <p>Seu navegador não suporta áudio.</p>
-                                    </audio>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
-            <div id="Iframe" class="lesson" title="Iframe | Áudio e Vídeo">
-                <h2 id="title" class="title" tabindex="">Iframe</h2>
-                <span class="subtitle">Inline Frame Element</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle">O que é?</div>
-                        <div class="boxinfo">
-                            <p class="infop">Um elemento que vai trazer conteúdo externo.</p>
-                            <ol>
-                                <li>A tag<code>&lt;iframe&gt;</code>será adicionada e serão adicionados elementos dentro
-                                    dela;</li>
-                                <li>O elemento<code>src=""</code>indica a fonte, é o mais importante;</li>
-                                <li>O elemento<code>frameborder</code>se haverá ou não uma borda no frame;</li>
-                                <li>O elemento<code>width</code>dará a largura;</li>
-                                <li>O elemento<code>height</code>dará a altura;</li>
-                                <li>O elemento<code>title</code>para acessibilidade;</li>
-                                <li>O elemento<code>allow</code>trará configurações específicas de onde vem o conteúdo,
-                                    no caso, estará permitindo algumas políticas do Youtube;</li>
-                                <li>O elemento<code>allowfullscreen</code>permitirá deixar o vídeo em tela cheia;</li>
-                            </ol><br>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe"
-                                target="_blank">MDN | iframe</a>
-                            <br><br>
-                        </div>
-                        <div class="boxtitle">Exemplo com vídeo:</div>
-                        <div class="boxinfo">
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace14">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;iframe<br> width="<em>576</em>"<br> height="<em>315</em>"<br> src="<em><abbr title="https://www.youtube-nocookie.com/embed/meKQIkPRUhE">exemplo</abbr></em>"<br> title="<em>YouTube video player</em>"<br> frameborder="<em>0</em>"<br> allow="<em>accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture</em>"<br> allowfullscreen&gt;<br>
-                                        &lt;/iframe&gt;<br>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace18">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <iframe width="575" height="315"
-                                        src="https://www.youtube-nocookie.com/embed/meKQIkPRUhE"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div><br>
-                        <div class="boxtitle">Exemplo com mapa:</div>
-                        <div class="boxinfo">
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace14">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;iframe<br> width="<em>576</em>"<br> height="<em>315</em>"<br> src="<em><abbr title="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230483.7742018825!2d-49.42988129579527!3d-25.494740159965506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce35351cdb3dd%3A0x6d2f6ba5bacbe809!2sCuritiba%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1661801902738!5m2!1spt-BR!2sbr">exemplo</abbr></em>"<br> style="<em>border:0;</em>"<br> allowfullscreen=""<br> loading="<em>lazy</em>"&gt;<br> referrerpolicy="<em>no-referrer-when-downgrade</em>"&gt;<br>
-                                        &lt;/iframe&gt;<br>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace18">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230483.7742018825!2d-49.42988129579527!3d-25.494740159965506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce35351cdb3dd%3A0x6d2f6ba5bacbe809!2sCuritiba%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1661801902738!5m2!1spt-BR!2sbr"
-                                        width="576" height="315" style="border:0;" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
+      </header>
+      <div id="glossário" class="glossário" title="Glossário">
+        <div id="autofitcol10px índice" class="autofitcol10px índice">
+          <div class="elevatedbox titlecolumngrid boxspace15">
+            <h4 class="titlecolumngrid">Áudio e Vídeo</h4>
+            <ol class="bodycolumngrid indol">
+              <li><a href="#Vídeo">Vídeo</a></li>
+              <li><a href="#Áudio">Áudio</a></li>
+              <li><a href="#Iframe">Iframe</a></li>
+            </ol>
+          </div>
+          <div class="elevatedbox titlecolumngrid boxspace15">
+            <h4 class="titlecolumngrid">Images</h4>
+            <ol class="bodycolumngrid indol">
+              <li><a href="#Images">Images</a></li>
+              <li><a href="#Background image">Background image</a></li>
+              <li><a href="#Figures">Figures</a></li>
+              <li><a href="#Intro de SVG">Intro de SVG</a></li>
+              <li><a href="#SVG na Prática">SVG na Prática</a></li>
+            </ol>
+          </div>
         </div>
-        <div id="segmento" class="segmento" title="Images">
-            <div id="Images" class="lesson" title="Images | Images">
-                <h2 id="title" class="title" tabindex="">Images</h2>
-                <span class="subtitle"><code>&lt;img&gt;</code></span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle">O que contém?</div>
-                        <div class="boxinfo">
-                            <ol>
-                                <li>O elemento<code>src=""</code>indica a fonte, é o mais importante;</li>
-                                <li>O elemento<code>alt</code>é um texto alternativo que servirá como mensagem caso a
-                                    imagem não carregue;</li>
-                                <li>O elemento<code>width</code>para largura também pode ser adicionado;</li>
-                                <li>O elemento<code>height</code>para altura;</li>
-                                <li>O elemento<code>title</code>;</li>
-                                <li>Colocá-la dentro da tag<code>&lt;a&gt;</code>possibilitará que a imagem tenha a
-                                    função de um link;</li>
-                            </ol><br>
-                        </div>
-                        <div class="boxtitle">Exemplo:</div>
-                        <div class="boxinfo">
-                            <p class="infop">Pode não funcionar, dependendo do browser.</p>
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace17">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;a href="<em>https://source.unsplash.com/random</em>" target="<em>_blank</em>"&gt;<br>
-                                        &nbsp; &lt;img src="<em>https://source.unsplash.com/random</em>"<br>alt="<em>&lt;img&gt; de exemplo.</em>" width="<em>400</em>" height="<em>315</em>"&gt;<br>
-                                        &lt;/a&gt;<br>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace13">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <a href="https://source.unsplash.com/random" target="_blank">
-                                        <img src="https://source.unsplash.com/random" alt="&lt;img&gt; de exemplo."
-                                            width="400" height="315" title="Imagem randômica de exemplo">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
-            <div id="Background image" class="lesson" title="Background image | Images">
-                <h2 id="title" class="title" tabindex="">Background image</h2>
-                <span class="subtitle"><code>style="background-image: url()"</code></span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle">O que é?</div>
-                        <div class="boxinfo">
-                            <p>É um elemento que pode ir dentro de tags, como a tag<code>p</code>.</p>
-                        </div>
-                        <div class="boxtitle">Exemplo:</div>
-                        <div class="boxinfo">
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace17">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;p style="<em>background-image: url('./<abbr title="'./assets-example/Iconarchive-Red-Orb-Alphabet-Letter-Z.ico'">exemplo</abbr>')</em>"&gt;<em>Imagem</em>&lt;/p&gt;<br>
-                                        &lt;/a&gt;<br>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace13">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <p
-                                        style="background-image: url('./assets-example/Iconarchive-Red-Orb-Alphabet-Letter-Z.ico')">
-                                        Imagem</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
-            <div id="Figures" class="lesson" title="Figures | Images">
-                <h2 id="title" class="title" tabindex="">Figures</h2>
-                <span class="subtitle">Como criar títulos visíveis para as imagens.</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle">Primeira opção:</div>
-                        <div class="boxinfo">
-                            <p class="infop">Criar uma caixa<code>div</code>com a classe<em>figure</em>para inserir
-                                elementos de imagem e texto dentro dela.</p>
-                            <p class="infop">Mas, esse modelo não é indicado. Além de não ser semântico, o texto da
-                                tag<code>p</code>não estará relacionado à imagem.</p>
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace15">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;div class="figure"&gt;<br>
-                                        &nbsp; &lt;a href="<em><abbr title="https://google.com">exemplo</abbr></em>" target:<em>_blank</em>&gt;<br>
-                                        &nbsp;&nbsp; &lt;img src="<abbr title="https://source.unsplash.com/random">exemplo</abbr>" alt="<em>Imagem de exemplo</em>"<br> &nbsp;&nbsp; title="<em>Colocar um título na imagem</em>" height="<em>315</em>"<br>&nbsp;&nbsp; width="<em>380</em>"&gt;<br>
-                                        &nbsp; &lt;/a&gt;<br>
-                                        &nbsp; &lt;p&gt;<em>Colocar um título na imagem</em>&lt;/p&gt;<br>
-                                        &lt;/div&gt;<br>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace13">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <div class="figure">
-                                        <a href="https://google.com" target="_blank">
-                                            <img src="https://source.unsplash.com/random" alt="Imagem de exemplo"
-                                                title="Colocar um título na imagem" height="315" width="380">
-                                        </a>
-                                        <p>Colocar um título na imagem</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="boxtitle">Segunda opção:</div>
-                        <div class="boxinfo">
-                            <p class="infop">Essa é a indicada e semântica, pois os elementos dentro da tag
-                                <code>figure</code>estarão relacionados à imagem.</p>
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace15">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;a href="<em><abbr title="https://google.com">exemplo</abbr></em>" target:<em>_blank</em>&gt;<br>
-                                        &nbsp; &lt;figure&gt;<br>
-                                        &nbsp;&nbsp; &lt;img src="<abbr title="https://source.unsplash.com/random">exemplo</abbr>" alt="<em>Imagem de exemplo</em>"<br> &nbsp;&nbsp; title="<em>Colocar um título na imagem</em>" height="<em>315</em>"<br>&nbsp;&nbsp; width="<em>380</em>"&gt;<br>
-                                        &nbsp;&nbsp; &lt;figcaption&gt;<em>Colocar um título na imagem</em>&lt;/figcaption&gt;<br>
-                                        &nbsp; &lt;/figure&gt;<br>
-                                        &lt;/a&gt;<br>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace13">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <a href="https://google.com" target="_blank">
-                                        <figure>
-                                            <img src="https://source.unsplash.com/random" alt="Imagem de exemplo"
-                                                title="Colocar um título na imagem" height="315" width="380">
-                                            <figcaption>Colocar um título na imagem</figcaption>
-                                        </figure>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
-            <div id="Intro de SVG" class="lesson" title="Intro de SVG | Images">
-                <h2 id="title" class="title" tabindex="">Intro de SVG</h2>
-                <span class="subtitle"><code>&lt;svg&gt;</code></span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle">O que é?</div>
-                        <div class="boxinfo">
-                            <p class="infop">É uma marcação estilo HTML, mas não é pra textos, e sim para<em>fazer
-                                    imagens.</em></p>
-                            <p class="infop">Possuímos elementos para gerar formas.</p>
-                        </div>
-                        <div class="boxtitle">Para entender melhor:</div>
-                        <div class="boxinfo">
-                            <p class="infop">- Imagem<em>rasterizada</em> x Imagem<em>vetorizada</em></p>
-                        </div><br>
-                        <h2>Imagem vetorizada.</h2>
-                        <div class="boxtitle">Benefícios:</div>
-                        <div class="boxinfo">
-                            <ul>
-                                <li>Mais leve;</li>
-                                <li>Mais detalhada;</li>
-                                <li>Maior acessibilidade e SEO;</li>
-                                <li>Pode ser editada via CSS ou atributos.</li>
-                            </ul>
-                        </div>
-                        <div class="boxtitle">Desvantagens:</div>
-                        <div class="boxinfo">
-                            <ul>
-                                <li>Pode ser mais complicado de trabalhar;</li>
-                                <li>Quanto mais complexa a imagem, mais trabalho para o navegador;</li>
-                                <li>Navegadores mais antigos não possuem suporte para essa tag.</li>
-                            </ul>
-                        </div>
-                        <div class="boxtitle">Exemplo:</div>
-                        <div class="boxinfo">
-                            <p class="infop">Imagem rasterizada (ou pixelada).</p>
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace13">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;img src="<em><abbr title="./assets-example/ball.png">fonte</abbr></em>" height="<em>315</em>" width="<em>400</em>"&gt;<br><br>
-                                        <p class="infop">Por ser formada por pixels, fica esticada.</p>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace13">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <img src="./assets-example/ball.png" height="315" width="400">
-                                </div>
-                            </div><br>
-                            <p class="infop">Imagem vetorizada.</p>
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace13">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;svg height="<em>300</em>" width="<em>400</em>"&gt;<br>
-                                        &nbsp; &lt;circle cx="<em>200</em>" cy="<em>150</em>" r="<em>140</em>"<br>&nbsp; stroke="<em>green</em>" stroke-width="<em>4</em>"<br>&nbsp; fill="<em>yellow</em>"&gt;<br>
-                                        &lt;/svg&gt;<br><br>
-                                        <p class="infop">Por ser vetorizada, mantém a qualidade.</p>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace13">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <svg width="400" height="300">
-                                        <circle cx="200" cy="150" r="140" stroke="green" stroke-width="4" fill="yellow">
-                                        </circle>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="boxtitle">Onde encontrar?</div>
-                        <div class="boxinfo">
-                            <p class="infop">SVGs podem ser feitas por programas específicos e seus códigos podem ser
-                                transferidos.</p>
-                            <span class="infop">Endereço:</span><a href="https://www.figma.com/"
-                                target="_blank">Figma</a>
-                        </div>
-                        <div class="boxtitle">Dica:</div>
-                        <div class="boxinfo">
-                            <p class="infop"><em>Para fotografias, ainda prefira usar imagens rasterizadas.</em></p>
-                        </div>
-                    </div>
-                    <br>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
-            <div id="SVG na Prática" class="lesson" title="SVG na Prática | Images">
-                <h2 id="title" class="title" tabindex="">SVG na Prática</h2>
-                <span class="subtitle">Mexendo nos valores das propriedades que vão dentro da
-                    tag<code>&lt;svg&gt;</code></span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle">Como?</div>
-                        <div class="boxinfo">
-                            <p class="infop">É o momento de fazer testes. Basta alterar valores como, por exemplo, os
-                                números dentro da<code>cx</code>que está na tag<code>circle</code></p>
-                        </div>
-                        <div class="boxtitle">SVGs prontos para serem praticados:</div>
-                        <div class="boxinfo">
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace13">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;svg style="<em>background-color: green;</em>" height="<em>300</em>" width="<em>400</em>"&gt;<br>
-                                        &nbsp; &lt;circle cx="<em>200</em>" cy="<em>150</em>" r="<em>100</em>"<br>&nbsp; stroke="<em>yellow</em>" stroke-width="<em>60</em>"<br>&nbsp; fill="<em>blue</em>"&gt;<br>
-                                        &lt;/svg&gt;<br><br>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace13">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <svg style="background-color: green;" height="300" width="400">
-                                        <circle cx="200" cy="150" r="100" stroke="yellow" stroke-width="60" fill="blue">
-                                        </circle>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace13">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;svg height="<em>200</em>" width="<em>400</em>"&gt;<br>
-                                        &nbsp; &lt;rect width="<em>4</em>" height="<em>200</em>" fill="<em>yellow</em>"&gt;<br>
-                                        &lt;/svg&gt;<br><br>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace13">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <svg height="200" width="400">
-                                        <rect width="100%" height="100%" fill="blue"></rect>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="boxtitle">Alternativa</div>
-                        <div class="boxinfo">
-                            <p class="infop">Também é possível adicionar um arquivo svg diretamente na
-                                tag<code>img</code></p>
-                        </div>
-                        <div class="boxtitle">Vantagens:</div>
-                        <div class="boxinfo">
-                            <ul>
-                                <li>Facilita o processo.</li>
-                            </ul>
-                        </div>
-                        <div class="boxtitle">Desvantagens:</div>
-                        <div class="boxinfo">
-                            <ul>
-                                <li>Impossibilita a edição direta da imagem no arquivo HTML;</li>
-                                <li>O arquivo svg precisará conter propriedades adicionais para que funcione
-                                    corretamente.</li>
-                            </ul>
-                        </div>
-                        <div class="boxtitle">Exemplo de importação de arquivo .svg:</div>
-                        <div class="boxinfo">
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace11">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;img src="<em>./assets-example/ball.svg</em>"&gt;
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace4">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <img src="./assets-example/ball.svg">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="boxtitle">Onde encontrar mais informações?</div>
-                        <div class="boxinfo">
-                            <p class="infop">Endereço: <a href="https://developer.mozilla.org/en-US/docs/Web/SVG"
-                                    target="_blank">MDN | SVG</a></p>
-                        </div>
-                    </div>
-                    <br>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
-        </div>
+      </div>
     </div>
-</body>
-
+    <br />
+    <hr />
+    <div id="body-div" class="body-div">
+      <div id="segmento" class="segmento" title="Áudio e Vídeo">
+        <div id="Vídeo" class="lesson" title="Vídeo | Áudio e Vídeo">
+          <h2 id="title" class="title" tabindex="">Vídeo</h2>
+          <span class="subtitle">Inserir vídeo no HTML para deixá-lo mais rico.</span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">Como fazer?</div>
+              <div class="boxinfo">
+                <ol>
+                  <li>A tag<code>&lt;video&gt;</code>será adicionada e serão adicionados elementos dentro dela;</li>
+                  <li>O elemento<code>src=""</code>indica a fonte, é o mais importante;</li>
+                  <li>O elemento<code>controls</code>fará aparecer controles como pause, som, fullscreen...</li>
+                  <li>Se não funcionar?</li>
+                  <ol>
+                    <li>Posso adicionar uma tag<code>p</code> para direcionar o usuário para outra URL ou para fazer o download..</li>
+                    <li>Posso adicionar a tag<code>&lt;source&gt;</code>;</li>
+                    <ul>
+                      <li>Ao fazer isso, transfere-se o elemento<code>src=""</code> da tag<code>&lt;video&gt;</code> para a tag<code>&lt;source&gt;</code>;</li>
+                      <li>O elemento<code>type=""</code>auxiliará o browser a entender o arquivo. No caso,<code>type="video/mp4"</code>;</li>
+                    </ul>
+                    <li>Encontrar diversos formatos de Media type no MDN:</li>
+                    <ul>
+                      <li><a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats" target="_blank">MDN | Media type and format guide</a></li>
+                    </ul>
+                  </ol>
+                  <li>O elemento<code>width</code>para largura também pode ser adicionado;</li>
+                  <li>O elemento<code>height</code>para altura;</li>
+                  <li>O elemento<code>autoplay</code>(dependendo do browser, não será obedecido);</li>
+                  <li>O elemento<code>preload</code>que fará a pré leitura do vídeo de maneira automatizada, ou carregará só o básico, ou não fará nada até que o usuário aperte algum botão;</li>
+                  <li>O elemento<code>loop</code>vai tocar o vídeo novamente quando o mesmo acabar (depende do browser);</li>
+                  <li>O elemento<code>muted</code>para o vídeo começar mutado (as vezes, acrescentar o muted faz o autoplay funcionar em determinados browsers);</li>
+                  <li>O elemento<code>poster</code>permite por uma imagem de fundo antes dele começar.</li>
+                </ol>
+                <br />
+              </div>
+              <div class="boxtitle">Exemplo:</div>
+              <div class="boxinfo">
+                <p class="infop">Pode não funcionar, dependendo do browser.</p>
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace17">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;video controls autoplay muted height="<em>200px</em>"&gt;<br />
+                        &nbsp; &lt;source src="<em>./assets-example/rocket.mp4</em>" type="<em>video/mp4</em>"&gt;<br />
+                        &lt;/video&gt;<br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace13">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <video controls autoplay muted height="200px">
+                      <source src="./assets-example/rocket.mp4" type="video/mp4" />
+                      <p>Este browser não suporta vídeo, baixe-o aqui.</p>
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+        <div id="Áudio" class="lesson" title="Áudio | Áudio e Vídeo">
+          <h2 id="title" class="title" tabindex="">Áudio</h2>
+          <span class="subtitle">Inserir áudio no HTML para deixá-lo mais rico.</span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">Como fazer?</div>
+              <div class="boxinfo">
+                <ol>
+                  <li>A tag<code>&lt;áudio&gt;</code>será adicionada e serão adicionados elementos dentro dela;</li>
+                  <li>O elemento<code>src=""</code>indica a fonte, é o mais importante;</li>
+                  <li>O elemento<code>controls</code>fará aparecer controles como pause, volume...</li>
+                  <li>Se não funcionar?</li>
+                  <ol>
+                    <li>Posso adicionar uma tag<code>p</code> para direcionar o usuário para outra URL ou para fazer o download..</li>
+                    <li>Posso adicionar a tag<code>&lt;source&gt;</code>;</li>
+                    <ul>
+                      <li>Ao fazer isso, transfere-se o elemento<code>src=""</code> da tag<code>&lt;audio&gt;</code> para a tag<code>&lt;source&gt;</code>;</li>
+                      <li>O elemento<code>type=""</code>auxiliará o browser a entender o arquivo. No caso,<code>type="audio/mp3"</code>ou<code>type="audio/ogg"</code>;</li>
+                    </ul>
+                    <li>Encontrar diversos formatos de Media type no MDN:</li>
+                    <ul>
+                      <li><a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats" target="_blank">MDN | Media type and format guide</a></li>
+                    </ul>
+                  </ol>
+                  <li>O elemento<code>hidden</code>esconde os controls do áudio;</li>
+                  <li>O elemento<code>autoplay</code>executará automaticamente (dependendo do browser, não será obedecido);</li>
+                  <li>O elemento<code>preload</code>fará a pré leitura do áudio de maneira automatizada, ou carregará só o básico, ou não fará nada até que o usuário aperte algum botão;</li>
+                  <li>O elemento<code>loop</code>vai tocar o áudio novamente quando o mesmo acabar (depende do browser);</li>
+                  <li>O elemento<code>muted</code>para o áudio começar mutado (para audios, acrescentar o muted faz o autoplay não funcionar em determinados browsers);</li>
+                </ol>
+                <br />
+              </div>
+              <div class="boxtitle">Exemplo:</div>
+              <div class="boxinfo">
+                <p class="infop">Pode não funcionar, dependendo do browser.</p>
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace17">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;audio controls autoplay muted height="<em>200px</em>"&gt;<br />
+                        &nbsp; &lt;source src="<em>./assets-example/viper.mp3</em>" type="<em>audio/mp3</em>"&gt;<br />
+                        &nbsp; &lt;source src="<em>./assets-example/viper.ogg</em>" type="<em>audio/ogg</em>"&gt;<br />
+                        &nbsp; &lt;p&gt;<em>Seu navegador não suporta áudio.</em>&lt;/p&gt;<br />
+                        &lt;/audio&gt;<br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace10">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <audio controls preload="none">
+                      <source src="./assets-example/viper.mp3" type="audio/mp3" />
+                      <source src="./assets-example/viper.ogg" type="audio/ogg" />
+                      <p>Seu navegador não suporta áudio.</p>
+                    </audio>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+        <div id="Iframe" class="lesson" title="Iframe | Áudio e Vídeo">
+          <h2 id="title" class="title" tabindex="">Iframe</h2>
+          <span class="subtitle">Inline Frame Element</span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">O que é?</div>
+              <div class="boxinfo">
+                <p class="infop">Um elemento que vai trazer conteúdo externo.</p>
+                <ol>
+                  <li>A tag<code>&lt;iframe&gt;</code>será adicionada e serão adicionados elementos dentro dela;</li>
+                  <li>O elemento<code>src=""</code>indica a fonte, é o mais importante;</li>
+                  <li>O elemento<code>frameborder</code>se haverá ou não uma borda no frame;</li>
+                  <li>O elemento<code>width</code>dará a largura;</li>
+                  <li>O elemento<code>height</code>dará a altura;</li>
+                  <li>O elemento<code>title</code>para acessibilidade;</li>
+                  <li>O elemento<code>allow</code>trará configurações específicas de onde vem o conteúdo, no caso, estará permitindo algumas políticas do Youtube;</li>
+                  <li>O elemento<code>allowfullscreen</code>permitirá deixar o vídeo em tela cheia;</li>
+                </ol>
+                <br />
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" target="_blank">MDN | iframe</a>
+                <br /><br />
+              </div>
+              <div class="boxtitle">Exemplo com vídeo:</div>
+              <div class="boxinfo">
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace14">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;iframe<br />
+                        width="<em>576</em>"<br />
+                        height="<em>315</em>"<br />
+                        src="<em><abbr title="https://www.youtube-nocookie.com/embed/meKQIkPRUhE">exemplo</abbr></em
+                        >"<br />
+                        title="<em>YouTube video player</em>"<br />
+                        frameborder="<em>0</em>"<br />
+                        allow="<em>accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture</em>"<br />
+                        allowfullscreen&gt;<br />
+                        &lt;/iframe&gt;<br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace18">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <iframe width="575" height="315" src="https://www.youtube-nocookie.com/embed/meKQIkPRUhE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="boxtitle">Exemplo com mapa:</div>
+              <div class="boxinfo">
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace14">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;iframe<br />
+                        width="<em>576</em>"<br />
+                        height="<em>315</em>"<br />
+                        src="<em
+                          ><abbr
+                            title="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230483.7742018825!2d-49.42988129579527!3d-25.494740159965506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce35351cdb3dd%3A0x6d2f6ba5bacbe809!2sCuritiba%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1661801902738!5m2!1spt-BR!2sbr"
+                            >exemplo</abbr
+                          ></em
+                        >"<br />
+                        style="<em>border:0;</em>"<br />
+                        allowfullscreen=""<br />
+                        loading="<em>lazy</em>"&gt;<br />
+                        referrerpolicy="<em>no-referrer-when-downgrade</em>"&gt;<br />
+                        &lt;/iframe&gt;<br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace18">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230483.7742018825!2d-49.42988129579527!3d-25.494740159965506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce35351cdb3dd%3A0x6d2f6ba5bacbe809!2sCuritiba%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1661801902738!5m2!1spt-BR!2sbr"
+                      width="576"
+                      height="315"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    >
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div id="segmento" class="segmento" title="Images">
+        <div id="Images" class="lesson" title="Images | Images">
+          <h2 id="title" class="title" tabindex="">Images</h2>
+          <span class="subtitle"><code>&lt;img&gt;</code></span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">O que contém?</div>
+              <div class="boxinfo">
+                <ol>
+                  <li>O elemento<code>src=""</code>indica a fonte, é o mais importante;</li>
+                  <li>O elemento<code>alt</code>é um texto alternativo que servirá como mensagem caso a imagem não carregue;</li>
+                  <li>O elemento<code>width</code>para largura também pode ser adicionado;</li>
+                  <li>O elemento<code>height</code>para altura;</li>
+                  <li>O elemento<code>title</code>;</li>
+                  <li>Colocá-la dentro da tag<code>&lt;a&gt;</code>possibilitará que a imagem tenha a função de um link;</li>
+                </ol>
+                <br />
+              </div>
+              <div class="boxtitle">Exemplo:</div>
+              <div class="boxinfo">
+                <p class="infop">Pode não funcionar, dependendo do browser.</p>
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace17">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;a href="<em>https://source.unsplash.com/random</em>" target="<em>_blank</em>"&gt;<br />
+                        &nbsp; &lt;img src="<em>https://source.unsplash.com/random</em>"<br />alt="<em>&lt;img&gt; de exemplo.</em>" width="<em>400</em>" height="<em>315</em>"&gt;<br />
+                        &lt;/a&gt;<br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace13">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <a href="https://source.unsplash.com/random" target="_blank">
+                      <img src="https://source.unsplash.com/random" alt="&lt;img&gt; de exemplo." width="400" height="315" title="Imagem randômica de exemplo" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+        <div id="Background image" class="lesson" title="Background image | Images">
+          <h2 id="title" class="title" tabindex="">Background image</h2>
+          <span class="subtitle"><code>style="background-image: url()"</code></span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">O que é?</div>
+              <div class="boxinfo">
+                <p>É um elemento que pode ir dentro de tags, como a tag<code>p</code>.</p>
+              </div>
+              <div class="boxtitle">Exemplo:</div>
+              <div class="boxinfo">
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace17">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;p style="<em>background-image: url('./<abbr title="'./assets-example/Iconarchive-Red-Orb-Alphabet-Letter-Z.ico'">exemplo</abbr>')</em>"&gt;<em>Imagem</em>&lt;/p&gt;<br />
+                        &lt;/a&gt;<br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace13">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <p style="background-image: url('./assets-example/Iconarchive-Red-Orb-Alphabet-Letter-Z.ico')">Imagem</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+        <div id="Figures" class="lesson" title="Figures | Images">
+          <h2 id="title" class="title" tabindex="">Figures</h2>
+          <span class="subtitle">Como criar títulos visíveis para as imagens.</span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">Primeira opção:</div>
+              <div class="boxinfo">
+                <p class="infop">Criar uma caixa<code>div</code>com a classe<em>figure</em>para inserir elementos de imagem e texto dentro dela.</p>
+                <p class="infop">Mas, esse modelo não é indicado. Além de não ser semântico, o texto da tag<code>p</code>não estará relacionado à imagem.</p>
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace15">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;div class="figure"&gt;<br />
+                        &nbsp; &lt;a href="<em><abbr title="https://google.com">exemplo</abbr></em
+                        >" target:<em>_blank</em>&gt;<br />
+                        &nbsp;&nbsp; &lt;img src="<abbr title="https://source.unsplash.com/random">exemplo</abbr>" alt="<em>Imagem de exemplo</em>"<br />
+                        &nbsp;&nbsp; title="<em>Colocar um título na imagem</em>" height="<em>315</em>"<br />&nbsp;&nbsp; width="<em>380</em>"&gt;<br />
+                        &nbsp; &lt;/a&gt;<br />
+                        &nbsp; &lt;p&gt;<em>Colocar um título na imagem</em>&lt;/p&gt;<br />
+                        &lt;/div&gt;<br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace13">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <div class="figure">
+                      <a href="https://google.com" target="_blank">
+                        <img src="https://source.unsplash.com/random" alt="Imagem de exemplo" title="Colocar um título na imagem" height="315" width="380" />
+                      </a>
+                      <p>Colocar um título na imagem</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="boxtitle">Segunda opção:</div>
+              <div class="boxinfo">
+                <p class="infop">Essa é a indicada e semântica, pois os elementos dentro da tag <code>figure</code>estarão relacionados à imagem.</p>
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace15">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;a href="<em><abbr title="https://google.com">exemplo</abbr></em
+                        >" target:<em>_blank</em>&gt;<br />
+                        &nbsp; &lt;figure&gt;<br />
+                        &nbsp;&nbsp; &lt;img src="<abbr title="https://source.unsplash.com/random">exemplo</abbr>" alt="<em>Imagem de exemplo</em>"<br />
+                        &nbsp;&nbsp; title="<em>Colocar um título na imagem</em>" height="<em>315</em>"<br />&nbsp;&nbsp; width="<em>380</em>"&gt;<br />
+                        &nbsp;&nbsp; &lt;figcaption&gt;<em>Colocar um título na imagem</em>&lt;/figcaption&gt;<br />
+                        &nbsp; &lt;/figure&gt;<br />
+                        &lt;/a&gt;<br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace13">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <a href="https://google.com" target="_blank">
+                      <figure>
+                        <img src="https://source.unsplash.com/random" alt="Imagem de exemplo" title="Colocar um título na imagem" height="315" width="380" />
+                        <figcaption>Colocar um título na imagem</figcaption>
+                      </figure>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+        <div id="Intro de SVG" class="lesson" title="Intro de SVG | Images">
+          <h2 id="title" class="title" tabindex="">Intro de SVG</h2>
+          <span class="subtitle"><code>&lt;svg&gt;</code></span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">O que é?</div>
+              <div class="boxinfo">
+                <p class="infop">É uma marcação estilo HTML, mas não é pra textos, e sim para<em>fazer imagens.</em></p>
+                <p class="infop">Possuímos elementos para gerar formas.</p>
+              </div>
+              <div class="boxtitle">Para entender melhor:</div>
+              <div class="boxinfo">
+                <p class="infop">- Imagem<em>rasterizada</em> x Imagem<em>vetorizada</em></p>
+              </div>
+              <br />
+              <h2>Imagem vetorizada.</h2>
+              <div class="boxtitle">Benefícios:</div>
+              <div class="boxinfo">
+                <ul>
+                  <li>Mais leve;</li>
+                  <li>Mais detalhada;</li>
+                  <li>Maior acessibilidade e SEO;</li>
+                  <li>Pode ser editada via CSS ou atributos.</li>
+                </ul>
+              </div>
+              <div class="boxtitle">Desvantagens:</div>
+              <div class="boxinfo">
+                <ul>
+                  <li>Pode ser mais complicado de trabalhar;</li>
+                  <li>Quanto mais complexa a imagem, mais trabalho para o navegador;</li>
+                  <li>Navegadores mais antigos não possuem suporte para essa tag.</li>
+                </ul>
+              </div>
+              <div class="boxtitle">Exemplo:</div>
+              <div class="boxinfo">
+                <p class="infop">Imagem rasterizada (ou pixelada).</p>
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace13">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;img src="<em><abbr title="./assets-example/ball.png">fonte</abbr></em
+                        >" height="<em>315</em>" width="<em>400</em>"&gt;<br /><br />
+                        <p class="infop">Por ser formada por pixels, fica esticada.</p>
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace13">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <img src="./assets-example/ball.png" height="315" width="400" />
+                  </div>
+                </div>
+                <br />
+                <p class="infop">Imagem vetorizada.</p>
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace13">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;svg height="<em>300</em>" width="<em>400</em>"&gt;<br />
+                        &nbsp; &lt;circle cx="<em>200</em>" cy="<em>150</em>" r="<em>140</em>"<br />&nbsp; stroke="<em>green</em>" stroke-width="<em>4</em>"<br />&nbsp; fill="<em>yellow</em>"&gt;<br />
+                        &lt;/svg&gt;<br /><br />
+                        <p class="infop">Por ser vetorizada, mantém a qualidade.</p>
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace13">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <svg width="400" height="300">
+                      <circle cx="200" cy="150" r="140" stroke="green" stroke-width="4" fill="yellow"></circle>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="boxtitle">Onde encontrar?</div>
+              <div class="boxinfo">
+                <p class="infop">SVGs podem ser feitas por programas específicos e seus códigos podem ser transferidos.</p>
+                <span class="infop">Endereço:</span><a href="https://www.figma.com/" target="_blank">Figma</a>
+              </div>
+              <div class="boxtitle">Dica:</div>
+              <div class="boxinfo">
+                <p class="infop"><em>Para fotografias, ainda prefira usar imagens rasterizadas.</em></p>
+              </div>
+            </div>
+            <br />
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+        <div id="SVG na Prática" class="lesson" title="SVG na Prática | Images">
+          <h2 id="title" class="title" tabindex="">SVG na Prática</h2>
+          <span class="subtitle">Mexendo nos valores das propriedades que vão dentro da tag<code>&lt;svg&gt;</code></span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">Como?</div>
+              <div class="boxinfo">
+                <p class="infop">É o momento de fazer testes. Basta alterar valores como, por exemplo, os números dentro da<code>cx</code>que está na tag<code>circle</code></p>
+              </div>
+              <div class="boxtitle">SVGs prontos para serem praticados:</div>
+              <div class="boxinfo">
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace13">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;svg style="<em>background-color: green;</em>" height="<em>300</em>" width="<em>400</em>"&gt;<br />
+                        &nbsp; &lt;circle cx="<em>200</em>" cy="<em>150</em>" r="<em>100</em>"<br />&nbsp; stroke="<em>yellow</em>" stroke-width="<em>60</em>"<br />&nbsp; fill="<em>blue</em>"&gt;<br />
+                        &lt;/svg&gt;<br /><br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace13">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <svg style="background-color: green" height="300" width="400">
+                      <circle cx="200" cy="150" r="100" stroke="yellow" stroke-width="60" fill="blue"></circle>
+                    </svg>
+                  </div>
+                </div>
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace13">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;svg height="<em>200</em>" width="<em>400</em>"&gt;<br />
+                        &nbsp; &lt;rect width="<em>4</em>" height="<em>200</em>" fill="<em>yellow</em>"&gt;<br />
+                        &lt;/svg&gt;<br /><br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace13">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <svg height="200" width="400">
+                      <rect width="100%" height="100%" fill="blue"></rect>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="boxtitle">Alternativa</div>
+              <div class="boxinfo">
+                <p class="infop">Também é possível adicionar um arquivo svg diretamente na tag<code>img</code></p>
+              </div>
+              <div class="boxtitle">Vantagens:</div>
+              <div class="boxinfo">
+                <ul>
+                  <li>Facilita o processo.</li>
+                </ul>
+              </div>
+              <div class="boxtitle">Desvantagens:</div>
+              <div class="boxinfo">
+                <ul>
+                  <li>Impossibilita a edição direta da imagem no arquivo HTML;</li>
+                  <li>O arquivo svg precisará conter propriedades adicionais para que funcione corretamente.</li>
+                </ul>
+              </div>
+              <div class="boxtitle">Exemplo de importação de arquivo .svg:</div>
+              <div class="boxinfo">
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace11">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote><code> &lt;img src="<em>./assets-example/ball.svg</em>"&gt; </code></blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace4">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <img src="./assets-example/ball.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="boxtitle">Onde encontrar mais informações?</div>
+              <div class="boxinfo">
+                <p class="infop">Endereço: <a href="https://developer.mozilla.org/en-US/docs/Web/SVG" target="_blank">MDN | SVG</a></p>
+              </div>
+            </div>
+            <br />
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+  </body>
 </html>

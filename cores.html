@@ -1,943 +1,980 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cores</title>
-    <link rel="stylesheet" href="./cssglobal.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Lato:wght@300&family=Lora:ital@1&family=Quicksand&family=Source+Serif+Pro:wght@300&display=swap"
-        rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="./cssglobal.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Lato:wght@300&family=Lora:ital@1&family=Quicksand&family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet" />
+  </head>
 
-<body id="body" class="body">
+  <body id="body" class="body">
     <div id="main-document-head-container" class="main-document-head-container">
-        <header class="main-document-head-container top-navigation">
-            <div class="container">
-                <a href="https://renkensg.github.io/sumario-discover/" id="logo" class="logo" title="Homepage | Sumário">
-                    <img src="https://icon-library.com/images/icon-for-home/icon-for-home-1.jpg"
-                        alt="Home button with a blue background" width="35px">
-                </a>
-                <h1 class="título" id="título" title="Caixas">Agora sim, cores</h1>
-            </div>
-        </header>
-        <div id="glossário" class="glossário" title="Glossário">
-            <div id="autofitcol10px índice" class="autofitcol10px índice">
-                <div class="elevatedbox titlecolumngrid boxspace13">Cores
-                    <ol class="bodycolumngrid indol">
-                        <li><a href="#Introdução1">Introdução</a></li>
-                        <li><a href="#Keyword named values">Keyword named values</a></li>
-                        <li><a href="#Hexadecimal">Hexadecimal</a></li>
-                        <li><a href="#RGB">RGB</a></li>
-                        <li><a href="#HSL">HSL</a></li>
-                        <li><a href="#Global values">Global values</a></li>
-                        <li><a href="#Conclusão">Conclusão</a></li>
-                    </ol>
-                </div>
-                <div class="elevatedbox titlecolumngrid boxspace14">Background
-                    <ol class="bodycolumngrid indol">
-                        <li><a href="#Introdução2">Introdução</a></li>
-                        <li><a href="#Background-color">Background-color</a></li>
-                        <li><a href="#Background-image-repeat">Background-image-repeat</a></li>
-                        <li><a href="#Background-position">Background-position</a></li>
-                        <li><a href="#Background-size">Background-size</a></li>
-                        <li><a href="#Background-origin-clip">Background-origin-clip</a></li>
-                        <li><a href="#Background-attachment">Background-attachment</a></li>
-                        <li><a href="#Shorthand">Shorthand</a></li>
-                        <li><a href="#Gradient">Gradient</a></li>
-                        <li><a href="#Múltiplos valores">Múltiplos valores</a></li>
-                    </ol>
-                </div>
-            </div>
+      <header class="main-document-head-container top-navigation">
+        <div class="container">
+          <a href="https://renkensg.github.io/sumario-discover/" id="logo" class="logo" title="Homepage | Sumário">
+            <img src="https://icon-library.com/images/icon-for-home/icon-for-home-1.jpg" alt="Home button with a blue background" width="35px" />
+          </a>
+          <h1 class="título" id="título" title="Caixas">Agora sim, cores</h1>
         </div>
+      </header>
+      <div id="glossário" class="glossário" title="Glossário">
+        <div id="autofitcol10px índice" class="autofitcol10px índice">
+          <div class="elevatedbox titlecolumngrid boxspace13">
+            Cores
+            <ol class="bodycolumngrid indol">
+              <li><a href="#Introdução1">Introdução</a></li>
+              <li><a href="#Keyword named values">Keyword named values</a></li>
+              <li><a href="#Hexadecimal">Hexadecimal</a></li>
+              <li><a href="#RGB">RGB</a></li>
+              <li><a href="#HSL">HSL</a></li>
+              <li><a href="#Global values">Global values</a></li>
+              <li><a href="#Conclusão">Conclusão</a></li>
+            </ol>
+          </div>
+          <div class="elevatedbox titlecolumngrid boxspace14">
+            Background
+            <ol class="bodycolumngrid indol">
+              <li><a href="#Introdução2">Introdução</a></li>
+              <li><a href="#Background-color">Background-color</a></li>
+              <li><a href="#Background-image-repeat">Background-image-repeat</a></li>
+              <li><a href="#Background-position">Background-position</a></li>
+              <li><a href="#Background-size">Background-size</a></li>
+              <li><a href="#Background-origin-clip">Background-origin-clip</a></li>
+              <li><a href="#Background-attachment">Background-attachment</a></li>
+              <li><a href="#Shorthand">Shorthand</a></li>
+              <li><a href="#Gradient">Gradient</a></li>
+              <li><a href="#Múltiplos valores">Múltiplos valores</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
     </div>
-    <hr>
+    <hr />
     <div id="body-div" class="body-div">
-        <div id="segmento" class="segmento" title="Cores">
-            <div id="Introdução1" class="lesson" title="Introdução | Cores">
-                <h2 id="title" class="title" tabindex="1">Introdução</h2>
-                <span class="subtitle">Usamos CSS para alterar cores do nosso documento.</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle">Tipos</div>
-                        <div class="boxinfo">
-                            <p class="infop">
-                                <em>background-color</em>- para caixas<br>
-                                <em>color</em>- para textos<br>
-                                <em>border-color</em>- para caixas<br>
-                                <em>outros</em>
-                            </p>
-                        </div>
-                        <div class="boxtitle">Valores</div>
-                        <div class="boxinfo">
-                            <p class="infop">Podemos definir valores por:</p>
-                            <p class="infop">
-                                <em>palavra-chave</em>- blue, transparent<br>
-                                <em>hexadecimal</em>- #990011<br>
-                                <em>funções:</em> rgb, rgba, hsl, hsla.
-                            </p>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
+      <div id="segmento" class="segmento" title="Cores">
+        <div id="Introdução1" class="lesson" title="Introdução | Cores">
+          <h2 id="title" class="title" tabindex="1">Introdução</h2>
+          <span class="subtitle">Usamos CSS para alterar cores do nosso documento.</span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">Tipos</div>
+              <div class="boxinfo">
+                <p class="infop">
+                  <em>background-color</em>- para caixas<br />
+                  <em>color</em>- para textos<br />
+                  <em>border-color</em>- para caixas<br />
+                  <em>outros</em>
+                </p>
+              </div>
+              <div class="boxtitle">Valores</div>
+              <div class="boxinfo">
+                <p class="infop">Podemos definir valores por:</p>
+                <p class="infop">
+                  <em>palavra-chave</em>- blue, transparent<br />
+                  <em>hexadecimal</em>- #990011<br />
+                  <em>funções:</em> rgb, rgba, hsl, hsla.
+                </p>
+              </div>
             </div>
-            <hr>
-            <div id="Keyword named values" class="lesson" title="Keyword named values | Cores">
-                <h2 id="title" class="title" tabindex="2">Keyword named values</h2>
-                <span class="subtitle">Entendendo as bases de como aplicar cores no CSS.</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle">HTML</div>
-                        <div class="boxinfo">
-                            <blockquote>
-                                <code>&lt;div&gt;<br>
-                                    &nbsp; &lt;h1&gt;<em>Um texto aqui</em>&lt;/h1&gt;<br>
-                                    &nbsp; &lt;p&gt;<em>Mais texto</em>&lt;/p&gt;<br>
-                                    &lt;/div&gt;</code>
-                            </blockquote>
-                        </div>
-                        <div class="boxtitle">CSS</div>
-                        <div class="boxinfo">
-                            <blockquote><code>
-                                div {<br>
-                                    &nbsp;    color: blue;<br>
-                                }<br>
-                                <br>
-                                h1 {<br>
-                                    &nbsp;    color: red;<br>
-                                }
-                            </code></blockquote>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
-            <div id="Hexadecimal" class="lesson" title="Hexadecimal | Cores">
-                <h2 id="title" class="title" tabindex="3">Hexadecimal</h2>
-                <span class="subtitle">Aprendendo a trabalhar com valores hexadecimal</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxinfo">
-                            <blockquote><code>
-                                <em>/*&lt;hex-color&gt; values 0-9 e A-F*/</em><br>
-                                color: #090;<em>/* RED, GREEN, BLUE */</em><br>
-                                color: #009900;<em>/* 00 RED, 99 GREEN, 00 BLUE */</em><br>
-                                color: #090a;<br>
-                                color:#009900aa;<em>/* RED, GREEN, BLUE, transparent */</em>
-                            </code></blockquote>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
-            <div id="RGB" class="lesson" title="RGB | Cores">
-                <h2 id="title" class="title" tabindex="4">RGB</h2>
-                <span class="subtitle">RGB → Red, Green e Blue</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle">O alpha representa a transparência da cor</div>
-                        <div class="boxinfo">
-                            <p class="infop">O alpha é o quarto e último elemento em um RGB:</p>
-                            <blockquote><code>
-                                <em>/*&lt;rgb()&gt; values */</em><br>
-                                color: rgb(34, 12, 64, 0.6)<em>/* 0-255 */</em><br>
-                                color: rgb(34, 12, 64, 60%)<em>/* Posso usar % */</em><br>
-                                color: rgba(34, 12, 64, 0.6)
-                            </code></blockquote>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
-            <div id="HSL" class="lesson" title="HSL | Cores">
-                <h2 id="title" class="title" tabindex="5">HSL</h2>
-                <span class="subtitle">HSL → Hue - Saturation - Lightness</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle"></div>
-                        <div class="boxinfo">
-                            <p class="infop">Na tabela HSL, trabalha-se com graus e porcentagem para atingir: <em>Cor,
-                                    Saturação, Luminosidade e, não necessariamente, Transparência.</em>
-                            </p>
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace10">
-                                    <blockquote><code>
-                                    color: hsl(180, 100%, 50%, 60%)<br>
-                                    color: hsla(180, 100%, 50%, 60%) 
-                                </code></blockquote>
-                                </div>
-                                <div class="bodycolumngridgray boxspace19">
-                                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhtml5book.ru%2Fwp-content%2Fuploads%2F2015%2F07%2Fhsl-colors.png&f=1&nofb=1"
-                                        alt="Tabela HSL">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
-            <div id="Global values" class="lesson" title="Global values | Cores">
-                <h2 id="title" class="title" tabindex="6">Global values</h2>
-                <span class="subtitle">Valores globais da propriedade <em>color.</em></span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxinfo">
-                            <blockquote><code>
-                                <em>/* Global values */</em><br>
-                                color: inheritr;<em>/* Herda a cor do elemento anterior */</em><br>
-                                color: initial;<em>/* Volta a sua cor inicial */</em><br>
-                                color: unset;<em>/* Pega a cor do contexto */</em>
-                            </code></blockquote>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
-            <div id="Conclusão" class="lesson" title="Conclusão | Cores">
-                <h2 id="title" class="title" tabindex="7">Conclusão</h2>
-                <span class="subtitle">Entendendo esses princípios e com a prática, fica cada vez mais fácil entender
-                    como aplicar cores no CSS.</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle">Referência:</div>
-                        <div class="boxinfo">
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" target="_blank">MDN |
-                                CSS color</a>
-                            <a href="https://convertacolor.com/" target="_blank">Convertacolor</a>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
         </div>
-        <div id="segmento" class="segmento" title="Background">
-            <div id="Introdução2" class="lesson" title="Introdução | Background">
-                <h2 id="title" class="title" tabindex="8">Introdução</h2>
-                <span class="subtitle">Propriedade <em>background.</em></span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle">Background</div>
-                        <div class="boxinfo">
-                            <ul>
-                                <li>Define um fundo para o elemento;</li>
-                                <li>Sua área de atuação é a caixa toda;</li>
-                                <li>Por padrão, é transparente.</li>
-                            </ul>
-                        </div>
-                        <div class="boxtitle">Exemplos:</div>
-                        <div class="boxinfo">
-                            <ul>
-                                <li>Usar cores solidas;</li>
-                                <li>Usar imagens;</li>
-                                <li>Controlar:</li>
-                                <ol>
-                                    <li>a posição das imagens;</li>
-                                    <li>se elas se repetem ou não;</li>
-                                    <li>o tamanho delas na caixa.</li>
-                                </ol>
-                                <li>Usar cor e imagem juntas;</li>
-                                <li>Usar cor gradiente.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
+        <hr />
+        <div id="Keyword named values" class="lesson" title="Keyword named values | Cores">
+          <h2 id="title" class="title" tabindex="2">Keyword named values</h2>
+          <span class="subtitle">Entendendo as bases de como aplicar cores no CSS.</span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">HTML</div>
+              <div class="boxinfo">
+                <blockquote>
+                  <code
+                    >&lt;div&gt;<br />
+                    &nbsp; &lt;h1&gt;<em>Um texto aqui</em>&lt;/h1&gt;<br />
+                    &nbsp; &lt;p&gt;<em>Mais texto</em>&lt;/p&gt;<br />
+                    &lt;/div&gt;</code
+                  >
+                </blockquote>
+              </div>
+              <div class="boxtitle">CSS</div>
+              <div class="boxinfo">
+                <blockquote>
+                  <code>
+                    div {<br />
+                    &nbsp; color: blue;<br />
+                    }<br />
+                    <br />
+                    h1 {<br />
+                    &nbsp; color: red;<br />
+                    }
+                  </code>
+                </blockquote>
+              </div>
             </div>
-            <hr>
-            <div id="Background-color" class="lesson" title="Background-color | Background">
-                <h2 id="title" class="title" tabindex="9">Background-color</h2>
-                <span class="subtitle">A propriedade<code>background-color</code>define a cor de fundo do elemento
-                    selecionado.</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="autofitcol25px">
-                            <div class="bodycolumngrid boxspace20">
-                                <h3 class="titlecolumngrid">HTML</h3>
-                                <blockquote><code>
-                                    &lt;header class="lessoncolorheader1"&gt;<br><br>
-                                    &lt;/header&gt;<br>
-                                    &lt;main&gt;<br>
-                                    &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br>
-                                    &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br>
-                                    &lt;/main&gt;<br>
-                                </code></blockquote>
-                            </div>
-                            <div class="bodycolumngrid boxspace10">
-                                <h3 class="titlecolumngrid">CSS</h3>
-                                <blockquote><code>
-                                    .lessoncolorheader1 {<br>
-                                        height:<em>100px</em>;<br>
-                                        border:<em>7px dashed blue</em>;<br>
-                                        background-color:<em>rgb(55, 100, 50)</em>;<br>
-                                    }
-                                </code></blockquote>
-                            </div>
-                            <div class="bodycolumngrid boxspace10">
-                                <h3 class="titlecolumngrid">Resultado</h3>
-                                <header class="lessoncolorheader1">
-
-                                </header>
-                                <main>
-                                    <h4>Evolua rápido com a tecnologia</h4>
-                                    <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
-                                </main>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
-            <div id="Background-image-repeat" class="lesson" title="Background-image-repeat | Background">
-                <h2 id="title" class="title" tabindex="10">Background-image-repeat</h2>
-                <span class="subtitle"><code>background-image</code>&<code>background-image-repeat</code></span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle">Backgroud-image</div>
-                        <div class="boxinfo">
-                            <p class="infop">Para adicionar uma imagem como background podemos usar a propriedade
-                                background-image</p>
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace20">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;header class="lessoncolorheader2"&gt;<br><br>
-                                        &lt;/header&gt;<br>
-                                        &lt;main&gt;<br>
-                                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br>
-                                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br>
-                                        &lt;/main&gt;<br>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace10">
-                                    <h3 class="titlecolumngrid">CSS</h3>
-                                    <blockquote><code>
-                                        .lessoncolorheader2 {<br>
-                                            height:<em>100px</em>;<br>
-                                            border:<em>7px dashed blue</em>;<br>
-                                            background-color:<em>rgb(55, 100, 50)</em>;<br>
-                                            background-image: url(<abbr title="https://cdn-icons-png.flaticon.com/128/1384/1384060.png">exemplo</abbr>);<br>
-                                        }
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace10">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <header class="lessoncolorheader2">
-
-                                    </header>
-                                    <main>
-                                        <h4>Evolua rápido com a tecnologia</h4>
-                                        <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
-                                    </main>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="boxtitle">Background-image-repeat</div>
-                        <div class="boxinfo">
-                            <p class="infop">Por padrão a imagem vai se repetir e podemos modificar essa opção usando a
-                                propriedade background-repeat</p>
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace20">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;header class="lessoncolorheader3"&gt;<br><br>
-                                        &lt;/header&gt;<br>
-                                        &lt;main&gt;<br>
-                                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br>
-                                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br>
-                                        &lt;/main&gt;<br>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace10">
-                                    <h3 class="titlecolumngrid">CSS</h3>
-                                    <blockquote><code>
-                                        .lessoncolorheader3 {<br>
-                                            height:<em>200px</em>;<br>
-                                            border:<em>7px dashed blue</em>;<br>
-                                            background-color:<em>rgb(55, 100, 50)</em>;<br>
-                                            background-image:<em>url(<abbr title="https://cdn-icons-png.flaticon.com/128/1384/1384060.png">exemplo</abbr>)</em>;<br>
-                                            background-repeat:<em>no-repeat round</em>;<br>                                            
-                                        }
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace10">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <header class="lessoncolorheader3">
-
-                                    </header>
-                                    <main>
-                                        <h4>Evolua rápido com a tecnologia</h4>
-                                        <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
-                                    </main>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="boxtitle">Valores CSS para<code>background-repeat</code></div>
-                        <div class="boxinfo">
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace10">
-                                    <blockquote><code>
-                                        <em>/* Values */</em><br>
-                                        background-repeat:<em>repeat-x</em>;<br>
-                                        background-repeat:<em>repeat-y</em>;<br>
-                                        background-repeat:<em>repeat</em>;<br>
-                                        background-repeat:<em>space</em>;<br>
-                                        background-repeat:<em>round</em>;<br>
-                                        background-repeat:<em>no-repeat</em>;                                        
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace15">
-                                    <blockquote><code>
-                                        <em>/* Podemos usar 2 valores: horizontal | vertical */</em><br><br>
-                                        background-repeat:<em>repeat space</em>;<br>
-                                        background-repeat:<em>repeat repeat</em>;<br>
-                                        background-repeat:<em>round space</em>;<br>
-                                        background-repeat:<em>no-repeat round</em>;                                        
-                                    </code></blockquote>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
-            <div id="Background-position" class="lesson" title="Background-position | Background">
-                <h2 id="title" class="title" tabindex="11">Background-position</h2>
-                <span class="subtitle">Com a propriedade<code>background-position</code>é possível mudar a posição da
-                    imagem do background.</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxinfo">
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace20">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;header class="lessoncolorheader4"&gt;<br><br>
-                                        &lt;/header&gt;<br>
-                                        &lt;main&gt;<br>
-                                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br>
-                                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br>
-                                        &lt;/main&gt;<br>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace10">
-                                    <h3 class="titlecolumngrid">CSS</h3>
-                                    <blockquote><code>
-                                        .lessoncolorheader4 {<br>
-                                            height:<em>200px</em>;<br>
-                                            border:<em>7px dashed blue</em>;<br>
-                                            background-color:<em>rgb(55, 100, 50)</em>;<br>
-                                            background-image:<em>url(<abbr title="https://cdn-icons-png.flaticon.com/128/1384/1384060.png">exemplo</abbr>)</em>;<br>
-                                            background-repeat:<em>no-repeat round</em>;<br>                                            
-                                            background-position:<em>right</em>;<br>                                            
-                                        }
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace10">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <header class="lessoncolorheader4">
-
-                                    </header>
-                                    <main>
-                                        <h4>Evolua rápido com a tecnologia</h4>
-                                        <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
-                                    </main>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="boxtitle">Valores CSS para<code>background-position</code></div>
-                        <div class="boxinfo">
-                            <blockquote><code>
-                                <em>/* Pricipais valores */</em><br>
-                                background-position:<em>top</em>;<br>
-                                background-position:<em>bottom</em>;<br>
-                                background-position:<em>left</em>;<br>
-                                background-position:<em>right</em>;<br>
-                                background-position:<em>center</em>;
-                            </code></blockquote>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
-            <div id="Background-size" class="lesson" title="Background-size | Background">
-                <h2 id="title" class="title" tabindex="12">Background-size</h2>
-                <span class="subtitle">Para mudar o tamanho da imagem do background usamos a
-                    propriedade<em>background-size</em></span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxinfo">
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace20">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;header class="lessoncolorheader5"&gt;<br><br>
-                                        &lt;/header&gt;<br>
-                                        &lt;main&gt;<br>
-                                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br>
-                                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br>
-                                        &lt;/main&gt;<br>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace10">
-                                    <h3 class="titlecolumngrid">CSS</h3>
-                                    <blockquote><code>
-                                        .lessoncolorheader5 {<br>
-                                            height:<em>200px</em>;<br>
-                                            border:<em>7px dashed blue</em>;<br>
-                                            background-color:<em>rgb(55, 100, 50)</em>;<br>
-                                            background-image:<em>url(<abbr title="https://cdn-icons-png.flaticon.com/128/1384/1384060.png">exemplo</abbr>)</em>;<br>
-                                            background-repeat:<em>no-repeat round</em>;<br>                                            
-                                            background-position:<em>right</em>;<br>                                            
-                                            background-size:<em>contain</em>;<br>                                            
-                                        }
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace10">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <header class="lessoncolorheader5">
-
-                                    </header>
-                                    <main>
-                                        <h4>Evolua rápido com a tecnologia</h4>
-                                        <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
-                                    </main>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="boxtitle">Valores CSS para<code>background-size</code></div>
-                        <div class="boxinfo">
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace10">
-                                    <blockquote><code>
-                                        <em>/* Values */</em><br>
-                                        background-size:<em>cover</em>;<br>
-                                        background-size:<em>contain</em>;<br>                                      
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace15">
-                                    <blockquote><code>
-                                        <em>/* Podemos usar 2 valores: horizontal | vertical */</em><br><br>
-                                        background-size:<em>40% auto</em>;<br>
-                                        background-size:<em>2em 25%</em>;<br>
-                                        background-size:<em>auto 8px</em>;<br>
-                                        background-size:<em>auto auto</em>;                                        
-                                    </code></blockquote>
-                                </div>
-                            </div>
-                        </div><br>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
-            <div id="Background-origin-clip" class="lesson" title="Background-origin-clip | Background">
-                <h2 id="title" class="title" tabindex="13">Background-origin-clip</h2>
-                <span class="subtitle"><em><code>background-origin</code>&<code>background-clip</code></em></span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle">Background-origin</div>
-                        <div class="boxinfo">
-                            <p class="infop">A propriedade<code>background-origin</code>é quem define o ponto de origem
-                                de uma imagem específica.</p>
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace20">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;header class="lessoncolorheader6"&gt;<br><br>
-                                        &lt;/header&gt;<br>
-                                        &lt;main&gt;<br>
-                                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br>
-                                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br>
-                                        &lt;/main&gt;<br>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace10">
-                                    <h3 class="titlecolumngrid">CSS</h3>
-                                    <blockquote><code>
-                                        .lessoncolorheader6 {<br>
-                                            height:<em>150px</em>;<br>
-                                            border:<em>7px dashed blue</em>;<br>
-                                            background-color:<em>rgb(55, 100, 50)</em>;<br>
-                                            background-image:<em>url(<abbr title="https://cdn-icons-png.flaticon.com/128/1384/1384060.png">exemplo</abbr>)</em>;<br>
-                                            background-repeat:<em>no-repeat round</em>;<br>
-                                            background-position:<em>left</em>;<br>
-                                            background-size:<em>contain</em>;<br>
-                                            background-origin:<em>border-box</em>;<br>
-                                        }
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace10">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <header class="lessoncolorheader6">
-
-                                    </header>
-                                    <main>
-                                        <h4>Evolua rápido com a tecnologia</h4>
-                                        <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
-                                    </main>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="boxtitle">Background-clip</div>
-                        <div class="boxinfo">
-                            <p class="infop">O<code>background-clip</code>define se a cor ou imagem do background
-                                iniciam debaixo de sua área de borda, preenchimento ou conteúdo.</p>
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace20">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;header class="lessoncolorheader7"&gt;<br><br>
-                                        &lt;/header&gt;<br>
-                                        &lt;main&gt;<br>
-                                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br>
-                                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br>
-                                        &lt;/main&gt;<br>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace10">
-                                    <h3 class="titlecolumngrid">CSS</h3>
-                                    <blockquote><code>
-                                        .lessoncolorheader7 {<br>
-                                            height:<em>150px</em>;<br>
-                                            border:<em>7px dashed blue</em>;<br>
-                                            background-color:<em>rgb(55, 100, 50)</em>;<br>
-                                            background-image:<em>url(<abbr title="https://cdn-icons-png.flaticon.com/128/1384/1384060.png">exemplo</abbr>)</em>;<br>
-                                            background-repeat:<em>no-repeat round</em>;<br>                                            
-                                            background-position:<em>center</em>;<br>                                            
-                                            background-size:<em>contain</em>;<br>
-                                            background-origin:<em>border-box</em>;<br>
-                                            background-clip:<em>border-box</em>;<br>
-                                        }
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace10">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <header class="lessoncolorheader7">
-
-                                    </header>
-                                    <main>
-                                        <h4>Evolua rápido com a tecnologia</h4>
-                                        <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
-                                    </main>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="boxtitle">Valores CSS para<code>background-origin</code> e
-                            para<code>background-clip</code></div>
-                        <div class="boxinfo">
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace10">
-                                    <h4><code>background-origin</code></h4>
-                                    <blockquote><code>
-                                        <em>/* Principais Values */</em><br>
-                                        background-origin:<em>border-box</em>;<br>
-                                        background-origin:<em>padding-box</em>;<br>                                      
-                                        background-origin:<em>content-box</em>;<br>                                     
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace15">
-                                    <h4><code>background-clip</code></h4>
-                                    <blockquote><code>
-                                        <em>/* Principais Values */</em><br>
-                                        background-clip:<em>border-box</em>;<br>
-                                        background-clip:<em>padding-box</em>;<br>
-                                        background-clip:<em>content-box</em>;<br>
-                                        background-clip:<em>text</em>;                                        
-                                    </code></blockquote>
-                                </div>
-                            </div>
-                        </div><br>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
-            <div id="Background-attachment" class="lesson" title="Background-attachment | Background">
-                <h2 id="title" class="title" tabindex="14">Background-attachment</h2>
-                <span class="subtitle"><code>background-attachment</code></span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle">Background-attachment</div>
-                        <div class="boxinfo">
-                            <p class="infop">A propriedade<code>background-attachment</code>determina se a posição da
-                                imagem vai ser fixa ou se vai rolar junto com o conteúdo.</p>
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace20">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;header&gt;<br><br>
-                                        &lt;/header&gt;<br>
-                                        &lt;main class="lessoncolormain1"&gt;<br>
-                                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br>
-                                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br><br>
-                                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br>
-                                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br><br>
-                                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br>
-                                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br><br>
-                                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br>
-                                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br><br>
-                                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br>
-                                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br>
-                                        &lt;/main&gt;<br>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace11">
-                                    <h3 class="titlecolumngrid">CSS</h3>
-                                    <blockquote><code>
-                                        .lessoncolormain1 {<br>
-                                            background-color:<em>rgb(55, 100, 50)</em>;<br>
-                                            background-image:<em>url(<abbr title="https://cdn-icons-png.flaticon.com/128/1384/1384060.png">exemplo</abbr>)</em>;<br>
-                                            background-repeat:<em>space round</em>;<br>                                            
-                                            background-position:<em>right</em>;<br>                                            
-                                            background-size:<em>200px</em>;<br>
-                                            background-origin:<em>content-box</em>;<br>
-                                            background-clip:<em>content-box</em>;<br>
-                                            background-attachment:<em>fixed</em>;<br>
-                                        }<br><br>
-                                        .lessoncolormain1 h4,<br>.lessoncolormain1 p {<br>
-                                            color:<em>black</em>;<br>
-                                            font-size:<em>15px</em>;<br>
-                                            background-color:<em>rgb(55, 100, 50, 0%)</em>;<br>
-                                            background-image:<em>unset</em>;<br>
-                                        }
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace10">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <header>
-
-                                    </header>
-                                    <main class="lessoncolormain1">
-                                        <h4>Evolua rápido com a tecnologia</h4>
-                                        <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
-                                        <h4>Evolua rápido com a tecnologia</h4>
-                                        <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
-                                        <h4>Evolua rápido com a tecnologia</h4>
-                                        <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
-                                        <h4>Evolua rápido com a tecnologia</h4>
-                                        <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
-                                        <h4>Evolua rápido com a tecnologia</h4>
-                                        <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
-                                    </main>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="boxtitle">Valores CSS para<code>background-attachment</code></div>
-                        <div class="boxinfo">
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace9">
-                                    <blockquote><code>
-                                        <em>/* Principais valores */</em><br>
-                                        background-attachment:<em>scroll</em>;<br>
-                                        background-attachment:<em>fixed</em>;<br>
-                                        background-attachment:<em>local</em>;                                        
-                                    </code></blockquote>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
-            <div id="Shorthand" class="lesson" title="Shorthand | Background">
-                <h2 id="title" class="title" tabindex="15">Shorthand</h2>
-                <span class="subtitle">É possível usar o shorthand<code>background</code>para definir todos os valores
-                    do background.</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxinfo">
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace20">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;header class="lessoncolorheader8"&gt;<br><br>
-                                        &lt;/header&gt;<br>
-                                        &lt;main&gt;<br>
-                                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br>
-                                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br>
-                                        &lt;/main&gt;<br>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace10">
-                                    <h3 class="titlecolumngrid">CSS</h3>
-                                    <blockquote><code>
-                                        .lessoncolorheader8 {<br>
-                                            height:<em>150px</em>;<br>
-                                            border:<em>7px dashed blue</em>;<br><br>
-                                            background:<em>rgb(55, 100, 50)<br>url(<abbr title="https://cdn-icons-png.flaticon.com/128/1384/1384060.png">exemplo</abbr>) no-repeat right 10px top / 50px content-box border-box</em>;<br>
-                                        }
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace10">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <header class="lessoncolorheader8">
-
-                                    </header>
-                                    <main>
-                                        <h4>Evolua rápido com a tecnologia</h4>
-                                        <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
-                                    </main>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
-            <div id="Gradient" class="lesson" title="Gradient | Background">
-                <h2 id="title" class="title" tabindex="16">Gradient</h2>
-                <span class="subtitle"><em><code>linear-gradient()</code>&<code>radial-gradient()</code></em></span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle"><code>linear-gradient()</code>é a função usada para criar gradient linear
-                            com o CSS.</div>
-                        <div class="boxinfo">
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace20">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;header class="lessoncolorheader9"&gt;<br><br>
-                                        &lt;/header&gt;<br>
-                                        &lt;main&gt;<br>
-                                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br>
-                                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br>
-                                        &lt;/main&gt;<br>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace13">
-                                    <h3 class="titlecolumngrid">CSS</h3>
-                                    <blockquote><code>
-                                        .lessoncolorheader9 {<br>
-                                            height:<em>150px</em>;<br>
-                                            border:<em>7px dashed blue</em>;<br><br>
-                                            background:<em>linear-gradient(45deg, red, yellow)</em>;<br>
-                                        }
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace10">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <header class="lessoncolorheader9">
-
-                                    </header>
-                                    <main>
-                                        <h4>Evolua rápido com a tecnologia</h4>
-                                        <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
-                                    </main>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="boxtitle"><code>radial-gradient()</code>é a função usada para criar gradient
-                            circular.</div>
-                        <div class="boxinfo">
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace20">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;header class="lessoncolorheader10"&gt;<br><br>
-                                        &lt;/header&gt;<br>
-                                        &lt;main&gt;<br>
-                                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br>
-                                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br>
-                                        &lt;/main&gt;<br>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace13">
-                                    <h3 class="titlecolumngrid">CSS</h3>
-                                    <blockquote><code>
-                                        .lessoncolorheader10 {<br>
-                                            height:<em>150px</em>;<br>
-                                            border:<em>7px dashed blue</em>;<br><br>
-                                            background:<em>radial-gradient(rgba(0, 255, 0, 1), rgba(0, 255, 255, 1), rgba(0, 0, 255, 100%))</em>;<br>
-                                        }
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace10">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <header class="lessoncolorheader10">
-
-                                    </header>
-                                    <main>
-                                        <h4>Evolua rápido com a tecnologia</h4>
-                                        <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
-                                    </main>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
-            <div id="Múltiplos valores" class="lesson" title="Múltiplos valores | Background">
-                <h2 id="title" class="title" tabindex="17">Múltiplos valores</h2>
-                <span class="subtitle">Podemos aplicar múltiplos backgrounds em um mesmo elemento, podendo ter cor
-                    sólida, gradiente ou imagem.</span>
-                <div id="info" class="info">
-                    <div class="box">
-                        <div class="boxtitle">Como fazer?</div>
-                        <div class="boxinfo">
-                            <p class="infop"> Para isso basta separar<b>por vírgula</b>cada background.</p>
-                        </div>
-                        <div class="boxtitle">Exemplo:</div>
-                        <div class="boxinfo">
-                            <div class="autofitcol25px">
-                                <div class="bodycolumngrid boxspace20">
-                                    <h3 class="titlecolumngrid">HTML</h3>
-                                    <blockquote><code>
-                                        &lt;header class="lessoncolorheader11"&gt;<br><br>
-                                        &lt;/header&gt;<br>
-                                        &lt;main&gt;<br>
-                                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br>
-                                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br>
-                                        &lt;/main&gt;<br>
-                                    </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace13">
-                                    <h3 class="titlecolumngrid">CSS</h3>
-                                    <blockquote><code>
-                                        .lessoncolorheader11 {<br>
-                                            height:<em>150px</em>;<br>
-                                            border:<em>7px dashed blue</em>;<br><br>
-                                            background:<em>linear-gradient(45deg, rgba(255, 255, 255, 0), rgba(255, 0, 0, 0.3))<b><code>,</code></b>rgb(55,
-                                        100, 50) url(<abbr
-                                            title="https://cdn-icons-png.flaticon.com/128/1384/1384060.png">exemplo</abbr>)
-                                        no-repeat right 10px top / 50px content-box border-box</em>;<br>
-                                        }
-                                        </code></blockquote>
-                                </div>
-                                <div class="bodycolumngrid boxspace10">
-                                    <h3 class="titlecolumngrid">Resultado</h3>
-                                    <header class="lessoncolorheader11">
-
-                                    </header>
-                                    <main>
-                                        <h4>Evolua rápido com a tecnologia</h4>
-                                        <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
-                                    </main>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
-                </div>
-            </div>
-            <hr>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
         </div>
+        <hr />
+        <div id="Hexadecimal" class="lesson" title="Hexadecimal | Cores">
+          <h2 id="title" class="title" tabindex="3">Hexadecimal</h2>
+          <span class="subtitle">Aprendendo a trabalhar com valores hexadecimal</span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxinfo">
+                <blockquote>
+                  <code>
+                    <em>/*&lt;hex-color&gt; values 0-9 e A-F*/</em><br />
+                    color: #090;<em>/* RED, GREEN, BLUE */</em><br />
+                    color: #009900;<em>/* 00 RED, 99 GREEN, 00 BLUE */</em><br />
+                    color: #090a;<br />
+                    color:#009900aa;<em>/* RED, GREEN, BLUE, transparent */</em>
+                  </code>
+                </blockquote>
+              </div>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+        <div id="RGB" class="lesson" title="RGB | Cores">
+          <h2 id="title" class="title" tabindex="4">RGB</h2>
+          <span class="subtitle">RGB → Red, Green e Blue</span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">O alpha representa a transparência da cor</div>
+              <div class="boxinfo">
+                <p class="infop">O alpha é o quarto e último elemento em um RGB:</p>
+                <blockquote>
+                  <code>
+                    <em>/*&lt;rgb()&gt; values */</em><br />
+                    color: rgb(34, 12, 64, 0.6)<em>/* 0-255 */</em><br />
+                    color: rgb(34, 12, 64, 60%)<em>/* Posso usar % */</em><br />
+                    color: rgba(34, 12, 64, 0.6)
+                  </code>
+                </blockquote>
+              </div>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+        <div id="HSL" class="lesson" title="HSL | Cores">
+          <h2 id="title" class="title" tabindex="5">HSL</h2>
+          <span class="subtitle">HSL → Hue - Saturation - Lightness</span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle"></div>
+              <div class="boxinfo">
+                <p class="infop">Na tabela HSL, trabalha-se com graus e porcentagem para atingir: <em>Cor, Saturação, Luminosidade e, não necessariamente, Transparência.</em></p>
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace10">
+                    <blockquote>
+                      <code>
+                        color: hsl(180, 100%, 50%, 60%)<br />
+                        color: hsla(180, 100%, 50%, 60%)
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngridgray boxspace19">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhtml5book.ru%2Fwp-content%2Fuploads%2F2015%2F07%2Fhsl-colors.png&f=1&nofb=1" alt="Tabela HSL" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+        <div id="Global values" class="lesson" title="Global values | Cores">
+          <h2 id="title" class="title" tabindex="6">Global values</h2>
+          <span class="subtitle">Valores globais da propriedade <em>color.</em></span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxinfo">
+                <blockquote>
+                  <code>
+                    <em>/* Global values */</em><br />
+                    color: inheritr;<em>/* Herda a cor do elemento anterior */</em><br />
+                    color: initial;<em>/* Volta a sua cor inicial */</em><br />
+                    color: unset;<em>/* Pega a cor do contexto */</em>
+                  </code>
+                </blockquote>
+              </div>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+        <div id="Conclusão" class="lesson" title="Conclusão | Cores">
+          <h2 id="title" class="title" tabindex="7">Conclusão</h2>
+          <span class="subtitle">Entendendo esses princípios e com a prática, fica cada vez mais fácil entender como aplicar cores no CSS.</span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">Referência:</div>
+              <div class="boxinfo">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" target="_blank">MDN | CSS color</a>
+                <a href="https://convertacolor.com/" target="_blank">Convertacolor</a>
+              </div>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div id="segmento" class="segmento" title="Background">
+        <div id="Introdução2" class="lesson" title="Introdução | Background">
+          <h2 id="title" class="title" tabindex="8">Introdução</h2>
+          <span class="subtitle">Propriedade <em>background.</em></span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">Background</div>
+              <div class="boxinfo">
+                <ul>
+                  <li>Define um fundo para o elemento;</li>
+                  <li>Sua área de atuação é a caixa toda;</li>
+                  <li>Por padrão, é transparente.</li>
+                </ul>
+              </div>
+              <div class="boxtitle">Exemplos:</div>
+              <div class="boxinfo">
+                <ul>
+                  <li>Usar cores solidas;</li>
+                  <li>Usar imagens;</li>
+                  <li>Controlar:</li>
+                  <ol>
+                    <li>a posição das imagens;</li>
+                    <li>se elas se repetem ou não;</li>
+                    <li>o tamanho delas na caixa.</li>
+                  </ol>
+                  <li>Usar cor e imagem juntas;</li>
+                  <li>Usar cor gradiente.</li>
+                </ul>
+              </div>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+        <div id="Background-color" class="lesson" title="Background-color | Background">
+          <h2 id="title" class="title" tabindex="9">Background-color</h2>
+          <span class="subtitle">A propriedade<code>background-color</code>define a cor de fundo do elemento selecionado.</span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="autofitcol25px">
+                <div class="bodycolumngrid boxspace20">
+                  <h3 class="titlecolumngrid">HTML</h3>
+                  <blockquote>
+                    <code>
+                      &lt;header class="lessoncolorheader1"&gt;<br /><br />
+                      &lt;/header&gt;<br />
+                      &lt;main&gt;<br />
+                      &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br />
+                      &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br />
+                      &lt;/main&gt;<br />
+                    </code>
+                  </blockquote>
+                </div>
+                <div class="bodycolumngrid boxspace10">
+                  <h3 class="titlecolumngrid">CSS</h3>
+                  <blockquote>
+                    <code>
+                      .lessoncolorheader1 {<br />
+                      height:<em>100px</em>;<br />
+                      border:<em>7px dashed blue</em>;<br />
+                      background-color:<em>rgb(55, 100, 50)</em>;<br />
+                      }
+                    </code>
+                  </blockquote>
+                </div>
+                <div class="bodycolumngrid boxspace10">
+                  <h3 class="titlecolumngrid">Resultado</h3>
+                  <header class="lessoncolorheader1"></header>
+                  <main>
+                    <h4>Evolua rápido com a tecnologia</h4>
+                    <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
+                  </main>
+                </div>
+              </div>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+        <div id="Background-image-repeat" class="lesson" title="Background-image-repeat | Background">
+          <h2 id="title" class="title" tabindex="10">Background-image-repeat</h2>
+          <span class="subtitle"><code>background-image</code>&<code>background-image-repeat</code></span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">Backgroud-image</div>
+              <div class="boxinfo">
+                <p class="infop">Para adicionar uma imagem como background podemos usar a propriedade background-image</p>
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace20">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;header class="lessoncolorheader2"&gt;<br /><br />
+                        &lt;/header&gt;<br />
+                        &lt;main&gt;<br />
+                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br />
+                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br />
+                        &lt;/main&gt;<br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace10">
+                    <h3 class="titlecolumngrid">CSS</h3>
+                    <blockquote>
+                      <code>
+                        .lessoncolorheader2 {<br />
+                        height:<em>100px</em>;<br />
+                        border:<em>7px dashed blue</em>;<br />
+                        background-color:<em>rgb(55, 100, 50)</em>;<br />
+                        background-image: url(<abbr title="https://cdn-icons-png.flaticon.com/128/1384/1384060.png">exemplo</abbr>);<br />
+                        }
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace10">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <header class="lessoncolorheader2"></header>
+                    <main>
+                      <h4>Evolua rápido com a tecnologia</h4>
+                      <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
+                    </main>
+                  </div>
+                </div>
+              </div>
+              <div class="boxtitle">Background-image-repeat</div>
+              <div class="boxinfo">
+                <p class="infop">Por padrão a imagem vai se repetir e podemos modificar essa opção usando a propriedade background-repeat</p>
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace20">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;header class="lessoncolorheader3"&gt;<br /><br />
+                        &lt;/header&gt;<br />
+                        &lt;main&gt;<br />
+                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br />
+                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br />
+                        &lt;/main&gt;<br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace10">
+                    <h3 class="titlecolumngrid">CSS</h3>
+                    <blockquote>
+                      <code>
+                        .lessoncolorheader3 {<br />
+                        height:<em>200px</em>;<br />
+                        border:<em>7px dashed blue</em>;<br />
+                        background-color:<em>rgb(55, 100, 50)</em>;<br />
+                        background-image:<em>url(<abbr title="https://cdn-icons-png.flaticon.com/128/1384/1384060.png">exemplo</abbr>)</em>;<br />
+                        background-repeat:<em>no-repeat round</em>;<br />
+                        }
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace10">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <header class="lessoncolorheader3"></header>
+                    <main>
+                      <h4>Evolua rápido com a tecnologia</h4>
+                      <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
+                    </main>
+                  </div>
+                </div>
+              </div>
+              <div class="boxtitle">Valores CSS para<code>background-repeat</code></div>
+              <div class="boxinfo">
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace10">
+                    <blockquote>
+                      <code>
+                        <em>/* Values */</em><br />
+                        background-repeat:<em>repeat-x</em>;<br />
+                        background-repeat:<em>repeat-y</em>;<br />
+                        background-repeat:<em>repeat</em>;<br />
+                        background-repeat:<em>space</em>;<br />
+                        background-repeat:<em>round</em>;<br />
+                        background-repeat:<em>no-repeat</em>;
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace15">
+                    <blockquote>
+                      <code>
+                        <em>/* Podemos usar 2 valores: horizontal | vertical */</em><br /><br />
+                        background-repeat:<em>repeat space</em>;<br />
+                        background-repeat:<em>repeat repeat</em>;<br />
+                        background-repeat:<em>round space</em>;<br />
+                        background-repeat:<em>no-repeat round</em>;
+                      </code>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+        <div id="Background-position" class="lesson" title="Background-position | Background">
+          <h2 id="title" class="title" tabindex="11">Background-position</h2>
+          <span class="subtitle">Com a propriedade<code>background-position</code>é possível mudar a posição da imagem do background.</span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxinfo">
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace20">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;header class="lessoncolorheader4"&gt;<br /><br />
+                        &lt;/header&gt;<br />
+                        &lt;main&gt;<br />
+                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br />
+                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br />
+                        &lt;/main&gt;<br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace10">
+                    <h3 class="titlecolumngrid">CSS</h3>
+                    <blockquote>
+                      <code>
+                        .lessoncolorheader4 {<br />
+                        height:<em>200px</em>;<br />
+                        border:<em>7px dashed blue</em>;<br />
+                        background-color:<em>rgb(55, 100, 50)</em>;<br />
+                        background-image:<em>url(<abbr title="https://cdn-icons-png.flaticon.com/128/1384/1384060.png">exemplo</abbr>)</em>;<br />
+                        background-repeat:<em>no-repeat round</em>;<br />
+                        background-position:<em>right</em>;<br />
+                        }
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace10">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <header class="lessoncolorheader4"></header>
+                    <main>
+                      <h4>Evolua rápido com a tecnologia</h4>
+                      <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
+                    </main>
+                  </div>
+                </div>
+              </div>
+              <div class="boxtitle">Valores CSS para<code>background-position</code></div>
+              <div class="boxinfo">
+                <blockquote>
+                  <code>
+                    <em>/* Pricipais valores */</em><br />
+                    background-position:<em>top</em>;<br />
+                    background-position:<em>bottom</em>;<br />
+                    background-position:<em>left</em>;<br />
+                    background-position:<em>right</em>;<br />
+                    background-position:<em>center</em>;
+                  </code>
+                </blockquote>
+              </div>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+        <div id="Background-size" class="lesson" title="Background-size | Background">
+          <h2 id="title" class="title" tabindex="12">Background-size</h2>
+          <span class="subtitle">Para mudar o tamanho da imagem do background usamos a propriedade<em>background-size</em></span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxinfo">
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace20">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;header class="lessoncolorheader5"&gt;<br /><br />
+                        &lt;/header&gt;<br />
+                        &lt;main&gt;<br />
+                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br />
+                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br />
+                        &lt;/main&gt;<br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace10">
+                    <h3 class="titlecolumngrid">CSS</h3>
+                    <blockquote>
+                      <code>
+                        .lessoncolorheader5 {<br />
+                        height:<em>200px</em>;<br />
+                        border:<em>7px dashed blue</em>;<br />
+                        background-color:<em>rgb(55, 100, 50)</em>;<br />
+                        background-image:<em>url(<abbr title="https://cdn-icons-png.flaticon.com/128/1384/1384060.png">exemplo</abbr>)</em>;<br />
+                        background-repeat:<em>no-repeat round</em>;<br />
+                        background-position:<em>right</em>;<br />
+                        background-size:<em>contain</em>;<br />
+                        }
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace10">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <header class="lessoncolorheader5"></header>
+                    <main>
+                      <h4>Evolua rápido com a tecnologia</h4>
+                      <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
+                    </main>
+                  </div>
+                </div>
+              </div>
+              <div class="boxtitle">Valores CSS para<code>background-size</code></div>
+              <div class="boxinfo">
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace10">
+                    <blockquote>
+                      <code>
+                        <em>/* Values */</em><br />
+                        background-size:<em>cover</em>;<br />
+                        background-size:<em>contain</em>;<br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace15">
+                    <blockquote>
+                      <code>
+                        <em>/* Podemos usar 2 valores: horizontal | vertical */</em><br /><br />
+                        background-size:<em>40% auto</em>;<br />
+                        background-size:<em>2em 25%</em>;<br />
+                        background-size:<em>auto 8px</em>;<br />
+                        background-size:<em>auto auto</em>;
+                      </code>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <br />
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+        <div id="Background-origin-clip" class="lesson" title="Background-origin-clip | Background">
+          <h2 id="title" class="title" tabindex="13">Background-origin-clip</h2>
+          <span class="subtitle"
+            ><em><code>background-origin</code>&<code>background-clip</code></em></span
+          >
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">Background-origin</div>
+              <div class="boxinfo">
+                <p class="infop">A propriedade<code>background-origin</code>é quem define o ponto de origem de uma imagem específica.</p>
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace20">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;header class="lessoncolorheader6"&gt;<br /><br />
+                        &lt;/header&gt;<br />
+                        &lt;main&gt;<br />
+                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br />
+                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br />
+                        &lt;/main&gt;<br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace10">
+                    <h3 class="titlecolumngrid">CSS</h3>
+                    <blockquote>
+                      <code>
+                        .lessoncolorheader6 {<br />
+                        height:<em>150px</em>;<br />
+                        border:<em>7px dashed blue</em>;<br />
+                        background-color:<em>rgb(55, 100, 50)</em>;<br />
+                        background-image:<em>url(<abbr title="https://cdn-icons-png.flaticon.com/128/1384/1384060.png">exemplo</abbr>)</em>;<br />
+                        background-repeat:<em>no-repeat round</em>;<br />
+                        background-position:<em>left</em>;<br />
+                        background-size:<em>contain</em>;<br />
+                        background-origin:<em>border-box</em>;<br />
+                        }
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace10">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <header class="lessoncolorheader6"></header>
+                    <main>
+                      <h4>Evolua rápido com a tecnologia</h4>
+                      <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
+                    </main>
+                  </div>
+                </div>
+              </div>
+              <div class="boxtitle">Background-clip</div>
+              <div class="boxinfo">
+                <p class="infop">O<code>background-clip</code>define se a cor ou imagem do background iniciam debaixo de sua área de borda, preenchimento ou conteúdo.</p>
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace20">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;header class="lessoncolorheader7"&gt;<br /><br />
+                        &lt;/header&gt;<br />
+                        &lt;main&gt;<br />
+                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br />
+                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br />
+                        &lt;/main&gt;<br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace10">
+                    <h3 class="titlecolumngrid">CSS</h3>
+                    <blockquote>
+                      <code>
+                        .lessoncolorheader7 {<br />
+                        height:<em>150px</em>;<br />
+                        border:<em>7px dashed blue</em>;<br />
+                        background-color:<em>rgb(55, 100, 50)</em>;<br />
+                        background-image:<em>url(<abbr title="https://cdn-icons-png.flaticon.com/128/1384/1384060.png">exemplo</abbr>)</em>;<br />
+                        background-repeat:<em>no-repeat round</em>;<br />
+                        background-position:<em>center</em>;<br />
+                        background-size:<em>contain</em>;<br />
+                        background-origin:<em>border-box</em>;<br />
+                        background-clip:<em>border-box</em>;<br />
+                        }
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace10">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <header class="lessoncolorheader7"></header>
+                    <main>
+                      <h4>Evolua rápido com a tecnologia</h4>
+                      <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
+                    </main>
+                  </div>
+                </div>
+              </div>
+              <div class="boxtitle">Valores CSS para<code>background-origin</code> e para<code>background-clip</code></div>
+              <div class="boxinfo">
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace10">
+                    <h4><code>background-origin</code></h4>
+                    <blockquote>
+                      <code>
+                        <em>/* Principais Values */</em><br />
+                        background-origin:<em>border-box</em>;<br />
+                        background-origin:<em>padding-box</em>;<br />
+                        background-origin:<em>content-box</em>;<br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace15">
+                    <h4><code>background-clip</code></h4>
+                    <blockquote>
+                      <code>
+                        <em>/* Principais Values */</em><br />
+                        background-clip:<em>border-box</em>;<br />
+                        background-clip:<em>padding-box</em>;<br />
+                        background-clip:<em>content-box</em>;<br />
+                        background-clip:<em>text</em>;
+                      </code>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <br />
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+        <div id="Background-attachment" class="lesson" title="Background-attachment | Background">
+          <h2 id="title" class="title" tabindex="14">Background-attachment</h2>
+          <span class="subtitle"><code>background-attachment</code></span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">Background-attachment</div>
+              <div class="boxinfo">
+                <p class="infop">A propriedade<code>background-attachment</code>determina se a posição da imagem vai ser fixa ou se vai rolar junto com o conteúdo.</p>
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace20">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;header&gt;<br /><br />
+                        &lt;/header&gt;<br />
+                        &lt;main class="lessoncolormain1"&gt;<br />
+                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br />
+                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br /><br />
+                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br />
+                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br /><br />
+                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br />
+                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br /><br />
+                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br />
+                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br /><br />
+                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br />
+                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br />
+                        &lt;/main&gt;<br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace11">
+                    <h3 class="titlecolumngrid">CSS</h3>
+                    <blockquote>
+                      <code>
+                        .lessoncolormain1 {<br />
+                        background-color:<em>rgb(55, 100, 50)</em>;<br />
+                        background-image:<em>url(<abbr title="https://cdn-icons-png.flaticon.com/128/1384/1384060.png">exemplo</abbr>)</em>;<br />
+                        background-repeat:<em>space round</em>;<br />
+                        background-position:<em>right</em>;<br />
+                        background-size:<em>200px</em>;<br />
+                        background-origin:<em>content-box</em>;<br />
+                        background-clip:<em>content-box</em>;<br />
+                        background-attachment:<em>fixed</em>;<br />
+                        }<br /><br />
+                        .lessoncolormain1 h4,<br />.lessoncolormain1 p {<br />
+                        color:<em>black</em>;<br />
+                        font-size:<em>15px</em>;<br />
+                        background-color:<em>rgb(55, 100, 50, 0%)</em>;<br />
+                        background-image:<em>unset</em>;<br />
+                        }
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace10">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <header></header>
+                    <main class="lessoncolormain1">
+                      <h4>Evolua rápido com a tecnologia</h4>
+                      <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
+                      <h4>Evolua rápido com a tecnologia</h4>
+                      <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
+                      <h4>Evolua rápido com a tecnologia</h4>
+                      <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
+                      <h4>Evolua rápido com a tecnologia</h4>
+                      <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
+                      <h4>Evolua rápido com a tecnologia</h4>
+                      <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
+                    </main>
+                  </div>
+                </div>
+              </div>
+              <div class="boxtitle">Valores CSS para<code>background-attachment</code></div>
+              <div class="boxinfo">
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace9">
+                    <blockquote>
+                      <code>
+                        <em>/* Principais valores */</em><br />
+                        background-attachment:<em>scroll</em>;<br />
+                        background-attachment:<em>fixed</em>;<br />
+                        background-attachment:<em>local</em>;
+                      </code>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+        <div id="Shorthand" class="lesson" title="Shorthand | Background">
+          <h2 id="title" class="title" tabindex="15">Shorthand</h2>
+          <span class="subtitle">É possível usar o shorthand<code>background</code>para definir todos os valores do background.</span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxinfo">
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace20">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;header class="lessoncolorheader8"&gt;<br /><br />
+                        &lt;/header&gt;<br />
+                        &lt;main&gt;<br />
+                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br />
+                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br />
+                        &lt;/main&gt;<br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace10">
+                    <h3 class="titlecolumngrid">CSS</h3>
+                    <blockquote>
+                      <code>
+                        .lessoncolorheader8 {<br />
+                        height:<em>150px</em>;<br />
+                        border:<em>7px dashed blue</em>;<br /><br />
+                        background:<em>rgb(55, 100, 50)<br />url(<abbr title="https://cdn-icons-png.flaticon.com/128/1384/1384060.png">exemplo</abbr>) no-repeat right 10px top / 50px content-box border-box</em>;<br />
+                        }
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace10">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <header class="lessoncolorheader8"></header>
+                    <main>
+                      <h4>Evolua rápido com a tecnologia</h4>
+                      <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
+                    </main>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+        <div id="Gradient" class="lesson" title="Gradient | Background">
+          <h2 id="title" class="title" tabindex="16">Gradient</h2>
+          <span class="subtitle"
+            ><em><code>linear-gradient()</code>&<code>radial-gradient()</code></em></span
+          >
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle"><code>linear-gradient()</code>é a função usada para criar gradient linear com o CSS.</div>
+              <div class="boxinfo">
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace20">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;header class="lessoncolorheader9"&gt;<br /><br />
+                        &lt;/header&gt;<br />
+                        &lt;main&gt;<br />
+                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br />
+                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br />
+                        &lt;/main&gt;<br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace13">
+                    <h3 class="titlecolumngrid">CSS</h3>
+                    <blockquote>
+                      <code>
+                        .lessoncolorheader9 {<br />
+                        height:<em>150px</em>;<br />
+                        border:<em>7px dashed blue</em>;<br /><br />
+                        background:<em>linear-gradient(45deg, red, yellow)</em>;<br />
+                        }
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace10">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <header class="lessoncolorheader9"></header>
+                    <main>
+                      <h4>Evolua rápido com a tecnologia</h4>
+                      <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
+                    </main>
+                  </div>
+                </div>
+              </div>
+              <div class="boxtitle"><code>radial-gradient()</code>é a função usada para criar gradient circular.</div>
+              <div class="boxinfo">
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace20">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;header class="lessoncolorheader10"&gt;<br /><br />
+                        &lt;/header&gt;<br />
+                        &lt;main&gt;<br />
+                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br />
+                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br />
+                        &lt;/main&gt;<br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace13">
+                    <h3 class="titlecolumngrid">CSS</h3>
+                    <blockquote>
+                      <code>
+                        .lessoncolorheader10 {<br />
+                        height:<em>150px</em>;<br />
+                        border:<em>7px dashed blue</em>;<br /><br />
+                        background:<em>radial-gradient(rgba(0, 255, 0, 1), rgba(0, 255, 255, 1), rgba(0, 0, 255, 100%))</em>;<br />
+                        }
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace10">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <header class="lessoncolorheader10"></header>
+                    <main>
+                      <h4>Evolua rápido com a tecnologia</h4>
+                      <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
+                    </main>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+        <div id="Múltiplos valores" class="lesson" title="Múltiplos valores | Background">
+          <h2 id="title" class="title" tabindex="17">Múltiplos valores</h2>
+          <span class="subtitle">Podemos aplicar múltiplos backgrounds em um mesmo elemento, podendo ter cor sólida, gradiente ou imagem.</span>
+          <div id="info" class="info">
+            <div class="box">
+              <div class="boxtitle">Como fazer?</div>
+              <div class="boxinfo">
+                <p class="infop">Para isso basta separar<b>por vírgula</b>cada background.</p>
+              </div>
+              <div class="boxtitle">Exemplo:</div>
+              <div class="boxinfo">
+                <div class="autofitcol25px">
+                  <div class="bodycolumngrid boxspace20">
+                    <h3 class="titlecolumngrid">HTML</h3>
+                    <blockquote>
+                      <code>
+                        &lt;header class="lessoncolorheader11"&gt;<br /><br />
+                        &lt;/header&gt;<br />
+                        &lt;main&gt;<br />
+                        &nbsp; &lt;h4&gt;<em>Evolua rápido com a tecnologia</em>&lt;/h4&gt;<br />
+                        &nbsp; &lt;p&gt;<em>Junte-se a milhares de devs e acelere na direção dos seus objetivos</em>&lt;/p&gt;<br />
+                        &lt;/main&gt;<br />
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace13">
+                    <h3 class="titlecolumngrid">CSS</h3>
+                    <blockquote>
+                      <code>
+                        .lessoncolorheader11 {<br />
+                        height:<em>150px</em>;<br />
+                        border:<em>7px dashed blue</em>;<br /><br />
+                        background:<em
+                          >linear-gradient(45deg, rgba(255, 255, 255, 0), rgba(255, 0, 0, 0.3))<b><code>,</code></b
+                          >rgb(55, 100, 50) url(<abbr title="https://cdn-icons-png.flaticon.com/128/1384/1384060.png">exemplo</abbr>) no-repeat right 10px top / 50px content-box border-box</em
+                        >;<br />
+                        }
+                      </code>
+                    </blockquote>
+                  </div>
+                  <div class="bodycolumngrid boxspace10">
+                    <h3 class="titlecolumngrid">Resultado</h3>
+                    <header class="lessoncolorheader11"></header>
+                    <main>
+                      <h4>Evolua rápido com a tecnologia</h4>
+                      <p>Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
+                    </main>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+          </div>
+        </div>
+        <hr />
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
