@@ -22,7 +22,7 @@
       </header>
       <div id="glossário" class="glossário" title="Glossário do Guia Estelar JavaScript">
         <div id="autofitcol10px índice" class="autofitcol10px índice">
-          <div class="elevatedbox titlecolumngrid boxspace15" title="Primeiros Passos de Guia Estelar JavaScript">
+          <div class="elevatedbox titlecolumngrid boxspace17" title="Primeiros Passos de Guia Estelar JavaScript">
             <h4 class="titlecolumngrid">Primeiros Passos</h4>
             <ol class="bodycolumngrid indol">
               <li><a href="#Sintaxe" title="Ir para Sintaxe">Sintaxe</a></li>
@@ -31,7 +31,19 @@
               <li><a href="#Comentários" title="Ir para Comentários">Comentários</a></li>
             </ol>
           </div>
-          <div class="elevatedbox titlecolumngrid boxspace15" title="segmento2 de Guia Estelar JavaScript">h4.titlecolumngrid{segmento2}+ol.bodycolumngrid.indol>li*8>a[href=#TITULOb$$ title="Ir para TITULOb$$"]{TITULOb$$}</div>
+          <div class="elevatedbox titlecolumngrid boxspace11" title="Tipos de dados de Guia Estelar JavaScript">
+            <h4 class="titlecolumngrid">Tipos de dados</h4>
+            <ol class="bodycolumngrid indol">
+              <li><a href="#Introdução" title="Ir para Introdução">Introdução</a></li>
+              <li><a href="#String" title="Ir para String">String</a></li>
+              <li><a href="#Number" title="Ir para Number">Number</a></li>
+              <li><a href="#Boolean" title="Ir para Boolean">Boolean</a></li>
+              <li><a href="#Undefinedvsnull" title="Ir para Undefined vs null">Undefined vs null</a></li>
+              <li><a href="#Object" title="Ir para Object">Object</a></li>
+              <li><a href="#Array" title="Ir para Array">Array</a></li>
+              <li><a href="#Conclusão" title="Ir para Conclusão">Conclusão</a></li>
+            </ol>
+          </div>
           <div class="elevatedbox titlecolumngrid boxspace15" title="segmento3 de Guia Estelar JavaScript">h4.titlecolumngrid{segmento3}+ol.bodycolumngrid.indol>li*5>a[href=#TITULOc$$ title="Ir para TITULOc$$"]{TITULOc$$}</div>
           <div class="elevatedbox titlecolumngrid boxspace15" title="segmento4 de Guia Estelar JavaScript">h4.titlecolumngrid{segmento4}+ol.bodycolumngrid.indol>li*6>a[href=#TITULOd$$ title="Ir para TITULOd$$"]{TITULOd$$}</div>
           <div class="elevatedbox titlecolumngrid boxspace15" title="segmento5 de Guia Estelar JavaScript">h4.titlecolumngrid{segmento5}+ol.bodycolumngrid.indol>li*9>a[href=#TITULOe$$ title="Ir para TITULOe$$"]{TITULOe$$}</div>
@@ -93,13 +105,122 @@
         <hr />
         <div id="Comentários" class="lesson" title="Comentários | Primeiros Passos">
           <h2 id="title" class="title" tabindex="04">Comentários</h2>
-          <span class="subtitle"></span>
-          <div id="info" class="info"></div>
+          <span class="subtitle">// e /* */</span>
+          <div id="info" class="info">
+            <div class="boxtitle">Duas maneiras</div>
+            <div class="boxinfo">
+              <p class="infop">Para comentar seu código no Javascript, pode se usar // antes da linha, para definir aquela linha inteira.</p>
+              <p class="infop">Para comentar mais de uma linha, pode se usar um /* no começo do comentário e um */ no final. <br />Comentários não são executados, mas são mostrados para quem visualiza o código.</p>
+            </div>
+          </div>
           <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
         </div>
         <hr />
       </div>
-      <div id="segmento" class="segmento" title="segmento2">((#TITULOb$$.lesson[title="TITULOb$$|segmento2"]>h2#title.title[tabindex="$$"]{TITULOb$$}+span.subtitle+#info.info+p.respawn>a[href="#logo"]{Voltar ao índice})+hr)*8</div>
+      <div id="segmento" class="segmento" title=" Tipos de dados">
+        <div id="Introdução" class="lesson" title="Introdução | Tipos de dados">
+          <h2 id="title" class="title" tabindex="01">Introdução</h2>
+          <span class="subtitle">Gramática e vocabulário. Conceitos e escrita.</span>
+          <div id="info" class="info">
+            <p class="infop">Para entendermos mais sobre os tipos de dados, podemos compará-los com elementos da gramática, para aprendermos precisamos saber como escrever, os significados e continuar aprendendo para expandir nosso vocabulário.</p>
+            <p class="infop">A dinâmica do aprendizado nesse módulo vai consistir em conceitos e escrita, deixando a aplicação para um outro momento, vamos aprender os tipos de dados mais utilizados.</p>
+            <div class="boxtitle">Gramática</div>
+            <div class="boxinfo">
+              <p class="infop">Elementos da linguagem e suas combinações.</p>
+              <p class="infop">A arte de falar e escever corretamente.</p>
+            </div>
+            <div class="boxtitle">Vocabulário</div>
+            <div class="boxinfo">
+              <p class="infop">Conjunto de termos e expressões.</p>
+              <p class="infop">Agrupamento de palavras.</p>
+              <ul>
+                <li>Precisamos saber como escrever;</li>
+                <li>Precisamos saber os significados;</li>
+                <li>Precisamos continuar aprendendo, para crescer nosso vocabulário.</li>
+              </ul>
+            </div>
+            <div class="boxtitle">Conceitos e escrita</div>
+            <div class="boxinfo">
+              <p class="infop">É possível aprender 80% de uma lingua nova, com cerca de 20% do vocabulário?</p>
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="String" class="lesson" title="String | Tipos de dados">
+          <h2 id="title" class="title" tabindex="02">String</h2>
+          <span class="subtitle">"&nbsp;", '&nbsp;' e `&nbsp;`</span>
+          <div id="info" class="info">
+            <div class="boxtitle">Tipo de dados String</div>
+            <div class="boxinfo">
+              <p class="infop">O tipo de dados String consiste em uma cadeia de caracteres, ou seja, textos.</p>
+              <p class="infop">Para denotar string no JavaScript são usados aspas duplas ( " " ), aspas simples ( ' ' ) e template literals ou template strings ( ` ` ), template literals permitem textos multilinhas e expressões de linguagem com os caracteres ${ }, por exemplo:</p>
+              <blockquote><code>console.log(A soma de duas unidades é ${1+1})</code>, já as outras não, por exemplo: <code>console.log("Isso é um texto")</code>.</blockquote>
+            </div>
+            <div class="boxtitle">Quando usar?</div>
+            <div class="boxinfo">
+              <p class="infop">
+                É simples: <br />Se for necessário usar mais de um par de aspas simples, embrulhe-as com um par de aspas duplas. <br />Se for necessário usar mais de um par de aspas duplas, embrulhe-as com um par de aspas simples. <br />Se for necessário usar mais de um par de aspas simples e aspas
+                duplas, embrulhe-as com um par de crases.
+              </p>
+              <p class="infop">Exemplo de uso de mais de um par de aspas simples:</p>
+              <img src="./stringaspassimples.jpg" alt="Print de exemplo." />
+              <p class="infop">As crases também permitem que usemos <b>multilinhas</b>. Exemplo:</p>
+              <img src="./stringcrasesmulti.jpg" alt="Print de exemplo de multilinhas." />
+            </div>
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Number" class="lesson" title="Number | Tipos de dados">
+          <h2 id="title" class="title" tabindex="03">Number</h2>
+          <span class="subtitle"></span>
+          <div id="info" class="info">No JavaScript temos 4 tipos de números, os inteiros (por exemplo: 13), os reais ou float (por exemplo: 83.1), o Not a Number (NaN) e o infinito (Infinity).</div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Boolean" class="lesson" title="Boolean | Tipos de dados">
+          <h2 id="title" class="title" tabindex="04">Boolean</h2>
+          <span class="subtitle"></span>
+          <div id="info" class="info">No JavaScript, um dado boolean pode ter apenas 2 valores, verdadeiro (true) e falso (false).</div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Undefinedvsnull" class="lesson" title="Undefined vs null | Tipos de dados">
+          <h2 id="title" class="title" tabindex="05">Undefined vs null</h2>
+          <span class="subtitle"></span>
+          <div id="info" class="info">
+            No JavaScript temos o tipo de dados Undefined, que representa valores indefinidos, e o tipo de dados null, que são muitas vezes confundidos. A diferença dos dois é que null é considerado como um objeto vazio, ou seja, algo indefinido não existe, já algo null existe mas não tem valor
+            algum.
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Object" class="lesson" title="Object | Tipos de dados">
+          <h2 id="title" class="title" tabindex="06">Object</h2>
+          <span class="subtitle"></span>
+          <div id="info" class="info">O tipo de dado Object é estrutural, contendo atributos, ou propriedades, e métodos, ou funcionalidades. Um objeto é denotado com os caracteres { }, atributos e métodos com nome: valor . Por exemplo { nome: "João", idade: 20 }.</div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Array" class="lesson" title="Array | Tipos de dados">
+          <h2 id="title" class="title" tabindex="07">Array</h2>
+          <span class="subtitle"></span>
+          <div id="info" class="info">O tipo de dados Array, ou vetor, também é estrutural, e consiste em uma lista de dados agrupados, um Array é denotado com os caracteres [ ] , por exemplo: [ "Leite", "Ovos", "Manteiga", 1, 2 ] .</div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+        <div id="Conclusão" class="lesson" title="Conclusão | Tipos de dados">
+          <h2 id="title" class="title" tabindex="08">Conclusão</h2>
+          <span class="subtitle"></span>
+          <div id="info" class="info">
+            Conforme o ECMAScript Standard (o padrão do orgão que padroniza o JavaScript) temos 9 tipos de dados organizados em 4 categorias: Primitive, Primitive Value, Structural e Structural Primitive. Os primitivos são: String, Number, Boolean, Undefined, Symbol, BigInt. Os estruturais são:
+            Object e Function. Além destes, temos o primitivo estrutural que consiste apenas no dado null
+          </div>
+          <p class="respawn"><a href="#logo">Voltar ao índice</a></p>
+        </div>
+        <hr />
+      </div>
       <div id="segmento" class="segmento" title="segmento3">((#TITULOc$$.lesson[title="TITULOc$$|segmento3"]>h2#title.title[tabindex="$$"]{TITULOc$$}+span.subtitle+#info.info+p.respawn>a[href="#logo"]{Voltar ao índice})+hr)*5</div>
       <div id="segmento" class="segmento" title="segmento4">((#TITULOd$$.lesson[title="TITULOd$$|segmento4"]>h2#title.title[tabindex="$$"]{TITULOd$$}+span.subtitle+#info.info+p.respawn>a[href="#logo"]{Voltar ao índice})+hr)*6</div>
       <div id="segmento" class="segmento" title="segmento5">((#TITULOe$$.lesson[title="TITULOe$$|segmento5"]>h2#title.title[tabindex="$$"]{TITULOe$$}+span.subtitle+#info.info+p.respawn>a[href="#logo"]{Voltar ao índice})+hr)*9</div>
