@@ -1,6 +1,6 @@
 # Sumário
 
-![preview](./sumario.png)
+![preview](pictures/sumario.png)
 
 > Trilha Fundamentar
 
