@@ -1,80 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sumário | Home</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <!-- <meta name="google-site-verification" content="qLxSPzcs-if62hsyiH6jBMOhTLkA7sNtMVb92Cughto" /> -->
-  </head>
-  <body id="body" class="body">
-    <header>
-      <h1 id="título" class="título" title="Sumário">&lt; Guia para iniciantes! /&gt;</h1>
-    </header>
-    <main>
-      <div class="cards">
-        <div class="card">
-          <img src="https://avatars.githubusercontent.com/u/109971144?v=4" alt="Guilherme Renkens Selfie" />
-          <h2 class="title">Guilherme Renkens</h2>
-          <p class="title">Ex industrial designer aspiring dev</p>
 
-          <!-- These are the links added with framework to the .card box.  -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-          <a class="title" href="https://www.linkedin.com/in/guilherme-renkens-22b573186/" target="_blank"><i class="fa fa-linkedin"></i></a>
-          <a class="title" href="https://github.com/Renkensg" target="_blank"><i class="fa fa-github"></i></a>
-          <a class="title" href="https://open.spotify.com/user/12146810453?si=b6156f61a3614fef" target="_blank"><i class="fa fa-spotify"></i></a>
-        </div>
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="pictures/favicon-32x32.png" type="image/x-icon">
+
+  <!-- REMIX ICONS -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Sumário | Home</title>
+
+</head>
+
+<body id="body" class="body">
+<!-- HEADER PROFILE -->
+<header class="profile container">
+  <!-- Theme button -->
+  <h1 id="título" class="header__title" title="Sumário">&lt; Guia para iniciantes! /&gt;</h1>
+  <div class="profile__container">
+    <i class="ri-moon-line change-theme" id="theme-button"></i>
+    <div class="profile__data">
+      <div class="profile__perfil">
+          <img src="https://avatars.githubusercontent.com/u/109971144?v=4" alt="user" />
+
       </div>
-    </main>
-    <aside>
-      <div id="glossário" class="glossário" title="Índice">
-        <div id="fundamentar" class="fundamentar" title="Trilha Fundamentar | Rocketseat">
-          <div id="guiaestelarhtml" class="chip" title="Guia Estelar HTML">
-            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="" width="100" height="100" />
-            <a href="01-guia-html/html.html">Guia Estelar de HTML</a>
-          </div>
-          <div id="guiaestelarcss" class="chip" title="Guia Estelar CSS">
-            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" alt="" width="100" height="100" />
-            <a href="02-guia-css/css.html">Guia Estelar de CSS</a>
-          </div>
-          <div id="pixels" class="chip" title="Nem tudo são pixels">
-            <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/5630579-pixel-art-glasses-isolated-on-white-background-gr%C3%A1tis-vetor.jpg" alt="" width="100" height="100" />
-            <a href="03-pixels/pixels.html">Nem tudo são Pixels</a>
-          </div>
-          <div id="caixa" class="chip" title="Uma caixa dentro da outra">
-            <img src="https://mudamuda.com.br/app/views//img/dicas/f3-6.jpg" alt="" width="100" height="100" />
-            <a href="04-caixa/caixa.html">Uma caixa dentro da outra</a>
-          </div>
-          <div id="cores" class="chip" title="Agora sim, cores">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5ZsLXWLB58UqMusl97Pabh_FEXWyLBTDrYQ&usqp=CAU" alt="" width="100" height="100" />
-            <a href="05-cores/cores.html">Agora sim, cores</a>
-          </div>
-          <div id="verouvir" class="chip" title="Posso ver e ouvir o HTML">
-            <img src="pictures/vereouvir.jpg" alt="" width="100" height="100" />
-            <a href="06-ver-e-ouvir/verouvir.html">Posso ver e ouvir o HTML</a>
-          </div>
-          <div id="foguetes" class="chip" title="Posicionando foguetes">
-            <img src="https://img.freepik.com/vetores-gratis/foguetes-sao-lancados-para-levar-a-espaconave-ao-espaco-sideral-conjunto-isolado-de-lancamento-de-foguete_1150-50831.jpg?w=2000" alt="" width="100" height="100" />
-            <a href="07-position/foguetes.html">Posicionando foguetes</a>
-          </div>
-          <div id="textos" class="chip" title="App bonito, até nos textos">
-            <img src="https://play-lh.googleusercontent.com/P8kyyGg3J4dzC2cNbrJekzslP8d83VNY1yOGEcniUs3wjum6mZNNKP9O4o67i0BwTw" alt="" width="100" height="100" />
-            <a href="08-texts/08-texto.css">App bonito, até nos textos</a>
-          </div>
-          <div id="formularios" class="chip" title="Formulários de outro planeta">
-            <img src="https://1.bp.blogspot.com/-zXUOQAmnATM/X1sCc0ncBnI/AAAAAAAABC8/P4c4wOdOslkunLognxWU6-k9_USoQWnDgCLcBGAsYHQ/s1600/How-To-Create-a-Simple-Contact-Form-with-HTML-and-CSS.webp" alt="" width="100" height="100" />
-            <a href="09-forms/formularios.html">Guia de Formulários</a>
-          </div>
-          <!-- <div id="js" class="chip" title="Guia Estelar de JavaScript">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="" width="100" height="100" />
-            <a href="10-guia-js/js.html">Guia Estelar de JavaScript</a>
-          </div> -->
-        </div>
+      <div class="profile__info">
+          <h2 class="profile__info-name">Guilherme Renkens</h2>
+
+          <h3 class="profile__info-bio">Industrial designer aspiring dev</h3>
+
       </div>
-    </aside>
-  </body>
+      <div class="profile__icon">
+        <a href="https://www.linkedin.com/in/guilherme-renkens-22b573186/" target="_blank"><i class="ri-linkedin-fill profile__icon-group"></i></a>
+
+        <a href="https://github.com/Renkensg" target="_blank"><i class="ri-github-line profile__icon-group"></i></a>
+
+        <a href="https://open.spotify.com/user/12146810453?si=b6156f61a3614fef" target="_blank"><i class="ri-spotify-line profile__icon-group"></i></a>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="lesson__group grid">
+    <div id="guiaestelarhtml" class="lesson__box" title="Guia Estelar HTML">
+      <a href="01-guia-html/html.html" class="lesson__link">Guia HTML</a>
+    </div>
+    <div id="guiaestelarcss" class="lesson__box" title="Guia Estelar CSS">
+      <a href="02-guia-css/css.html" class="lesson__link">Guia CSS</a>
+    </div>
+    <div id="pixels" class="lesson__box" title="Nem tudo são pixels">
+      <a href="03-pixels/pixels.html" class="lesson__link">Pixels</a>
+    </div>
+    <div id="caixa" class="lesson__box" title="Uma caixa dentro da outra">
+      <a href="04-caixa/caixa.html" class="lesson__link">Boxes</a>
+    </div>
+    <div id="cores" class="lesson__box" title="Agora sim, cores">
+      <a href="05-cores/cores.html" class="lesson__link">Cores</a>
+    </div>
+    <div id="verouvir" class="lesson__box" title="Posso ver e ouvir o HTML">
+      <a href="06-ver-e-ouvir/verouvir.html" class="lesson__link">Audio e video</a>
+    </div>
+    <div id="foguetes" class="lesson__box" title="Posicionando foguetes">
+      <a href="07-position/foguetes.html" class="lesson__link">Position</a>
+    </div>
+    <div id="textos" class="lesson__box" title="App bonito, até nos textos">
+      <a href="08-texts/08-texto.css">Tipografia</a>
+    </div>
+    <div id="formularios" class="lesson__box" title="Formulários de outro planeta">
+      <a href="09-forms/formularios.html" class="lesson__link">Formulários</a>
+    </div>
+    <!-- <div id="js" class="lesson__box" title="Guia Estelar de JavaScript">
+      <a href="10-guia-js/js.html" class="lesson__link">Guia JavaScript</a>
+    </div> -->
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer container">
+  <span class="footer__copy">
+      &#169; Renkens. All rights reserved
+  </span>
+</footer>
+
+<!-- MAIN JS -->
+<script src="assets/js/script.js"></script>
+
+</body>
 </html>

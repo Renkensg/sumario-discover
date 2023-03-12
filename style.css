@@ -1,282 +1,447 @@
-* {
-  margin: 5px;
-  padding: 5px;
-  border: 1px solid #121214;
+/*========== GOOGLE FONTS ==========*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400&display=swap');
+/*========== VARIABLES CSS ==========*/
+:root {
+  /*========== Colors ==========*/
+  --hue-color: 250; /*BLue 240 - Green 154 - Orange 25 - Pink 335*/
 
-  background-color: #121214;
+  --first-color: hsl(var(--hue-color), 53%, 49%);
+  --title-color: hsl(var(--hue-color), 53%, 15%);
+  --text-color: hsl(var(--hue-color), 22%, 35%);
+  --text-color-light: hsl(var(--hue-color), 22%, 50%);
+  --body-color: hsl(var(--hue-color), 24%, 95%);
+  --border-gradient: linear-gradient(250deg, var(--first-color), #F61ACD, #E23500, #F6DD00);
+  --hover-color: hsl(var(--hue-color), 50%, 60%);
+  --white-color: #fff;
+  --dark-color: hsl(var(--hue-color), 100%, 5%);
 
-  color: white;
+  /*========== Font and typography ==========*/
+  /* .5rem = 8px | 1rem = 16px ... */
+  --body-font: 'Lato', sans-serif;
+  --a-font: 'Cinzel', sans-serif;
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.4rem;
+  --large-font-size: 1.25rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*========== Font weight ==========*/
+  --a-font-weight: 700;
+
+  /* Responsive typography */
+  @media screen and (min-width: 968px) {
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
 }
 
-html {
-  padding-top: 0;
+/*========== BASE ===========*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  display: grid;
-  grid-template-areas: "header header"
-  "main aside";
-  justify-content: stretch;
-  align-content: start;
-  font: 62.5% "Lato", sans-serif;
-  height: 100vh;
-  padding: 5px 0 10px 0;
-  margin: 5px 0 10px 0;
+  transition: 0.75s;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: 0.3s; /* For animation dark mode */
 }
 
-/* Inside header is the .título */
-header {
-  margin: 0 5px;
-  padding: 0 5px;
-  height: fit-content;
-  grid-area: header;
+h1 {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+  font-weight: 900;
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  color: var(--text-color);
+  font-weight: 700;
+  padding-bottom: 0;
+}
+
+h3 {
+  padding-top: 0;
+  font-size: var(--h3-font-size);
+  color: var(--text-color-light);
+  font-weight: 300;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  padding: 0.3rem;
+  font-family: var(--a-font);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+i {
+  color: var(--dark-color);
+}
+
+img {
+  border-radius: 50%;
 }
 
 /* Inside main is the .card */
 main {
-  margin-top: 0;
-  padding-top: 0;
-  height: fit-content;
-  grid-area: main;
+  animation: fromLeft 0.9s backwards; /* The main is for the information boxes that is coming to the center from left. */
 }
 
-/* Inside aside is the .glossário */
-aside {
-  grid-area: aside;
-  height: fit-content;
+/*========== THEME ==========*/
+.change-theme {
+  position: relative;
+  left: 55%;
+  font-size: 1.4rem;
+  margin: 0 0.5rem;
+  padding: 0.25rem;
+  border-radius: 50%;
+  box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 0%, 100%, 1),
+               inset 1px 1px 1px hsla(var(--hue-color), 30%, 86%, 1);
+  color: var(--title-color);
+  transition: .75s;
+  cursor: pointer;
 }
 
-/* This is the h1 "< Guia para iniciantes! /> */
-.título {
-  margin-top: 0;
-  padding-top: 0;
-  text-align: center;
-  font-size: 2.2rem;
+.change-theme:hover {
+  color: var(--hover-color);
 }
 
-/* .cards is the box who contains the information boxes. */
-.cards {
-  padding: 0;
-  margin: 0;
+/*========== Variables Dark theme ==========*/
+body.dark-theme {
+  transition: 0.7s;
+  --title-color: hsl(var(--hue-color), 12%, 95%);
+  --text-color: hsl(var(--hue-color), 12%, 75%);
+  --body-color: hsl(var(--hue-color), 10%, 16%);
+  --white-color: hsl(var(--hue-color), 24%, 12%);
 }
 
-/* These ".card" are the header information box. */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 330px;
-  margin: auto;
-  padding-top: 7px;
+/*========== Box shadow Dark theme ==========*/
+.dark-theme .profile__data {
+  box-shadow: 6px 6px 16px hsla(var(--hue-color), 8%, 12%, 1),
+  -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 2),
+  inset -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1),
+  inset 6px 6px 16px hsla(var(--hue-color), 8%, 12%, 2);
+}
+
+.dark-theme .change-theme {
+  box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 8%, 20%, 1),
+  inset 1px 1px 1px hsla(var(--hue-color), 8%, 12%, 1);
+}
+
+/*========== Icons Dark theme ==========*/
+.dark-theme .profile__icon-group {
+  color: var(--text-color-light);
+}
+
+.dark-theme .ri-linkedin-fill:hover {
+  color: #61dfff;
+  text-shadow: 0 0 0.5rem #36a4ff, 0.02rem 0.02rem 0.3rem #1e76be, 0.03rem 0.03rem 0.2rem #0f5188;
+}
+
+.dark-theme .ri-github-line:hover {
+  color: #f3afff;
+  text-shadow: 0 0 0.5rem #B32CCB,
+    0.05rem 0.05rem 0.2rem #791E89, 0.05rem 0.05rem 0.1rem #45114E;
+}
+
+.dark-theme .ri-spotify-line:hover {
+  color: #92ff96;
+  text-shadow: 0.03rem 0.03rem 0.5rem #4CAF50, 0.04rem 0.04rem 0.2rem #2F6F35, 0.05rem 0.05rem 0.1rem #153117;
+}
+
+
+.dark-theme .lesson__box {
+  width: 190px;
+  height: 50px;
+  border: solid;
+  border-image: var(--border-gradient) 1 / 2px;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  transition: .7s;
+}
+
+
+.dark-theme .lesson__box::before {
+  background: var(--body-color);
+}
+
+.dark-theme .lesson__box::after {
+  background: var(--body-color);
+}
+
+.dark-theme .lesson__box:hover::before {
+  width: 0px;
+  background: hsl(var(--hue-color), 20%, 12%);;
+}
+
+.dark-theme .lesson__box:hover::after {
+  height: 0px;
+  background: hsl(var(--hue-color), 20%, 12%);;
+}
+
+.dark-theme .lesson__box:hover {
+  background: hsl(var(--hue-color), 20%, 12%);;
+}
+
+.dark-theme .lesson__box:hover a {
+  transition: .7s;
+  font-size: var(--large-font-size);
+  font-weight: var(--a-font-weight);
+  color: var(--title-color);
+}
+
+/*====================
+   Color changes in some parts of
+   the website, in light theme
+   ====================*/
+
+/*========== REUSABLE CSS CLASSES ==========*/
+/* max-width: 968px; */
+.container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/*========== TITLE ==========*/
+
+/*========== PROFILE ==========*/
+.profile {
+  position: relative;
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fromTop 0.9s 0.2s backwards; /* The header is for the main title that is coming to the center from the top. */
+}
+
+.profile__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3rem;
+  width: max-content;
+  margin: 2rem;
+}
+
+.profile__data {
+  position: relative;
+  box-shadow: -6px -6px 16px var(--white-color),
+               6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1),
+               inset 6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1),
+               inset -6px -6px 16px var(--white-color);
+  width: fit-content;
+  margin: 0.5rem;
   text-align: center;
   border-radius: 10%;
 }
 
-.card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  transition: 0.6s;
-  background: #131314;
-  border-color: transparent;
-}
-
-.card img {
+.profile__perfil img {
   width: 250px;
-  margin: auto;
-  padding: 0;
-  border-radius: 50%;
-  background-color: mediumspringgreen;
-  box-sizing: border-box;
-  /* background: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%); */
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  background: var(--border-gradient);
 }
 
-.card img:hover {
-  transform: scale(1.04);
-  padding: 2px;
+.profile__perfil img:hover {
+  padding: 0.17rem;
   transition: 0.4s;
 }
 
-/* The ".title" is about the h2 "Guilherme Renkens", subtitle and links inside the .card. */
-.title,
-.title * {
+.profile__info,
+.profile__info * {
   border-color: transparent;
   background-color: transparent;
 }
 
-.title {
-  color: grey;
-  font-size: 1.2rem;
+.profile__info-name {
+  margin: 0 1.5rem;
 }
 
-/* Back to the .card to respect the cascading style order. */
-.card h2 {
-  font-size: 1.8rem;
+.profile__info-bio {
+  margin: 0 0 0.5rem 0;
 }
 
-.card a {
-  font-size: 1.4rem;
+.profile__icon,
+.profile__icon * {
+  border-color: transparent;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
 }
 
-/* These are the links that was added to the header box. */
-.fa-linkedin:hover {
+.profile__icon-group {
+  padding: 0.5rem;
   transform: scale(1.5);
-  text-shadow: 1px 1px 0 rgb(0, 12, 7), 0 0 0.2em rgb(0, 0, 255),
-    0 0 0.7em rgb(0, 0, 160), 1px 1px 1.3em rgb(0, 0, 70);
   transition: 0.3s;
 }
 
-.fa-github:hover {
-  transform: scale(1.5);
-  text-shadow: 1px 1px 0 rgb(0, 12, 7), 0 0 0.2em rgb(255, 0, 255),
-    0 0 0.7em rgb(128, 0, 255), 1px 1px 1.3em rgb(71, 0, 143);
-  transition: 0.3s;
+.ri-linkedin-fill:hover {
+  color: #03213A;
+  text-shadow: 0 0 0.7rem #128DF3, 0.07rem 0.07rem 0.15rem #128DF3,
+    0.06rem 0.06rem 0.1rem #0967B3, 0.05rem 0.05rem 0.05rem #06406F;
 }
 
-.fa-spotify:hover {
-  transform: scale(1.5);
-  text-shadow: 1px 1px 0 rgb(0, 12, 7), 0 0 0.2em #00ff59, 0 0 0.7em #008830,
-    1px 1px 1.3em #00300f;
-  transition: 0.3s;
+.ri-github-line:hover {
+  color: #22133D;
+  text-shadow: 0 0 0.5rem #B32CCB,
+    0.05rem 0.05rem 0.2rem #791E89, 0.05rem 0.05rem 0.1rem #45114E;
 }
 
-/* This is the box that align .fundamentar and his boxes in the center. */
-.glossário {
-  display: grid;
+.ri-spotify-line:hover {
+  color: #081309;
+  text-shadow: 0.03rem 0.03rem 0.5rem #4CAF50, 0.04rem 0.04rem 0.2rem #2F6F35, 0.05rem 0.05rem 0.1rem #153117;
+}
+
+/*========== LESSON ==========*/
+.main {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+.lesson__group {
+  width: fit-content;
+}
+
+.lesson__box {
+  width: 190px;
+  height: 50px;
+  border: solid;
+  border-image: var(--border-gradient) 1 / 2px;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0;
+  position: relative;
+  z-index: 0;
+  transition: .7s;
 }
 
-/* This is the box that contain the lesson's link boxes. */
-.fundamentar {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 0.4rem;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0;
+.lesson__box::before, .lesson__box::after {
+  position: absolute;
+  background: var(--body-color);
+  z-index: -1;
+  transition: .7s;
+  content: '';
 }
 
-/* Thats to auto-organize the lesson's boxes on a medium display. */
-@media (max-width: 1531px) {
-  .fundamentar {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 0.59rem;
-    box-sizing: border-box;
-    justify-content: center;
-  }
-}
-
-/* Thats to auto-organize the lesson's boxes on a small display. */
-@media (max-width: 1225px) {
-  .fundamentar {
-    display: grid;
-    grid-template-columns: 1fr;
-    column-gap: 0.59rem;
-    box-sizing: border-box;
-    justify-content: center;
-  }
-}
-
-/* Those was the old ones displays columns organize */
-/*@media (max-width: 1295px) {
-  .fundamentar {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(385px, 385px));
-    column-gap: 0.59rem;
-    box-sizing: border-box;
-    justify-content: center;
-    width: 95vw;
-  }
-} 
-
-@media (max-width: 700px) {
-  .fundamentar {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(385px, 385px));
-    column-gap: 0.59rem;
-    box-sizing: border-box;
-    justify-content: center;
-    width: 95vw;
-  }
-}
-*/
-
-/* These ".chip" are the lesson's link buttons. */
-/* This one is to give them their border, display format and rounded design. */
-.chip {
-  border: 2px solid gray;
-  display: inline-block;
-  padding: 0 25px;
+.lesson__box::before {
   height: 50px;
-  min-width: max-content;
-  font-size: 16px;
-  line-height: 50px;
-  border-radius: 25px;
+  width: 190px;
 }
 
-/* The difference between these two is that the hover only is for the border, and the a:hover is for the text. */
-.chip:hover {
-  border: 2px solid mediumspringgreen;
-  transition: 0.4s;
+.lesson__box::after {
+  width: 190px;
+  height: 30px;
 }
 
-.chip a:hover {
-  color: mediumspringgreen;
-  text-shadow: 1px 1px 0 rgb(0, 12, 7), 0 0 0.2em rgb(0, 129, 65),
-    0 0 0.4em rgb(0, 70, 0), 1px 1px 0.6em rgb(0, 30, 0);
-  transition: 0.7s;
+.lesson_link {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
-/* This .chip img is positioning and defining the size of the buttons' img logo.
-His float is allowing the img and text link to stay side by side. */
-.chip img {
-  float: left;
-  margin: 0 10px 0 -25px;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
+.lesson__box:hover::before {
+  width: 0px;
+  background: #fff;
 }
 
-/* This "a" is about the lesson's link buttons text. 
-He's removing the underline link's decoration, increasing his font size too, and defining his padding. */
-a {
-  outline: none;
-  text-decoration: none;
-  padding: 2px 2px;
-  font-size: 20px;
+.lesson__box:hover::after {
+  height: 0px;
+  background: #fff;
 }
 
-/* That was for the old "a" links. They was removed. */
-/* button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
+.lesson__box:hover {
+  background: #fff;
+}
+
+.lesson__box:hover a {
+  transition: .7s;
+  font-size: var(--large-font-size);
+  font-weight: var(--a-font-weight);
+  color: var(--dark-color);
+}
+
+
+/* ========== FOOTER ========== */
+.footer__copy {
+  display: block;
+  margin: 2.5rem 0 2rem;
   text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-} */
-
-/* Animation display party! */
-
-/* The header is for the main title that is coming to the center from the top. */
-header {
-  animation: fromTop 0.9s 0.2s backwards;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
 }
 
-/* The main is for the information boxes that is coming to the center from left. */
-main {
-  animation: fromLeft 0.9s backwards;
+/* ========== SCROLL BAR ========== */
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: hsl(var(--hue-color), 8%, 66%);
 }
 
-/* The aside is for the lesson's link boxes that is coming to the center from right. */
-aside {
-  animation: fromRight 0.9s backwards;
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: hsl(var(--hue-color), 8%, 54%);
 }
 
-/* These two are the commands to the header's and main's animations. */
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(var(--hue-color), 8%, 44%);
+}
+
+/* ========== BREAKPOINTS ========== */
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .grid {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 692px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* ========== ANIMATIONS ========== */
 @keyframes fromTop {
   from {
     opacity: 0;
