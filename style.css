@@ -6,6 +6,7 @@
   --hue-color: 250; /*BLue 240 - Green 154 - Orange 25 - Pink 335*/
 
   --first-color: hsl(var(--hue-color), 53%, 49%);
+  --first-color-alt: hsl(var(--hue-color), 77%, 80%);
   --title-color: hsl(var(--hue-color), 53%, 15%);
   --text-color: hsl(var(--hue-color), 22%, 35%);
   --text-color-light: hsl(var(--hue-color), 22%, 50%);
@@ -48,7 +49,6 @@
 }
 
 body {
-  transition: 0.75s;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -109,18 +109,17 @@ main {
   border-radius: 50%;
   box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 0%, 100%, 1),
                inset 1px 1px 1px hsla(var(--hue-color), 30%, 86%, 1);
-  color: var(--title-color);
+  color: var(--text-color-light);
   transition: .75s;
   cursor: pointer;
 }
 
 .change-theme:hover {
-  color: var(--hover-color);
+  color: var(--first-color-alt);
 }
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  transition: 0.7s;
   --title-color: hsl(var(--hue-color), 12%, 95%);
   --text-color: hsl(var(--hue-color), 12%, 75%);
   --body-color: hsl(var(--hue-color), 10%, 16%);
@@ -173,7 +172,7 @@ body.dark-theme {
   justify-content: center;
   position: relative;
   z-index: 0;
-  transition: .7s;
+  transition: 1s;
 }
 
 
@@ -200,7 +199,7 @@ body.dark-theme {
 }
 
 .dark-theme .lesson__box:hover a {
-  transition: .7s;
+  transition: 1s;
   font-size: var(--large-font-size);
   font-weight: var(--a-font-weight);
   color: var(--title-color);
@@ -298,6 +297,7 @@ body.dark-theme {
   padding: 0.5rem;
   transform: scale(1.5);
   transition: 0.3s;
+  color: var(--text-color-light);
 }
 
 .ri-linkedin-fill:hover {
@@ -338,14 +338,14 @@ body.dark-theme {
   justify-content: center;
   position: relative;
   z-index: 0;
-  transition: .7s;
+  transition: 1s;
 }
 
 .lesson__box::before, .lesson__box::after {
   position: absolute;
   background: var(--body-color);
   z-index: -1;
-  transition: .7s;
+  transition: 1s;
   content: '';
 }
 
