@@ -3,7 +3,7 @@
 
 /*========== VARIABLES CSS ==========*/
 :root {
-  
+
   /*========== Colors ==========*/
   --hue-color: 250; /*BLue 240 - Green 154 - Orange 25 - Pink 335*/
 
@@ -209,7 +209,7 @@ body.dark-theme {
 /*====================
    Color changes in some parts of
    the website, in light theme
-   ====================*/
+======================*/
 
 /*========== REUSABLE CSS CLASSES ==========*/
 /* max-width: 968px; */
