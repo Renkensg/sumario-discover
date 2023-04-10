@@ -3,7 +3,6 @@
 
 /*========== VARIABLES CSS ==========*/
 :root {
-
   /*========== Colors ==========*/
   --hue-color: 250; /*BLue 240 - Green 154 - Orange 25 - Pink 335*/
 
@@ -13,7 +12,13 @@
   --text-color: hsl(var(--hue-color), 22%, 35%);
   --text-color-light: hsl(var(--hue-color), 22%, 50%);
   --body-color: hsl(var(--hue-color), 24%, 95%);
-  --border-gradient: linear-gradient(250deg, var(--first-color), #F61ACD, #E23500, #F6DD00);
+  --border-gradient: linear-gradient(
+    250deg,
+    var(--first-color),
+    #f61acd,
+    #e23500,
+    #f6dd00
+  );
   --hover-color: hsl(var(--hue-color), 50%, 60%);
   --white-color: #fff;
   --dark-color: hsl(var(--hue-color), 100%, 5%);
@@ -25,22 +30,21 @@
   --h1-font-size: 2.5rem;
   --h2-font-size: 2rem;
   --h3-font-size: 1.4rem;
-  --large-font-size: 1.25rem;
-  --normal-font-size: 0.938rem;
+  --normal-font-size: 1.2rem;
   --smaller-font-size: 0.75rem;
 
   /*========== Font weight ==========*/
   --a-font-weight: 700;
 
   /* Responsive typography */
-  @media screen and (min-width: 576px) {
+  /* @media screen and (min-width: 576px) {
     --h1-font-size: 2.5rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
-  }
+  } */
 }
 
 /*========== BASE ===========*/
@@ -83,7 +87,7 @@ a {
   text-decoration: none;
   padding: 0.3rem;
   font-family: var(--a-font);
-  font-size: 1.2rem;
+  font-size: var(--normal-font-size);
   font-weight: 500;
   color: var(--text-color);
 }
@@ -105,14 +109,13 @@ main {
 .change-theme {
   position: relative;
   left: 55%;
-  font-size: 1.4rem;
   margin: 0 0.5rem;
   padding: 0.25rem;
   border-radius: 50%;
   box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 0%, 100%, 1),
-               inset 1px 1px 1px hsla(var(--hue-color), 30%, 86%, 1);
+    inset 1px 1px 1px hsla(var(--hue-color), 30%, 86%, 1);
   color: var(--text-color-light);
-  transition: .75s;
+  transition: 0.75s;
   cursor: pointer;
 }
 
@@ -131,14 +134,14 @@ body.dark-theme {
 /*========== Box shadow Dark theme ==========*/
 .dark-theme .profile__data {
   box-shadow: 6px 6px 16px hsla(var(--hue-color), 8%, 12%, 1),
-  -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 2),
-  inset -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1),
-  inset 6px 6px 16px hsla(var(--hue-color), 8%, 12%, 2);
+    -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 2),
+    inset -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1),
+    inset 6px 6px 16px hsla(var(--hue-color), 8%, 12%, 2);
 }
 
 .dark-theme .change-theme {
   box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 8%, 20%, 1),
-  inset 1px 1px 1px hsla(var(--hue-color), 8%, 12%, 1);
+    inset 1px 1px 1px hsla(var(--hue-color), 8%, 12%, 1);
 }
 
 /*========== Icons Dark theme ==========*/
@@ -148,20 +151,21 @@ body.dark-theme {
 
 .dark-theme .ri-linkedin-fill:hover {
   color: #61dfff;
-  text-shadow: 0 0 0.5rem #36a4ff, 0.02rem 0.02rem 0.3rem #1e76be, 0.03rem 0.03rem 0.2rem #0f5188;
+  text-shadow: 0 0 0.5rem #36a4ff, 0.02rem 0.02rem 0.3rem #1e76be,
+    0.03rem 0.03rem 0.2rem #0f5188;
 }
 
 .dark-theme .ri-github-line:hover {
   color: #f3afff;
-  text-shadow: 0 0 0.5rem #B32CCB,
-    0.05rem 0.05rem 0.2rem #791E89, 0.05rem 0.05rem 0.1rem #45114E;
+  text-shadow: 0 0 0.5rem #b32ccb, 0.05rem 0.05rem 0.2rem #791e89,
+    0.05rem 0.05rem 0.1rem #45114e;
 }
 
 .dark-theme .ri-spotify-line:hover {
   color: #92ff96;
-  text-shadow: 0.03rem 0.03rem 0.5rem #4CAF50, 0.04rem 0.04rem 0.2rem #2F6F35, 0.05rem 0.05rem 0.1rem #153117;
+  text-shadow: 0.03rem 0.03rem 0.5rem #4caf50, 0.04rem 0.04rem 0.2rem #2f6f35,
+    0.05rem 0.05rem 0.1rem #153117;
 }
-
 
 .dark-theme .lesson__box {
   width: 190px;
@@ -177,7 +181,6 @@ body.dark-theme {
   transition: 1s;
 }
 
-
 .dark-theme .lesson__box::before {
   background: var(--body-color);
 }
@@ -188,21 +191,21 @@ body.dark-theme {
 
 .dark-theme .lesson__box:hover::before {
   width: 0px;
-  background: hsl(var(--hue-color), 20%, 12%);;
+  background: hsl(var(--hue-color), 20%, 12%);
 }
 
 .dark-theme .lesson__box:hover::after {
   height: 0px;
-  background: hsl(var(--hue-color), 20%, 12%);;
+  background: hsl(var(--hue-color), 20%, 12%);
 }
 
 .dark-theme .lesson__box:hover {
-  background: hsl(var(--hue-color), 20%, 12%);;
+  background: hsl(var(--hue-color), 20%, 12%);
 }
 
 .dark-theme .lesson__box:hover a {
   transition: 1s;
-  font-size: var(--large-font-size);
+  font-size: var(--normal-font-size);
   font-weight: var(--a-font-weight);
   color: var(--title-color);
 }
@@ -242,7 +245,7 @@ body.dark-theme {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 3rem;
+  /* padding: 0 3rem; */
   width: max-content;
   margin: 2rem;
 }
@@ -250,18 +253,18 @@ body.dark-theme {
 .profile__data {
   position: relative;
   box-shadow: -6px -6px 16px var(--white-color),
-               6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1),
-               inset 6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1),
-               inset -6px -6px 16px var(--white-color);
+    6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1),
+    inset 6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1),
+    inset -6px -6px 16px var(--white-color);
   width: fit-content;
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
   text-align: center;
   border-radius: 10%;
 }
 
 .profile__perfil img {
   width: 250px;
-  margin: 0.5rem .5rem;
+  margin: 1.7rem 1.7rem 1rem 1.7rem;
   background: var(--border-gradient);
 }
 
@@ -277,7 +280,8 @@ body.dark-theme {
 }
 
 .profile__info-name {
-  margin: 0 1.5rem;
+  margin: 0;
+  padding: 0;
 }
 
 .profile__info-bio {
@@ -293,27 +297,28 @@ body.dark-theme {
 }
 
 .profile__icon-group {
-  padding: 0.5rem;
+  margin-bottom: .9rem;
   transform: scale(1.5);
   transition: 0.3s;
   color: var(--text-color-light);
 }
 
 .ri-linkedin-fill:hover {
-  color: #03213A;
-  text-shadow: 0 0 0.7rem #128DF3, 0.07rem 0.07rem 0.15rem #128DF3,
-    0.06rem 0.06rem 0.1rem #0967B3, 0.05rem 0.05rem 0.05rem #06406F;
+  color: #03213a;
+  text-shadow: 0 0 0.7rem #128df3, 0.07rem 0.07rem 0.15rem #128df3,
+    0.06rem 0.06rem 0.1rem #0967b3, 0.05rem 0.05rem 0.05rem #06406f;
 }
 
 .ri-github-line:hover {
-  color: #22133D;
-  text-shadow: 0 0 0.5rem #B32CCB,
-    0.05rem 0.05rem 0.2rem #791E89, 0.05rem 0.05rem 0.1rem #45114E;
+  color: #22133d;
+  text-shadow: 0 0 0.5rem #b32ccb, 0.05rem 0.05rem 0.2rem #791e89,
+    0.05rem 0.05rem 0.1rem #45114e;
 }
 
 .ri-spotify-line:hover {
   color: #081309;
-  text-shadow: 0.03rem 0.03rem 0.5rem #4CAF50, 0.04rem 0.04rem 0.2rem #2F6F35, 0.05rem 0.05rem 0.1rem #153117;
+  text-shadow: 0.03rem 0.03rem 0.5rem #4caf50, 0.04rem 0.04rem 0.2rem #2f6f35,
+    0.05rem 0.05rem 0.1rem #153117;
 }
 
 /*========== LESSON ==========*/
@@ -340,7 +345,8 @@ body.dark-theme {
   transition: 1s;
 }
 
-.lesson__box::before, .lesson__box::after {
+.lesson__box::before,
+.lesson__box::after {
   position: absolute;
   background: var(--body-color);
   z-index: -1;
@@ -360,11 +366,11 @@ body.dark-theme {
 
 .lesson_link {
   -webkit-touch-callout: none;
-    -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .lesson__box:hover::before {
@@ -382,12 +388,11 @@ body.dark-theme {
 }
 
 .lesson__box:hover a {
-  transition: .7s;
-  font-size: var(--large-font-size);
+  transition: 0.7s;
+  font-size: var(--normal-font-size);
   font-weight: var(--a-font-weight);
   color: var(--dark-color);
 }
-
 
 /* ========== FOOTER ========== */
 .footer__copy {
@@ -421,20 +426,80 @@ body.dark-theme {
     margin-left: 1rem;
     margin-right: 1rem;
   }
+
+  :root {
+    --h1-font-size: 7vw;
+    --h2-font-size: 5vw;
+    --h3-font-size: 3.5vw;
+    --normal-font-size: 4vw;
+  }
+
+  .profile__perfil img {
+    width: 45vw;
+  }
+
+  .profile__icon-group {
+    font-size: 3.6vw;
+    padding: .2rem;
+  }
+
+  .change-theme {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  :root {
+    --h1-font-size: 7vw;
+    --h2-font-size: 5vw;
+    --h3-font-size: 3.5vw;
+    --normal-font-size: 4vw;
+  }
+
+  .profile__perfil img {
+    width: 46.5vw;
+  }
+
+  .profile__icon-group {
+    font-size: 3.6vw;
+    padding: .4rem;
+  }
+
+  .change-theme {
+    font-size: 4vw;
+  }
+
 }
 
 /* For medium devices */
-@media screen and (min-width: 576px) {
-}
-
-@media screen and (min-width: 692px) {
+@media screen and (min-width: 540px) {
   .grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  :root {
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 1.7rem;
+    --h3-font-size: 1.2rem;
+    --normal-font-size: 1.2rem;
+  }
+
+  .profile__perfil img {
+    width: 250px;
+  }
+
+  .profile__icon-group {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+
+  .change-theme {
+    font-size: 1.4rem;
   }
 }
 
 /* For large devices */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 792px) {
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
