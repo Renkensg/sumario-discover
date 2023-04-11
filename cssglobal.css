@@ -1,413 +1,482 @@
+/*========= GOOGLE FONTS =========*/
+
+/*========== VARIABLES CSS ==========*/
+:root {
+  /*========== Colors ==========*/
+  --hue-color: 250; /*BLue 240 - Green 154 - Orange 25 - Pink 335*/
+
+  --first-color: hsl(var(--hue-color), 53%, 49%);
+  --first-color-alt: hsl(var(--hue-color), 77%, 80%);
+  --title-color: hsl(var(--hue-color), 53%, 15%);
+  --text-color: hsl(var(--hue-color), 22%, 35%);
+  --text-color-light: hsl(var(--hue-color), 22%, 50%);
+  --body-color: hsl(var(--hue-color), 24%, 95%);
+  --border-gradient: linear-gradient(
+    250deg,
+    var(--first-color),
+    #f61acd,
+    #e23500,
+    #f6dd00
+  );
+  --hover-color: hsl(var(--hue-color), 50%, 60%);
+  --white-color: #fff;
+  --dark-color: hsl(var(--hue-color), 100%, 5%);
+
+  /*========== Font and typography ==========*/
+  /* .5rem = 8px | 1rem = 16px ... */
+  --body-font: 'Lato', sans-serif;
+  --a-font: 'Cinzel', sans-serif;
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.4rem;
+  --normal-font-size: 1.2rem;
+  --smaller-font-size: 0.75rem;
+
+  /*========== Font weight ==========*/
+  --a-font-weight: 700;
+
+  /* Responsive typography */
+  /* @media screen and (min-width: 576px) {
+     --h1-font-size: 2.5rem;
+     --h2-font-size: 1.5rem;
+     --h3-font-size: 1.25rem;
+     --normal-font-size: 1rem;
+     --small-font-size: 0.875rem;
+     --smaller-font-size: 0.813rem;
+   } */
+}
+
+/*========== BASE ===========*/
+
+/*========== THEME ==========*/
+
+/*========== Variables Dark theme ==========*/
+
+/*========== Box shadow Dark theme ==========*/
+
+/*========== Icons Dark theme ==========*/
+
+/*==================
+   Color changes in some parts of
+   the website, in light theme
+====================*/
+
+/*========== REUSABLE CSS CLASSES ==========*/
+
+/*========== PROFILE ==========*/
+
+/*========== LESSON ==========*/
+
 * {
-   margin: 5px;
-   background-color: #121214;
-   color: white;
+  margin: 5px;
+  background-color: #121214;
+  color: white;
 }
 
 body {
-   font: 17px sans-serif;
-   height: 100vh;
+  font: 17px sans-serif;
+  height: 100vh;
 }
 
 .main-document-head-container {
-   margin: 0;
-   padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .top-navigation {
-   margin: 0;
-   width: 100%;
-   padding: 0;
+  margin: 0;
+  width: 100%;
+  padding: 0;
 }
 
 .container {
-   margin: 0;
-   width: 100%;
-   padding: 0;
+  margin: 0;
+  width: 100%;
+  padding: 0;
 }
 
 .logo {
-   position: absolute;
-   top: 1%;
-   left: 1%;
-   height: 0;
-   margin: 0;
-   padding: 0;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  height: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .título {
-   display: flex;
-   text-align: center;
-   justify-content: center;
-   margin: 5px 0 0 0;
-   width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 5px 0 0 0;
+  width: 100%;
 }
 
 .glossário {
-   display: grid;
-   align-items: center;
-   justify-content: center;
-   width: 97vw;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 97vw;
 }
 
 /* Dividi o índice em autofitcol10px índice */
 .autofitcol10px {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(10px, 10px));
-   column-gap: 0.59rem;
-   box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10px, 10px));
+  column-gap: 0.59rem;
+  box-sizing: border-box;
 }
 
 .índice {
-   padding-top: 10px;
-   justify-content: center;
-   width: 98vw;
+  padding-top: 10px;
+  justify-content: center;
+  width: 98vw;
 }
 
 .titlecolumngrid {
-   font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 /* Mudei o índiceol para bodycolumngrid indol; e o bodyboxgrid para bodycolumngrid boxspace */
 .bodycolumngrid {
-   padding: 0.5em;
-   border-radius: 0.5em;
-   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
-   text-align: start;
-   font-weight: normal;
-   background-color: #151515;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+  text-align: start;
+  font-weight: normal;
+  background-color: #151515;
 }
 
 .bodycolumngrid * {
-   background-color: #151515;
+  background-color: #151515;
 }
 
 .bodycolumngrid li {
-   font-size: 95%;
-   color: white;
+  font-size: 95%;
+  color: white;
 }
 
 /* acrescentei o indol apenas para o índice */
 .indol {
-   padding-left: 20px;
-   font-family: "Quicksand", sans-serif;
+  padding-left: 20px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* Mudei o divol para elevatedbox boxspace */
 .elevatedbox {
-   text-align: center;
-   font-weight: bold;
-   padding: 0;
-   margin: 10px 0 0 0;
+  text-align: center;
+  font-weight: bold;
+  padding: 0;
+  margin: 10px 0 0 0;
 }
 
 /* Mudei span- e boxgridspan para boxspace */
 @media {
-   .boxspace1 {
-      grid-column: auto / span 1;
-   }
+  .boxspace1 {
+    grid-column: auto / span 1;
+  }
 
-   .boxspace2 {
-      grid-column: auto / span 2;
-   }
+  .boxspace2 {
+    grid-column: auto / span 2;
+  }
 
-   .boxspace3 {
-      grid-column: auto / span 3;
-   }
+  .boxspace3 {
+    grid-column: auto / span 3;
+  }
 
-   .boxspace4 {
-      grid-column: auto / span 4;
-   }
+  .boxspace4 {
+    grid-column: auto / span 4;
+  }
 
-   .boxspace5 {
-      grid-column: auto / span 5;
-   }
+  .boxspace5 {
+    grid-column: auto / span 5;
+  }
 
-   .boxspace6 {
-      grid-column: auto / span 6;
-   }
+  .boxspace6 {
+    grid-column: auto / span 6;
+  }
 
-   .boxspace7 {
-      grid-column: auto / span 7;
-   }
+  .boxspace7 {
+    grid-column: auto / span 7;
+  }
 
-   .boxspace8 {
-      grid-column: auto / span 8;
-   }
+  .boxspace8 {
+    grid-column: auto / span 8;
+  }
 
-   .boxspace9 {
-      grid-column: auto / span 9;
-   }
+  .boxspace9 {
+    grid-column: auto / span 9;
+  }
 
-   .boxspace10 {
-      grid-column: auto / span 10;
-   }
+  .boxspace10 {
+    grid-column: auto / span 10;
+  }
 
-   .boxspace11 {
-      grid-column: auto / span 11;
-   }
+  .boxspace11 {
+    grid-column: auto / span 11;
+  }
 
-   .boxspace12 {
-      grid-column: auto / span 12;
-   }
+  .boxspace12 {
+    grid-column: auto / span 12;
+  }
 
-   .boxspace13 {
-      grid-column: auto / span 13;
-   }
+  .boxspace13 {
+    grid-column: auto / span 13;
+  }
 
-   .boxspace14 {
-      grid-column: auto / span 14;
-   }
+  .boxspace14 {
+    grid-column: auto / span 14;
+  }
 
-   .boxspace15 {
-      grid-column: auto / span 15;
-   }
+  .boxspace15 {
+    grid-column: auto / span 15;
+  }
 
-   .boxspace16 {
-      grid-column: auto / span 16;
-   }
+  .boxspace16 {
+    grid-column: auto / span 16;
+  }
 
-   .boxspace17 {
-      grid-column: auto / span 17;
-   }
+  .boxspace17 {
+    grid-column: auto / span 17;
+  }
 
-   .boxspace18 {
-      grid-column: auto / span 18;
-   }
+  .boxspace18 {
+    grid-column: auto / span 18;
+  }
 
-   .boxspace19 {
-      grid-column: auto / span 19;
-   }
+  .boxspace19 {
+    grid-column: auto / span 19;
+  }
 
-   .boxspace20 {
-      grid-column: auto / span 20;
-   }
+  .boxspace20 {
+    grid-column: auto / span 20;
+  }
 
-   .boxspace21 {
-      grid-column: auto / span 21;
-   }
+  .boxspace21 {
+    grid-column: auto / span 21;
+  }
 
-   .boxspace22 {
-      grid-column: auto / span 22;
-   }
+  .boxspace22 {
+    grid-column: auto / span 22;
+  }
 
-   .boxspace23 {
-      grid-column: auto / span 23;
-   }
+  .boxspace23 {
+    grid-column: auto / span 23;
+  }
 
-   .boxspace24 {
-      grid-column: auto / span 24;
-   }
+  .boxspace24 {
+    grid-column: auto / span 24;
+  }
 
-   .boxspace25 {
-      grid-column: auto / span 25;
-   }
+  .boxspace25 {
+    grid-column: auto / span 25;
+  }
 
-   .boxspace26 {
-      grid-column: auto / span 26;
-   }
+  .boxspace26 {
+    grid-column: auto / span 26;
+  }
 
-   .boxspace27 {
-      grid-column: auto / span 27;
-   }
+  .boxspace27 {
+    grid-column: auto / span 27;
+  }
 
-   .boxspace28 {
-      grid-column: auto / span 28;
-   }
+  .boxspace28 {
+    grid-column: auto / span 28;
+  }
 
-   .boxspace29 {
-      grid-column: auto / span 29;
-   }
+  .boxspace29 {
+    grid-column: auto / span 29;
+  }
 
-   .boxspace30 {
-      grid-column: auto / span 30;
-   }
+  .boxspace30 {
+    grid-column: auto / span 30;
+  }
 
-   .boxspace31 {
-      grid-column: auto / span 31;
-   }
+  .boxspace31 {
+    grid-column: auto / span 31;
+  }
 
-   .boxspace32 {
-      grid-column: auto / span 32;
-   }
+  .boxspace32 {
+    grid-column: auto / span 32;
+  }
 
-   .boxspace33 {
-      grid-column: auto / span 33;
-   }
+  .boxspace33 {
+    grid-column: auto / span 33;
+  }
 
-   .boxspace34 {
-      grid-column: auto / span 34;
-   }
+  .boxspace34 {
+    grid-column: auto / span 34;
+  }
 
-   .boxspace35 {
-      grid-column: auto / span 35;
-   }
+  .boxspace35 {
+    grid-column: auto / span 35;
+  }
 
-   .boxspace36 {
-      grid-column: auto / span 36;
-   }
+  .boxspace36 {
+    grid-column: auto / span 36;
+  }
 
-   .boxspace37 {
-      grid-column: auto / span 37;
-   }
+  .boxspace37 {
+    grid-column: auto / span 37;
+  }
 
-   .boxspace38 {
-      grid-column: auto / span 38;
-   }
+  .boxspace38 {
+    grid-column: auto / span 38;
+  }
 
-   .boxspace39 {
-      grid-column: auto / span 39;
-   }
+  .boxspace39 {
+    grid-column: auto / span 39;
+  }
 
-   .boxspace40 {
-      grid-column: auto / span 40;
-   }
+  .boxspace40 {
+    grid-column: auto / span 40;
+  }
 
-   .boxspace41 {
-      grid-column: auto / span 41;
-   }
+  .boxspace41 {
+    grid-column: auto / span 41;
+  }
 
-   .boxspace42 {
-      grid-column: auto / span 42;
-   }
+  .boxspace42 {
+    grid-column: auto / span 42;
+  }
 
-   .boxspace43 {
-      grid-column: auto / span 43;
-   }
+  .boxspace43 {
+    grid-column: auto / span 43;
+  }
 
-   .boxspace44 {
-      grid-column: auto / span 44;
-   }
+  .boxspace44 {
+    grid-column: auto / span 44;
+  }
 
-   .boxspace45 {
-      grid-column: auto / span 45;
-   }
+  .boxspace45 {
+    grid-column: auto / span 45;
+  }
 
-   .boxspace46 {
-      grid-column: auto / span 46;
-   }
+  .boxspace46 {
+    grid-column: auto / span 46;
+  }
 
-   .boxspace47 {
-      grid-column: auto / span 47;
-   }
+  .boxspace47 {
+    grid-column: auto / span 47;
+  }
 
-   .boxspace48 {
-      grid-column: auto / span 48;
-   }
+  .boxspace48 {
+    grid-column: auto / span 48;
+  }
 
-   .boxspace49 {
-      grid-column: auto / span 49;
-   }
+  .boxspace49 {
+    grid-column: auto / span 49;
+  }
 
-   .boxspace50 {
-      grid-column: auto / span 50;
-   }
+  .boxspace50 {
+    grid-column: auto / span 50;
+  }
 }
 
 .title {
-   margin-left: 8px;
-   font-family: "Anonymous Pro", monospace;
-   font-size: 30px;
+  margin-left: 8px;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 30px;
 }
 
 .subtitle,
 .subtitle * {
-   font-family: "Lora", serif;
-   margin: 0px 8px 10px 8px;
-   color: rgb(204, 255, 128);
+  font-family: 'Lora', serif;
+  margin: 0px 8px 10px 8px;
+  color: rgb(204, 255, 128);
 }
 
 .info {
-   font-size: 0.912em;
+  font-size: 0.912em;
 }
 
 .boxtitle {
-   font-size: 1.2em;
-   font-weight: bolder;
-   color: rgb(240, 240, 240);
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: rgb(240, 240, 240);
 }
 
 .boxinfo,
 .infop {
-   color: rgb(175, 175, 175);
+  color: rgb(175, 175, 175);
 }
 
 .infop em {
-   color: rgb(235, 235, 235);
+  color: rgb(235, 235, 235);
 }
 
 /* Mudei headboxgrid para autofitcol25px */
 .autofitcol25px {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(25px, 25px));
-   column-gap: 0.59rem;
-   box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25px, 25px));
+  column-gap: 0.59rem;
+  box-sizing: border-box;
 }
 
 /* Mudei o bodyboxgrid para bodycolumngrid boxspace */
 
 .titlecolumngrid {
-   text-align: center;
+  text-align: center;
 }
 
 /* Mudei respaw para respawn */
 .respawn {
-   font-family: "Quicksand", sans-serif;
-   font-size: 15px;
-   text-align: center;
-   margin: 2px 8px 3px 3px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin: 2px 8px 3px 3px;
 }
 
 code {
-   color: hsl(30, 100%, 50%);
-   font-style: italic;
-   font-size: 1em;
+  color: hsl(30, 100%, 50%);
+  font-style: italic;
+  font-size: 1em;
 }
 
 a {
-   color: mediumspringgreen;
-   text-decoration: none;
-   border-bottom: none;
+  color: mediumspringgreen;
+  text-decoration: none;
+  border-bottom: none;
 }
 
 a:hover {
-   text-shadow: 1px 1px 0 rgb(0, 12, 7), 0 0 0.2em rgb(0, 129, 65),
-      0 0 0.7em rgb(0, 90, 0), 1px 1px 1.3em rgb(0, 50, 0);
-   border-bottom: none;
+  text-shadow: 1px 1px 0 rgb(0, 12, 7), 0 0 0.2em rgb(0, 129, 65),
+    0 0 0.7em rgb(0, 90, 0), 1px 1px 1.3em rgb(0, 50, 0);
+  border-bottom: none;
 }
 
 blockquote {
-   margin-left: 1.2em;
-   font-size: 1em;
-   color: rgb(180, 180, 180);
+  margin-left: 1.2em;
+  font-size: 1em;
+  color: rgb(180, 180, 180);
 }
 
 blockquote em {
-   color: rgb(239, 239, 239);
+  color: rgb(239, 239, 239);
 }
 
 li {
-   color: rgb(220, 220, 220);
+  color: rgb(220, 220, 220);
 }
 
 /* Próprios do Guia HTML */
 .tabelastable {
-   font-size: 0.912em;
-   border: 1px solid rgb(177, 182, 194);
-   border-collapse: collapse;
+  font-size: 0.912em;
+  border: 1px solid rgb(177, 182, 194);
+  border-collapse: collapse;
 }
 
 .tabelastr th {
-   border: 1px ridge white;
-   border-collapse: collapse;
-   padding: 5px;
-   background-color: black;
+  border: 1px ridge white;
+  border-collapse: collapse;
+  padding: 5px;
+  background-color: black;
 }
 
 .tabelastr td {
-   border-left: 1px solid rgb(177, 182, 194);
-   border-collapse: collapse;
-   padding: 2px 6px 2px 6px;
+  border-left: 1px solid rgb(177, 182, 194);
+  border-collapse: collapse;
+  padding: 2px 6px 2px 6px;
 }
 
 /* Fim dos próprios do HTML */
@@ -415,202 +484,202 @@ li {
 /* Próprios do Guia CSS */
 .exemploidselector,
 .exemploidselector b {
-   color: red;
-   font-size: 25px;
-   background: black;
+  color: red;
+  font-size: 25px;
+  background: black;
 }
 
 .divtest {
-   display: grid;
-   width: 50vw;
-   align-items: center;
-   justify-content: space-between;
+  display: grid;
+  width: 50vw;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .h3id {
-   margin: 20px;
-   padding: 20px;
-   text-align: center;
-   font-size: 30px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
 }
 
 .boxmodeltest {
-   display: flex;
+  display: flex;
 }
 
 .examplebox {
-   font-size: 17px;
-   padding-top: 5px;
+  font-size: 17px;
+  padding-top: 5px;
 }
 
 .button {
-   background-color: purple;
-   border-color: purple;
-   font-size: 17px;
+  background-color: purple;
+  border-color: purple;
+  font-size: 17px;
 }
 
 .evitar {
-   font: bolder large "Secular One", sans-serif;
-   color: white;
-   width: 51px;
-   height: 20px;
-   border: 1px solid rgb(170, 0, 0);
-   padding: 10px;
-   box-sizing: content-box;
-   border-radius: 30px;
-   background-color: rgb(170, 0, 0);
+  font: bolder large 'Secular One', sans-serif;
+  color: white;
+  width: 51px;
+  height: 20px;
+  border: 1px solid rgb(170, 0, 0);
+  padding: 10px;
+  box-sizing: content-box;
+  border-radius: 30px;
+  background-color: rgb(170, 0, 0);
 }
 
 /* Fim dos próprios do CSS */
 
 /* Próprios do Nem tudo são Pixels */
 .pixelstable {
-   font-size: 0.912em;
-   border: 1px solid rgb(190, 190, 190);
-   border-collapse: collapse;
+  font-size: 0.912em;
+  border: 1px solid rgb(190, 190, 190);
+  border-collapse: collapse;
 }
 
 .pixelsth {
-   border: 1px ridge white;
-   border-collapse: collapse;
-   padding: 5px;
-   background-color: black;
+  border: 1px ridge white;
+  border-collapse: collapse;
+  padding: 5px;
+  background-color: black;
 }
 
 .pixelstd {
-   border-left: 1px solid rgb(190, 190, 190);
-   border-collapse: collapse;
-   padding: 2px 6px 2px 6px;
+  border-left: 1px solid rgb(190, 190, 190);
+  border-collapse: collapse;
+  padding: 2px 6px 2px 6px;
 }
 
 .boxx2 {
-   height: calc(96%);
-   width: var(bodycolumngrid);
-   background-image: url(https://images.unsplash.com/photo-1657143377606-ad2f0b790fc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
-   background-repeat: no-repeat;
-   background-position: right -25px bottom;
+  height: calc(96%);
+  width: var(bodycolumngrid);
+  background-image: url(https://images.unsplash.com/photo-1657143377606-ad2f0b790fc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat;
+  background-position: right -25px bottom;
 }
 
 .boxx4 {
-   height: calc(50% + 20px);
-   width: var(bodycolumngrid);
-   background-image: url(https://images.unsplash.com/photo-1657143377606-ad2f0b790fc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
-   background-repeat: no-repeat;
-   background-position: right -40px bottom;
+  height: calc(50% + 20px);
+  width: var(bodycolumngrid);
+  background-image: url(https://images.unsplash.com/photo-1657143377606-ad2f0b790fc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat;
+  background-position: right -40px bottom;
 }
 
 /* Fim do Nem tudo são Pixels */
 
 /* Próprios do Uma caixa dentro da outra */
 .imgp {
-   width: 93vw;
+  width: 93vw;
 }
 
 /* Fim do Uma caixa dentro da outra */
 
 /* Próprios do Agora sim, cores */
 .bodycolumngridgray {
-   padding: 0.5em;
-   border-radius: 0.5em;
-   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
-   text-align: start;
-   font-weight: normal;
-   background-color: rgb(80, 80, 80);
+  padding: 0.5em;
+  border-radius: 0.5em;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+  text-align: start;
+  font-weight: normal;
+  background-color: rgb(80, 80, 80);
 }
 
 .bodycolumngridgray * {
-   background-color: rgb(80, 80, 80);
+  background-color: rgb(80, 80, 80);
 }
 
 .lessoncolorheader1 {
-   height: 100px;
-   border: 7px dashed blue;
-   background-color: rgb(55, 100, 50);
+  height: 100px;
+  border: 7px dashed blue;
+  background-color: rgb(55, 100, 50);
 }
 
 .lessoncolorheader2 {
-   height: 100px;
-   border: 7px dashed blue;
-   background-color: rgb(55, 100, 50);
-   background-image: url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png);
+  height: 100px;
+  border: 7px dashed blue;
+  background-color: rgb(55, 100, 50);
+  background-image: url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png);
 }
 
 .lessoncolorheader3 {
-   height: 200px;
-   border: 7px dashed blue;
-   background-color: rgb(55, 100, 50);
-   background-image: url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png);
-   background-repeat: no-repeat round;
+  height: 200px;
+  border: 7px dashed blue;
+  background-color: rgb(55, 100, 50);
+  background-image: url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png);
+  background-repeat: no-repeat round;
 }
 
 .lessoncolorheader4 {
-   height: 200px;
-   border: 7px dashed blue;
-   background-color: rgb(55, 100, 50);
-   background-image: url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png);
-   background-repeat: no-repeat round;
-   background-position: right;
+  height: 200px;
+  border: 7px dashed blue;
+  background-color: rgb(55, 100, 50);
+  background-image: url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png);
+  background-repeat: no-repeat round;
+  background-position: right;
 }
 
 .lessoncolorheader5 {
-   height: 200px;
-   border: 7px dashed blue;
-   background-color: rgb(55, 100, 50);
-   background-image: url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png);
-   background-repeat: no-repeat round;
-   background-position: right;
-   background-size: contain;
+  height: 200px;
+  border: 7px dashed blue;
+  background-color: rgb(55, 100, 50);
+  background-image: url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png);
+  background-repeat: no-repeat round;
+  background-position: right;
+  background-size: contain;
 }
 
 .lessoncolorheader6 {
-   height: 150px;
-   border: 7px dashed blue;
-   background-color: rgb(55, 100, 50);
-   background-image: url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png);
-   background-repeat: no-repeat round;
-   background-position: left;
-   background-size: contain;
-   background-origin: border-box;
+  height: 150px;
+  border: 7px dashed blue;
+  background-color: rgb(55, 100, 50);
+  background-image: url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png);
+  background-repeat: no-repeat round;
+  background-position: left;
+  background-size: contain;
+  background-origin: border-box;
 }
 
 .lessoncolorheader7 {
-   height: 150px;
-   border: 7px dashed blue;
-   background-color: rgb(55, 100, 50);
-   background-image: url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png);
-   background-repeat: no-repeat round;
-   background-position: center;
-   background-size: contain;
-   background-origin: border-box;
-   background-clip: padding-box;
+  height: 150px;
+  border: 7px dashed blue;
+  background-color: rgb(55, 100, 50);
+  background-image: url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png);
+  background-repeat: no-repeat round;
+  background-position: center;
+  background-size: contain;
+  background-origin: border-box;
+  background-clip: padding-box;
 }
 
 .lessoncolormain1 {
-   background-color: rgb(55, 100, 50);
-   background-image: url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png);
-   background-repeat: space round;
-   background-position: right;
-   background-size: 200px;
-   background-origin: border-box;
-   background-clip: border-box;
-   background-attachment: fixed;
+  background-color: rgb(55, 100, 50);
+  background-image: url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png);
+  background-repeat: space round;
+  background-position: right;
+  background-size: 200px;
+  background-origin: border-box;
+  background-clip: border-box;
+  background-attachment: fixed;
 }
 
 .lessoncolormain1 h4,
 .lessoncolormain1 p {
-   color: black;
-   font-size: 15px;
-   background-color: rgb(55, 100, 50, 0%);
-   background-image: unset;
+  color: black;
+  font-size: 15px;
+  background-color: rgb(55, 100, 50, 0%);
+  background-image: unset;
 }
 
 .lessoncolorheader8 {
-   height: 150px;
-   border: 7px dashed blue;
-   background: rgb(55, 100, 50)
-      url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png) no-repeat
-      right 10px top / 50px content-box border-box;
-   /* background-image: url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png);
+  height: 150px;
+  border: 7px dashed blue;
+  background: rgb(55, 100, 50)
+    url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png) no-repeat right
+    10px top / 50px content-box border-box;
+  /* background-image: url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png);
     background-repeat: no-repeat round;
     background-position: center;
     background-size: contain;
@@ -619,32 +688,32 @@ li {
 }
 
 .lessoncolorheader9 {
-   height: 150px;
-   border: 7px dashed blue;
-   background: linear-gradient(45deg, red, yellow);
+  height: 150px;
+  border: 7px dashed blue;
+  background: linear-gradient(45deg, red, yellow);
 }
 
 .lessoncolorheader10 {
-   height: 150px;
-   border: 7px dashed blue;
-   background: radial-gradient(
-      purple,
-      rgba(0, 255, 255, 1),
-      rgba(0, 0, 255, 100%)
-   );
+  height: 150px;
+  border: 7px dashed blue;
+  background: radial-gradient(
+    purple,
+    rgba(0, 255, 255, 1),
+    rgba(0, 0, 255, 100%)
+  );
 }
 
 .lessoncolorheader11 {
-   height: 150px;
-   border: 7px dashed blue;
-   background: linear-gradient(
-         45deg,
-         rgba(255, 255, 255, 0),
-         rgba(255, 0, 0, 0.3)
-      ),
-      rgb(55, 100, 50)
-         url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png) no-repeat
-         right 10px top / 50px content-box border-box;
+  height: 150px;
+  border: 7px dashed blue;
+  background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 0, 0, 0.3)
+    ),
+    rgb(55, 100, 50)
+      url(https://cdn-icons-png.flaticon.com/128/1384/1384060.png) no-repeat
+      right 10px top / 50px content-box border-box;
 }
 
 /* Fim do Agora sim, cores */
@@ -654,160 +723,160 @@ li {
 
 /* Próprios do Posicionando foguetes*/
 .lessonbox {
-   width: 50px;
-   height: 50px;
-   margin-bottom: 8px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 8px;
 }
 
 .lessonbox1 {
-   background-color: red;
-   position: relative;
-   left: 100px;
-   top: 80px;
+  background-color: red;
+  position: relative;
+  left: 100px;
+  top: 80px;
 }
 
 .lessonbox2 {
-   background-color: green;
+  background-color: green;
 }
 
 .lessonbox3 {
-   background-color: blue;
+  background-color: blue;
 }
 
 .lessonbox4 {
-   background-color: red;
-   position: absolute;
-   left: 100px;
-   top: 80px;
+  background-color: red;
+  position: absolute;
+  left: 100px;
+  top: 80px;
 }
 
 .foguetesgrid {
-   position: relative;
+  position: relative;
 }
 
 .lessonbox7 {
-   background-color: red;
-   position: fixed;
+  background-color: red;
+  position: fixed;
 }
 
 .lessonbox8 {
-   background-color: red;
-   position: absolute;
-   left: 10px;
-   top: 35px;
-   z-index: 3;
+  background-color: red;
+  position: absolute;
+  left: 10px;
+  top: 35px;
+  z-index: 3;
 }
 
 .lessonbox5 {
-   background-color: green;
-   position: absolute;
-   left: 15px;
-   top: 40px;
-   z-index: 2;
+  background-color: green;
+  position: absolute;
+  left: 15px;
+  top: 40px;
+  z-index: 2;
 }
 
 .lessonbox6 {
-   background-color: blue;
-   position: absolute;
-   left: 20px;
-   top: 45px;
-   z-index: 1;
+  background-color: blue;
+  position: absolute;
+  left: 20px;
+  top: 45px;
+  z-index: 1;
 }
 
 .flexlessoncontainer {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
 }
 
 .flexlessonbox {
-   width: 50px;
-   height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .flexlessonblue {
-   background-color: blue;
+  background-color: blue;
 }
 
 .flexlessonred {
-   background-color: red;
+  background-color: red;
 }
 
 .flexlessongreen {
-   background-color: green;
+  background-color: green;
 }
 
 .gridlessonbody {
-   height: 1fr;
+  height: 1fr;
 
-   display: grid;
-   grid-template-areas: "title title" "header header" "main aside" "footer footer";
-   grid-template-rows: 30px 50px 1fr 35px;
-   grid-template-columns: 1fr 80px;
+  display: grid;
+  grid-template-areas: 'title title' 'header header' 'main aside' 'footer footer';
+  grid-template-rows: 30px 50px 1fr 35px;
+  grid-template-columns: 1fr 80px;
 }
 
 .gridlessontitle {
-   grid-area: title;
+  grid-area: title;
 }
 
 .gridlessonheader {
-   grid-area: header;
-   background-color: green;
+  grid-area: header;
+  background-color: green;
 }
 
 .gridlessonmain {
-   grid-area: main;
-   background-color: red;
+  grid-area: main;
+  background-color: red;
 }
 
 .gridlessonaside {
-   grid-area: aside;
-   background-color: blue;
+  grid-area: aside;
+  background-color: blue;
 }
 
 .gridlessonfooter {
-   grid-area: footer;
-   background-color: gray;
+  grid-area: footer;
+  background-color: gray;
 }
 
 .gridlessonfitcoltest {
-   display: grid;
-   grid-template-areas: "css html" "css resultado";
-   grid-template-columns: 400px 530px;
-   grid-template-rows: 200px 1fr;
+  display: grid;
+  grid-template-areas: 'css html' 'css resultado';
+  grid-template-columns: 400px 530px;
+  grid-template-rows: 200px 1fr;
 }
 
 .gridlessonbodycolumngridhtml {
-   grid-area: html;
+  grid-area: html;
 }
 
 .gridlessonbodycolumngridcss {
-   grid-area: css;
+  grid-area: css;
 }
 
 .gridlessonbodycolumngridresult {
-   grid-area: resultado;
+  grid-area: resultado;
 }
 
 .gridlessonfitcoltest2 {
-   display: grid;
-   grid-template-areas: "css html" "css resultado";
-   grid-template-columns: 400px 530px;
-   grid-template-rows: 240px 1fr;
+  display: grid;
+  grid-template-areas: 'css html' 'css resultado';
+  grid-template-columns: 400px 530px;
+  grid-template-rows: 240px 1fr;
 }
 
 .gridlessonheader2 {
-   grid-area: header;
-   background-color: green;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 0 5px;
+  grid-area: header;
+  background-color: green;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
 }
 
 .gridlessondiv {
-   background-color: unset;
+  background-color: unset;
 }
 
 /* Fim do Posicionando foguetes*/
